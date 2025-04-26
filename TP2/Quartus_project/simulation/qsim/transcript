@@ -1,0 +1,39 @@
+# do tp2_e5_ERV25_grupo2.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:28:02 on Apr 26,2025
+# vlog -work work tp2_e5_ERV25_grupo2.vo 
+# -- Compiling module tp2_e5_ERV25_grupo2
+# -- Compiling module hard_block
+# 
+# Top level modules:
+# 	tp2_e5_ERV25_grupo2
+# End time: 18:28:03 on Apr 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 18:28:03 on Apr 26,2025
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module tp2_e5_ERV25_grupo2_vlg_vec_tst
+# 
+# Top level modules:
+# 	tp2_e5_ERV25_grupo2_vlg_vec_tst
+# End time: 18:28:03 on Apr 26,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.tp2_e5_ERV25_grupo2_vlg_vec_tst 
+# Start time: 18:28:03 on Apr 26,2025
+# Loading work.tp2_e5_ERV25_grupo2_vlg_vec_tst
+# Loading work.tp2_e5_ERV25_grupo2
+# Loading work.hard_block
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading instances from tp2_e5_ERV25_grupo2_v.sdo
+# Loading timing data from tp2_e5_ERV25_grupo2_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst File: Waveform.vwf.vt
+# after#24
+# ** Note: $finish    : Waveform.vwf.vt(49)
+#    Time: 1 us  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst
+# End time: 18:28:04 on Apr 26,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

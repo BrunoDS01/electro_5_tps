@@ -1,0 +1,24 @@
+module fetch (
+	input wire stage_clk,          
+    input wire stage_ena,          
+    input wire stage_x,            
+    input wire [31:0] instr_in,
+	input wire a,
+	input wire b,
+	input wire c,
+	
+	output wire z,
+    output wire [31:0] instr_out,
+	output wire [31:0] pc_out
+);
+
+reg x, y;
+
+// Combinacional
+always @(a, b, c) begin
+	x = a and b;
+	y = c or x;
+end
+
+
+endmodule

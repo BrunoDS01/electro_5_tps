@@ -1,0 +1,47 @@
+module fetch_unit (
+	//input wire stage_clk,          
+    //input wire stage_ena,          
+    //input wire stage_x,            
+    //input wire [31:0] instr_in,
+	input wire a,
+	input wire b,
+	input wire c,
+	input wire clk;
+	
+	output wire z
+    //output wire [31:0] instr_out,
+	//output wire [31:0] pc_out
+);
+
+reg x, y, w;
+
+// Secuencial
+always @(posedge clk or reset) begin
+	if (reset) begin
+		w <= 1'b0;
+	else
+		w <= a;
+end
+
+// Combinacional
+always @(a, b, c) begin
+	if (a == 1'b1) begin
+		y = c | b;
+	end
+	else begin
+		y = c & b;
+	end
+end
+
+always @(a, b, c) begin
+	if (a == 1'b1) begin
+		w = c | b;
+	end
+	else begin
+		w = c & b;
+	end
+end
+
+assign z = y;
+
+endmodule

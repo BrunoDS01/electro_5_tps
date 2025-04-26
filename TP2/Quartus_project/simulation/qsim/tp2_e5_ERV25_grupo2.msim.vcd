@@ -1,0 +1,89 @@
+$comment
+	File created using the following command:
+		vcd file tp2_e5_ERV25_grupo2.msim.vcd -direction
+$end
+$date
+	Sat Apr 26 18:28:04 2025
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module tp2_e5_ERV25_grupo2_vlg_vec_tst $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var reg 1 # c $end
+$var wire 1 $ z $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + z~output_o $end
+$var wire 1 , c~input_o $end
+$var wire 1 - a~input_o $end
+$var wire 1 . b~input_o $end
+$var wire 1 / inst2|z~combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+0#
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+x+
+0,
+1-
+0.
+x/
+$end
+#5078
+0/
+#9092
+0+
+0$
+#60000
+1"
+#60745
+1.
+#64660
+1/
+#68703
+1+
+1$
+#100000
+1#
+#100745
+1,
+#120000
+0!
+#120758
+0-
+#220000
+0"
+#220758
+0.
+#300000
+0#
+#300758
+0,
+#305836
+0/
+#309850
+0+
+0$
+#1000000
