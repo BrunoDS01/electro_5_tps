@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tp2_e5_ERV25_grupo2
-Thu May  1 12:49:07 2025
+Thu May  1 17:40:19 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -17,11 +17,13 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   9. Registers Removed During Synthesis
  10. General Register Statistics
  11. Source assignments for ram_principal:inst|altsyncram:altsyncram_component|altsyncram_hjh2:auto_generated
- 12. Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component
- 13. altsyncram Parameter Settings by Entity Instance
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 12. Parameter Settings for User Entity Instance: bht:inst7
+ 13. Parameter Settings for User Entity Instance: btb:inst10
+ 14. Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component
+ 15. altsyncram Parameter Settings by Entity Instance
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
 
 
 
@@ -48,7 +50,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May  1 12:49:07 2025           ;
+; Analysis & Synthesis Status        ; Successful - Thu May  1 17:40:19 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
@@ -57,7 +59,7 @@ on the Quartus Prime software download page.
 ;     Total combinational functions  ; 0                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 2                                               ;
+; Total pins                         ; 6                                               ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -175,6 +177,8 @@ on the Quartus Prime software download page.
 ; ram_principal.v                  ; yes             ; User Wizard-Generated File         ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v         ;         ;
 ; tp2_e5_ERV25_grupo2.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/tp2_e5_ERV25_grupo2.bdf ;         ;
 ; fetch_unit.v                     ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/fetch_unit.v            ;         ;
+; bht.v                            ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht.v                   ;         ;
+; btb.v                            ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/btb.v                   ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf                                 ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                          ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc                                    ;         ;
@@ -208,13 +212,13 @@ on the Quartus Prime software download page.
 ;     -- Dedicated logic registers            ; 0                ;
 ;     -- I/O registers                        ; 0                ;
 ;                                             ;                  ;
-; I/O pins                                    ; 2                ;
+; I/O pins                                    ; 6                ;
 ;                                             ;                  ;
 ; Embedded Multiplier 9-bit elements          ; 0                ;
 ;                                             ;                  ;
 ; Maximum fan-out node                        ; pin_name1~output ;
 ; Maximum fan-out                             ; 1                ;
-; Total fan-out                               ; 2                ;
+; Total fan-out                               ; 6                ;
 ; Average fan-out                             ; 0.50             ;
 +---------------------------------------------+------------------+
 
@@ -224,7 +228,7 @@ on the Quartus Prime software download page.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name         ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+---------------------+--------------+
-; |tp2_e5_ERV25_grupo2       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |tp2_e5_ERV25_grupo2 ; tp2_e5_ERV25_grupo2 ; work         ;
+; |tp2_e5_ERV25_grupo2       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 6    ; 0            ; |tp2_e5_ERV25_grupo2 ; tp2_e5_ERV25_grupo2 ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -238,14 +242,526 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-----------------------------------------+-----------------+
 
 
-+-------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                            ;
-+----------------------------------------+--------------------------------------+
-; Register name                          ; Reason for Removal                   ;
-+----------------------------------------+--------------------------------------+
-; fetch_unit:inst4|pc[2..31]             ; Stuck at GND due to stuck port clock ;
-; Total Number of Removed Registers = 30 ;                                      ;
-+----------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++-----------------------------------------+--------------------------------------+
+; Register name                           ; Reason for Removal                   ;
++-----------------------------------------+--------------------------------------+
+; fetch_unit:inst4|pc[2..31]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[63][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[63][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[62][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[62][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[61][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[61][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[60][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[60][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[59][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[59][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[58][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[58][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[57][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[57][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[56][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[56][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[55][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[55][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[54][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[54][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[53][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[53][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[52][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[52][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[51][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[51][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[50][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[50][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[49][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[49][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[48][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[48][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[47][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[47][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[46][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[46][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[45][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[45][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[44][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[44][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[43][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[43][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[42][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[42][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[41][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[41][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[40][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[40][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[39][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[39][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[38][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[38][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[37][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[37][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[36][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[36][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[35][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[35][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[34][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[34][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[33][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[33][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[32][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[32][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[31][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[31][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[30][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[30][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[29][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[29][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[28][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[28][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[27][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[27][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[26][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[26][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[25][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[25][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[24][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[24][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[23][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[23][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[22][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[22][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[21][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[21][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[20][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[20][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[19][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[19][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[18][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[18][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[17][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[17][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[16][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[16][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[15][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[15][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[14][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[14][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[13][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[13][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[12][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[12][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[11][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[11][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[10][0]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[10][1]              ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[9][0]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[9][1]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[8][0]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[8][1]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[7][0]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[7][1]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[6][0]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[6][1]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[5][0]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[5][1]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[4][0]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[4][1]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[3][0]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[3][1]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[2][0]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[2][1]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[1][0]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[1][1]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[0][0]               ; Stuck at GND due to stuck port clock ;
+; bht:inst7|bht_table[0][1]               ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~0                   ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~1                   ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~2                   ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~3                   ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~4                   ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~5                   ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~6                   ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~7                   ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~8                   ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~9                   ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~10                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~11                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~12                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~13                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~14                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~15                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~16                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~17                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~18                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~19                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~20                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~21                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~22                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~23                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~24                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~25                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~26                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~27                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~28                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~29                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~30                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~31                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~32                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~33                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~34                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~35                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~36                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~37                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~38                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~39                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~40                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~41                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~42                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~43                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~44                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~45                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~46                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~47                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~48                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~49                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~50                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~51                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~52                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~53                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~54                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~55                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~56                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~57                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~58                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~59                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~60                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~61                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~62                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~63                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~64                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~65                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~66                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~67                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~68                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~69                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~70                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~71                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~72                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~73                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~74                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~75                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~76                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~77                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~78                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~79                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~80                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~81                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~82                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~83                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~84                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~85                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~86                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~87                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~88                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~89                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~90                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~91                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~92                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~93                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~94                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~95                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~96                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~97                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~98                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~99                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~100                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~101                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~102                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~103                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~104                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~105                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~106                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~107                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~108                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~109                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~110                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~111                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~112                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~113                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~114                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~115                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~116                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~117                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~118                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~119                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~120                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~121                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~122                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~123                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~124                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~125                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~126                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~127                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~128                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~129                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~130                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~131                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~132                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~133                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~134                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~135                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~136                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~137                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~138                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~139                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~140                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~141                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~142                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~143                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~144                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~145                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~146                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~147                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~148                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~149                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~150                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~151                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~152                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~153                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~154                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~155                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~156                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~157                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~158                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~159                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~160                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~161                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~162                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~163                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~164                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~165                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~166                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~167                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~168                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~169                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~170                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~171                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~172                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~173                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~174                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~175                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~176                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~177                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~178                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~179                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~180                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~181                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~182                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~183                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~184                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~185                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~186                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~187                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~188                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~189                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~190                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~191                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~192                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~193                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~194                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~195                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~196                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~197                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~198                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~199                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~200                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~201                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~202                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~203                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~204                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~205                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~206                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~207                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~208                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~209                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~210                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~211                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~212                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~213                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~214                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~215                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~216                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~217                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~218                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~219                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~220                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~221                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~222                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~223                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~224                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~225                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~226                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~227                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~228                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~229                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~230                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~231                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~232                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~233                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~234                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~235                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~236                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~237                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~238                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~239                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~240                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~241                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~242                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~243                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~244                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~245                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~246                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~247                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~248                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~249                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~250                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~251                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~252                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~253                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~254                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~255                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~256                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~257                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~258                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~259                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~260                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~261                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~262                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~263                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~264                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~265                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~266                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~267                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~268                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~269                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~270                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~271                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~272                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~273                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~274                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~275                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~276                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~277                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~278                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~279                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~280                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~281                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~282                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~283                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~284                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~285                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~286                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~287                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~288                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~289                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~290                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~291                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~292                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~293                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~294                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~295                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~296                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~297                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~298                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~299                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~300                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~301                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~302                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~303                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~304                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~305                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~306                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~307                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~308                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~309                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~310                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~311                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~312                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~313                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~314                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~315                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~316                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~317                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~318                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_tags~319                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~0                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~1                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~2                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~3                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~4                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~5                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~6                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~7                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~8                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~9                  ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~10                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~11                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~12                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~13                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~14                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~15                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~16                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~17                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~18                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~19                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~20                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~21                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~22                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~23                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~24                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~25                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~26                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~27                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~28                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~29                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~30                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~31                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~32                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~33                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~34                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~35                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~36                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~37                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~38                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~39                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~40                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~41                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~42                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~43                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~44                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~45                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~46                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~47                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~48                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~49                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~50                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~51                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~52                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~53                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~54                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~55                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~56                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~57                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~58                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~59                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~60                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~61                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~62                 ; Stuck at GND due to stuck port clock ;
+; btb:inst10|btb_valid~63                 ; Stuck at GND due to stuck port clock ;
+; Total Number of Removed Registers = 542 ;                                      ;
++-----------------------------------------+--------------------------------------+
 
 
 +------------------------------------------------------+
@@ -270,6 +786,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+--------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
 +---------------------------------+--------------------+------+--------------------------------------------+
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bht:inst7 ;
++----------------+-------+-------------------------------+
+; Parameter Name ; Value ; Type                          ;
++----------------+-------+-------------------------------+
+; ADDR_WIDTH     ; 6     ; Signed Integer                ;
+; COUNTER_BITS   ; 2     ; Signed Integer                ;
++----------------+-------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: btb:inst10 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; ADDR_WIDTH     ; 6     ; Signed Integer                 ;
+; PC_BITS        ; 11    ; Signed Integer                 ;
+; TAG_BITS       ; 5     ; Signed Integer                 ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -358,7 +897,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 2                           ;
+; boundary_port         ; 6                           ;
 ; cycloneiii_lcell_comb ; 1                           ;
 ;     normal            ; 1                           ;
 ;         0 data inputs ; 1                           ;
@@ -383,7 +922,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu May  1 12:48:53 2025
+    Info: Processing started: Thu May  1 17:40:07 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -396,8 +935,17 @@ Info (12021): Found 1 design units, including 1 entities, in source file fetch_u
 Info (12021): Found 2 design units, including 2 entities, in source file constant0.v
     Info (12023): Found entity 1: constant0_lpm_constant_r09 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/constant0.v Line: 47
     Info (12023): Found entity 2: constant0 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/constant0.v Line: 62
+Info (12021): Found 1 design units, including 1 entities, in source file bht.v
+    Info (12023): Found entity 1: bht File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file btb.v
+    Info (12023): Found entity 1: btb File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/btb.v Line: 3
 Info (12127): Elaborating entity "tp2_e5_ERV25_grupo2" for the top level hierarchy
+Warning (275011): Block or symbol "bht" of instance "inst7" overlaps another block or symbol
 Warning (275043): Pin "pin_name1" is missing source
+Warning (275013): Port "clk" of type bht and instance "inst7" is missing source signal
+Warning (275013): Port "clk" of type btb and instance "inst10" is missing source signal
+Info (12128): Elaborating entity "bht" for hierarchy "bht:inst7"
+Info (12128): Elaborating entity "btb" for hierarchy "btb:inst10"
 Info (12128): Elaborating entity "ram_principal" for hierarchy "ram_principal:inst"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram_principal:inst|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v Line: 98
 Info (12130): Elaborated megafunction instantiation "ram_principal:inst|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v Line: 98
@@ -442,19 +990,26 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_hjh2:auto_generated|q_a[5]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_hjh2.tdf Line: 216
         Warning (14320): Synthesized away node "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_hjh2:auto_generated|q_a[6]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_hjh2.tdf Line: 251
         Warning (14320): Synthesized away node "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_hjh2:auto_generated|q_a[7]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_hjh2.tdf Line: 286
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276007): RAM logic "btb:inst10|btb_tags" is uninferred due to asynchronous read logic File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/btb.v Line: 32
+    Info (276007): RAM logic "btb:inst10|btb_valid" is uninferred due to asynchronous read logic File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/btb.v Line: 35
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "pin_name1" is stuck at GND
+    Warning (13410): Pin "pin_name4" is stuck at GND
+    Warning (13410): Pin "pin_name5" is stuck at GND
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "pin_name2"
     Warning (15610): No output dependent on input pin "clk"
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 1 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Warning (15610): No output dependent on input pin "pin_name3"
+Info (21057): Implemented 6 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 3 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
     Info: Peak virtual memory: 4758 megabytes
-    Info: Processing ended: Thu May  1 12:49:07 2025
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:30
+    Info: Processing ended: Thu May  1 17:40:19 2025
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:26
 
 

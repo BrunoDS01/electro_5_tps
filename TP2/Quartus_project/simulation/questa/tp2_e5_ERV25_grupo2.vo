@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition"
 
-// DATE "05/01/2025 12:49:23"
+// DATE "05/01/2025 17:40:34"
 
 // 
 // Device: Altera EP4CE22F17C8L Package FBGA256
@@ -31,13 +31,25 @@
 
 module tp2_e5_ERV25_grupo2 (
 	pin_name1,
+	pin_name4,
+	pin_name2,
+	pin_name5,
+	pin_name3,
 	clk);
 output 	pin_name1;
+output 	pin_name4;
+input 	pin_name2;
+output 	pin_name5;
+input 	pin_name3;
 input 	clk;
 
 // Design Ports Information
-// pin_name1	=>  Location: PIN_L13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// pin_name1	=>  Location: PIN_R5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// pin_name4	=>  Location: PIN_A15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// pin_name2	=>  Location: PIN_L13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// pin_name5	=>  Location: PIN_B13,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // clk	=>  Location: PIN_B11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// pin_name3	=>  Location: PIN_P11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -51,8 +63,12 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
+wire \pin_name2~input_o ;
 wire \clk~input_o ;
+wire \pin_name3~input_o ;
 wire \pin_name1~output_o ;
+wire \pin_name4~output_o ;
+wire \pin_name5~output_o ;
 
 
 hard_block auto_generated_inst(
@@ -60,7 +76,7 @@ hard_block auto_generated_inst(
 	.devclrn(devclrn),
 	.devoe(devoe));
 
-// Location: IOOBUF_X53_Y10_N16
+// Location: IOOBUF_X14_Y0_N23
 cycloneive_io_obuf \pin_name1~output (
 	.i(gnd),
 	.oe(vcc),
@@ -73,6 +89,42 @@ defparam \pin_name1~output .bus_hold = "false";
 defparam \pin_name1~output .open_drain_output = "false";
 // synopsys translate_on
 
+// Location: IOOBUF_X38_Y34_N16
+cycloneive_io_obuf \pin_name4~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\pin_name4~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \pin_name4~output .bus_hold = "false";
+defparam \pin_name4~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X49_Y34_N9
+cycloneive_io_obuf \pin_name5~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\pin_name5~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \pin_name5~output .bus_hold = "false";
+defparam \pin_name5~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X53_Y10_N15
+cycloneive_io_ibuf \pin_name2~input (
+	.i(pin_name2),
+	.ibar(gnd),
+	.o(\pin_name2~input_o ));
+// synopsys translate_off
+defparam \pin_name2~input .bus_hold = "false";
+defparam \pin_name2~input .simulate_z_as = "z";
+// synopsys translate_on
+
 // Location: IOIBUF_X40_Y34_N8
 cycloneive_io_ibuf \clk~input (
 	.i(clk),
@@ -83,7 +135,21 @@ defparam \clk~input .bus_hold = "false";
 defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
 
+// Location: IOIBUF_X38_Y0_N1
+cycloneive_io_ibuf \pin_name3~input (
+	.i(pin_name3),
+	.ibar(gnd),
+	.o(\pin_name3~input_o ));
+// synopsys translate_off
+defparam \pin_name3~input .bus_hold = "false";
+defparam \pin_name3~input .simulate_z_as = "z";
+// synopsys translate_on
+
 assign pin_name1 = \pin_name1~output_o ;
+
+assign pin_name4 = \pin_name4~output_o ;
+
+assign pin_name5 = \pin_name5~output_o ;
 
 endmodule
 
