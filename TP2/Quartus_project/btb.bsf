@@ -83,11 +83,6 @@ on the Quartus Prime software download page.
 		"11"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"TAG_BITS"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
 		(rectangle (rect 16 16 360 128)(line_width 1))
 	)

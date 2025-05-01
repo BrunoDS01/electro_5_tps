@@ -2,8 +2,8 @@
 pin_name1 <= <GND>
 pin_name4 <= bht:inst7.taken_prediction
 pin_name2 => bht:inst7.wr_enable
-pin_name5 <= btb:inst10.hit
-pin_name3 => btb:inst10.wr_enable
+pin_name5 <= btb:inst12.hit
+pin_name3 => btb:inst12.wr_enable
 clk => ram_principal:inst.clock
 
 
@@ -293,7 +293,7 @@ clk => bht_table[0][1].CLK
 taken_prediction <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|tp2_e5_ERV25_grupo2|btb:inst10
+|tp2_e5_ERV25_grupo2|btb:inst12
 pc_fetch[0] => btb_pc_target.RADDR
 pc_fetch[0] => btb_tags.RADDR
 pc_fetch[0] => btb_valid.RADDR

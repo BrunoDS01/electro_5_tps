@@ -2,8 +2,7 @@
 
 module btb #(
     parameter ADDR_WIDTH = 6,  // Ancho de la dirección (64 direcciones)
-    parameter PC_BITS = 11,    // Ancho del PC (11 bits) (12..2)
-	parameter TAG_BITS = PC_BITS - ADDR_WIDTH
+    parameter PC_BITS = 11    // Ancho del PC (11 bits) (12..2)
 )(         
 	input wire [PC_BITS-1:0] pc_fetch,
 	
@@ -15,6 +14,8 @@ module btb #(
     output reg [PC_BITS-1:0] pc_target_prediction,
 	output reg hit
 );
+
+localparam TAG_BITS = PC_BITS - ADDR_WIDTH;
 
 wire [ADDR_WIDTH-1:0] address_rd = pc_fetch[ADDR_WIDTH-1:0];
 wire [TAG_BITS-1:0] tag = pc_fetch[ADDR_WIDTH+TAG_BITS-1:ADDR_WIDTH];

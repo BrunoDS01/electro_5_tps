@@ -86,7 +86,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 192 576 368 592)
+	(rect 336 576 512 592)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "pin_name4" (rect 90 0 143 12)(font "Intel Clear" ))
 	(pt 0 8)
@@ -102,7 +102,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 208 840 384 856)
+	(rect 248 840 424 856)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "pin_name5" (rect 90 0 143 12)(font "Intel Clear" ))
 	(pt 0 8)
@@ -396,9 +396,9 @@ on the Quartus Prime software download page.
 	(annotation_block (parameter)(rect 264 504 464 552))
 )
 (symbol
-	(rect -192 800 184 944)
+	(rect -176 800 200 944)
 	(text "btb" (rect 5 0 20 10)(font "Arial" ))
-	(text "inst10" (rect 8 128 36 140)(font "Intel Clear" ))
+	(text "inst12" (rect 8 128 36 140)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -458,15 +458,10 @@ on the Quartus Prime software download page.
 		"11"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
-	(parameter
-		"TAG_BITS"
-		""
-		""
-		(type "PARAMETER_SIGNED_DEC")	)
 	(drawing
 		(rectangle (rect 16 16 360 128))
 	)
-	(annotation_block (parameter)(rect 184 744 376 800))
+	(annotation_block (parameter)(rect 200 752 392 800))
 )
 (connector
 	(text "pc[12..2]" (rect -160 112 -120 124)(font "Intel Clear" ))
@@ -513,16 +508,20 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(pt 184 848)
-	(pt 208 848)
-)
-(connector
-	(pt 192 584)
-	(pt 264 584)
-)
-(connector
 	(pt -288 600)
 	(pt -48 600)
+)
+(connector
+	(pt -192 848)
+	(pt -176 848)
+)
+(connector
+	(pt 264 584)
+	(pt 336 584)
+)
+(connector
+	(pt 200 848)
+	(pt 248 848)
 )
 (text "Tablas del predictor" (rect -296 440 -176 454)(font "Intel Clear" (font_size 8)))
 (text "FETCH" (rect 368 48 408 62)(font "Intel Clear" (font_size 8)))
