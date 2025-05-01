@@ -2,24 +2,7 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : [
-				{
-					"name" : "z",
-					"strict" : false
-				},
-				{
-					"name" : "a",
-					"strict" : false
-				},
-				{
-					"name" : "c",
-					"strict" : false
-				},
-				{
-					"name" : "b",
-					"strict" : false
-				}
-			]
+			"pins" : []
 		}
 	]
 }

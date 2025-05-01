@@ -21,9 +21,9 @@ on the Quartus Prime software download page.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 224 128)
+	(rect 16 16 224 160)
 	(text "fetch_unit" (rect 5 0 43 12)(font "Arial" ))
-	(text "inst" (rect 8 96 20 108)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -41,16 +41,23 @@ on the Quartus Prime software download page.
 	(port
 		(pt 0 64)
 		(input)
-		(text "stage_ena" (rect 0 0 41 12)(font "Arial" ))
-		(text "stage_ena" (rect 21 59 62 71)(font "Arial" ))
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 59 41 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "stage_x" (rect 0 0 31 12)(font "Arial" ))
-		(text "stage_x" (rect 21 75 52 87)(font "Arial" ))
+		(text "stage_ena" (rect 0 0 41 12)(font "Arial" ))
+		(text "stage_ena" (rect 21 75 62 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "stage_x" (rect 0 0 31 12)(font "Arial" ))
+		(text "stage_x" (rect 21 91 52 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
 		(pt 208 32)
@@ -67,6 +74,6 @@ on the Quartus Prime software download page.
 		(line (pt 208 48)(pt 192 48)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 192 96)(line_width 1))
+		(rectangle (rect 16 16 192 128)(line_width 1))
 	)
 )

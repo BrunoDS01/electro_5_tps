@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition"
 
-// DATE "04/26/2025 18:41:36"
+// DATE "05/01/2025 12:49:23"
 
 // 
 // Device: Altera EP4CE22F17C8L Package FBGA256
@@ -30,20 +30,14 @@
 `timescale 1 ps/ 1 ps
 
 module tp2_e5_ERV25_grupo2 (
-	z,
-	a,
-	b,
-	c);
-output 	z;
-input 	a;
-input 	b;
-input 	c;
+	pin_name1,
+	clk);
+output 	pin_name1;
+input 	clk;
 
 // Design Ports Information
-// z	=>  Location: PIN_L1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// a	=>  Location: PIN_K1,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// c	=>  Location: PIN_K2,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// b	=>  Location: PIN_J2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// pin_name1	=>  Location: PIN_L13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_B11,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -57,11 +51,8 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-wire \z~output_o ;
-wire \a~input_o ;
-wire \c~input_o ;
-wire \b~input_o ;
-wire \inst2|z~0_combout ;
+wire \clk~input_o ;
+wire \pin_name1~output_o ;
 
 
 hard_block auto_generated_inst(
@@ -69,67 +60,30 @@ hard_block auto_generated_inst(
 	.devclrn(devclrn),
 	.devoe(devoe));
 
-// Location: IOOBUF_X0_Y11_N9
-cycloneive_io_obuf \z~output (
-	.i(\inst2|z~0_combout ),
+// Location: IOOBUF_X53_Y10_N16
+cycloneive_io_obuf \pin_name1~output (
+	.i(gnd),
 	.oe(vcc),
 	.seriesterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\z~output_o ),
+	.o(\pin_name1~output_o ),
 	.obar());
 // synopsys translate_off
-defparam \z~output .bus_hold = "false";
-defparam \z~output .open_drain_output = "false";
+defparam \pin_name1~output .bus_hold = "false";
+defparam \pin_name1~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X0_Y12_N8
-cycloneive_io_ibuf \a~input (
-	.i(a),
+// Location: IOIBUF_X40_Y34_N8
+cycloneive_io_ibuf \clk~input (
+	.i(clk),
 	.ibar(gnd),
-	.o(\a~input_o ));
+	.o(\clk~input_o ));
 // synopsys translate_off
-defparam \a~input .bus_hold = "false";
-defparam \a~input .simulate_z_as = "z";
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X0_Y12_N1
-cycloneive_io_ibuf \c~input (
-	.i(c),
-	.ibar(gnd),
-	.o(\c~input_o ));
-// synopsys translate_off
-defparam \c~input .bus_hold = "false";
-defparam \c~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X0_Y15_N1
-cycloneive_io_ibuf \b~input (
-	.i(b),
-	.ibar(gnd),
-	.o(\b~input_o ));
-// synopsys translate_off
-defparam \b~input .bus_hold = "false";
-defparam \b~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: LCCOMB_X1_Y15_N16
-cycloneive_lcell_comb \inst2|z~0 (
-// Equation(s):
-// \inst2|z~0_combout  = (\a~input_o  & ((\c~input_o ) # (\b~input_o ))) # (!\a~input_o  & (\c~input_o  & \b~input_o ))
-
-	.dataa(gnd),
-	.datab(\a~input_o ),
-	.datac(\c~input_o ),
-	.datad(\b~input_o ),
-	.cin(gnd),
-	.combout(\inst2|z~0_combout ),
-	.cout());
-// synopsys translate_off
-defparam \inst2|z~0 .lut_mask = 16'hFCC0;
-defparam \inst2|z~0 .sum_lutc_input = "datac";
-// synopsys translate_on
-
-assign z = \z~output_o ;
+assign pin_name1 = \pin_name1~output_o ;
 
 endmodule
 
