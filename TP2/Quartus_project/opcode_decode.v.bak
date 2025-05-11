@@ -1,0 +1,17 @@
+module opcode_decode(
+	input wire [6:0] opcode,
+	
+	output reg save_to_reg,
+	output reg rs1_used,
+	output reg rs2_used,
+	output reg immediate_used,
+	output reg branch,
+	output reg rd_memory,
+	output reg wr_memory,
+	output reg [2:0] alu_control
+);
+
+
+
+
+endmodule

@@ -1,0 +1,15 @@
+module decode_latch(
+	input wire pc[31:0],
+	input wire rs1[],
+	input wire rs2[],
+	input wire rd[],
+	input wire funct3[],
+	input wire funct7[],
+	input wire imm[31:0],
+	
+	
+
+);
+
+
+endmodule

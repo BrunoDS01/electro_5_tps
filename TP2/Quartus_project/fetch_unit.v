@@ -5,13 +5,10 @@ module fetch_unit (
     input wire stage_ena,          
     input wire stage_x,   	
 
-    output wire [31:0] instr_out,
-	output wire [31:0] pc_out
+    output reg [31:0] instr,
+	output reg [31:0] pc_next,
+	output reg [31:0] pc
 );
-
-reg[31:0] pc;
-reg[31:0] pc_next;
-reg[31:0] instr;
 
 always @(posedge stage_clk or posedge reset) begin
 	if (reset) begin
@@ -28,7 +25,5 @@ always @(pc) begin
 	pc_next = pc + 32'd4;
 end
 
-assign pc_out = pc;
-assign instr_out = instr;
 
 endmodule
