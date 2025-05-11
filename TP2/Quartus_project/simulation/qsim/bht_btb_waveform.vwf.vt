@@ -1,0 +1,619 @@
+// Copyright (C) 2025  Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Altera and sold by Altera or its authorized distributors.  Please
+// refer to the Altera Software License Subscription Agreements 
+// on the Quartus Prime software download page.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/11/2025 02:43:15"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          tp2_e5_ERV25_grupo2
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module tp2_e5_ERV25_grupo2_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg increment_counter;
+reg is_branch;
+reg [31:0] pc_fetch;
+reg [31:0] pc_fetch_update;
+reg [31:0] pc_target_update;
+reg reset;
+// wires                                               
+wire [5:0] address2_;
+wire branch_prediction;
+wire [31:0] pc_target_prediction;
+wire [31:0] ram_out1_;
+wire [31:0] ram_out2_;
+wire [31:0] wr_data2_;
+wire wr_enable2_;
+
+// assign statements (if any)                          
+tp2_e5_ERV25_grupo2 i1 (
+// port map - connection between master ports and signals/registers   
+	.address2_(address2_),
+	.branch_prediction(branch_prediction),
+	.clk(clk),
+	.increment_counter(increment_counter),
+	.is_branch(is_branch),
+	.pc_fetch(pc_fetch),
+	.pc_fetch_update(pc_fetch_update),
+	.pc_target_prediction(pc_target_prediction),
+	.pc_target_update(pc_target_update),
+	.ram_out1_(ram_out1_),
+	.ram_out2_(ram_out2_),
+	.reset(reset),
+	.wr_data2_(wr_data2_),
+	.wr_enable2_(wr_enable2_)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #10000 1'b1;
+	#10000;
+end 
+
+// increment_counter
+initial
+begin
+	increment_counter = 1'b0;
+	increment_counter = #20000 1'b1;
+	increment_counter = #20000 1'b0;
+	increment_counter = #20000 1'b1;
+	increment_counter = #20000 1'b0;
+end 
+
+// is_branch
+initial
+begin
+	is_branch = 1'b0;
+	is_branch = #20000 1'b1;
+	is_branch = #20000 1'b0;
+	is_branch = #20000 1'b1;
+	is_branch = #20000 1'b0;
+end 
+// pc_fetch[ 31 ]
+initial
+begin
+	pc_fetch[31] = 1'b0;
+end 
+// pc_fetch[ 30 ]
+initial
+begin
+	pc_fetch[30] = 1'b0;
+end 
+// pc_fetch[ 29 ]
+initial
+begin
+	pc_fetch[29] = 1'b0;
+end 
+// pc_fetch[ 28 ]
+initial
+begin
+	pc_fetch[28] = 1'b0;
+end 
+// pc_fetch[ 27 ]
+initial
+begin
+	pc_fetch[27] = 1'b0;
+end 
+// pc_fetch[ 26 ]
+initial
+begin
+	pc_fetch[26] = 1'b0;
+end 
+// pc_fetch[ 25 ]
+initial
+begin
+	pc_fetch[25] = 1'b0;
+end 
+// pc_fetch[ 24 ]
+initial
+begin
+	pc_fetch[24] = 1'b0;
+end 
+// pc_fetch[ 23 ]
+initial
+begin
+	pc_fetch[23] = 1'b0;
+end 
+// pc_fetch[ 22 ]
+initial
+begin
+	pc_fetch[22] = 1'b0;
+end 
+// pc_fetch[ 21 ]
+initial
+begin
+	pc_fetch[21] = 1'b0;
+end 
+// pc_fetch[ 20 ]
+initial
+begin
+	pc_fetch[20] = 1'b0;
+end 
+// pc_fetch[ 19 ]
+initial
+begin
+	pc_fetch[19] = 1'b0;
+end 
+// pc_fetch[ 18 ]
+initial
+begin
+	pc_fetch[18] = 1'b0;
+end 
+// pc_fetch[ 17 ]
+initial
+begin
+	pc_fetch[17] = 1'b0;
+end 
+// pc_fetch[ 16 ]
+initial
+begin
+	pc_fetch[16] = 1'b0;
+end 
+// pc_fetch[ 15 ]
+initial
+begin
+	pc_fetch[15] = 1'b0;
+end 
+// pc_fetch[ 14 ]
+initial
+begin
+	pc_fetch[14] = 1'b0;
+end 
+// pc_fetch[ 13 ]
+initial
+begin
+	pc_fetch[13] = 1'b0;
+end 
+// pc_fetch[ 12 ]
+initial
+begin
+	pc_fetch[12] = 1'b0;
+end 
+// pc_fetch[ 11 ]
+initial
+begin
+	pc_fetch[11] = 1'b0;
+end 
+// pc_fetch[ 10 ]
+initial
+begin
+	pc_fetch[10] = 1'b0;
+end 
+// pc_fetch[ 9 ]
+initial
+begin
+	pc_fetch[9] = 1'b0;
+end 
+// pc_fetch[ 8 ]
+initial
+begin
+	pc_fetch[8] = 1'b0;
+end 
+// pc_fetch[ 7 ]
+initial
+begin
+	pc_fetch[7] = 1'b0;
+end 
+// pc_fetch[ 6 ]
+initial
+begin
+	pc_fetch[6] = 1'b0;
+end 
+// pc_fetch[ 5 ]
+initial
+begin
+	pc_fetch[5] = 1'b0;
+end 
+// pc_fetch[ 4 ]
+initial
+begin
+	pc_fetch[4] = 1'b0;
+end 
+// pc_fetch[ 3 ]
+initial
+begin
+	pc_fetch[3] = 1'b0;
+end 
+// pc_fetch[ 2 ]
+initial
+begin
+	pc_fetch[2] = 1'b0;
+end 
+// pc_fetch[ 1 ]
+initial
+begin
+	pc_fetch[1] = 1'b0;
+	pc_fetch[1] = #20000 1'b1;
+	pc_fetch[1] = #20000 1'b0;
+	pc_fetch[1] = #20000 1'b1;
+	pc_fetch[1] = #20000 1'b0;
+	pc_fetch[1] = #20000 1'b1;
+	pc_fetch[1] = #20000 1'b0;
+end 
+// pc_fetch[ 0 ]
+initial
+begin
+	pc_fetch[0] = 1'b0;
+	pc_fetch[0] = #20000 1'b1;
+	pc_fetch[0] = #20000 1'b0;
+	pc_fetch[0] = #20000 1'b1;
+	pc_fetch[0] = #20000 1'b0;
+	pc_fetch[0] = #20000 1'b1;
+	pc_fetch[0] = #20000 1'b0;
+end 
+// pc_fetch_update[ 31 ]
+initial
+begin
+	pc_fetch_update[31] = 1'b0;
+end 
+// pc_fetch_update[ 30 ]
+initial
+begin
+	pc_fetch_update[30] = 1'b0;
+end 
+// pc_fetch_update[ 29 ]
+initial
+begin
+	pc_fetch_update[29] = 1'b0;
+end 
+// pc_fetch_update[ 28 ]
+initial
+begin
+	pc_fetch_update[28] = 1'b0;
+end 
+// pc_fetch_update[ 27 ]
+initial
+begin
+	pc_fetch_update[27] = 1'b0;
+end 
+// pc_fetch_update[ 26 ]
+initial
+begin
+	pc_fetch_update[26] = 1'b0;
+end 
+// pc_fetch_update[ 25 ]
+initial
+begin
+	pc_fetch_update[25] = 1'b0;
+end 
+// pc_fetch_update[ 24 ]
+initial
+begin
+	pc_fetch_update[24] = 1'b0;
+end 
+// pc_fetch_update[ 23 ]
+initial
+begin
+	pc_fetch_update[23] = 1'b0;
+end 
+// pc_fetch_update[ 22 ]
+initial
+begin
+	pc_fetch_update[22] = 1'b0;
+end 
+// pc_fetch_update[ 21 ]
+initial
+begin
+	pc_fetch_update[21] = 1'b0;
+end 
+// pc_fetch_update[ 20 ]
+initial
+begin
+	pc_fetch_update[20] = 1'b0;
+end 
+// pc_fetch_update[ 19 ]
+initial
+begin
+	pc_fetch_update[19] = 1'b0;
+end 
+// pc_fetch_update[ 18 ]
+initial
+begin
+	pc_fetch_update[18] = 1'b0;
+end 
+// pc_fetch_update[ 17 ]
+initial
+begin
+	pc_fetch_update[17] = 1'b0;
+end 
+// pc_fetch_update[ 16 ]
+initial
+begin
+	pc_fetch_update[16] = 1'b0;
+end 
+// pc_fetch_update[ 15 ]
+initial
+begin
+	pc_fetch_update[15] = 1'b0;
+end 
+// pc_fetch_update[ 14 ]
+initial
+begin
+	pc_fetch_update[14] = 1'b0;
+end 
+// pc_fetch_update[ 13 ]
+initial
+begin
+	pc_fetch_update[13] = 1'b0;
+end 
+// pc_fetch_update[ 12 ]
+initial
+begin
+	pc_fetch_update[12] = 1'b0;
+end 
+// pc_fetch_update[ 11 ]
+initial
+begin
+	pc_fetch_update[11] = 1'b0;
+end 
+// pc_fetch_update[ 10 ]
+initial
+begin
+	pc_fetch_update[10] = 1'b0;
+end 
+// pc_fetch_update[ 9 ]
+initial
+begin
+	pc_fetch_update[9] = 1'b0;
+end 
+// pc_fetch_update[ 8 ]
+initial
+begin
+	pc_fetch_update[8] = 1'b0;
+end 
+// pc_fetch_update[ 7 ]
+initial
+begin
+	pc_fetch_update[7] = 1'b0;
+end 
+// pc_fetch_update[ 6 ]
+initial
+begin
+	pc_fetch_update[6] = 1'b0;
+end 
+// pc_fetch_update[ 5 ]
+initial
+begin
+	pc_fetch_update[5] = 1'b0;
+end 
+// pc_fetch_update[ 4 ]
+initial
+begin
+	pc_fetch_update[4] = 1'b0;
+end 
+// pc_fetch_update[ 3 ]
+initial
+begin
+	pc_fetch_update[3] = 1'b0;
+end 
+// pc_fetch_update[ 2 ]
+initial
+begin
+	pc_fetch_update[2] = 1'b0;
+end 
+// pc_fetch_update[ 1 ]
+initial
+begin
+	pc_fetch_update[1] = 1'b0;
+	pc_fetch_update[1] = #20000 1'b1;
+	pc_fetch_update[1] = #20000 1'b0;
+	pc_fetch_update[1] = #20000 1'b1;
+	pc_fetch_update[1] = #20000 1'b0;
+end 
+// pc_fetch_update[ 0 ]
+initial
+begin
+	pc_fetch_update[0] = 1'b0;
+	pc_fetch_update[0] = #20000 1'b1;
+	pc_fetch_update[0] = #20000 1'b0;
+	pc_fetch_update[0] = #20000 1'b1;
+	pc_fetch_update[0] = #20000 1'b0;
+end 
+// pc_target_update[ 31 ]
+initial
+begin
+	pc_target_update[31] = 1'b0;
+end 
+// pc_target_update[ 30 ]
+initial
+begin
+	pc_target_update[30] = 1'b0;
+end 
+// pc_target_update[ 29 ]
+initial
+begin
+	pc_target_update[29] = 1'b0;
+end 
+// pc_target_update[ 28 ]
+initial
+begin
+	pc_target_update[28] = 1'b0;
+end 
+// pc_target_update[ 27 ]
+initial
+begin
+	pc_target_update[27] = 1'b0;
+end 
+// pc_target_update[ 26 ]
+initial
+begin
+	pc_target_update[26] = 1'b0;
+end 
+// pc_target_update[ 25 ]
+initial
+begin
+	pc_target_update[25] = 1'b0;
+end 
+// pc_target_update[ 24 ]
+initial
+begin
+	pc_target_update[24] = 1'b0;
+end 
+// pc_target_update[ 23 ]
+initial
+begin
+	pc_target_update[23] = 1'b0;
+end 
+// pc_target_update[ 22 ]
+initial
+begin
+	pc_target_update[22] = 1'b0;
+end 
+// pc_target_update[ 21 ]
+initial
+begin
+	pc_target_update[21] = 1'b0;
+end 
+// pc_target_update[ 20 ]
+initial
+begin
+	pc_target_update[20] = 1'b0;
+end 
+// pc_target_update[ 19 ]
+initial
+begin
+	pc_target_update[19] = 1'b0;
+end 
+// pc_target_update[ 18 ]
+initial
+begin
+	pc_target_update[18] = 1'b0;
+end 
+// pc_target_update[ 17 ]
+initial
+begin
+	pc_target_update[17] = 1'b0;
+end 
+// pc_target_update[ 16 ]
+initial
+begin
+	pc_target_update[16] = 1'b0;
+end 
+// pc_target_update[ 15 ]
+initial
+begin
+	pc_target_update[15] = 1'b0;
+end 
+// pc_target_update[ 14 ]
+initial
+begin
+	pc_target_update[14] = 1'b0;
+end 
+// pc_target_update[ 13 ]
+initial
+begin
+	pc_target_update[13] = 1'b0;
+end 
+// pc_target_update[ 12 ]
+initial
+begin
+	pc_target_update[12] = 1'b0;
+end 
+// pc_target_update[ 11 ]
+initial
+begin
+	pc_target_update[11] = 1'b0;
+end 
+// pc_target_update[ 10 ]
+initial
+begin
+	pc_target_update[10] = 1'b0;
+end 
+// pc_target_update[ 9 ]
+initial
+begin
+	pc_target_update[9] = 1'b0;
+end 
+// pc_target_update[ 8 ]
+initial
+begin
+	pc_target_update[8] = 1'b0;
+end 
+// pc_target_update[ 7 ]
+initial
+begin
+	pc_target_update[7] = 1'b0;
+end 
+// pc_target_update[ 6 ]
+initial
+begin
+	pc_target_update[6] = 1'b0;
+end 
+// pc_target_update[ 5 ]
+initial
+begin
+	pc_target_update[5] = 1'b0;
+end 
+// pc_target_update[ 4 ]
+initial
+begin
+	pc_target_update[4] = 1'b0;
+end 
+// pc_target_update[ 3 ]
+initial
+begin
+	pc_target_update[3] = 1'b0;
+end 
+// pc_target_update[ 2 ]
+initial
+begin
+	pc_target_update[2] = 1'b0;
+	pc_target_update[2] = #20000 1'b1;
+	pc_target_update[2] = #20000 1'b0;
+	pc_target_update[2] = #20000 1'b1;
+	pc_target_update[2] = #20000 1'b0;
+end 
+// pc_target_update[ 1 ]
+initial
+begin
+	pc_target_update[1] = 1'b0;
+	pc_target_update[1] = #20000 1'b1;
+	pc_target_update[1] = #20000 1'b0;
+	pc_target_update[1] = #20000 1'b1;
+	pc_target_update[1] = #20000 1'b0;
+end 
+// pc_target_update[ 0 ]
+initial
+begin
+	pc_target_update[0] = 1'b0;
+	pc_target_update[0] = #20000 1'b1;
+	pc_target_update[0] = #20000 1'b0;
+	pc_target_update[0] = #20000 1'b1;
+	pc_target_update[0] = #20000 1'b0;
+end 
+
+// reset
+initial
+begin
+	reset = 1'b1;
+	reset = #10000 1'b0;
+end 
+endmodule
+

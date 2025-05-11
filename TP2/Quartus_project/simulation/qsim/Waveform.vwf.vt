@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/26/2025 18:27:57"
+// Generated on "05/08/2025 17:08:48"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          tp2_e5_ERV25_grupo2
 // 
@@ -30,46 +30,129 @@
 module tp2_e5_ERV25_grupo2_vlg_vec_tst();
 // constants                                           
 // general purpose registers
-reg a;
-reg b;
-reg c;
+reg clk;
+reg [5:0] rd_address;
+reg update_counter;
+reg [5:0] wr_address;
+reg wr_ena;
 // wires                                               
-wire z;
+wire prediction;
 
 // assign statements (if any)                          
 tp2_e5_ERV25_grupo2 i1 (
 // port map - connection between master ports and signals/registers   
-	.a(a),
-	.b(b),
-	.c(c),
-	.z(z)
+	.clk(clk),
+	.prediction(prediction),
+	.rd_address(rd_address),
+	.update_counter(update_counter),
+	.wr_address(wr_address),
+	.wr_ena(wr_ena)
 );
 initial 
 begin 
 #1000000 $finish;
 end 
 
-// a
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #25000 1'b1;
+	#25000;
+end 
+// rd_address[ 5 ]
 initial
 begin
-	a = 1'b1;
-	a = #120000 1'b0;
+	rd_address[5] = 1'b0;
+end 
+// rd_address[ 4 ]
+initial
+begin
+	rd_address[4] = 1'b0;
+end 
+// rd_address[ 3 ]
+initial
+begin
+	rd_address[3] = 1'b0;
+	rd_address[3] = #20000 1'b1;
+	rd_address[3] = #110000 1'b0;
+	rd_address[3] = #310000 1'b1;
+end 
+// rd_address[ 2 ]
+initial
+begin
+	rd_address[2] = 1'b0;
+end 
+// rd_address[ 1 ]
+initial
+begin
+	rd_address[1] = 1'b0;
+	rd_address[1] = #20000 1'b1;
+	rd_address[1] = #110000 1'b0;
+	rd_address[1] = #310000 1'b1;
+end 
+// rd_address[ 0 ]
+initial
+begin
+	rd_address[0] = 1'b0;
 end 
 
-// b
+// update_counter
 initial
 begin
-	b = 1'b0;
-	b = #60000 1'b1;
-	b = #160000 1'b0;
+	update_counter = 1'b0;
+	update_counter = #210000 1'b1;
+	update_counter = #50000 1'b0;
+	update_counter = #60000 1'b1;
+	update_counter = #50000 1'b0;
+end 
+// wr_address[ 5 ]
+initial
+begin
+	wr_address[5] = 1'b0;
+end 
+// wr_address[ 4 ]
+initial
+begin
+	wr_address[4] = 1'b0;
+end 
+// wr_address[ 3 ]
+initial
+begin
+	wr_address[3] = 1'b0;
+	wr_address[3] = #210000 1'b1;
+	wr_address[3] = #50000 1'b0;
+	wr_address[3] = #60000 1'b1;
+	wr_address[3] = #50000 1'b0;
+end 
+// wr_address[ 2 ]
+initial
+begin
+	wr_address[2] = 1'b0;
+end 
+// wr_address[ 1 ]
+initial
+begin
+	wr_address[1] = 1'b0;
+	wr_address[1] = #210000 1'b1;
+	wr_address[1] = #50000 1'b0;
+	wr_address[1] = #60000 1'b1;
+	wr_address[1] = #50000 1'b0;
+end 
+// wr_address[ 0 ]
+initial
+begin
+	wr_address[0] = 1'b0;
 end 
 
-// c
+// wr_ena
 initial
 begin
-	c = 1'b0;
-	c = #100000 1'b1;
-	c = #200000 1'b0;
+	wr_ena = 1'b0;
+	wr_ena = #210000 1'b1;
+	wr_ena = #50000 1'b0;
+	wr_ena = #60000 1'b1;
+	wr_ena = #50000 1'b0;
 end 
 endmodule
 

@@ -10,73 +10,73 @@ z2
 cModel Technology
 Z0 dD:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim
 vhard_block
-Z1 !s110 1745702882
+!s110 1746938003
 !i10b 1
-!s100 44joCiLO^7N]^ozf4`i@m0
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IihUJzAd`NdSHd]`B2?3[T3
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 [O`azWlgLX11PK6jSXm3D0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I_gV[]DHJjme7OP]e`9j>E1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1745702879
-Z5 8tp2_e5_ERV25_grupo2.vo
-Z6 Ftp2_e5_ERV25_grupo2.vo
-!i122 0
-L0 140 34
-Z7 OV;L;2020.1;71
+w1746938001
+Z3 8tp2_e5_ERV25_grupo2.vo
+Z4 Ftp2_e5_ERV25_grupo2.vo
+!i122 18
+L0 2219 34
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1745702882.000000
-Z9 !s107 tp2_e5_ERV25_grupo2.vo|
-Z10 !s90 -work|work|tp2_e5_ERV25_grupo2.vo|
+!s108 1746938003.000000
+Z6 !s107 tp2_e5_ERV25_grupo2.vo|
+Z7 !s90 -work|work|tp2_e5_ERV25_grupo2.vo|
 !i113 1
-Z11 o-work work
-Z12 tCvgOpt 0
+Z8 o-work work
+Z9 tCvgOpt 0
 vtp2_e5_ERV25_grupo2
-R1
+Z10 !s110 1746942199
 !i10b 1
-!s100 I=Bz?zlKjJMo2H_G^?@b>1
+!s100 VmNhacKGF3MJKCoHO1Oi^1
+R1
+Iad1GQf]91ESTRMgYjl3]31
 R2
-I0AA9N3lS9Yb^6[V3aIfkH1
-R3
 R0
+w1746942197
+R3
 R4
+!i122 44
+L0 32 5813
 R5
-R6
-!i122 0
-L0 32 107
-R7
 r1
 !s85 0
 31
+Z11 !s108 1746942199.000000
+R6
+R7
+!i113 1
 R8
 R9
-R10
-!i113 1
-R11
-R12
 ntp2_e5_@e@r@v25_grupo2
 vtp2_e5_ERV25_grupo2_vlg_vec_tst
-!s110 1745702883
+R10
 !i10b 1
-!s100 o=CM>OeXPdJ71B2FG_m^61
+!s100 R_2Q4h`a5hOcNhZ4W_WID1
+R1
+I]9^_:O1TPkhA=aezOZ6EU1
 R2
-Ic7;j9lDo=QE:6:5aHD`gR1
-R3
 R0
-w1745702877
-8Waveform.vwf.vt
-FWaveform.vwf.vt
-!i122 1
-L0 30 45
-R7
+w1746942196
+8bht_btb_waveform.vwf.vt
+Fbht_btb_waveform.vwf.vt
+!i122 45
+L0 30 589
+R5
 r1
 !s85 0
 31
-!s108 1745702883.000000
-!s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
-!i113 1
 R11
-R12
+!s107 bht_btb_waveform.vwf.vt|
+!s90 -work|work|bht_btb_waveform.vwf.vt|
+!i113 1
+R8
+R9
 ntp2_e5_@e@r@v25_grupo2_vlg_vec_tst
