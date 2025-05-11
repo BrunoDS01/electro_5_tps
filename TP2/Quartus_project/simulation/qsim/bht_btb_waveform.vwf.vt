@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/11/2025 02:43:15"
+// Generated on "05/11/2025 02:50:35"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          tp2_e5_ERV25_grupo2
 // 
@@ -85,6 +85,8 @@ begin
 	increment_counter = #20000 1'b0;
 	increment_counter = #20000 1'b1;
 	increment_counter = #20000 1'b0;
+	increment_counter = #60000 1'b1;
+	increment_counter = #20000 1'b0;
 end 
 
 // is_branch
@@ -94,6 +96,14 @@ begin
 	is_branch = #20000 1'b1;
 	is_branch = #20000 1'b0;
 	is_branch = #20000 1'b1;
+	is_branch = #20000 1'b0;
+	is_branch = #60000 1'b1;
+	is_branch = #20000 1'b0;
+	is_branch = #40000 1'b1;
+	is_branch = #20000 1'b0;
+	is_branch = #40000 1'b1;
+	is_branch = #20000 1'b0;
+	is_branch = #680000 1'b1;
 	is_branch = #20000 1'b0;
 end 
 // pc_fetch[ 31 ]
@@ -255,7 +265,7 @@ begin
 	pc_fetch[1] = #20000 1'b1;
 	pc_fetch[1] = #20000 1'b0;
 	pc_fetch[1] = #20000 1'b1;
-	pc_fetch[1] = #20000 1'b0;
+	pc_fetch[1] = #270000 1'b0;
 end 
 // pc_fetch[ 0 ]
 initial
@@ -266,7 +276,7 @@ begin
 	pc_fetch[0] = #20000 1'b1;
 	pc_fetch[0] = #20000 1'b0;
 	pc_fetch[0] = #20000 1'b1;
-	pc_fetch[0] = #20000 1'b0;
+	pc_fetch[0] = #270000 1'b0;
 end 
 // pc_fetch_update[ 31 ]
 initial
@@ -426,6 +436,14 @@ begin
 	pc_fetch_update[1] = #20000 1'b0;
 	pc_fetch_update[1] = #20000 1'b1;
 	pc_fetch_update[1] = #20000 1'b0;
+	pc_fetch_update[1] = #60000 1'b1;
+	pc_fetch_update[1] = #20000 1'b0;
+	pc_fetch_update[1] = #40000 1'b1;
+	pc_fetch_update[1] = #20000 1'b0;
+	pc_fetch_update[1] = #40000 1'b1;
+	pc_fetch_update[1] = #20000 1'b0;
+	pc_fetch_update[1] = #690000 1'b1;
+	pc_fetch_update[1] = #20000 1'b0;
 end 
 // pc_fetch_update[ 0 ]
 initial
@@ -434,6 +452,14 @@ begin
 	pc_fetch_update[0] = #20000 1'b1;
 	pc_fetch_update[0] = #20000 1'b0;
 	pc_fetch_update[0] = #20000 1'b1;
+	pc_fetch_update[0] = #20000 1'b0;
+	pc_fetch_update[0] = #60000 1'b1;
+	pc_fetch_update[0] = #20000 1'b0;
+	pc_fetch_update[0] = #40000 1'b1;
+	pc_fetch_update[0] = #20000 1'b0;
+	pc_fetch_update[0] = #40000 1'b1;
+	pc_fetch_update[0] = #20000 1'b0;
+	pc_fetch_update[0] = #690000 1'b1;
 	pc_fetch_update[0] = #20000 1'b0;
 end 
 // pc_target_update[ 31 ]
@@ -589,6 +615,14 @@ begin
 	pc_target_update[2] = #20000 1'b0;
 	pc_target_update[2] = #20000 1'b1;
 	pc_target_update[2] = #20000 1'b0;
+	pc_target_update[2] = #60000 1'b1;
+	pc_target_update[2] = #20000 1'b0;
+	pc_target_update[2] = #40000 1'b1;
+	pc_target_update[2] = #20000 1'b0;
+	pc_target_update[2] = #40000 1'b1;
+	pc_target_update[2] = #20000 1'b0;
+	pc_target_update[2] = #680000 1'b1;
+	pc_target_update[2] = #20000 1'b0;
 end 
 // pc_target_update[ 1 ]
 initial
@@ -598,6 +632,14 @@ begin
 	pc_target_update[1] = #20000 1'b0;
 	pc_target_update[1] = #20000 1'b1;
 	pc_target_update[1] = #20000 1'b0;
+	pc_target_update[1] = #60000 1'b1;
+	pc_target_update[1] = #20000 1'b0;
+	pc_target_update[1] = #40000 1'b1;
+	pc_target_update[1] = #20000 1'b0;
+	pc_target_update[1] = #40000 1'b1;
+	pc_target_update[1] = #20000 1'b0;
+	pc_target_update[1] = #680000 1'b1;
+	pc_target_update[1] = #20000 1'b0;
 end 
 // pc_target_update[ 0 ]
 initial
@@ -606,6 +648,14 @@ begin
 	pc_target_update[0] = #20000 1'b1;
 	pc_target_update[0] = #20000 1'b0;
 	pc_target_update[0] = #20000 1'b1;
+	pc_target_update[0] = #20000 1'b0;
+	pc_target_update[0] = #60000 1'b1;
+	pc_target_update[0] = #20000 1'b0;
+	pc_target_update[0] = #40000 1'b1;
+	pc_target_update[0] = #20000 1'b0;
+	pc_target_update[0] = #40000 1'b1;
+	pc_target_update[0] = #20000 1'b0;
+	pc_target_update[0] = #680000 1'b1;
 	pc_target_update[0] = #20000 1'b0;
 end 
 

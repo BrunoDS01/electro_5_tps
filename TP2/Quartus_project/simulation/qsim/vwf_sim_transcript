@@ -28,7 +28,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Sun May 11 02:43:15 2025
+    Info: Processing started: Sun May 11 02:50:34 2025
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2 --vector_source="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_waveform.vwf" --testbench_file="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/bht_btb_waveform.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -65,13 +65,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Sun May 11 02:43:16 2025
+    Info: Processing started: Sun May 11 02:50:36 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/" tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file tp2_e5_ERV25_grupo2.vo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4674 megabytes
-    Info: Processing ended: Sun May 11 02:43:17 2025
+    Info: Processing ended: Sun May 11 02:50:37 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -99,22 +99,23 @@ Reading pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 02:43:19 on May 11,2025
+# Start time: 02:50:38 on May 11,2025
 # vlog -work work tp2_e5_ERV25_grupo2.vo 
 
 # -- Compiling module tp2_e5_ERV25_grupo2
 
 # 
-
 # Top level modules:
+
 # 	tp2_e5_ERV25_grupo2
 
-# End time: 02:43:19 on May 11,2025, Elapsed time: 0:00:00
+# End time: 02:50:39 on May 11,2025, Elapsed time: 0:00:01
+
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 02:43:19 on May 11,2025
+# Start time: 02:50:39 on May 11,2025
 # vlog -work work bht_btb_waveform.vwf.vt 
 
 # -- Compiling module tp2_e5_ERV25_grupo2_vlg_vec_tst
@@ -124,12 +125,12 @@ Reading pref.tcl
 # Top level modules:
 # 	tp2_e5_ERV25_grupo2_vlg_vec_tst
 
-# End time: 02:43:19 on May 11,2025, Elapsed time: 0:00:00
+# End time: 02:50:39 on May 11,2025, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.tp2_e5_ERV25_grupo2_vlg_vec_tst 
-# Start time: 02:43:19 on May 11,2025
+# Start time: 02:50:39 on May 11,2025
 # Loading work.tp2_e5_ERV25_grupo2_vlg_vec_tst
 # Loading work.tp2_e5_ERV25_grupo2
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -149,7 +150,7 @@ Reading pref.tcl
 # ** Note: $finish    : bht_btb_waveform.vwf.vt(69)
 #    Time: 1 us  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst
 
-# End time: 02:43:20 on May 11,2025, Elapsed time: 0:00:01
+# End time: 02:50:40 on May 11,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -162,7 +163,7 @@ Reading D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_pr
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/tp2_e5_ERV25_grupo2_20250511024321.sim.vwf
+Writing the resulting VWF to D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/tp2_e5_ERV25_grupo2_20250511025040.sim.vwf
 
 Finished VCD to VWF conversion.
 
