@@ -3,8 +3,7 @@ module decode_latch(
 	input wire [4:0]  rs1,
 	input wire [4:0]  rs2,
 	input wire [4:0]  rd,
-	input wire [2:0]  funct3,
-	input wire [6:0]  funct7,
+	input wire [9:0]  funct,
 	input wire [31:0] imm,
 	input wire [6:0]  opcode,
 
@@ -26,8 +25,7 @@ module decode_latch(
 	output reg [4:0]  rs1_out,
 	output reg [4:0]  rs2_out,
 	output reg [4:0]  rd_out,
-	output reg [2:0]  funct3_out,
-	output reg [6:0]  funct7_out,
+	output reg [9:0]  funct_out,
 	output reg [31:0] imm_out,
 	output reg [6:0]  opcode_out,
 
@@ -46,8 +44,7 @@ always @(posedge stg_clk or posedge reset) begin
 		rs1_out <= 0;
 		rs2_out <= 0;
 		rd_out <= 0;
-		funct3_out <= 0;
-		funct7_out <= 0;
+		funct_out <= 0;
 		imm_out <= 0;
 		opcode_out <= 0;
 
@@ -64,8 +61,7 @@ always @(posedge stg_clk or posedge reset) begin
         rs1_out <= rs1;
         rs2_out <= rs2;
         rd_out <= rd;
-        funct3_out <= funct3;
-        funct7_out <= funct7;
+        funct_out <= funct;
         imm_out <= imm;
         opcode_out <= opcode;
 

@@ -1,0 +1,25 @@
+module alu_latch(
+	input wire [4:0] rd,
+	input wire [31:0] c,
+	
+	input wire stg_clk,
+	input wire stg_ena,
+	input wire stg_x,
+	input wire reset,
+	
+	output reg [4:0] rd_out,
+	output reg [31:0] c_out
+);
+
+always @(posedge stg_clk or posedge reset) begin
+	if(reset) begin
+		rd_out <= 0;
+		c_out <= 0;
+	end
+	else begin
+		rd_out <= rd;
+		c_out <= c;
+	end
+end
+
+endmodule

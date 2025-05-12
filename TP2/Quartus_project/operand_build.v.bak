@@ -1,0 +1,29 @@
+module operand_build(
+	input wire [31:0] rs1_data,
+	input wire [31:0] rs2_data,
+	
+	input wire [31:0] pc,
+	input wire [31:0] imm,
+	
+	input wire [6:0] opcode,
+	
+	output reg [31:0] a,
+	output reg [31:0] b
+
+);
+
+always @(
+	opcode,
+	rs1_data,
+	rs2_data,
+	pc,
+	imm
+)
+begin
+	case (opcode)
+		
+	
+end
+
+
+endmodule

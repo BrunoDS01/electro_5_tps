@@ -1,0 +1,12 @@
+module register_bank(
+	input wire rs1[4:0],
+	input wire rs2[4:0],
+	
+	input wire [4:0],
+	
+
+
+);
+
+
+endmodule
