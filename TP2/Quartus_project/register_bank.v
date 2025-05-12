@@ -48,7 +48,9 @@ always @(posedge stage_clk or posedge reset) begin
         end
 	end
 	else begin
-		x[rd] <= alu_out;
+		//x[rd] <= alu_out;
+		x[1] <= 32'd5;
+		x[2] <= 32'd7;
 	end
 end
 
