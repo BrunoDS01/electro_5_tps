@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition"
 
-// DATE "05/11/2025 23:16:45"
+// DATE "05/11/2025 23:26:22"
 
 // 
 // Device: Altera EP4CE22F17C8L Package FBGA256
@@ -123,7 +123,7 @@ wire \inst2|instr[0]~feeder_combout ;
 wire \reset~input_o ;
 wire \reset~inputclkctrl_outclk ;
 wire \inst4|opcode_out[0]~feeder_combout ;
-wire \inst22|Mux63~0_combout ;
+wire \inst34|Mux63~0_combout ;
 wire \inst29|opcode_out[0]~feeder_combout ;
 wire \inst24|a[0]~0_combout ;
 wire \inst7|c_out[3]~feeder_combout ;
@@ -674,26 +674,26 @@ defparam \inst4|opcode_out[0] .power_up = "low";
 // synopsys translate_on
 
 // Location: LCCOMB_X8_Y33_N30
-cycloneive_lcell_comb \inst22|Mux63~0 (
+cycloneive_lcell_comb \inst34|Mux63~0 (
 // Equation(s):
-// \inst22|Mux63~0_combout  = (\inst2|instr [0] & \inst4|opcode_out [0])
+// \inst34|Mux63~0_combout  = (\inst2|instr [0] & \inst4|opcode_out [0])
 
 	.dataa(gnd),
 	.datab(\inst2|instr [0]),
 	.datac(gnd),
 	.datad(\inst4|opcode_out [0]),
 	.cin(gnd),
-	.combout(\inst22|Mux63~0_combout ),
+	.combout(\inst34|Mux63~0_combout ),
 	.cout());
 // synopsys translate_off
-defparam \inst22|Mux63~0 .lut_mask = 16'hCC00;
-defparam \inst22|Mux63~0 .sum_lutc_input = "datac";
+defparam \inst34|Mux63~0 .lut_mask = 16'hCC00;
+defparam \inst34|Mux63~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 // Location: FF_X8_Y33_N31
 dffeas \inst29|rs2_data_out[0] (
 	.clk(\clk~inputclkctrl_outclk ),
-	.d(\inst22|Mux63~0_combout ),
+	.d(\inst34|Mux63~0_combout ),
 	.asdata(vcc),
 	.clrn(!\reset~inputclkctrl_outclk ),
 	.aload(gnd),

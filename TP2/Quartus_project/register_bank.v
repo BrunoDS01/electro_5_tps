@@ -11,7 +11,8 @@ module register_bank(
 
     output reg [31:0] rs1_data,
     output reg [31:0] rs2_data,
-    output reg [31:0] data_out
+    output reg [31:0] data_out,
+	output reg memwrite
 );
 
 reg [31:0] x[0:31];

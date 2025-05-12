@@ -35,13 +35,13 @@ clk => alu_latch:inst7.stg_clk
 clk => op_latch:inst29.stg_clk
 clk => decode_latch:inst4.stg_clk
 clk => fetch_unit:inst2.stage_clk
-clk => register_bank:inst22.stage_clk
+clk => register_bank:inst34.stage_clk
 clk => ram_principal:inst.clock
 reset => alu_latch:inst7.reset
 reset => op_latch:inst29.reset
 reset => decode_latch:inst4.reset
 reset => fetch_unit:inst2.reset
-reset => register_bank:inst22.reset
+reset => register_bank:inst34.reset
 
 
 |tp2_e5_ERV25_grupo2|alu_latch:inst7
@@ -2042,7 +2042,7 @@ rd_memory <= <GND>
 wr_memory <= <GND>
 
 
-|tp2_e5_ERV25_grupo2|register_bank:inst22
+|tp2_e5_ERV25_grupo2|register_bank:inst34
 rs1[0] => Mux0.IN4
 rs1[0] => Mux1.IN4
 rs1[0] => Mux2.IN4
@@ -2666,6 +2666,7 @@ data_out[28] <= <GND>
 data_out[29] <= <GND>
 data_out[30] <= <GND>
 data_out[31] <= <GND>
+memwrite <= <GND>
 
 
 |tp2_e5_ERV25_grupo2|ram_principal:inst
