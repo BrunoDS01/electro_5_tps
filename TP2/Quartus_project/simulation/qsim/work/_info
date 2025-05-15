@@ -10,64 +10,64 @@ z2
 cModel Technology
 Z0 dD:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim
 vbht_btb_module
-Z1 !s110 1747280851
+Z1 !s110 1747317835
 !i10b 1
-!s100 AJP:]^zkA:_<K?3cRUQ=33
+!s100 N81dCY_;A2RbhJLGcTC?02
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IADk77^YKXcXOE9k8kJz;M0
+I<;;ln@ic42U:AIGKVnoij2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1747280849
+Z4 w1747317833
 Z5 8tp2_e5_ERV25_grupo2.vo
 Z6 Ftp2_e5_ERV25_grupo2.vo
-!i122 70
-L0 32 2117
+!i122 112
+L0 32 2276
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1747280851.000000
+Z8 !s108 1747317835.000000
 Z9 !s107 tp2_e5_ERV25_grupo2.vo|
 Z10 !s90 -work|work|tp2_e5_ERV25_grupo2.vo|
 !i113 1
 Z11 o-work work
 Z12 tCvgOpt 0
 vbht_btb_module_vlg_vec_tst
-!s110 1747280852
+R1
 !i10b 1
-!s100 3CfL`?_MWQPm^eJ4N1UWO1
+!s100 mP]AVA>fXgZ0PE>E1i7Z71
 R2
-IE`<11HTQ5OB8a:e0olV`n2
+I9::fMRW9BdLoiGMSY7KQ93
 R3
 R0
-w1747280848
-8bht_btb_waveform.vwf.vt
-Fbht_btb_waveform.vwf.vt
-!i122 71
-L0 30 624
+w1747317832
+Z13 8bht_btb_waveform.vwf.vt
+Z14 Fbht_btb_waveform.vwf.vt
+!i122 113
+L0 30 727
 R7
 r1
 !s85 0
 31
 R8
-!s107 bht_btb_waveform.vwf.vt|
-!s90 -work|work|bht_btb_waveform.vwf.vt|
+Z15 !s107 bht_btb_waveform.vwf.vt|
+Z16 !s90 -work|work|bht_btb_waveform.vwf.vt|
 !i113 1
 R11
 R12
 vhard_block
 R1
 !i10b 1
-!s100 HT7NeU=1i>jzz[;L]HGc;2
+!s100 64<LMKNRN:CjiJJ6=<FQ^0
 R2
-IUaciHbPo]iaW033RzLDiY2
+IOzV00G]?2`d_:7C6n7c493
 R3
 R0
 R4
 R5
 R6
-!i122 70
-L0 2150 34
+!i122 112
+L0 2309 34
 R7
 r1
 !s85 0
@@ -79,23 +79,23 @@ R10
 R11
 R12
 vtp2_e5_ERV25_grupo2
-Z13 !s110 1747057983
+Z17 !s110 1747316408
 !i10b 1
-!s100 Pa0`M7XdOdhPKOm@@9Hn]3
+!s100 <J44i;ndH5X9zf<WPkS?o2
 R2
-I_Zc3P`Eb[<9>ecCmf@QYY0
+I>V>A76EdYUi]>d0@=WgZN0
 R3
 R0
-w1747057981
+w1747316406
 R5
 R6
-!i122 62
-L0 32 1403
+!i122 88
+L0 32 1399
 R7
 r1
 !s85 0
 31
-Z14 !s108 1747057983.000000
+Z18 !s108 1747316408.000000
 R9
 R10
 !i113 1
@@ -103,25 +103,25 @@ R11
 R12
 ntp2_e5_@e@r@v25_grupo2
 vtp2_e5_ERV25_grupo2_vlg_vec_tst
-R13
+R17
 !i10b 1
-!s100 i_JP9<eAeKFF8`0A_=kz;2
+!s100 NQ6mA@]:IU]fT=hOI@_<R0
 R2
-IgiA2;A<3zc^48CeSM_NQV0
+I?_l;c_P[VRBRfRl==EYNR1
 R3
 R0
-w1747057979
-8first_loop_simulation.vwf.vt
-Ffirst_loop_simulation.vwf.vt
-!i122 63
+w1747316405
+R13
+R14
+!i122 89
 L0 30 37
 R7
 r1
 !s85 0
 31
-R14
-!s107 first_loop_simulation.vwf.vt|
-!s90 -work|work|first_loop_simulation.vwf.vt|
+R18
+R15
+R16
 !i113 1
 R11
 R12

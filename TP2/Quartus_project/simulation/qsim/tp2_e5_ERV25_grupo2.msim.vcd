@@ -3,7 +3,7 @@ $comment
 		vcd file tp2_e5_ERV25_grupo2.msim.vcd -direction
 $end
 $date
-	Thu May 15 00:47:33 2025
+	Thu May 15 11:03:56 2025
 $end
 $version
 	ModelSim Version 2020.1
@@ -21,264 +21,274 @@ $var reg 32 % pc_fetch_update [31:0] $end
 $var reg 32 & pc_target_update [31:0] $end
 $var reg 2 ' prev_counter [1:0] $end
 $var reg 1 ( prev_valid $end
-$var wire 1 ) branch_prediction $end
-$var wire 1 * current_counter [1] $end
-$var wire 1 + current_counter [0] $end
-$var wire 1 , current_valid $end
-$var wire 1 - pc_target_prediction [31] $end
-$var wire 1 . pc_target_prediction [30] $end
-$var wire 1 / pc_target_prediction [29] $end
-$var wire 1 0 pc_target_prediction [28] $end
-$var wire 1 1 pc_target_prediction [27] $end
-$var wire 1 2 pc_target_prediction [26] $end
-$var wire 1 3 pc_target_prediction [25] $end
-$var wire 1 4 pc_target_prediction [24] $end
-$var wire 1 5 pc_target_prediction [23] $end
-$var wire 1 6 pc_target_prediction [22] $end
-$var wire 1 7 pc_target_prediction [21] $end
-$var wire 1 8 pc_target_prediction [20] $end
-$var wire 1 9 pc_target_prediction [19] $end
-$var wire 1 : pc_target_prediction [18] $end
-$var wire 1 ; pc_target_prediction [17] $end
-$var wire 1 < pc_target_prediction [16] $end
-$var wire 1 = pc_target_prediction [15] $end
-$var wire 1 > pc_target_prediction [14] $end
-$var wire 1 ? pc_target_prediction [13] $end
-$var wire 1 @ pc_target_prediction [12] $end
-$var wire 1 A pc_target_prediction [11] $end
-$var wire 1 B pc_target_prediction [10] $end
-$var wire 1 C pc_target_prediction [9] $end
-$var wire 1 D pc_target_prediction [8] $end
-$var wire 1 E pc_target_prediction [7] $end
-$var wire 1 F pc_target_prediction [6] $end
-$var wire 1 G pc_target_prediction [5] $end
-$var wire 1 H pc_target_prediction [4] $end
-$var wire 1 I pc_target_prediction [3] $end
-$var wire 1 J pc_target_prediction [2] $end
-$var wire 1 K pc_target_prediction [1] $end
-$var wire 1 L pc_target_prediction [0] $end
+$var reg 1 ) reset $end
+$var wire 1 * branch_prediction $end
+$var wire 1 + current_counter [1] $end
+$var wire 1 , current_counter [0] $end
+$var wire 1 - current_valid $end
+$var wire 1 . pc_target_prediction [31] $end
+$var wire 1 / pc_target_prediction [30] $end
+$var wire 1 0 pc_target_prediction [29] $end
+$var wire 1 1 pc_target_prediction [28] $end
+$var wire 1 2 pc_target_prediction [27] $end
+$var wire 1 3 pc_target_prediction [26] $end
+$var wire 1 4 pc_target_prediction [25] $end
+$var wire 1 5 pc_target_prediction [24] $end
+$var wire 1 6 pc_target_prediction [23] $end
+$var wire 1 7 pc_target_prediction [22] $end
+$var wire 1 8 pc_target_prediction [21] $end
+$var wire 1 9 pc_target_prediction [20] $end
+$var wire 1 : pc_target_prediction [19] $end
+$var wire 1 ; pc_target_prediction [18] $end
+$var wire 1 < pc_target_prediction [17] $end
+$var wire 1 = pc_target_prediction [16] $end
+$var wire 1 > pc_target_prediction [15] $end
+$var wire 1 ? pc_target_prediction [14] $end
+$var wire 1 @ pc_target_prediction [13] $end
+$var wire 1 A pc_target_prediction [12] $end
+$var wire 1 B pc_target_prediction [11] $end
+$var wire 1 C pc_target_prediction [10] $end
+$var wire 1 D pc_target_prediction [9] $end
+$var wire 1 E pc_target_prediction [8] $end
+$var wire 1 F pc_target_prediction [7] $end
+$var wire 1 G pc_target_prediction [6] $end
+$var wire 1 H pc_target_prediction [5] $end
+$var wire 1 I pc_target_prediction [4] $end
+$var wire 1 J pc_target_prediction [3] $end
+$var wire 1 K pc_target_prediction [2] $end
+$var wire 1 L pc_target_prediction [1] $end
+$var wire 1 M pc_target_prediction [0] $end
 
 $scope module i1 $end
-$var wire 1 M gnd $end
-$var wire 1 N vcc $end
-$var wire 1 O unknown $end
-$var tri1 1 P devclrn $end
-$var tri1 1 Q devpor $end
-$var tri1 1 R devoe $end
-$var wire 1 S pc_fetch[31]~input_o $end
-$var wire 1 T pc_fetch[30]~input_o $end
-$var wire 1 U pc_fetch[29]~input_o $end
-$var wire 1 V pc_fetch[28]~input_o $end
-$var wire 1 W pc_fetch[27]~input_o $end
-$var wire 1 X pc_fetch[26]~input_o $end
-$var wire 1 Y pc_fetch[25]~input_o $end
-$var wire 1 Z pc_fetch[24]~input_o $end
-$var wire 1 [ pc_fetch[23]~input_o $end
-$var wire 1 \ pc_fetch[22]~input_o $end
-$var wire 1 ] pc_fetch[21]~input_o $end
-$var wire 1 ^ pc_fetch[20]~input_o $end
-$var wire 1 _ pc_fetch[19]~input_o $end
-$var wire 1 ` pc_fetch[18]~input_o $end
-$var wire 1 a pc_fetch[17]~input_o $end
-$var wire 1 b pc_fetch[16]~input_o $end
-$var wire 1 c pc_fetch[15]~input_o $end
-$var wire 1 d pc_fetch[14]~input_o $end
-$var wire 1 e pc_fetch[13]~input_o $end
-$var wire 1 f pc_fetch[1]~input_o $end
-$var wire 1 g pc_fetch[0]~input_o $end
-$var wire 1 h pc_fetch_update[31]~input_o $end
-$var wire 1 i pc_fetch_update[30]~input_o $end
-$var wire 1 j pc_fetch_update[29]~input_o $end
-$var wire 1 k pc_fetch_update[28]~input_o $end
-$var wire 1 l pc_fetch_update[27]~input_o $end
-$var wire 1 m pc_fetch_update[26]~input_o $end
-$var wire 1 n pc_fetch_update[25]~input_o $end
-$var wire 1 o pc_fetch_update[24]~input_o $end
-$var wire 1 p pc_fetch_update[23]~input_o $end
-$var wire 1 q pc_fetch_update[22]~input_o $end
-$var wire 1 r pc_fetch_update[21]~input_o $end
-$var wire 1 s pc_fetch_update[20]~input_o $end
-$var wire 1 t pc_fetch_update[19]~input_o $end
-$var wire 1 u pc_fetch_update[18]~input_o $end
-$var wire 1 v pc_fetch_update[17]~input_o $end
-$var wire 1 w pc_fetch_update[16]~input_o $end
-$var wire 1 x pc_fetch_update[15]~input_o $end
-$var wire 1 y pc_fetch_update[14]~input_o $end
-$var wire 1 z pc_fetch_update[13]~input_o $end
-$var wire 1 { pc_fetch_update[1]~input_o $end
-$var wire 1 | pc_fetch_update[0]~input_o $end
-$var wire 1 } pc_target_update[31]~input_o $end
-$var wire 1 ~ pc_target_update[30]~input_o $end
-$var wire 1 !! pc_target_update[29]~input_o $end
-$var wire 1 "! pc_target_update[28]~input_o $end
-$var wire 1 #! pc_target_update[27]~input_o $end
-$var wire 1 $! pc_target_update[26]~input_o $end
-$var wire 1 %! pc_target_update[25]~input_o $end
-$var wire 1 &! pc_target_update[24]~input_o $end
-$var wire 1 '! pc_target_update[23]~input_o $end
-$var wire 1 (! pc_target_update[22]~input_o $end
-$var wire 1 )! pc_target_update[21]~input_o $end
-$var wire 1 *! pc_target_update[20]~input_o $end
-$var wire 1 +! pc_target_update[19]~input_o $end
-$var wire 1 ,! pc_target_update[18]~input_o $end
-$var wire 1 -! pc_target_update[17]~input_o $end
-$var wire 1 .! pc_target_update[16]~input_o $end
-$var wire 1 /! pc_target_update[15]~input_o $end
-$var wire 1 0! pc_target_update[14]~input_o $end
-$var wire 1 1! pc_target_update[13]~input_o $end
-$var wire 1 2! pc_target_update[1]~input_o $end
-$var wire 1 3! pc_target_update[0]~input_o $end
-$var wire 1 4! branch_prediction~output_o $end
-$var wire 1 5! current_valid~output_o $end
-$var wire 1 6! current_counter[1]~output_o $end
-$var wire 1 7! current_counter[0]~output_o $end
-$var wire 1 8! pc_target_prediction[31]~output_o $end
-$var wire 1 9! pc_target_prediction[30]~output_o $end
-$var wire 1 :! pc_target_prediction[29]~output_o $end
-$var wire 1 ;! pc_target_prediction[28]~output_o $end
-$var wire 1 <! pc_target_prediction[27]~output_o $end
-$var wire 1 =! pc_target_prediction[26]~output_o $end
-$var wire 1 >! pc_target_prediction[25]~output_o $end
-$var wire 1 ?! pc_target_prediction[24]~output_o $end
-$var wire 1 @! pc_target_prediction[23]~output_o $end
-$var wire 1 A! pc_target_prediction[22]~output_o $end
-$var wire 1 B! pc_target_prediction[21]~output_o $end
-$var wire 1 C! pc_target_prediction[20]~output_o $end
-$var wire 1 D! pc_target_prediction[19]~output_o $end
-$var wire 1 E! pc_target_prediction[18]~output_o $end
-$var wire 1 F! pc_target_prediction[17]~output_o $end
-$var wire 1 G! pc_target_prediction[16]~output_o $end
-$var wire 1 H! pc_target_prediction[15]~output_o $end
-$var wire 1 I! pc_target_prediction[14]~output_o $end
-$var wire 1 J! pc_target_prediction[13]~output_o $end
-$var wire 1 K! pc_target_prediction[12]~output_o $end
-$var wire 1 L! pc_target_prediction[11]~output_o $end
-$var wire 1 M! pc_target_prediction[10]~output_o $end
-$var wire 1 N! pc_target_prediction[9]~output_o $end
-$var wire 1 O! pc_target_prediction[8]~output_o $end
-$var wire 1 P! pc_target_prediction[7]~output_o $end
-$var wire 1 Q! pc_target_prediction[6]~output_o $end
-$var wire 1 R! pc_target_prediction[5]~output_o $end
-$var wire 1 S! pc_target_prediction[4]~output_o $end
-$var wire 1 T! pc_target_prediction[3]~output_o $end
-$var wire 1 U! pc_target_prediction[2]~output_o $end
-$var wire 1 V! pc_target_prediction[1]~output_o $end
-$var wire 1 W! pc_target_prediction[0]~output_o $end
-$var wire 1 X! pc_fetch[10]~input_o $end
-$var wire 1 Y! pc_fetch[11]~input_o $end
-$var wire 1 Z! is_branch~input_o $end
-$var wire 1 [! clk~input_o $end
-$var wire 1 \! clk~inputclkctrl_outclk $end
-$var wire 1 ]! pc_target_update[2]~input_o $end
-$var wire 1 ^! pc_fetch_update[2]~input_o $end
-$var wire 1 _! pc_fetch_update[3]~input_o $end
-$var wire 1 `! pc_fetch_update[4]~input_o $end
-$var wire 1 a! pc_fetch_update[5]~input_o $end
-$var wire 1 b! pc_fetch_update[6]~input_o $end
-$var wire 1 c! pc_fetch_update[7]~input_o $end
-$var wire 1 d! pc_fetch[2]~input_o $end
-$var wire 1 e! pc_fetch[3]~input_o $end
-$var wire 1 f! pc_fetch[4]~input_o $end
-$var wire 1 g! pc_fetch[5]~input_o $end
-$var wire 1 h! pc_fetch[6]~input_o $end
-$var wire 1 i! pc_fetch[7]~input_o $end
-$var wire 1 j! pc_target_update[3]~input_o $end
-$var wire 1 k! pc_target_update[4]~input_o $end
-$var wire 1 l! pc_target_update[5]~input_o $end
-$var wire 1 m! pc_target_update[6]~input_o $end
-$var wire 1 n! pc_target_update[7]~input_o $end
-$var wire 1 o! pc_target_update[8]~input_o $end
-$var wire 1 p! pc_target_update[9]~input_o $end
-$var wire 1 q! pc_target_update[10]~input_o $end
-$var wire 1 r! pc_target_update[11]~input_o $end
-$var wire 1 s! pc_target_update[12]~input_o $end
-$var wire 1 t! pc_fetch_update[8]~input_o $end
-$var wire 1 u! pc_fetch_update[9]~input_o $end
-$var wire 1 v! pc_fetch_update[10]~input_o $end
-$var wire 1 w! pc_fetch_update[11]~input_o $end
-$var wire 1 x! pc_fetch_update[12]~input_o $end
-$var wire 1 y! prev_valid~input_o $end
-$var wire 1 z! inst1|wr_data[16]~0_combout $end
-$var wire 1 {! increment_counter~input_o $end
+$var wire 1 N gnd $end
+$var wire 1 O vcc $end
+$var wire 1 P unknown $end
+$var tri1 1 Q devclrn $end
+$var tri1 1 R devpor $end
+$var tri1 1 S devoe $end
+$var wire 1 T pc_target_update[31]~input_o $end
+$var wire 1 U pc_target_update[30]~input_o $end
+$var wire 1 V pc_target_update[29]~input_o $end
+$var wire 1 W pc_target_update[28]~input_o $end
+$var wire 1 X pc_target_update[27]~input_o $end
+$var wire 1 Y pc_target_update[26]~input_o $end
+$var wire 1 Z pc_target_update[25]~input_o $end
+$var wire 1 [ pc_target_update[24]~input_o $end
+$var wire 1 \ pc_target_update[23]~input_o $end
+$var wire 1 ] pc_target_update[22]~input_o $end
+$var wire 1 ^ pc_target_update[21]~input_o $end
+$var wire 1 _ pc_target_update[20]~input_o $end
+$var wire 1 ` pc_target_update[19]~input_o $end
+$var wire 1 a pc_target_update[18]~input_o $end
+$var wire 1 b pc_target_update[17]~input_o $end
+$var wire 1 c pc_target_update[16]~input_o $end
+$var wire 1 d pc_target_update[15]~input_o $end
+$var wire 1 e pc_target_update[14]~input_o $end
+$var wire 1 f pc_target_update[13]~input_o $end
+$var wire 1 g pc_target_update[1]~input_o $end
+$var wire 1 h pc_target_update[0]~input_o $end
+$var wire 1 i pc_fetch_update[31]~input_o $end
+$var wire 1 j pc_fetch_update[30]~input_o $end
+$var wire 1 k pc_fetch_update[29]~input_o $end
+$var wire 1 l pc_fetch_update[28]~input_o $end
+$var wire 1 m pc_fetch_update[27]~input_o $end
+$var wire 1 n pc_fetch_update[26]~input_o $end
+$var wire 1 o pc_fetch_update[25]~input_o $end
+$var wire 1 p pc_fetch_update[24]~input_o $end
+$var wire 1 q pc_fetch_update[23]~input_o $end
+$var wire 1 r pc_fetch_update[22]~input_o $end
+$var wire 1 s pc_fetch_update[21]~input_o $end
+$var wire 1 t pc_fetch_update[20]~input_o $end
+$var wire 1 u pc_fetch_update[19]~input_o $end
+$var wire 1 v pc_fetch_update[18]~input_o $end
+$var wire 1 w pc_fetch_update[17]~input_o $end
+$var wire 1 x pc_fetch_update[16]~input_o $end
+$var wire 1 y pc_fetch_update[15]~input_o $end
+$var wire 1 z pc_fetch_update[14]~input_o $end
+$var wire 1 { pc_fetch_update[13]~input_o $end
+$var wire 1 | pc_fetch_update[1]~input_o $end
+$var wire 1 } pc_fetch_update[0]~input_o $end
+$var wire 1 ~ pc_fetch[31]~input_o $end
+$var wire 1 !! pc_fetch[30]~input_o $end
+$var wire 1 "! pc_fetch[29]~input_o $end
+$var wire 1 #! pc_fetch[28]~input_o $end
+$var wire 1 $! pc_fetch[27]~input_o $end
+$var wire 1 %! pc_fetch[26]~input_o $end
+$var wire 1 &! pc_fetch[25]~input_o $end
+$var wire 1 '! pc_fetch[24]~input_o $end
+$var wire 1 (! pc_fetch[23]~input_o $end
+$var wire 1 )! pc_fetch[22]~input_o $end
+$var wire 1 *! pc_fetch[21]~input_o $end
+$var wire 1 +! pc_fetch[20]~input_o $end
+$var wire 1 ,! pc_fetch[19]~input_o $end
+$var wire 1 -! pc_fetch[18]~input_o $end
+$var wire 1 .! pc_fetch[17]~input_o $end
+$var wire 1 /! pc_fetch[16]~input_o $end
+$var wire 1 0! pc_fetch[15]~input_o $end
+$var wire 1 1! pc_fetch[14]~input_o $end
+$var wire 1 2! pc_fetch[13]~input_o $end
+$var wire 1 3! pc_fetch[1]~input_o $end
+$var wire 1 4! pc_fetch[0]~input_o $end
+$var wire 1 5! branch_prediction~output_o $end
+$var wire 1 6! current_valid~output_o $end
+$var wire 1 7! current_counter[1]~output_o $end
+$var wire 1 8! current_counter[0]~output_o $end
+$var wire 1 9! pc_target_prediction[31]~output_o $end
+$var wire 1 :! pc_target_prediction[30]~output_o $end
+$var wire 1 ;! pc_target_prediction[29]~output_o $end
+$var wire 1 <! pc_target_prediction[28]~output_o $end
+$var wire 1 =! pc_target_prediction[27]~output_o $end
+$var wire 1 >! pc_target_prediction[26]~output_o $end
+$var wire 1 ?! pc_target_prediction[25]~output_o $end
+$var wire 1 @! pc_target_prediction[24]~output_o $end
+$var wire 1 A! pc_target_prediction[23]~output_o $end
+$var wire 1 B! pc_target_prediction[22]~output_o $end
+$var wire 1 C! pc_target_prediction[21]~output_o $end
+$var wire 1 D! pc_target_prediction[20]~output_o $end
+$var wire 1 E! pc_target_prediction[19]~output_o $end
+$var wire 1 F! pc_target_prediction[18]~output_o $end
+$var wire 1 G! pc_target_prediction[17]~output_o $end
+$var wire 1 H! pc_target_prediction[16]~output_o $end
+$var wire 1 I! pc_target_prediction[15]~output_o $end
+$var wire 1 J! pc_target_prediction[14]~output_o $end
+$var wire 1 K! pc_target_prediction[13]~output_o $end
+$var wire 1 L! pc_target_prediction[12]~output_o $end
+$var wire 1 M! pc_target_prediction[11]~output_o $end
+$var wire 1 N! pc_target_prediction[10]~output_o $end
+$var wire 1 O! pc_target_prediction[9]~output_o $end
+$var wire 1 P! pc_target_prediction[8]~output_o $end
+$var wire 1 Q! pc_target_prediction[7]~output_o $end
+$var wire 1 R! pc_target_prediction[6]~output_o $end
+$var wire 1 S! pc_target_prediction[5]~output_o $end
+$var wire 1 T! pc_target_prediction[4]~output_o $end
+$var wire 1 U! pc_target_prediction[3]~output_o $end
+$var wire 1 V! pc_target_prediction[2]~output_o $end
+$var wire 1 W! pc_target_prediction[1]~output_o $end
+$var wire 1 X! pc_target_prediction[0]~output_o $end
+$var wire 1 Y! is_branch~input_o $end
+$var wire 1 Z! clk~input_o $end
+$var wire 1 [! clk~inputclkctrl_outclk $end
+$var wire 1 \! pc_target_update[2]~input_o $end
+$var wire 1 ]! pc_fetch_update[2]~input_o $end
+$var wire 1 ^! pc_fetch_update[3]~input_o $end
+$var wire 1 _! pc_fetch_update[4]~input_o $end
+$var wire 1 `! pc_fetch_update[5]~input_o $end
+$var wire 1 a! pc_fetch_update[6]~input_o $end
+$var wire 1 b! pc_fetch_update[7]~input_o $end
+$var wire 1 c! pc_fetch[2]~input_o $end
+$var wire 1 d! pc_fetch[3]~input_o $end
+$var wire 1 e! pc_fetch[4]~input_o $end
+$var wire 1 f! pc_fetch[5]~input_o $end
+$var wire 1 g! pc_fetch[6]~input_o $end
+$var wire 1 h! pc_fetch[7]~input_o $end
+$var wire 1 i! pc_target_update[3]~input_o $end
+$var wire 1 j! pc_target_update[4]~input_o $end
+$var wire 1 k! pc_target_update[5]~input_o $end
+$var wire 1 l! pc_target_update[6]~input_o $end
+$var wire 1 m! pc_target_update[7]~input_o $end
+$var wire 1 n! pc_target_update[8]~input_o $end
+$var wire 1 o! pc_target_update[9]~input_o $end
+$var wire 1 p! pc_target_update[10]~input_o $end
+$var wire 1 q! pc_target_update[11]~input_o $end
+$var wire 1 r! pc_target_update[12]~input_o $end
+$var wire 1 s! pc_fetch_update[8]~input_o $end
+$var wire 1 t! pc_fetch_update[9]~input_o $end
+$var wire 1 u! pc_fetch_update[10]~input_o $end
+$var wire 1 v! pc_fetch_update[11]~input_o $end
+$var wire 1 w! pc_fetch_update[12]~input_o $end
+$var wire 1 x! prev_valid~input_o $end
+$var wire 1 y! inst4|wr_data[16]~0_combout $end
+$var wire 1 z! increment_counter~input_o $end
+$var wire 1 {! prev_counter[1]~input_o $end
 $var wire 1 |! prev_counter[0]~input_o $end
-$var wire 1 }! prev_counter[1]~input_o $end
-$var wire 1 ~! inst1|wr_data[17]~2_combout $end
-$var wire 1 !" inst1|wr_data[18]~1_combout $end
-$var wire 1 "" inst1|branch_prediction~1_combout $end
-$var wire 1 #" pc_fetch[9]~input_o $end
-$var wire 1 $" pc_fetch[8]~input_o $end
-$var wire 1 %" inst1|branch_prediction~0_combout $end
-$var wire 1 &" pc_fetch[12]~input_o $end
-$var wire 1 '" inst1|branch_prediction~2_combout $end
-$var wire 1 (" inst1|branch_prediction~3_combout $end
-$var wire 1 )" inst|altsyncram_component|auto_generated|q_b [31] $end
-$var wire 1 *" inst|altsyncram_component|auto_generated|q_b [30] $end
-$var wire 1 +" inst|altsyncram_component|auto_generated|q_b [29] $end
-$var wire 1 ," inst|altsyncram_component|auto_generated|q_b [28] $end
-$var wire 1 -" inst|altsyncram_component|auto_generated|q_b [27] $end
-$var wire 1 ." inst|altsyncram_component|auto_generated|q_b [26] $end
-$var wire 1 /" inst|altsyncram_component|auto_generated|q_b [25] $end
-$var wire 1 0" inst|altsyncram_component|auto_generated|q_b [24] $end
-$var wire 1 1" inst|altsyncram_component|auto_generated|q_b [23] $end
-$var wire 1 2" inst|altsyncram_component|auto_generated|q_b [22] $end
-$var wire 1 3" inst|altsyncram_component|auto_generated|q_b [21] $end
-$var wire 1 4" inst|altsyncram_component|auto_generated|q_b [20] $end
-$var wire 1 5" inst|altsyncram_component|auto_generated|q_b [19] $end
-$var wire 1 6" inst|altsyncram_component|auto_generated|q_b [18] $end
-$var wire 1 7" inst|altsyncram_component|auto_generated|q_b [17] $end
-$var wire 1 8" inst|altsyncram_component|auto_generated|q_b [16] $end
-$var wire 1 9" inst|altsyncram_component|auto_generated|q_b [15] $end
-$var wire 1 :" inst|altsyncram_component|auto_generated|q_b [14] $end
-$var wire 1 ;" inst|altsyncram_component|auto_generated|q_b [13] $end
-$var wire 1 <" inst|altsyncram_component|auto_generated|q_b [12] $end
-$var wire 1 =" inst|altsyncram_component|auto_generated|q_b [11] $end
-$var wire 1 >" inst|altsyncram_component|auto_generated|q_b [10] $end
-$var wire 1 ?" inst|altsyncram_component|auto_generated|q_b [9] $end
-$var wire 1 @" inst|altsyncram_component|auto_generated|q_b [8] $end
-$var wire 1 A" inst|altsyncram_component|auto_generated|q_b [7] $end
-$var wire 1 B" inst|altsyncram_component|auto_generated|q_b [6] $end
-$var wire 1 C" inst|altsyncram_component|auto_generated|q_b [5] $end
-$var wire 1 D" inst|altsyncram_component|auto_generated|q_b [4] $end
-$var wire 1 E" inst|altsyncram_component|auto_generated|q_b [3] $end
-$var wire 1 F" inst|altsyncram_component|auto_generated|q_b [2] $end
-$var wire 1 G" inst|altsyncram_component|auto_generated|q_b [1] $end
-$var wire 1 H" inst|altsyncram_component|auto_generated|q_b [0] $end
-$var wire 1 I" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [35] $end
-$var wire 1 J" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [34] $end
-$var wire 1 K" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [33] $end
-$var wire 1 L" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [32] $end
-$var wire 1 M" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [31] $end
-$var wire 1 N" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [30] $end
-$var wire 1 O" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [29] $end
-$var wire 1 P" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [28] $end
-$var wire 1 Q" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [27] $end
-$var wire 1 R" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [26] $end
-$var wire 1 S" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [25] $end
-$var wire 1 T" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [24] $end
-$var wire 1 U" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [23] $end
-$var wire 1 V" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [22] $end
-$var wire 1 W" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [21] $end
-$var wire 1 X" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [20] $end
-$var wire 1 Y" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [19] $end
-$var wire 1 Z" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [18] $end
-$var wire 1 [" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [17] $end
-$var wire 1 \" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [16] $end
-$var wire 1 ]" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [15] $end
-$var wire 1 ^" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [14] $end
-$var wire 1 _" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [13] $end
-$var wire 1 `" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [12] $end
-$var wire 1 a" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [11] $end
-$var wire 1 b" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [10] $end
-$var wire 1 c" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [9] $end
-$var wire 1 d" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [8] $end
-$var wire 1 e" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [7] $end
-$var wire 1 f" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [6] $end
-$var wire 1 g" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [5] $end
-$var wire 1 h" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [4] $end
-$var wire 1 i" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [3] $end
-$var wire 1 j" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [2] $end
-$var wire 1 k" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [1] $end
-$var wire 1 l" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0] $end
+$var wire 1 }! inst4|wr_data[17]~2_combout $end
+$var wire 1 ~! inst4|wr_data[18]~1_combout $end
+$var wire 1 !" pc_fetch[9]~input_o $end
+$var wire 1 "" inst2|out_tag[1]~feeder_combout $end
+$var wire 1 #" reset~input_o $end
+$var wire 1 $" reset~inputclkctrl_outclk $end
+$var wire 1 %" pc_fetch[8]~input_o $end
+$var wire 1 &" inst3|branch_prediction~0_combout $end
+$var wire 1 '" pc_fetch[12]~input_o $end
+$var wire 1 (" inst3|branch_prediction~2_combout $end
+$var wire 1 )" pc_fetch[11]~input_o $end
+$var wire 1 *" inst2|out_tag[3]~feeder_combout $end
+$var wire 1 +" pc_fetch[10]~input_o $end
+$var wire 1 ," inst3|branch_prediction~1_combout $end
+$var wire 1 -" inst3|branch_prediction~3_combout $end
+$var wire 1 ." inst|altsyncram_component|auto_generated|q_b [31] $end
+$var wire 1 /" inst|altsyncram_component|auto_generated|q_b [30] $end
+$var wire 1 0" inst|altsyncram_component|auto_generated|q_b [29] $end
+$var wire 1 1" inst|altsyncram_component|auto_generated|q_b [28] $end
+$var wire 1 2" inst|altsyncram_component|auto_generated|q_b [27] $end
+$var wire 1 3" inst|altsyncram_component|auto_generated|q_b [26] $end
+$var wire 1 4" inst|altsyncram_component|auto_generated|q_b [25] $end
+$var wire 1 5" inst|altsyncram_component|auto_generated|q_b [24] $end
+$var wire 1 6" inst|altsyncram_component|auto_generated|q_b [23] $end
+$var wire 1 7" inst|altsyncram_component|auto_generated|q_b [22] $end
+$var wire 1 8" inst|altsyncram_component|auto_generated|q_b [21] $end
+$var wire 1 9" inst|altsyncram_component|auto_generated|q_b [20] $end
+$var wire 1 :" inst|altsyncram_component|auto_generated|q_b [19] $end
+$var wire 1 ;" inst|altsyncram_component|auto_generated|q_b [18] $end
+$var wire 1 <" inst|altsyncram_component|auto_generated|q_b [17] $end
+$var wire 1 =" inst|altsyncram_component|auto_generated|q_b [16] $end
+$var wire 1 >" inst|altsyncram_component|auto_generated|q_b [15] $end
+$var wire 1 ?" inst|altsyncram_component|auto_generated|q_b [14] $end
+$var wire 1 @" inst|altsyncram_component|auto_generated|q_b [13] $end
+$var wire 1 A" inst|altsyncram_component|auto_generated|q_b [12] $end
+$var wire 1 B" inst|altsyncram_component|auto_generated|q_b [11] $end
+$var wire 1 C" inst|altsyncram_component|auto_generated|q_b [10] $end
+$var wire 1 D" inst|altsyncram_component|auto_generated|q_b [9] $end
+$var wire 1 E" inst|altsyncram_component|auto_generated|q_b [8] $end
+$var wire 1 F" inst|altsyncram_component|auto_generated|q_b [7] $end
+$var wire 1 G" inst|altsyncram_component|auto_generated|q_b [6] $end
+$var wire 1 H" inst|altsyncram_component|auto_generated|q_b [5] $end
+$var wire 1 I" inst|altsyncram_component|auto_generated|q_b [4] $end
+$var wire 1 J" inst|altsyncram_component|auto_generated|q_b [3] $end
+$var wire 1 K" inst|altsyncram_component|auto_generated|q_b [2] $end
+$var wire 1 L" inst|altsyncram_component|auto_generated|q_b [1] $end
+$var wire 1 M" inst|altsyncram_component|auto_generated|q_b [0] $end
+$var wire 1 N" inst2|out_tag [4] $end
+$var wire 1 O" inst2|out_tag [3] $end
+$var wire 1 P" inst2|out_tag [2] $end
+$var wire 1 Q" inst2|out_tag [1] $end
+$var wire 1 R" inst2|out_tag [0] $end
+$var wire 1 S" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [35] $end
+$var wire 1 T" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [34] $end
+$var wire 1 U" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [33] $end
+$var wire 1 V" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [32] $end
+$var wire 1 W" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [31] $end
+$var wire 1 X" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [30] $end
+$var wire 1 Y" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [29] $end
+$var wire 1 Z" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [28] $end
+$var wire 1 [" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [27] $end
+$var wire 1 \" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [26] $end
+$var wire 1 ]" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [25] $end
+$var wire 1 ^" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [24] $end
+$var wire 1 _" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [23] $end
+$var wire 1 `" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [22] $end
+$var wire 1 a" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [21] $end
+$var wire 1 b" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [20] $end
+$var wire 1 c" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [19] $end
+$var wire 1 d" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [18] $end
+$var wire 1 e" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [17] $end
+$var wire 1 f" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [16] $end
+$var wire 1 g" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [15] $end
+$var wire 1 h" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [14] $end
+$var wire 1 i" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [13] $end
+$var wire 1 j" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [12] $end
+$var wire 1 k" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [11] $end
+$var wire 1 l" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [10] $end
+$var wire 1 m" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [9] $end
+$var wire 1 n" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [8] $end
+$var wire 1 o" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [7] $end
+$var wire 1 p" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [6] $end
+$var wire 1 q" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [5] $end
+$var wire 1 r" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [4] $end
+$var wire 1 s" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [3] $end
+$var wire 1 t" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [2] $end
+$var wire 1 u" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [1] $end
+$var wire 1 v" inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -292,12 +302,14 @@ b0 %
 b0 &
 b0 '
 0(
-x)
-x+
+1)
 x*
 x,
+x+
+x-
+0M
 0L
-0K
+xK
 xJ
 xI
 xH
@@ -308,7 +320,7 @@ xD
 xC
 xB
 xA
-x@
+0@
 0?
 0>
 0=
@@ -327,14 +339,12 @@ x@
 00
 0/
 0.
-0-
-0M
-1N
-xO
-1P
+0N
+1O
+xP
 1Q
 1R
-0S
+1S
 0T
 0U
 0V
@@ -397,11 +407,11 @@ xO
 01!
 02!
 03!
-x4!
+04!
 x5!
 x6!
 x7!
-08!
+x8!
 09!
 0:!
 0;!
@@ -420,7 +430,7 @@ x7!
 0H!
 0I!
 0J!
-xK!
+0K!
 xL!
 xM!
 xN!
@@ -431,13 +441,13 @@ xR!
 xS!
 xT!
 xU!
-0V!
+xV!
 0W!
 0X!
 0Y!
 0Z!
-0[!
-x\!
+x[!
+0\!
 0]!
 0^!
 0_!
@@ -466,20 +476,30 @@ x\!
 0v!
 0w!
 0x!
-0y!
-xz!
+xy!
+0z!
 0{!
 0|!
-0}!
+x}!
 x~!
-x!"
+0!"
 x""
-0#"
-0$"
-x%"
-0&"
-x'"
+1#"
+x$"
+0%"
+x&"
+0'"
 x("
+0)"
+x*"
+0+"
+x,"
+x-"
+0M"
+0L"
+0K"
+0J"
+0I"
 0H"
 0G"
 0F"
@@ -494,11 +514,11 @@ x("
 0="
 0<"
 0;"
-0:"
-09"
-08"
-07"
-06"
+z:"
+z9"
+z8"
+z7"
+z6"
 z5"
 z4"
 z3"
@@ -507,11 +527,21 @@ z1"
 z0"
 z/"
 z."
-z-"
-z,"
-z+"
-z*"
-z)"
+0R"
+0Q"
+0P"
+0O"
+0N"
+0v"
+0u"
+0t"
+0s"
+0r"
+0q"
+0p"
+0o"
+0n"
+0m"
 0l"
 0k"
 0j"
@@ -538,556 +568,1000 @@ z)"
 0U"
 0T"
 0S"
-0R"
-0Q"
-0P"
-0O"
-0N"
-0M"
-0L"
-0K"
-0J"
-0I"
 $end
 #177
-0\!
-#1208
-0'"
-#1630
+0[!
+#188
+1$"
+#615
 0("
-#4334
-06!
-0*
-#4527
-0P!
-0E
-#4553
-0L!
-0A
-#4765
-0R!
-0G
-#4962
-05!
-0,
-#4965
-0O!
-0D
-#5079
-0K!
-0@
-#5085
+#999
+1,"
+#1008
+1&"
+#1365
+0-"
+#2564
 0~!
-#5087
-0!"
-#5146
-07!
-0+
-#5201
-0S!
-0H
-#5337
-0Q!
-0F
-#5514
-0U!
-0J
-#5531
-0M!
-0B
-#5616
-04!
-0)
-#6032
-1%"
-#6168
-1""
-#6171
-0z!
-#6286
+#4019
 0N!
 0C
-#6959
+#4056
+07!
+0+
+#4358
+0R!
+0G
+#4496
+08!
+0,
+#4641
+0O!
+0D
+#4752
 0T!
 0I
+#4917
+06!
+0-
+#5007
+0U!
+0J
+#5141
+0M!
+0B
+#5155
+0P!
+0E
+#5306
+0Q!
+0F
+#5311
+0*"
+#5426
+0}!
+#5486
+0""
+#5644
+0y!
+#5857
+0L!
+0A
+#6206
+05!
+0*
+#6211
+0V!
+0K
+#6600
+0S!
+0H
 #50000
 1!
 #50745
-1[!
+1Z!
 #50933
-1\!
+1[!
+#70000
+0)
+#70758
+0#"
+#70935
+0$"
 #100000
 0!
 #100758
-0[!
+0Z!
 #100935
-0\!
+0[!
 #120000
 b1000 $
 b1010 $
-1f
-#120743
-1e!
-#150000
-1!
-#150745
-1[!
-#150933
-1\!
-#180000
-b10 $
-b0 $
-0f
-#180756
-0e!
-#200000
-0!
-#200758
-0[!
-#200935
-0\!
-#220000
-1"
-1#
 b1000 %
 b1010 %
 b100000 &
 b110000 &
 b111000 &
 b111010 &
-12!
-1{
-#220743
+1g
+1|
+13!
+#120743
+1i!
 1j!
 1k!
-1l!
-1_!
-1Z!
-#220745
-1{!
-#226459
-1z!
-#226464
-1~!
-#250000
+1^!
+1d!
+#130000
+1#
+#130743
+1Y!
+#135971
+1y!
+#150000
 1!
-#250745
+#150745
+1Z!
+#150933
 1[!
-#250933
-1\!
-#280000
-0"
-0#
+#160000
 b10 %
 b0 %
 b11010 &
 b1010 &
 b10 &
 b0 &
-02!
-0{
-#280756
+0#
+0g
+0|
+#160756
+0i!
 0j!
 0k!
-0l!
-0_!
+0^!
+0Y!
+#166400
+0y!
+#180000
+b10 $
+b0 $
+03!
+#180756
+0d!
+#200000
+0!
+#200758
 0Z!
+#200935
+0[!
+#220000
+1(
+1"
+b1000 %
+b1010 %
+b100000 &
+b110000 &
+b111000 &
+b111010 &
+1#
+1g
+1|
+#220743
+1i!
+1j!
+1k!
+1^!
+1Y!
+#220745
+1z!
+1x!
+#223031
+1y!
+#225961
+1}!
+#240000
+b1000 $
+b1010 $
+13!
+#240743
+1d!
+#250000
+1!
+#250745
+1Z!
+#250933
+1[!
+#257213
+1u"
+1t"
+1s"
+1f"
+1="
+1J"
+1K"
+1L"
+#260000
+b10 $
+b0 $
+03!
+#260756
+0d!
+#262028
+1T!
+1I
+#262185
+16!
+1-
+#262307
+1U!
+1J
+#264045
+1S!
+1H
+#280000
+0(
+0"
+b10 %
+b0 %
+b11010 &
+b1010 &
+b10 &
+b0 &
+0#
+0g
+0|
+#280756
+0i!
+0j!
+0k!
+0^!
+0Y!
 #280758
-0{!
-#283268
-0~!
-#286927
 0z!
+0x!
+#283353
+0}!
+#286400
+0y!
 #300000
 0!
 #300758
-0[!
+0Z!
 #300935
-0\!
+0[!
 #340000
 b1000 $
 b1010 $
-1f
+13!
 #340743
-1e!
+1d!
 #350000
 1!
 #350745
-1[!
+1Z!
 #350933
-1\!
-#357169
-1k"
-1j"
-1i"
-1\"
-1["
-17"
-18"
-1E"
-1F"
-1G"
-#362056
-1R!
-1G
-#362227
-15!
+1[!
+#357213
+1e"
+1<"
+#361785
+18!
 1,
-#362440
-17!
-1+
-#362485
-1S!
-1H
-#364139
-1T!
-1I
 #380000
 b10 $
 b0 $
-0f
+03!
 #380756
-0e!
+0d!
 #400000
 0!
 #400758
-0[!
+0Z!
 #400935
-0\!
+0[!
 #420000
 b1 '
 1(
 1"
-1#
 b1000 %
 b1010 %
 b100000 &
 b110000 &
 b111000 &
 b111010 &
-12!
-1{
+1#
+1g
+1|
 #420743
+1i!
 1j!
 1k!
-1l!
-1_!
-1Z!
-#420745
+1^!
+1Y!
 1|!
-1{!
-1y!
-#423169
+#420745
 1z!
-#423290
+1x!
+#423031
+1y!
+#425803
 1~!
-#426463
-1!"
-#426480
-0~!
 #450000
 1!
 #450745
-1[!
+1Z!
 #450933
-1\!
-#457169
-0k"
-0j"
-0i"
-0\"
-0["
-07"
-08"
-0E"
-0F"
-0G"
-#461934
-0R!
-0G
-#462131
-05!
+1[!
+#457213
+0u"
+0t"
+0s"
+0f"
+0e"
+0<"
+0="
+0J"
+0K"
+0L"
+#461709
+08!
 0,
-#462315
-07!
-0+
-#462370
-0S!
-0H
-#464128
+#461965
 0T!
 0I
+#462130
+06!
+0-
+#462220
+0U!
+0J
+#463813
+0S!
+0H
 #480000
 b0 '
 0(
 0"
-0#
 b10 %
 b0 %
 b11010 &
 b1010 &
 b10 &
 b0 &
-02!
-0{
+0#
+0g
+0|
 #480756
+0i!
 0j!
 0k!
-0l!
-0_!
-0Z!
-#480758
+0^!
+0Y!
 0|!
-0{!
-0y!
-#483279
-0!"
-#486927
+#480758
 0z!
+0x!
+#483322
+0~!
+#486400
+0y!
 #500000
 0!
 #500758
-0[!
+0Z!
 #500935
-0\!
+0[!
 #520000
 b1000 $
 b1010 $
-1f
+13!
 #520743
-1e!
+1d!
 #550000
 1!
 #550745
-1[!
+1Z!
 #550933
-1\!
-#557169
-1k"
-1j"
-1i"
-1\"
-1Z"
-16"
-18"
-1E"
-1F"
-1G"
-#558434
-1'"
-#558852
+1[!
+#557213
+1u"
+1t"
+1s"
+1f"
+1d"
+1;"
+1="
+1J"
+1K"
+1L"
+#558465
 1("
-#561586
-16!
-1*
-#562056
-1R!
-1G
-#562227
-15!
-1,
-#562485
-1S!
-1H
-#562867
-14!
-1)
-#564139
+#559145
+1-"
+#561327
+17!
+1+
+#562028
 1T!
 1I
+#562185
+16!
+1-
+#562307
+1U!
+1J
+#564044
+15!
+1*
+#564045
+1S!
+1H
 #580000
 b10 $
 b0 $
-0f
+03!
 #580756
-0e!
+0d!
 #600000
 0!
 #600758
-0[!
+0Z!
 #600935
-0\!
+0[!
 #640000
+b10 '
 b100 &
 b101 &
-b10 '
 1(
-1#
 b1000 %
 b1010 %
 b10101 &
 b10111 &
-1{
-13!
-12!
+1#
+1|
+1h
+1g
 #640743
-1_!
-1]!
-1k!
-1Z!
+1^!
+1j!
+1Y!
 #640745
-1}!
-1y!
-#643169
-1z!
-#645497
-1!"
-#646464
+1\!
+1{!
+1x!
+#642946
 1~!
-#646478
-0!"
+#643031
+1y!
+#645961
+1}!
+#645979
+0~!
 #650000
 1!
 #650745
-1[!
+1Z!
 #650933
-1\!
-#657169
-0k"
-0j"
-0i"
-0\"
-0Z"
-06"
-08"
-0E"
-0F"
-0G"
-#658377
-0'"
-#658799
+1[!
+#657213
+0u"
+0t"
+0s"
+0f"
+0d"
+0;"
+0="
+0J"
+0K"
+0L"
+#657828
 0("
-#661503
-06!
-0*
-#661934
-0R!
-0G
-#662131
-05!
-0,
-#662370
-0S!
-0H
-#662785
-04!
-0)
-#664128
+#658578
+0-"
+#661269
+07!
+0+
+#661965
 0T!
 0I
+#662130
+06!
+0-
+#662220
+0U!
+0J
+#663419
+05!
+0*
+#663813
+0S!
+0H
 #670000
+b0 '
 b10011 &
 b10010 &
-b0 '
 0(
-0#
 b10 %
 b0 %
 b10 &
 b0 &
-0{
-03!
-02!
+0#
+0|
+0h
+0g
 #670756
-0_!
-0]!
-0k!
-0Z!
+0^!
+0j!
+0Y!
 #670758
+0\!
+0{!
+0x!
+#672972
 0}!
+#676400
 0y!
-#675843
-0~!
-#676927
-0z!
 #700000
 0!
 #700758
-0[!
+0Z!
 #700935
-0\!
+0[!
 #740000
 b1000 $
 b1010 $
-1f
+13!
 #740743
-1e!
+1d!
 #750000
 1!
 #750745
-1[!
+1Z!
 #750933
-1\!
-#757169
-1l"
-1j"
-1\"
-1["
-17"
-18"
-1F"
-1H"
-#762227
-15!
+1[!
+#757213
+1v"
+1t"
+1f"
+1e"
+1<"
+1="
+1K"
+1M"
+#761785
+18!
 1,
-#762440
-17!
-1+
-#762485
-1S!
-1H
-#762783
-1U!
-1J
+#762028
+1T!
+1I
+#762185
+16!
+1-
+#763434
+1V!
+1K
 #770000
 b10 $
 b0 $
-0f
+03!
 #770756
-0e!
+0d!
 #800000
 0!
 #800758
-0[!
+0Z!
 #800935
-0\!
+0[!
+#830000
+b1 '
+1"
+b100 &
+b101 &
+1(
+b1000 %
+b1010 %
+b10101 &
+b10111 &
+1#
+1|
+1h
+1g
+#830743
+1^!
+1j!
+1Y!
+1|!
+#830745
+1\!
+1x!
+1z!
+#833031
+1y!
+#835803
+1~!
 #850000
 1!
 #850745
-1[!
+1Z!
 #850933
-1\!
-#857169
-0l"
-0j"
-0\"
-0["
-07"
-08"
-0F"
-0H"
-#862131
-05!
+1[!
+#857213
+0v"
+0t"
+0f"
+0e"
+0<"
+0="
+0K"
+0M"
+#860000
+b0 '
+0"
+b10011 &
+b10010 &
+0(
+b10 %
+b0 %
+b10 &
+b0 &
+0#
+0|
+0h
+0g
+#860756
+0^!
+0j!
+0Y!
+0|!
+#860758
+0\!
+0x!
+0z!
+#861709
+08!
 0,
-#862315
-07!
-0+
-#862370
-0S!
-0H
-#862683
-0U!
-0J
+#861965
+0T!
+0I
+#862130
+06!
+0-
+#863322
+0~!
+#863424
+0V!
+0K
+#866400
+0y!
 #900000
 0!
 #900758
-0[!
+0Z!
 #900935
-0\!
+0[!
+#930000
+b10 '
+b1000 $
+b1010 $
+1"
+b100 &
+b101 &
+1(
+b1000 %
+b1010 %
+b10101 &
+b10111 &
+1#
+1|
+1h
+1g
+13!
+#930743
+1^!
+1j!
+1d!
+1Y!
+#930745
+1\!
+1{!
+1x!
+1z!
+#932946
+1~!
+#933031
+1y!
+#935961
+1}!
 #950000
 1!
 #950745
-1[!
+1Z!
 #950933
-1\!
+1[!
+#957213
+1v"
+1t"
+1f"
+1d"
+1;"
+1="
+1K"
+1M"
+#958465
+1("
+#959145
+1-"
+#960000
+b10 $
+b0 $
+03!
+#960756
+0d!
+#961327
+17!
+1+
+#962028
+1T!
+1I
+#962185
+16!
+1-
+#963434
+1V!
+1K
+#964044
+15!
+1*
+#970000
+b0 '
+0"
+b10011 &
+b10010 &
+0(
+b10 %
+b0 %
+b10 &
+b0 &
+0#
+0|
+0h
+0g
+#970756
+0^!
+0j!
+0Y!
+#970758
+0\!
+0{!
+0x!
+0z!
+#972972
+0~!
+#973353
+0}!
+#976400
+0y!
 #1000000
+0!
+#1000758
+0Z!
+#1000935
+0[!
+#1020000
+b1 '
+b11 '
+1"
+b100 &
+b101 &
+1(
+b1000 %
+b1010 %
+b10101 &
+b10111 &
+1|
+1h
+1g
+#1020743
+1^!
+1j!
+1|!
+#1020745
+1\!
+1{!
+1x!
+1z!
+#1022946
+1~!
+#1023031
+1y!
+#1025803
+1}!
+#1030000
+b1000 $
+b1010 $
+1#
+13!
+#1030743
+1d!
+1Y!
+#1050000
+1!
+#1050745
+1Z!
+#1050933
+1[!
+#1057213
+1e"
+1<"
+#1060000
+b10 '
+b0 '
+0"
+b10011 &
+b10010 &
+0(
+b10 %
+b0 %
+b10 &
+b0 &
+b10 $
+b0 $
+0#
+03!
+0|
+0h
+0g
+#1060756
+0d!
+0^!
+0j!
+0Y!
+0|!
+#1060758
+0\!
+0{!
+0x!
+0z!
+#1061785
+18!
+1,
+#1062972
+0}!
+#1063322
+0~!
+#1066400
+0y!
+#1100000
+0!
+#1100758
+0Z!
+#1100935
+0[!
+#1140000
+b1000 $
+b1010 $
+13!
+#1140743
+1d!
+#1150000
+1!
+#1150745
+1Z!
+#1150933
+1[!
+#1170000
+b10 $
+b0 $
+03!
+#1170756
+0d!
+#1200000
+0!
+#1200758
+0Z!
+#1200935
+0[!
+#1250000
+1!
+#1250745
+1Z!
+#1250933
+1[!
+#1257213
+0v"
+0t"
+0f"
+0e"
+0d"
+0;"
+0<"
+0="
+0K"
+0M"
+#1257828
+0("
+#1258578
+0-"
+#1261269
+07!
+0+
+#1261709
+08!
+0,
+#1261965
+0T!
+0I
+#1262130
+06!
+0-
+#1263419
+05!
+0*
+#1263424
+0V!
+0K
+#1300000
+0!
+#1300758
+0Z!
+#1300935
+0[!
+#1350000
+1!
+#1350745
+1Z!
+#1350933
+1[!
+#1400000
+0!
+#1400758
+0Z!
+#1400935
+0[!
+#1450000
+1!
+#1450745
+1Z!
+#1450933
+1[!
+#1500000
+0!
+#1500758
+0Z!
+#1500935
+0[!
+#1550000
+1!
+#1550745
+1Z!
+#1550933
+1[!
+#1600000
+0!
+#1600758
+0Z!
+#1600935
+0[!
+#1650000
+1!
+#1650745
+1Z!
+#1650933
+1[!
+#1700000
+0!
+#1700758
+0Z!
+#1700935
+0[!
+#1750000
+1!
+#1750745
+1Z!
+#1750933
+1[!
+#1800000
+0!
+#1800758
+0Z!
+#1800935
+0[!
+#1850000
+1!
+#1850745
+1Z!
+#1850933
+1[!
+#1900000
+0!
+#1900758
+0Z!
+#1900935
+0[!
+#1950000
+1!
+#1950745
+1Z!
+#1950933
+1[!
+#2000000

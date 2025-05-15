@@ -1,0 +1,6 @@
+module tag_latch(
+
+
+);
+
+endmodule

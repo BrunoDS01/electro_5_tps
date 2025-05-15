@@ -1,0 +1,40 @@
+module bht_btb_wr_data_builder(
+	input wire pc_target_update_bits,
+	input wire is_branch,
+	input wire [1:0] prev_counter,
+	input wire prev_valid,
+	input wire increment_counter
+
+
+);
+
+/*
+	Lógica de actualización del contador
+	
+	(Si una vez es valid una dirección, lo será por siempre)
+*/
+always @(is_branch, prev_counter, prev_valid, increment_counter) begin
+	if (is_branch) begin
+		wr_enable = 1'b1;
+		valid_bit = 1'b1;
+		if (increment_counter == 1'b0 && prev_counter != 2'b00) begin
+			wr_counter = prev_counter - 2'b01;
+		end
+		else if (increment_counter == 1'b1 && prev_counter != 2'b11) begin
+			wr_counter = prev_counter + 2'b01;
+		end
+		else begin
+			wr_counter = prev_counter;
+		end
+	end
+	else begin
+		wr_enable = 1'b0;
+		wr_counter = prev_counter;
+		valid_bit = prev_valid;	
+	end	
+end
+
+// Asignación de elemento a guardar en memoria
+assign wr_data = {{(31-(COUNTER_BITS + TAG_BITS + PC_BITS)){1'b0}}, wr_counter, valid_bit, wr_tag, pc_target_update_bits};
+
+endmodule

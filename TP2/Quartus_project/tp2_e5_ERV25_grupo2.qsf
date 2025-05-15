@@ -79,6 +79,11 @@ set_global_assignment -name VERILOG_FILE concat_funct.v
 set_global_assignment -name VERILOG_FILE alu_latch.v
 set_global_assignment -name QIP_FILE instruction_constant.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE first_loop_simulation.vwf
+set_global_assignment -name BDF_FILE bht_btb_module3.bdf
+set_global_assignment -name VERILOG_FILE tag_latch.v
+set_global_assignment -name VERILOG_FILE prediction_module.v
+set_global_assignment -name VERILOG_FILE pc_target_concat.v
+set_global_assignment -name VERILOG_FILE bht_btb_wr_data_builder.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
