@@ -58,9 +58,6 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name QIP_FILE ram_principal.qip
 set_global_assignment -name BDF_FILE tp2_e5_ERV25_grupo2.bdf
 set_global_assignment -name VERILOG_FILE fetch_unit.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name QIP_FILE constant0.qip
 set_global_assignment -name SOURCE_FILE btb.h
@@ -71,8 +68,6 @@ set_global_assignment -name VERILOG_FILE bht_btb_controller.v
 set_global_assignment -name QIP_FILE bht_btb_ram.qip
 set_global_assignment -name BDF_FILE bht_btb_module.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE bht_btb_waveform.vwf
-set_global_assignment -name VERILOG_FILE bht_btb_controller2.v
-set_global_assignment -name BDF_FILE bht_btb_module2.bdf
 set_global_assignment -name VERILOG_FILE opcode_decode.v
 set_global_assignment -name VERILOG_FILE immediate_builder.v
 set_global_assignment -name VERILOG_FILE decode_latch.v
@@ -84,4 +79,7 @@ set_global_assignment -name VERILOG_FILE concat_funct.v
 set_global_assignment -name VERILOG_FILE alu_latch.v
 set_global_assignment -name QIP_FILE instruction_constant.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE first_loop_simulation.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

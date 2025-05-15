@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tp2_e5_ERV25_grupo2
-Sun May 11 23:26:01 2025
+Thu May 15 00:48:17 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -51,7 +51,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun May 11 23:26:01 2025           ;
+; Analysis & Synthesis Status        ; Successful - Thu May 15 00:48:17 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
@@ -60,7 +60,7 @@ on the Quartus Prime software download page.
 ;     Total combinational functions  ; 2                                               ;
 ;     Dedicated logic registers      ; 6                                               ;
 ; Total registers                    ; 6                                               ;
-; Total pins                         ; 34                                              ;
+; Total pins                         ; 66                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -167,7 +167,7 @@ on the Quartus Prime software download page.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -223,14 +223,14 @@ on the Quartus Prime software download page.
 ;     -- Dedicated logic registers            ; 6         ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 34        ;
+; I/O pins                                    ; 66        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 6         ;
-; Total fan-out                               ; 57        ;
-; Average fan-out                             ; 0.75      ;
+; Total fan-out                               ; 91        ;
+; Average fan-out                             ; 0.65      ;
 +---------------------------------------------+-----------+
 
 
@@ -239,7 +239,7 @@ on the Quartus Prime software download page.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name         ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+---------------------+--------------+
-; |tp2_e5_ERV25_grupo2       ; 2 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |tp2_e5_ERV25_grupo2                      ; tp2_e5_ERV25_grupo2 ; work         ;
+; |tp2_e5_ERV25_grupo2       ; 2 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 66   ; 0            ; |tp2_e5_ERV25_grupo2                      ; tp2_e5_ERV25_grupo2 ; work         ;
 ;    |alu_latch:inst7|       ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu_latch:inst7      ; alu_latch           ; work         ;
 ;    |decode_latch:inst4|    ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|decode_latch:inst4   ; decode_latch        ; work         ;
 ;    |fetch_unit:inst2|      ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst2     ; fetch_unit          ; work         ;
@@ -556,7 +556,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 34                          ;
+; boundary_port         ; 66                          ;
 ; cycloneiii_ff         ; 6                           ;
 ;     CLR               ; 6                           ;
 ; cycloneiii_lcell_comb ; 3                           ;
@@ -584,7 +584,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Sun May 11 23:25:47 2025
+    Info: Processing started: Thu May 15 00:48:04 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -603,15 +603,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file bht_tes
     Info (12023): Found entity 1: bht_testbench
 Info (12021): Found 1 design units, including 1 entities, in source file bht_module.bdf
     Info (12023): Found entity 1: bht_module
-Info (12021): Found 0 design units, including 0 entities, in source file bht_btb_controller.v
+Info (12021): Found 1 design units, including 1 entities, in source file bht_btb_controller.v
+    Info (12023): Found entity 1: bht_btb_controller File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_controller.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file bht_btb_ram.v
     Info (12023): Found entity 1: bht_btb_ram File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file bht_btb_module.bdf
     Info (12023): Found entity 1: bht_btb_module
-Info (12021): Found 1 design units, including 1 entities, in source file bht_btb_controller2.v
-    Info (12023): Found entity 1: bht_btb_controller File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_controller2.v Line: 10
-Info (12021): Found 1 design units, including 1 entities, in source file bht_btb_module2.bdf
-    Info (12023): Found entity 1: bht_btb_module2
 Info (12021): Found 1 design units, including 1 entities, in source file opcode_decode.v
     Info (12023): Found entity 1: opcode_decode File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/opcode_decode.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file immediate_builder.v
@@ -634,7 +631,6 @@ Info (12021): Found 2 design units, including 2 entities, in source file instruc
     Info (12023): Found entity 1: instruction_constant_lpm_constant_319 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v Line: 47
     Info (12023): Found entity 2: instruction_constant File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v Line: 62
 Info (12127): Elaborating entity "tp2_e5_ERV25_grupo2" for the top level hierarchy
-Info (12128): Elaborating entity "alu_latch" for hierarchy "alu_latch:inst7"
 Info (12128): Elaborating entity "alu" for hierarchy "alu:inst30"
 Info (12128): Elaborating entity "operand_build" for hierarchy "operand_build:inst24"
 Info (12128): Elaborating entity "op_latch" for hierarchy "op_latch:inst29"
@@ -1608,6 +1604,7 @@ Info (10041): Inferred latch for "x[0][28]" at register_bank.v(44) File: D:/Brun
 Info (10041): Inferred latch for "x[0][29]" at register_bank.v(44) File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v Line: 44
 Info (10041): Inferred latch for "x[0][30]" at register_bank.v(44) File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v Line: 44
 Info (10041): Inferred latch for "x[0][31]" at register_bank.v(44) File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v Line: 44
+Info (12128): Elaborating entity "alu_latch" for hierarchy "alu_latch:inst7"
 Info (12128): Elaborating entity "ram_principal" for hierarchy "ram_principal:inst"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram_principal:inst|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v Line: 98
 Info (12130): Elaborated megafunction instantiation "ram_principal:inst|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v Line: 98
@@ -1676,6 +1673,36 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_mkh2:auto_generated|q_a[30]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_mkh2.tdf Line: 1031
         Warning (14320): Synthesized away node "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_mkh2:auto_generated|q_a[31]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_mkh2.tdf Line: 1064
 Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "c[31]" is stuck at GND
+    Warning (13410): Pin "c[30]" is stuck at GND
+    Warning (13410): Pin "c[29]" is stuck at GND
+    Warning (13410): Pin "c[28]" is stuck at GND
+    Warning (13410): Pin "c[27]" is stuck at GND
+    Warning (13410): Pin "c[26]" is stuck at GND
+    Warning (13410): Pin "c[25]" is stuck at GND
+    Warning (13410): Pin "c[24]" is stuck at GND
+    Warning (13410): Pin "c[23]" is stuck at GND
+    Warning (13410): Pin "c[22]" is stuck at GND
+    Warning (13410): Pin "c[21]" is stuck at GND
+    Warning (13410): Pin "c[20]" is stuck at GND
+    Warning (13410): Pin "c[19]" is stuck at GND
+    Warning (13410): Pin "c[18]" is stuck at GND
+    Warning (13410): Pin "c[17]" is stuck at GND
+    Warning (13410): Pin "c[16]" is stuck at GND
+    Warning (13410): Pin "c[15]" is stuck at GND
+    Warning (13410): Pin "c[14]" is stuck at GND
+    Warning (13410): Pin "c[13]" is stuck at GND
+    Warning (13410): Pin "c[12]" is stuck at GND
+    Warning (13410): Pin "c[11]" is stuck at GND
+    Warning (13410): Pin "c[10]" is stuck at GND
+    Warning (13410): Pin "c[9]" is stuck at GND
+    Warning (13410): Pin "c[8]" is stuck at GND
+    Warning (13410): Pin "c[7]" is stuck at GND
+    Warning (13410): Pin "c[6]" is stuck at GND
+    Warning (13410): Pin "c[5]" is stuck at GND
+    Warning (13410): Pin "c[4]" is stuck at GND
+    Warning (13410): Pin "c[1]" is stuck at GND
+    Warning (13410): Pin "c[0]" is stuck at GND
     Warning (13410): Pin "c_write_back[31]" is stuck at GND
     Warning (13410): Pin "c_write_back[30]" is stuck at GND
     Warning (13410): Pin "c_write_back[29]" is stuck at GND
@@ -1710,14 +1737,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 30 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 41 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 73 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 32 output pins
+    Info (21059): Implemented 64 output pins
     Info (21061): Implemented 7 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 68 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 98 warnings
     Info: Peak virtual memory: 4788 megabytes
-    Info: Processing ended: Sun May 11 23:26:01 2025
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Processing ended: Thu May 15 00:48:17 2025
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:26
 
 
