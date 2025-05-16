@@ -42,7 +42,7 @@ set_global_assignment -name DEVICE EP4CE22F17C8L
 set_global_assignment -name TOP_LEVEL_ENTITY tp2_e5_ERV25_grupo2
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 24.1STD.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:34:49  APRIL 26, 2025"
-set_global_assignment -name LAST_QUARTUS_VERSION "24.1std.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
@@ -62,8 +62,6 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name QIP_FILE constant0.qip
 set_global_assignment -name SOURCE_FILE btb.h
 set_global_assignment -name VERILOG_FILE btb.v
-set_global_assignment -name BDF_FILE bht_testbench.bdf
-set_global_assignment -name BDF_FILE bht_module.bdf
 set_global_assignment -name VERILOG_FILE bht_btb_controller.v
 set_global_assignment -name QIP_FILE bht_btb_ram.qip
 set_global_assignment -name BDF_FILE bht_btb_module.bdf
@@ -79,7 +77,6 @@ set_global_assignment -name VERILOG_FILE concat_funct.v
 set_global_assignment -name VERILOG_FILE alu_latch.v
 set_global_assignment -name QIP_FILE instruction_constant.qip
 set_global_assignment -name VECTOR_WAVEFORM_FILE first_loop_simulation.vwf
-set_global_assignment -name BDF_FILE bht_btb_module3.bdf
 set_global_assignment -name VERILOG_FILE tag_latch.v
 set_global_assignment -name VERILOG_FILE prediction_module.v
 set_global_assignment -name VERILOG_FILE pc_target_concat.v
@@ -87,4 +84,6 @@ set_global_assignment -name VERILOG_FILE bht_btb_wr_data_builder.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE address_builder.v
+set_global_assignment -name VERILOG_FILE ad_latch.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -4,26 +4,26 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2025  Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera IP License Agreement, or other applicable license
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Altera and sold by Altera or its authorized distributors.  Please
-refer to the Altera Software License Subscription Agreements 
-on the Quartus Prime software download page.
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 224 160)
+	(rect 16 16 280 256)
 	(text "fetch_unit" (rect 5 0 43 12)(font "Arial" ))
-	(text "inst" (rect 8 128 20 140)(font "Arial" ))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -34,53 +34,102 @@ on the Quartus Prime software download page.
 	(port
 		(pt 0 48)
 		(input)
-		(text "stage_clk" (rect 0 0 37 12)(font "Arial" ))
-		(text "stage_clk" (rect 21 43 58 55)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 1))
+		(text "prev_pc[31..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "prev_pc[31..0]" (rect 21 43 78 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "reset" (rect 0 0 20 12)(font "Arial" ))
-		(text "reset" (rect 21 59 41 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 1))
+		(text "pc_real_target[31..0]" (rect 0 0 81 12)(font "Arial" ))
+		(text "pc_real_target[31..0]" (rect 21 59 102 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "stage_ena" (rect 0 0 41 12)(font "Arial" ))
-		(text "stage_ena" (rect 21 75 62 87)(font "Arial" ))
+		(text "flag_real_branch" (rect 0 0 67 12)(font "Arial" ))
+		(text "flag_real_branch" (rect 21 75 88 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 1))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "stage_x" (rect 0 0 31 12)(font "Arial" ))
-		(text "stage_x" (rect 21 91 52 103)(font "Arial" ))
+		(text "prev_branch_prediction" (rect 0 0 94 12)(font "Arial" ))
+		(text "prev_branch_prediction" (rect 21 91 115 103)(font "Arial" ))
 		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
-		(pt 208 32)
+		(pt 0 112)
+		(input)
+		(text "pc_target_prediction[31..0]" (rect 0 0 103 12)(font "Arial" ))
+		(text "pc_target_prediction[31..0]" (rect 21 107 124 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "branch_prediction" (rect 0 0 69 12)(font "Arial" ))
+		(text "branch_prediction" (rect 21 123 90 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "stage_clk" (rect 0 0 37 12)(font "Arial" ))
+		(text "stage_clk" (rect 21 139 58 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 155 41 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "stage_ena" (rect 0 0 41 12)(font "Arial" ))
+		(text "stage_ena" (rect 21 171 62 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "stage_x" (rect 0 0 31 12)(font "Arial" ))
+		(text "stage_x" (rect 21 187 52 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 264 32)
 		(output)
 		(text "instr[31..0]" (rect 0 0 40 12)(font "Arial" ))
-		(text "instr[31..0]" (rect 147 27 187 39)(font "Arial" ))
-		(line (pt 208 32)(pt 192 32)(line_width 3))
+		(text "instr[31..0]" (rect 203 27 243 39)(font "Arial" ))
+		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
 	(port
-		(pt 208 48)
+		(pt 264 48)
 		(output)
 		(text "pc_next[31..0]" (rect 0 0 55 12)(font "Arial" ))
-		(text "pc_next[31..0]" (rect 132 43 187 55)(font "Arial" ))
-		(line (pt 208 48)(pt 192 48)(line_width 3))
+		(text "pc_next[31..0]" (rect 188 43 243 55)(font "Arial" ))
+		(line (pt 264 48)(pt 248 48)(line_width 3))
 	)
 	(port
-		(pt 208 64)
+		(pt 264 64)
 		(output)
 		(text "pc[31..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "pc[31..0]" (rect 154 59 187 71)(font "Arial" ))
-		(line (pt 208 64)(pt 192 64)(line_width 3))
+		(text "pc[31..0]" (rect 210 59 243 71)(font "Arial" ))
+		(line (pt 264 64)(pt 248 64)(line_width 3))
+	)
+	(port
+		(pt 264 80)
+		(output)
+		(text "flush_pipeline" (rect 0 0 51 12)(font "Arial" ))
+		(text "flush_pipeline" (rect 192 75 243 87)(font "Arial" ))
+		(line (pt 264 80)(pt 248 80)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 192 128)(line_width 1))
+		(rectangle (rect 16 16 248 224)(line_width 1))
 	)
 )

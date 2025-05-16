@@ -17,6 +17,13 @@ always @(instr_type) begin
 		R_TYPE: begin
 			imm = 32'd0;		
 		end
+		J_TYPE: begin
+			imm[20] = instr[31];
+			imm[10:1] = instr[30:21];
+			imm[11] =  instr[20];
+			imm[19:12] = instr[19:12];
+			imm[31:21] = 11'd0;
+		end
 		default: begin
 			imm = 32'd0;
 		end
