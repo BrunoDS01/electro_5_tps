@@ -20,7 +20,7 @@ parameter B_TYPE = 3'd3;
 parameter U_TYPE = 3'd4;
 parameter J_TYPE = 3'd5;
 
-always @(imm, pc, instr_type)
+always @(imm, pc, instr_type, rs1)
 begin
 	case (instr_type)
 		J_TYPE: begin

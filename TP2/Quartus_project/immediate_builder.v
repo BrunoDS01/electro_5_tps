@@ -12,12 +12,13 @@ parameter B_TYPE = 3'd3;
 parameter U_TYPE = 3'd4;
 parameter J_TYPE = 3'd5;
 
-always @(instr_type) begin
+always @(instr_type, instr) begin
 	case (instr_type)
 		R_TYPE: begin
 			imm = 32'd0;		
 		end
 		J_TYPE: begin
+			imm[0] = 0;
 			imm[20] = instr[31];
 			imm[10:1] = instr[30:21];
 			imm[11] =  instr[20];

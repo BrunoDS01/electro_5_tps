@@ -2,32 +2,7 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : [
-				{
-					"name" : "c[3]",
-					"strict" : false
-				},
-				{
-					"name" : "c[2]",
-					"strict" : false
-				},
-				{
-					"name" : "c_write_back[3]",
-					"strict" : false
-				},
-				{
-					"name" : "c_write_back[2]",
-					"strict" : false
-				},
-				{
-					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "reset",
-					"strict" : false
-				}
-			]
+			"pins" : []
 		}
 	]
 }

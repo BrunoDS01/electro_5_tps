@@ -28,8 +28,9 @@ always @(
 	prev_branch_prediction,
 	branch_result,
 	pc_target_prediction_actual,
+	branch_prediction_actual,
 	pc_add_build_target,
-	prev_pc	
+	prev_pc
 )begin
 
 	// La predicción fue correcta, sigue pipeline normal (leemos el predictor de saltos actual y tomamos decisión)

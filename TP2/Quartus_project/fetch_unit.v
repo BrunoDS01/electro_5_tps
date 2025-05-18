@@ -30,7 +30,7 @@ always @(posedge stage_clk or posedge reset) begin
 	end
 end
 
-always @(take_new_pc) begin
+always @(take_new_pc, pc_new, pc) begin
 	if (take_new_pc)  
 	begin
 		pc_next = pc_new;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tp2_e5_ERV25_grupo2
-Thu May 15 11:05:43 2025
+Sun May 18 01:14:58 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -17,14 +17,17 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   9. Registers Removed During Synthesis
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
- 12. Source assignments for ram_principal:inst|altsyncram:altsyncram_component|altsyncram_mkh2:auto_generated
- 13. Parameter Settings for User Entity Instance: immediate_builder:inst17
- 14. Parameter Settings for User Entity Instance: opcode_decode:inst16
- 15. Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component
- 16. altsyncram Parameter Settings by Entity Instance
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+ 12. Source assignments for bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated
+ 13. Source assignments for ram_principal:inst|altsyncram:altsyncram_component|altsyncram_mkh2:auto_generated
+ 14. Parameter Settings for User Entity Instance: bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component
+ 15. Parameter Settings for User Entity Instance: address_builder:inst3
+ 16. Parameter Settings for User Entity Instance: opcode_decode:inst16
+ 17. Parameter Settings for User Entity Instance: immediate_builder:inst17
+ 18. Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component
+ 19. altsyncram Parameter Settings by Entity Instance
+ 20. Post-Synthesis Netlist Statistics for Top Partition
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -51,15 +54,15 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 15 11:05:43 2025           ;
+; Analysis & Synthesis Status        ; Successful - Sun May 18 01:14:58 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 6                                               ;
-;     Total combinational functions  ; 2                                               ;
-;     Dedicated logic registers      ; 6                                               ;
-; Total registers                    ; 6                                               ;
+; Total logic elements               ; 0                                               ;
+;     Total combinational functions  ; 0                                               ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
 ; Total pins                         ; 66                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -163,257 +166,364 @@ on the Quartus Prime software download page.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                          ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
-; ram_principal.v                  ; yes             ; User Wizard-Generated File         ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v         ;         ;
-; tp2_e5_ERV25_grupo2.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/tp2_e5_ERV25_grupo2.bdf ;         ;
-; fetch_unit.v                     ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/fetch_unit.v            ;         ;
-; opcode_decode.v                  ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/opcode_decode.v         ;         ;
-; immediate_builder.v              ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/immediate_builder.v     ;         ;
-; decode_latch.v                   ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/decode_latch.v          ;         ;
-; register_bank.v                  ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v         ;         ;
-; op_latch.v                       ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/op_latch.v              ;         ;
-; operand_build.v                  ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/operand_build.v         ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/alu.v                   ;         ;
-; concat_funct.v                   ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/concat_funct.v          ;         ;
-; alu_latch.v                      ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/alu_latch.v             ;         ;
-; instruction_constant.v           ; yes             ; User Wizard-Generated File         ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v  ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf                                 ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                          ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc                                    ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc                                 ;         ;
-; aglobal241.inc                   ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                                 ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc                                  ;         ;
-; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altrom.inc                                     ;         ;
-; altram.inc                       ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altram.inc                                     ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc                                   ;         ;
-; db/altsyncram_mkh2.tdf           ; yes             ; Auto-Generated Megafunction        ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_mkh2.tdf  ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                            ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
+; ram_principal.v                  ; yes             ; User Wizard-Generated File         ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v           ;         ;
+; tp2_e5_ERV25_grupo2.bdf          ; yes             ; User Block Diagram/Schematic File  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/tp2_e5_ERV25_grupo2.bdf   ;         ;
+; fetch_unit.v                     ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/fetch_unit.v              ;         ;
+; bht_btb_ram.v                    ; yes             ; User Wizard-Generated File         ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v             ;         ;
+; bht_btb_module.bdf               ; yes             ; User Block Diagram/Schematic File  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_module.bdf        ;         ;
+; opcode_decode.v                  ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/opcode_decode.v           ;         ;
+; immediate_builder.v              ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/immediate_builder.v       ;         ;
+; decode_latch.v                   ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/decode_latch.v            ;         ;
+; register_bank.v                  ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v           ;         ;
+; op_latch.v                       ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/op_latch.v                ;         ;
+; operand_build.v                  ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/operand_build.v           ;         ;
+; alu.v                            ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/alu.v                     ;         ;
+; concat_funct.v                   ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/concat_funct.v            ;         ;
+; alu_latch.v                      ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/alu_latch.v               ;         ;
+; instruction_constant.v           ; yes             ; User Wizard-Generated File         ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v    ;         ;
+; tag_latch.v                      ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/tag_latch.v               ;         ;
+; prediction_module.v              ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/prediction_module.v       ;         ;
+; pc_target_concat.v               ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/pc_target_concat.v        ;         ;
+; bht_btb_wr_data_builder.v        ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_wr_data_builder.v ;         ;
+; address_builder.v                ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/address_builder.v         ;         ;
+; ad_latch.v                       ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ad_latch.v                ;         ;
+; next_pc_decision_module.v        ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/next_pc_decision_module.v ;         ;
+; branch_result_module.v           ; yes             ; User Verilog HDL File              ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/branch_result_module.v    ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf                                   ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                            ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc                                      ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc                                   ;         ;
+; aglobal241.inc                   ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                                   ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc                                    ;         ;
+; altrom.inc                       ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altrom.inc                                       ;         ;
+; altram.inc                       ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altram.inc                                       ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc                                     ;         ;
+; db/altsyncram_c2o1.tdf           ; yes             ; Auto-Generated Megafunction        ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf    ;         ;
+; db/altsyncram_mkh2.tdf           ; yes             ; Auto-Generated Megafunction        ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_mkh2.tdf    ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 6         ;
-;                                             ;           ;
-; Total combinational functions               ; 2         ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 0         ;
-;     -- 3 input functions                    ; 0         ;
-;     -- <=2 input functions                  ; 2         ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2         ;
-;     -- arithmetic mode                      ; 0         ;
-;                                             ;           ;
-; Total registers                             ; 6         ;
-;     -- Dedicated logic registers            ; 6         ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 66        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 6         ;
-; Total fan-out                               ; 91        ;
-; Average fan-out                             ; 0.65      ;
-+---------------------------------------------+-----------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+;                                             ;              ;
+; Total combinational functions               ; 0            ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 0            ;
+;     -- 3 input functions                    ; 0            ;
+;     -- <=2 input functions                  ; 0            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 0            ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 66           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; c[31]~output ;
+; Maximum fan-out                             ; 1            ;
+; Total fan-out                               ; 66           ;
+; Average fan-out                             ; 0.50         ;
++---------------------------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                    ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Entity Name         ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+---------------------+--------------+
-; |tp2_e5_ERV25_grupo2       ; 2 (0)               ; 6 (0)                     ; 0           ; 0            ; 0       ; 0         ; 66   ; 0            ; |tp2_e5_ERV25_grupo2                      ; tp2_e5_ERV25_grupo2 ; work         ;
-;    |alu_latch:inst7|       ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu_latch:inst7      ; alu_latch           ; work         ;
-;    |decode_latch:inst4|    ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|decode_latch:inst4   ; decode_latch        ; work         ;
-;    |fetch_unit:inst2|      ; 0 (0)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst2     ; fetch_unit          ; work         ;
-;    |op_latch:inst29|       ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|op_latch:inst29      ; op_latch            ; work         ;
-;    |operand_build:inst24|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|operand_build:inst24 ; operand_build       ; work         ;
-;    |register_bank:inst34|  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|register_bank:inst34 ; register_bank       ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Entity Name         ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+---------------------+--------------+
+; |tp2_e5_ERV25_grupo2       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 66   ; 0            ; |tp2_e5_ERV25_grupo2 ; tp2_e5_ERV25_grupo2 ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                     ;
-+--------+--------------+---------+--------------+--------------+--------------------------------------------------+------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                  ; IP Include File        ;
-+--------+--------------+---------+--------------+--------------+--------------------------------------------------+------------------------+
-; Altera ; RAM: 2-PORT  ; 24.1    ; N/A          ; N/A          ; |tp2_e5_ERV25_grupo2|ram_principal:inst          ; ram_principal.v        ;
-; Altera ; LPM_CONSTANT ; 24.1    ; N/A          ; N/A          ; |tp2_e5_ERV25_grupo2|instruction_constant:inst10 ; instruction_constant.v ;
-+--------+--------------+---------+--------------+--------------+--------------------------------------------------+------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------------+------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                             ; IP Include File        ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------------+------------------------+
+; Altera ; RAM: 2-PORT  ; 24.1    ; N/A          ; N/A          ; |tp2_e5_ERV25_grupo2|ram_principal:inst                     ; ram_principal.v        ;
+; Altera ; LPM_CONSTANT ; 23.1    ; N/A          ; N/A          ; |tp2_e5_ERV25_grupo2|instruction_constant:inst10            ; instruction_constant.v ;
+; Altera ; RAM: 2-PORT  ; 24.1    ; N/A          ; N/A          ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|bht_btb_ram:inst ; bht_btb_ram.v          ;
++--------+--------------+---------+--------------+--------------+-------------------------------------------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                ;
-+----------------------------------------------------+----------------------------------------------+
-; Register name                                      ; Reason for Removal                           ;
-+----------------------------------------------------+----------------------------------------------+
-; register_bank:inst34|x[1][31]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][30]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][29]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][28]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][27]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][26]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][25]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][24]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][23]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][22]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][21]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][20]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][19]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][18]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][17]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][16]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][15]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][14]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][13]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][12]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][11]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][10]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][9]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][8]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][7]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][6]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][5]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][4]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][3]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[1][1]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][31]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][30]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][29]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][28]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][27]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][26]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][25]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][24]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][23]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][22]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][21]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][20]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][19]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][18]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][17]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][16]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][15]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][14]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][13]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][12]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][11]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][10]                      ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][9]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][8]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][7]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][6]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][5]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][4]                       ; Stuck at GND due to stuck port data_in       ;
-; register_bank:inst34|x[2][3]                       ; Stuck at GND due to stuck port data_in       ;
-; fetch_unit:inst2|instr[2,3,6,12..15,17..19,21..31] ; Stuck at GND due to stuck port data_in       ;
-; decode_latch:inst4|rs1_out[0,2..4]                 ; Stuck at GND due to stuck port data_in       ;
-; decode_latch:inst4|rs2_out[1..4]                   ; Stuck at GND due to stuck port data_in       ;
-; decode_latch:inst4|funct_out[0..9]                 ; Stuck at GND due to stuck port data_in       ;
-; decode_latch:inst4|opcode_out[2,3,6]               ; Stuck at GND due to stuck port data_in       ;
-; op_latch:inst29|funct_out[0..9]                    ; Stuck at GND due to stuck port data_in       ;
-; op_latch:inst29|opcode_out[2,3,6]                  ; Stuck at GND due to stuck port data_in       ;
-; fetch_unit:inst2|pc[2..31]                         ; Lost fanout                                  ;
-; op_latch:inst29|rs2_data_out[1,3..9,11..31]        ; Merged with op_latch:inst29|rs2_data_out[10] ;
-; op_latch:inst29|opcode_out[1,4,5]                  ; Merged with op_latch:inst29|opcode_out[0]    ;
-; op_latch:inst29|rs2_data_out[2]                    ; Merged with op_latch:inst29|rs2_data_out[0]  ;
-; op_latch:inst29|rs1_data_out[3..9,11..31]          ; Merged with op_latch:inst29|rs1_data_out[10] ;
-; op_latch:inst29|rs1_data_out[1,2]                  ; Merged with op_latch:inst29|rs1_data_out[0]  ;
-; decode_latch:inst4|opcode_out[1,4,5]               ; Merged with decode_latch:inst4|opcode_out[0] ;
-; decode_latch:inst4|rs1_out[1]                      ; Merged with decode_latch:inst4|opcode_out[0] ;
-; decode_latch:inst4|rs2_out[0]                      ; Merged with decode_latch:inst4|opcode_out[0] ;
-; fetch_unit:inst2|instr[1,4,5,16,20]                ; Merged with fetch_unit:inst2|instr[0]        ;
-; register_bank:inst34|x[1][0]                       ; Merged with fetch_unit:inst2|instr[0]        ;
-; register_bank:inst34|x[1][2]                       ; Merged with fetch_unit:inst2|instr[0]        ;
-; register_bank:inst34|x[2][0]                       ; Merged with fetch_unit:inst2|instr[0]        ;
-; register_bank:inst34|x[2][1]                       ; Merged with fetch_unit:inst2|instr[0]        ;
-; register_bank:inst34|x[2][2]                       ; Merged with fetch_unit:inst2|instr[0]        ;
-; op_latch:inst29|rs1_data_out[10]                   ; Stuck at GND due to stuck port data_in       ;
-; op_latch:inst29|rs2_data_out[10]                   ; Stuck at GND due to stuck port data_in       ;
-; alu_latch:inst7|c_out[4..31]                       ; Stuck at GND due to stuck port data_in       ;
-; op_latch:inst29|rs1_data_out[0]                    ; Merged with op_latch:inst29|rs2_data_out[0]  ;
-; alu_latch:inst7|c_out[0,1]                         ; Stuck at GND due to stuck port data_in       ;
-; Total Number of Removed Registers = 255            ;                                              ;
-+----------------------------------------------------+----------------------------------------------+
++----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                           ;
++-----------------------------------------------------+----------------------------------------+
+; Register name                                       ; Reason for Removal                     ;
++-----------------------------------------------------+----------------------------------------+
+; register_bank:inst34|x[1][31]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][30]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][29]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][28]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][27]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][26]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][25]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][24]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][23]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][22]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][21]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][20]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][19]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][18]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][17]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][16]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][15]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][14]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][13]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][12]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][11]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][10]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][9]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][8]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][7]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][6]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][5]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][4]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][3]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[1][1]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][31]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][30]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][29]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][28]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][27]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][26]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][25]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][24]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][23]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][22]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][21]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][20]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][19]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][18]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][17]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][16]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][15]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][14]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][13]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][12]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][11]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][10]                       ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][9]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][8]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][7]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][6]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][5]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][4]                        ; Stuck at GND due to stuck port data_in ;
+; register_bank:inst34|x[2][3]                        ; Stuck at GND due to stuck port data_in ;
+; fetch_unit:inst6|instr[4,12,13,15..31]              ; Stuck at GND due to stuck port data_in ;
+; ad_latch:inst15|pc_target_ad_out[0..31]             ; Stuck at GND due to stuck port data_in ;
+; ad_latch:inst15|flag_branch_ad_out[0,1]             ; Stuck at GND due to stuck port data_in ;
+; decode_latch:inst12|rs1_out[0..4]                   ; Stuck at GND due to stuck port data_in ;
+; decode_latch:inst12|rs2_out[0..4]                   ; Stuck at GND due to stuck port data_in ;
+; decode_latch:inst12|funct_out[0,1,3..9]             ; Stuck at GND due to stuck port data_in ;
+; decode_latch:inst12|imm_out[0..31]                  ; Stuck at GND due to stuck port data_in ;
+; decode_latch:inst12|opcode_out[4]                   ; Stuck at GND due to stuck port data_in ;
+; op_latch:inst29|funct_out[0,1,3..9]                 ; Stuck at GND due to stuck port data_in ;
+; op_latch:inst29|opcode_out[4]                       ; Stuck at GND due to stuck port data_in ;
+; op_latch:inst29|opcode_out[6]                       ; Lost fanout                            ;
+; decode_latch:inst12|opcode_out[6]                   ; Lost fanout                            ;
+; fetch_unit:inst6|instr[6]                           ; Lost fanout                            ;
+; op_latch:inst29|opcode_out[5]                       ; Lost fanout                            ;
+; decode_latch:inst12|opcode_out[5]                   ; Lost fanout                            ;
+; fetch_unit:inst6|instr[5]                           ; Lost fanout                            ;
+; op_latch:inst29|opcode_out[3]                       ; Lost fanout                            ;
+; decode_latch:inst12|opcode_out[3]                   ; Lost fanout                            ;
+; fetch_unit:inst6|instr[3]                           ; Lost fanout                            ;
+; op_latch:inst29|opcode_out[2]                       ; Lost fanout                            ;
+; decode_latch:inst12|opcode_out[2]                   ; Lost fanout                            ;
+; fetch_unit:inst6|instr[2]                           ; Lost fanout                            ;
+; op_latch:inst29|opcode_out[1]                       ; Lost fanout                            ;
+; decode_latch:inst12|opcode_out[1]                   ; Lost fanout                            ;
+; fetch_unit:inst6|instr[1]                           ; Lost fanout                            ;
+; op_latch:inst29|opcode_out[0]                       ; Lost fanout                            ;
+; decode_latch:inst12|opcode_out[0]                   ; Lost fanout                            ;
+; fetch_unit:inst6|instr[0]                           ; Lost fanout                            ;
+; op_latch:inst29|rs1_data_out[0..31]                 ; Lost fanout                            ;
+; op_latch:inst29|rs2_data_out[2..31]                 ; Lost fanout                            ;
+; register_bank:inst34|x[1][2]                        ; Lost fanout                            ;
+; register_bank:inst34|x[2][2]                        ; Lost fanout                            ;
+; op_latch:inst29|rs2_data_out[1]                     ; Lost fanout                            ;
+; register_bank:inst34|x[2][1]                        ; Lost fanout                            ;
+; op_latch:inst29|rs2_data_out[0]                     ; Lost fanout                            ;
+; register_bank:inst34|x[1][0]                        ; Lost fanout                            ;
+; register_bank:inst34|x[2][0]                        ; Lost fanout                            ;
+; fetch_unit:inst6|pc[0..31]                          ; Lost fanout                            ;
+; ad_latch:inst15|prev_counter_out[0,1]               ; Lost fanout                            ;
+; ad_latch:inst15|prev_valid_out                      ; Lost fanout                            ;
+; ad_latch:inst15|prev_branch_prediction_out          ; Lost fanout                            ;
+; ad_latch:inst15|prev_pc_out[0..31]                  ; Lost fanout                            ;
+; bht_btb_module:inst11|tag_latch:inst2|out_tag[0..4] ; Lost fanout                            ;
+; decode_latch:inst12|branch_prediction_out           ; Lost fanout                            ;
+; decode_latch:inst12|valid_out                       ; Lost fanout                            ;
+; decode_latch:inst12|counter_out[0,1]                ; Lost fanout                            ;
+; decode_latch:inst12|pc_out[0..31]                   ; Lost fanout                            ;
+; alu_latch:inst7|c_out[0..31]                        ; Stuck at GND due to stuck port data_in ;
+; op_latch:inst29|funct_out[2]                        ; Lost fanout                            ;
+; decode_latch:inst12|funct_out[2]                    ; Lost fanout                            ;
+; fetch_unit:inst6|instr[14]                          ; Lost fanout                            ;
+; Total Number of Removed Registers = 406             ;                                        ;
++-----------------------------------------------------+----------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                  ;
-+-------------------------------+---------------------------+----------------------------------------------------------------------------------+
-; Register name                 ; Reason for Removal        ; Registers Removed due to This Register                                           ;
-+-------------------------------+---------------------------+----------------------------------------------------------------------------------+
-; fetch_unit:inst2|instr[31]    ; Stuck at GND              ; decode_latch:inst4|funct_out[9], op_latch:inst29|funct_out[9],                   ;
-;                               ; due to stuck port data_in ; alu_latch:inst7|c_out[31], alu_latch:inst7|c_out[30], alu_latch:inst7|c_out[29], ;
-;                               ;                           ; alu_latch:inst7|c_out[28], alu_latch:inst7|c_out[27], alu_latch:inst7|c_out[26], ;
-;                               ;                           ; alu_latch:inst7|c_out[25], alu_latch:inst7|c_out[24], alu_latch:inst7|c_out[23], ;
-;                               ;                           ; alu_latch:inst7|c_out[22], alu_latch:inst7|c_out[21], alu_latch:inst7|c_out[20], ;
-;                               ;                           ; alu_latch:inst7|c_out[19], alu_latch:inst7|c_out[18], alu_latch:inst7|c_out[17], ;
-;                               ;                           ; alu_latch:inst7|c_out[16], alu_latch:inst7|c_out[15], alu_latch:inst7|c_out[14], ;
-;                               ;                           ; alu_latch:inst7|c_out[13], alu_latch:inst7|c_out[12], alu_latch:inst7|c_out[11], ;
-;                               ;                           ; alu_latch:inst7|c_out[10], alu_latch:inst7|c_out[9], alu_latch:inst7|c_out[8],   ;
-;                               ;                           ; alu_latch:inst7|c_out[7], alu_latch:inst7|c_out[6], alu_latch:inst7|c_out[5],    ;
-;                               ;                           ; alu_latch:inst7|c_out[4], alu_latch:inst7|c_out[0], alu_latch:inst7|c_out[1]     ;
-; register_bank:inst34|x[1][10] ; Stuck at GND              ; op_latch:inst29|rs1_data_out[10], op_latch:inst29|rs2_data_out[10]               ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[30]    ; Stuck at GND              ; decode_latch:inst4|funct_out[8], op_latch:inst29|funct_out[8]                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[29]    ; Stuck at GND              ; decode_latch:inst4|funct_out[7], op_latch:inst29|funct_out[7]                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[28]    ; Stuck at GND              ; decode_latch:inst4|funct_out[6], op_latch:inst29|funct_out[6]                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[27]    ; Stuck at GND              ; decode_latch:inst4|funct_out[5], op_latch:inst29|funct_out[5]                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[26]    ; Stuck at GND              ; decode_latch:inst4|funct_out[4], op_latch:inst29|funct_out[4]                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[25]    ; Stuck at GND              ; decode_latch:inst4|funct_out[3], op_latch:inst29|funct_out[3]                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[14]    ; Stuck at GND              ; decode_latch:inst4|funct_out[2], op_latch:inst29|funct_out[2]                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[13]    ; Stuck at GND              ; decode_latch:inst4|funct_out[1], op_latch:inst29|funct_out[1]                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[12]    ; Stuck at GND              ; decode_latch:inst4|funct_out[0], op_latch:inst29|funct_out[0]                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[6]     ; Stuck at GND              ; decode_latch:inst4|opcode_out[6], op_latch:inst29|opcode_out[6]                  ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[3]     ; Stuck at GND              ; decode_latch:inst4|opcode_out[3], op_latch:inst29|opcode_out[3]                  ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[2]     ; Stuck at GND              ; decode_latch:inst4|opcode_out[2], op_latch:inst29|opcode_out[2]                  ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[24]    ; Stuck at GND              ; decode_latch:inst4|rs2_out[4]                                                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[23]    ; Stuck at GND              ; decode_latch:inst4|rs2_out[3]                                                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[22]    ; Stuck at GND              ; decode_latch:inst4|rs2_out[2]                                                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[21]    ; Stuck at GND              ; decode_latch:inst4|rs2_out[1]                                                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[19]    ; Stuck at GND              ; decode_latch:inst4|rs1_out[4]                                                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[18]    ; Stuck at GND              ; decode_latch:inst4|rs1_out[3]                                                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[17]    ; Stuck at GND              ; decode_latch:inst4|rs1_out[2]                                                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-; fetch_unit:inst2|instr[15]    ; Stuck at GND              ; decode_latch:inst4|rs1_out[0]                                                    ;
-;                               ; due to stuck port data_in ;                                                                                  ;
-+-------------------------------+---------------------------+----------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                          ;
++---------------------------------------+---------------------------+----------------------------------------------------------------------------------+
+; Register name                         ; Reason for Removal        ; Registers Removed due to This Register                                           ;
++---------------------------------------+---------------------------+----------------------------------------------------------------------------------+
+; fetch_unit:inst6|instr[4]             ; Stuck at GND              ; decode_latch:inst12|opcode_out[4], op_latch:inst29|opcode_out[4],                ;
+;                                       ; due to stuck port data_in ; op_latch:inst29|opcode_out[6], decode_latch:inst12|opcode_out[6],                ;
+;                                       ;                           ; fetch_unit:inst6|instr[6], op_latch:inst29|opcode_out[5],                        ;
+;                                       ;                           ; decode_latch:inst12|opcode_out[5], fetch_unit:inst6|instr[5],                    ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[28], op_latch:inst29|rs1_data_out[25],              ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[24], op_latch:inst29|rs1_data_out[23],              ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[22], op_latch:inst29|rs1_data_out[21],              ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[20], op_latch:inst29|rs1_data_out[19],              ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[18], op_latch:inst29|rs1_data_out[17],              ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[16], op_latch:inst29|rs1_data_out[15],              ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[14], op_latch:inst29|rs1_data_out[13],              ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[12], op_latch:inst29|rs1_data_out[11],              ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[10], op_latch:inst29|rs1_data_out[9],               ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[8], op_latch:inst29|rs1_data_out[7],                ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[6], op_latch:inst29|rs1_data_out[5],                ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[4], op_latch:inst29|rs1_data_out[3],                ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[2], op_latch:inst29|rs1_data_out[1],                ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[0], op_latch:inst29|rs2_data_out[31],               ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[30], op_latch:inst29|rs2_data_out[29],              ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[28], op_latch:inst29|rs2_data_out[27],              ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[26], op_latch:inst29|rs2_data_out[25],              ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[24], op_latch:inst29|rs2_data_out[23],              ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[22], op_latch:inst29|rs2_data_out[21],              ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[20], op_latch:inst29|rs2_data_out[19],              ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[18], op_latch:inst29|rs2_data_out[17],              ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[16], op_latch:inst29|rs2_data_out[15],              ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[14], op_latch:inst29|rs2_data_out[13],              ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[12], op_latch:inst29|rs2_data_out[11],              ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[10], op_latch:inst29|rs2_data_out[9],               ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[8], op_latch:inst29|rs2_data_out[7],                ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[6], op_latch:inst29|rs2_data_out[5],                ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[4], op_latch:inst29|rs2_data_out[3],                ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[2], op_latch:inst29|rs2_data_out[1],                ;
+;                                       ;                           ; op_latch:inst29|rs2_data_out[0]                                                  ;
+; fetch_unit:inst6|instr[31]            ; Stuck at GND              ; decode_latch:inst12|funct_out[9], op_latch:inst29|funct_out[9],                  ;
+;                                       ; due to stuck port data_in ; op_latch:inst29|rs1_data_out[31], op_latch:inst29|rs1_data_out[30],              ;
+;                                       ;                           ; op_latch:inst29|rs1_data_out[29], alu_latch:inst7|c_out[31],                     ;
+;                                       ;                           ; alu_latch:inst7|c_out[30], alu_latch:inst7|c_out[29], alu_latch:inst7|c_out[28], ;
+;                                       ;                           ; alu_latch:inst7|c_out[27], alu_latch:inst7|c_out[26], alu_latch:inst7|c_out[25], ;
+;                                       ;                           ; alu_latch:inst7|c_out[24], alu_latch:inst7|c_out[23], alu_latch:inst7|c_out[22], ;
+;                                       ;                           ; alu_latch:inst7|c_out[21], alu_latch:inst7|c_out[20], alu_latch:inst7|c_out[19], ;
+;                                       ;                           ; alu_latch:inst7|c_out[18], alu_latch:inst7|c_out[17], alu_latch:inst7|c_out[16], ;
+;                                       ;                           ; alu_latch:inst7|c_out[15], alu_latch:inst7|c_out[14], alu_latch:inst7|c_out[13], ;
+;                                       ;                           ; alu_latch:inst7|c_out[12], alu_latch:inst7|c_out[11], alu_latch:inst7|c_out[10], ;
+;                                       ;                           ; alu_latch:inst7|c_out[9], alu_latch:inst7|c_out[8], alu_latch:inst7|c_out[7],    ;
+;                                       ;                           ; alu_latch:inst7|c_out[6], alu_latch:inst7|c_out[5], alu_latch:inst7|c_out[4],    ;
+;                                       ;                           ; alu_latch:inst7|c_out[3], alu_latch:inst7|c_out[2], alu_latch:inst7|c_out[1],    ;
+;                                       ;                           ; alu_latch:inst7|c_out[0]                                                         ;
+; ad_latch:inst15|pc_target_ad_out[12]  ; Stuck at GND              ; ad_latch:inst15|prev_pc_out[5], ad_latch:inst15|prev_pc_out[4],                  ;
+;                                       ; due to stuck port data_in ; ad_latch:inst15|prev_pc_out[3], ad_latch:inst15|prev_pc_out[2],                  ;
+;                                       ;                           ; decode_latch:inst12|pc_out[5], decode_latch:inst12|pc_out[4],                    ;
+;                                       ;                           ; decode_latch:inst12|pc_out[3], decode_latch:inst12|pc_out[2]                     ;
+; fetch_unit:inst6|instr[19]            ; Stuck at GND              ; decode_latch:inst12|rs1_out[4], register_bank:inst34|x[1][2],                    ;
+;                                       ; due to stuck port data_in ; register_bank:inst34|x[2][2], register_bank:inst34|x[1][0],                      ;
+;                                       ;                           ; register_bank:inst34|x[2][0]                                                     ;
+; ad_latch:inst15|flag_branch_ad_out[1] ; Stuck at GND              ; ad_latch:inst15|prev_counter_out[1], ad_latch:inst15|prev_counter_out[0],        ;
+;                                       ; due to stuck port data_in ; decode_latch:inst12|counter_out[1], decode_latch:inst12|counter_out[0]           ;
+; fetch_unit:inst6|instr[25]            ; Stuck at GND              ; decode_latch:inst12|funct_out[3], op_latch:inst29|funct_out[3]                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[30]            ; Stuck at GND              ; decode_latch:inst12|funct_out[8], op_latch:inst29|funct_out[8]                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[29]            ; Stuck at GND              ; decode_latch:inst12|funct_out[7], op_latch:inst29|funct_out[7]                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[28]            ; Stuck at GND              ; decode_latch:inst12|funct_out[6], op_latch:inst29|funct_out[6]                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[27]            ; Stuck at GND              ; decode_latch:inst12|funct_out[5], op_latch:inst29|funct_out[5]                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[26]            ; Stuck at GND              ; decode_latch:inst12|funct_out[4], op_latch:inst29|funct_out[4]                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; op_latch:inst29|opcode_out[1]         ; Lost Fanouts              ; decode_latch:inst12|opcode_out[1], fetch_unit:inst6|instr[1]                     ;
+; ad_latch:inst15|pc_target_ad_out[31]  ; Stuck at GND              ; ad_latch:inst15|prev_branch_prediction_out,                                      ;
+;                                       ; due to stuck port data_in ; decode_latch:inst12|branch_prediction_out                                        ;
+; ad_latch:inst15|pc_target_ad_out[1]   ; Stuck at GND              ; ad_latch:inst15|prev_pc_out[1], decode_latch:inst12|pc_out[1]                    ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; ad_latch:inst15|pc_target_ad_out[0]   ; Stuck at GND              ; ad_latch:inst15|prev_pc_out[0], decode_latch:inst12|pc_out[0]                    ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; ad_latch:inst15|flag_branch_ad_out[0] ; Stuck at GND              ; ad_latch:inst15|prev_valid_out, decode_latch:inst12|valid_out                    ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; op_latch:inst29|opcode_out[3]         ; Lost Fanouts              ; decode_latch:inst12|opcode_out[3], fetch_unit:inst6|instr[3]                     ;
+; op_latch:inst29|opcode_out[2]         ; Lost Fanouts              ; decode_latch:inst12|opcode_out[2], fetch_unit:inst6|instr[2]                     ;
+; fetch_unit:inst6|instr[13]            ; Stuck at GND              ; decode_latch:inst12|funct_out[1], op_latch:inst29|funct_out[1]                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[12]            ; Stuck at GND              ; decode_latch:inst12|funct_out[0], op_latch:inst29|funct_out[0]                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; op_latch:inst29|opcode_out[0]         ; Lost Fanouts              ; decode_latch:inst12|opcode_out[0], fetch_unit:inst6|instr[0]                     ;
+; op_latch:inst29|funct_out[2]          ; Lost Fanouts              ; decode_latch:inst12|funct_out[2], fetch_unit:inst6|instr[14]                     ;
+; fetch_unit:inst6|instr[22]            ; Stuck at GND              ; decode_latch:inst12|rs2_out[2]                                                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[21]            ; Stuck at GND              ; decode_latch:inst12|rs2_out[1]                                                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[20]            ; Stuck at GND              ; decode_latch:inst12|rs2_out[0]                                                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[18]            ; Stuck at GND              ; decode_latch:inst12|rs1_out[3]                                                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[17]            ; Stuck at GND              ; decode_latch:inst12|rs1_out[2]                                                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[16]            ; Stuck at GND              ; decode_latch:inst12|rs1_out[1]                                                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[15]            ; Stuck at GND              ; decode_latch:inst12|rs1_out[0]                                                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; register_bank:inst34|x[1][1]          ; Stuck at GND              ; register_bank:inst34|x[2][1]                                                     ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; fetch_unit:inst6|instr[24]            ; Stuck at GND              ; decode_latch:inst12|rs2_out[4]                                                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; ad_latch:inst15|prev_pc_out[31]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[31]                                                   ;
+; ad_latch:inst15|prev_pc_out[30]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[30]                                                   ;
+; ad_latch:inst15|prev_pc_out[29]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[29]                                                   ;
+; ad_latch:inst15|prev_pc_out[28]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[28]                                                   ;
+; ad_latch:inst15|prev_pc_out[27]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[27]                                                   ;
+; ad_latch:inst15|prev_pc_out[26]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[26]                                                   ;
+; ad_latch:inst15|prev_pc_out[25]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[25]                                                   ;
+; ad_latch:inst15|prev_pc_out[24]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[24]                                                   ;
+; ad_latch:inst15|prev_pc_out[23]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[23]                                                   ;
+; ad_latch:inst15|prev_pc_out[22]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[22]                                                   ;
+; ad_latch:inst15|prev_pc_out[21]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[21]                                                   ;
+; ad_latch:inst15|prev_pc_out[20]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[20]                                                   ;
+; fetch_unit:inst6|instr[23]            ; Stuck at GND              ; decode_latch:inst12|rs2_out[3]                                                   ;
+;                                       ; due to stuck port data_in ;                                                                                  ;
+; ad_latch:inst15|prev_pc_out[18]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[18]                                                   ;
+; ad_latch:inst15|prev_pc_out[17]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[17]                                                   ;
+; ad_latch:inst15|prev_pc_out[16]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[16]                                                   ;
+; ad_latch:inst15|prev_pc_out[15]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[15]                                                   ;
+; ad_latch:inst15|prev_pc_out[14]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[14]                                                   ;
+; ad_latch:inst15|prev_pc_out[13]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[13]                                                   ;
+; ad_latch:inst15|prev_pc_out[19]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[19]                                                   ;
+; ad_latch:inst15|prev_pc_out[11]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[11]                                                   ;
+; ad_latch:inst15|prev_pc_out[10]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[10]                                                   ;
+; ad_latch:inst15|prev_pc_out[9]        ; Lost Fanouts              ; decode_latch:inst12|pc_out[9]                                                    ;
+; ad_latch:inst15|prev_pc_out[8]        ; Lost Fanouts              ; decode_latch:inst12|pc_out[8]                                                    ;
+; ad_latch:inst15|prev_pc_out[7]        ; Lost Fanouts              ; decode_latch:inst12|pc_out[7]                                                    ;
+; ad_latch:inst15|prev_pc_out[6]        ; Lost Fanouts              ; decode_latch:inst12|pc_out[6]                                                    ;
+; ad_latch:inst15|prev_pc_out[12]       ; Lost Fanouts              ; decode_latch:inst12|pc_out[12]                                                   ;
++---------------------------------------+---------------------------+----------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -421,14 +531,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 6     ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 6     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated ;
++---------------------------------+--------------------+------+----------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                             ;
++---------------------------------+--------------------+------+----------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                              ;
++---------------------------------+--------------------+------+----------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------+
@@ -440,18 +559,79 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+--------------------------------------------+
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: immediate_builder:inst17 ;
-+----------------+-------+----------------------------------------------+
-; Parameter Name ; Value ; Type                                         ;
-+----------------+-------+----------------------------------------------+
-; R_TYPE         ; 000   ; Unsigned Binary                              ;
-; I_TYPE         ; 001   ; Unsigned Binary                              ;
-; S_TYPE         ; 010   ; Unsigned Binary                              ;
-; B_TYPE         ; 011   ; Unsigned Binary                              ;
-; U_TYPE         ; 100   ; Unsigned Binary                              ;
-; J_TYPE         ; 101   ; Unsigned Binary                              ;
-+----------------+-------+----------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+---------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                    ;
++------------------------------------+----------------------+---------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                 ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                              ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                            ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                            ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                          ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                 ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                 ;
+; WIDTH_A                            ; 32                   ; Signed Integer                                          ;
+; WIDTHAD_A                          ; 6                    ; Signed Integer                                          ;
+; NUMWORDS_A                         ; 64                   ; Signed Integer                                          ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                 ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                 ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                 ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                 ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                 ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                 ;
+; WIDTH_B                            ; 32                   ; Signed Integer                                          ;
+; WIDTHAD_B                          ; 6                    ; Signed Integer                                          ;
+; NUMWORDS_B                         ; 64                   ; Signed Integer                                          ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                 ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                 ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                 ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                 ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                 ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                 ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                 ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                 ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                 ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                 ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                 ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                 ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                          ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                 ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                 ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                 ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                 ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                                 ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                 ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                 ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                 ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                 ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                 ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                 ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                 ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                 ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                 ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                 ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                 ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                 ;
+; CBXI_PARAMETER                     ; altsyncram_c2o1      ; Untyped                                                 ;
++------------------------------------+----------------------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: address_builder:inst3 ;
++----------------+-------+-------------------------------------------+
+; Parameter Name ; Value ; Type                                      ;
++----------------+-------+-------------------------------------------+
+; R_TYPE         ; 000   ; Unsigned Binary                           ;
+; I_TYPE         ; 001   ; Unsigned Binary                           ;
+; S_TYPE         ; 010   ; Unsigned Binary                           ;
+; B_TYPE         ; 011   ; Unsigned Binary                           ;
+; U_TYPE         ; 100   ; Unsigned Binary                           ;
+; J_TYPE         ; 101   ; Unsigned Binary                           ;
++----------------+-------+-------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -467,6 +647,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; U_TYPE         ; 100   ; Unsigned Binary                          ;
 ; J_TYPE         ; 101   ; Unsigned Binary                          ;
 +----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: immediate_builder:inst17 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; R_TYPE         ; 000   ; Unsigned Binary                              ;
+; I_TYPE         ; 001   ; Unsigned Binary                              ;
+; S_TYPE         ; 010   ; Unsigned Binary                              ;
+; B_TYPE         ; 011   ; Unsigned Binary                              ;
+; U_TYPE         ; 100   ; Unsigned Binary                              ;
+; J_TYPE         ; 101   ; Unsigned Binary                              ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -531,24 +726,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                               ;
-+-------------------------------------------+----------------------------------------------------+
-; Name                                      ; Value                                              ;
-+-------------------------------------------+----------------------------------------------------+
-; Number of entity instances                ; 1                                                  ;
-; Entity Instance                           ; ram_principal:inst|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                    ;
-;     -- WIDTH_A                            ; 32                                                 ;
-;     -- NUMWORDS_A                         ; 2048                                               ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                       ;
-;     -- WIDTH_B                            ; 32                                                 ;
-;     -- NUMWORDS_B                         ; 2048                                               ;
-;     -- ADDRESS_REG_B                      ; CLOCK0                                             ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                       ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                               ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                          ;
-+-------------------------------------------+----------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                   ;
++-------------------------------------------+------------------------------------------------------------------------+
+; Name                                      ; Value                                                                  ;
++-------------------------------------------+------------------------------------------------------------------------+
+; Number of entity instances                ; 2                                                                      ;
+; Entity Instance                           ; bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                              ;
+;     -- WIDTH_A                            ; 32                                                                     ;
+;     -- NUMWORDS_A                         ; 64                                                                     ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                           ;
+;     -- WIDTH_B                            ; 32                                                                     ;
+;     -- NUMWORDS_B                         ; 64                                                                     ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                 ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                           ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                   ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                                               ;
+; Entity Instance                           ; ram_principal:inst|altsyncram:altsyncram_component                     ;
+;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                                        ;
+;     -- WIDTH_A                            ; 32                                                                     ;
+;     -- NUMWORDS_A                         ; 2048                                                                   ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                           ;
+;     -- WIDTH_B                            ; 32                                                                     ;
+;     -- NUMWORDS_B                         ; 2048                                                                   ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                 ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                           ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                   ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                              ;
++-------------------------------------------+------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -557,15 +763,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 66                          ;
-; cycloneiii_ff         ; 6                           ;
-;     CLR               ; 6                           ;
-; cycloneiii_lcell_comb ; 3                           ;
-;     normal            ; 3                           ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.55                        ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -584,7 +787,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu May 15 11:05:29 2025
+    Info: Processing started: Sun May 18 01:14:44 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -599,10 +802,6 @@ Info (12021): Found 2 design units, including 2 entities, in source file constan
     Info (12023): Found entity 2: constant0 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/constant0.v Line: 62
 Info (12021): Found 1 design units, including 1 entities, in source file btb.v
     Info (12023): Found entity 1: btb File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/btb.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file bht_testbench.bdf
-    Info (12023): Found entity 1: bht_testbench
-Info (12021): Found 1 design units, including 1 entities, in source file bht_module.bdf
-    Info (12023): Found entity 1: bht_module
 Info (12021): Found 1 design units, including 1 entities, in source file bht_btb_controller.v
     Info (12023): Found entity 1: bht_btb_controller File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_controller.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file bht_btb_ram.v
@@ -628,10 +827,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file concat_
 Info (12021): Found 1 design units, including 1 entities, in source file alu_latch.v
     Info (12023): Found entity 1: alu_latch File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/alu_latch.v Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file instruction_constant.v
-    Info (12023): Found entity 1: instruction_constant_lpm_constant_319 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v Line: 47
+    Info (12023): Found entity 1: instruction_constant_lpm_constant_a49 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v Line: 47
     Info (12023): Found entity 2: instruction_constant File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v Line: 62
-Info (12021): Found 1 design units, including 1 entities, in source file bht_btb_module3.bdf
-    Info (12023): Found entity 1: bht_btb_module3
 Info (12021): Found 1 design units, including 1 entities, in source file tag_latch.v
     Info (12023): Found entity 1: tag_latch File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/tag_latch.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file prediction_module.v
@@ -640,17 +837,60 @@ Info (12021): Found 1 design units, including 1 entities, in source file pc_targ
     Info (12023): Found entity 1: pc_target_concat File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/pc_target_concat.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bht_btb_wr_data_builder.v
     Info (12023): Found entity 1: bht_btb_wr_data_builder File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_wr_data_builder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file address_builder.v
+    Info (12023): Found entity 1: address_builder File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/address_builder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ad_latch.v
+    Info (12023): Found entity 1: ad_latch File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ad_latch.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file next_pc_decision_module.v
+    Info (12023): Found entity 1: next_pc_decision_module File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/next_pc_decision_module.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file branch_result_module.v
+    Info (12023): Found entity 1: branch_result_module File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/branch_result_module.v Line: 1
 Info (12127): Elaborating entity "tp2_e5_ERV25_grupo2" for the top level hierarchy
 Info (12128): Elaborating entity "alu" for hierarchy "alu:inst30"
 Info (12128): Elaborating entity "operand_build" for hierarchy "operand_build:inst24"
 Info (12128): Elaborating entity "op_latch" for hierarchy "op_latch:inst29"
-Info (12128): Elaborating entity "decode_latch" for hierarchy "decode_latch:inst4"
-Info (12128): Elaborating entity "concat_funct" for hierarchy "concat_funct:inst28"
-Info (12128): Elaborating entity "fetch_unit" for hierarchy "fetch_unit:inst2"
-Info (12128): Elaborating entity "instruction_constant" for hierarchy "instruction_constant:inst10"
-Info (12128): Elaborating entity "instruction_constant_lpm_constant_319" for hierarchy "instruction_constant:inst10|instruction_constant_lpm_constant_319:instruction_constant_lpm_constant_319_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v Line: 71
-Info (12128): Elaborating entity "immediate_builder" for hierarchy "immediate_builder:inst17"
+Info (12128): Elaborating entity "decode_latch" for hierarchy "decode_latch:inst12"
+Info (12128): Elaborating entity "bht_btb_module" for hierarchy "bht_btb_module:inst11"
+Info (12128): Elaborating entity "prediction_module" for hierarchy "bht_btb_module:inst11|prediction_module:inst3"
+Info (12128): Elaborating entity "bht_btb_ram" for hierarchy "bht_btb_module:inst11|bht_btb_ram:inst"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v Line: 89
+Info (12130): Elaborated megafunction instantiation "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v Line: 89
+Info (12133): Instantiated megafunction "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component" with the following parameter: File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v Line: 89
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK0"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "64"
+    Info (12134): Parameter "numwords_b" = "64"
+    Info (12134): Parameter "operation_mode" = "DUAL_PORT"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "OLD_DATA"
+    Info (12134): Parameter "widthad_a" = "6"
+    Info (12134): Parameter "widthad_b" = "6"
+    Info (12134): Parameter "width_a" = "32"
+    Info (12134): Parameter "width_b" = "32"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_c2o1.tdf
+    Info (12023): Found entity 1: altsyncram_c2o1 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_c2o1" for hierarchy "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated" File: c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "bht_btb_wr_data_builder" for hierarchy "bht_btb_module:inst11|bht_btb_wr_data_builder:inst4"
+Info (12128): Elaborating entity "tag_latch" for hierarchy "bht_btb_module:inst11|tag_latch:inst2"
+Info (12128): Elaborating entity "pc_target_concat" for hierarchy "bht_btb_module:inst11|pc_target_concat:inst5"
+Info (12128): Elaborating entity "ad_latch" for hierarchy "ad_latch:inst15"
+Info (12128): Elaborating entity "address_builder" for hierarchy "address_builder:inst3"
 Info (12128): Elaborating entity "opcode_decode" for hierarchy "opcode_decode:inst16"
+Info (12128): Elaborating entity "fetch_unit" for hierarchy "fetch_unit:inst6"
+Info (12128): Elaborating entity "next_pc_decision_module" for hierarchy "next_pc_decision_module:inst9"
+Info (12128): Elaborating entity "branch_result_module" for hierarchy "branch_result_module:inst8"
+Info (12128): Elaborating entity "instruction_constant" for hierarchy "instruction_constant:inst10"
+Info (12128): Elaborating entity "instruction_constant_lpm_constant_a49" for hierarchy "instruction_constant:inst10|instruction_constant_lpm_constant_a49:instruction_constant_lpm_constant_a49_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v Line: 71
+Info (12128): Elaborating entity "concat_funct" for hierarchy "concat_funct:inst28"
+Info (12128): Elaborating entity "immediate_builder" for hierarchy "immediate_builder:inst17"
 Info (12128): Elaborating entity "register_bank" for hierarchy "register_bank:inst34"
 Warning (10034): Output port "data_out" at register_bank.v(14) has no driver File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v Line: 14
 Warning (10034): Output port "memwrite" at register_bank.v(16) has no driver File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v Line: 16
@@ -1682,6 +1922,40 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_mkh2:auto_generated|q_a[29]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_mkh2.tdf Line: 998
         Warning (14320): Synthesized away node "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_mkh2:auto_generated|q_a[30]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_mkh2.tdf Line: 1031
         Warning (14320): Synthesized away node "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_mkh2:auto_generated|q_a[31]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_mkh2.tdf Line: 1064
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[19]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 589
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[20]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 618
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[21]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 647
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[22]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 676
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[23]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 705
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[24]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 734
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[25]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 763
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[26]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 792
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[27]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 821
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[28]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 850
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[29]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 879
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[30]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 908
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[31]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 937
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[0]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 38
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[1]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 67
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[2]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 96
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[3]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 125
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[4]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 154
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[5]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 183
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[6]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 212
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[7]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 241
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[8]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 270
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[9]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 299
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[10]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 328
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[11]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 357
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[12]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 386
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[13]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 415
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[14]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 444
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[15]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 473
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[16]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 502
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[17]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 531
+        Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[18]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 560
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "c[31]" is stuck at GND
     Warning (13410): Pin "c[30]" is stuck at GND
@@ -1711,6 +1985,8 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "c[6]" is stuck at GND
     Warning (13410): Pin "c[5]" is stuck at GND
     Warning (13410): Pin "c[4]" is stuck at GND
+    Warning (13410): Pin "c[3]" is stuck at GND
+    Warning (13410): Pin "c[2]" is stuck at GND
     Warning (13410): Pin "c[1]" is stuck at GND
     Warning (13410): Pin "c[0]" is stuck at GND
     Warning (13410): Pin "c_write_back[31]" is stuck at GND
@@ -1741,20 +2017,23 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "c_write_back[6]" is stuck at GND
     Warning (13410): Pin "c_write_back[5]" is stuck at GND
     Warning (13410): Pin "c_write_back[4]" is stuck at GND
+    Warning (13410): Pin "c_write_back[3]" is stuck at GND
+    Warning (13410): Pin "c_write_back[2]" is stuck at GND
     Warning (13410): Pin "c_write_back[1]" is stuck at GND
     Warning (13410): Pin "c_write_back[0]" is stuck at GND
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 30 registers lost all their fanouts during netlist optimizations.
+Info (17049): 199 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 73 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+    Warning (15610): No output dependent on input pin "reset"
+Info (21057): Implemented 66 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 7 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 98 warnings
-    Info: Peak virtual memory: 4794 megabytes
-    Info: Processing ended: Thu May 15 11:05:43 2025
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 139 warnings
+    Info: Peak virtual memory: 4774 megabytes
+    Info: Processing ended: Sun May 18 01:14:58 2025
     Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Total CPU time (on all processors): 00:00:30
 
 

@@ -1,6 +1,8 @@
 module decode_latch(
-	input wire [31:0] pc,
 	input wire branch_prediction,
+	input wire valid,
+	input wire [1:0] counter,
+	input wire [31:0] pc,
 	input wire [4:0]  rs1,
 	input wire [4:0]  rs2,
 	input wire [4:0]  rd,
@@ -23,8 +25,10 @@ module decode_latch(
 	input wire stg_x,
 	input wire reset,
 	
-	output reg [31:0] pc_out,
 	output reg branch_prediction_out,
+	output reg valid_out,
+	output reg [1:0] counter_out,
+	output reg [31:0] pc_out,
 	output reg [4:0]  rs1_out,
 	output reg [4:0]  rs2_out,
 	output reg [4:0]  rd_out,
@@ -45,8 +49,10 @@ module decode_latch(
 
 always @(posedge stg_clk or posedge reset) begin
 	if(reset) begin
-		pc_out <= 0;
 		branch_prediction_out <= 0;
+		valid_out <= 0;
+		counter_out <= 0;
+		pc_out <= 0;
 		rs1_out <= 0;
 		rs2_out <= 0;
 		rd_out <= 0;
@@ -65,8 +71,10 @@ always @(posedge stg_clk or posedge reset) begin
 		wr_memory_out <= 0;
 	end
 	else begin
-		pc_out <= pc;
 		branch_prediction_out <= branch_prediction;
+		valid_out <= valid;
+		counter_out <= counter;
+		pc_out <= pc;
         rs1_out <= rs1;
         rs2_out <= rs2;
         rd_out <= rd;
@@ -74,7 +82,7 @@ always @(posedge stg_clk or posedge reset) begin
         imm_out <= imm;
         opcode_out <= opcode;
 
-		  instr_type_out <= instr_type;
+		instr_type_out <= instr_type;
 			
 			
         save_to_reg_out <= save_to_reg;

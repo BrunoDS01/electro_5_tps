@@ -4,26 +4,26 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 2024  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 328 256)
+	(rect 16 16 328 224)
 	(text "ad_latch" (rect 5 0 38 12)(font "Arial" ))
-	(text "inst" (rect 8 224 20 236)(font "Arial" ))
+	(text "inst" (rect 8 192 20 204)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -48,58 +48,51 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 80)
 		(input)
-		(text "pc_fetch_update[31..0]" (rect 0 0 90 12)(font "Arial" ))
-		(text "pc_fetch_update[31..0]" (rect 21 75 111 87)(font "Arial" ))
+		(text "prev_counter[1..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "prev_counter[1..0]" (rect 21 75 94 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "prev_counter[1..0]" (rect 0 0 73 12)(font "Arial" ))
-		(text "prev_counter[1..0]" (rect 21 91 94 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
+		(text "prev_valid" (rect 0 0 42 12)(font "Arial" ))
+		(text "prev_valid" (rect 21 91 63 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
 		(pt 0 112)
 		(input)
-		(text "prev_valid" (rect 0 0 42 12)(font "Arial" ))
-		(text "prev_valid" (rect 21 107 63 119)(font "Arial" ))
+		(text "prev_branch_prediction" (rect 0 0 94 12)(font "Arial" ))
+		(text "prev_branch_prediction" (rect 21 107 115 119)(font "Arial" ))
 		(line (pt 0 112)(pt 16 112)(line_width 1))
 	)
 	(port
 		(pt 0 128)
 		(input)
-		(text "prev_branch_prediction" (rect 0 0 94 12)(font "Arial" ))
-		(text "prev_branch_prediction" (rect 21 123 115 135)(font "Arial" ))
+		(text "stg_clk" (rect 0 0 28 12)(font "Arial" ))
+		(text "stg_clk" (rect 21 123 49 135)(font "Arial" ))
 		(line (pt 0 128)(pt 16 128)(line_width 1))
 	)
 	(port
 		(pt 0 144)
 		(input)
-		(text "stg_clk" (rect 0 0 28 12)(font "Arial" ))
-		(text "stg_clk" (rect 21 139 49 151)(font "Arial" ))
+		(text "stg_ena" (rect 0 0 31 12)(font "Arial" ))
+		(text "stg_ena" (rect 21 139 52 151)(font "Arial" ))
 		(line (pt 0 144)(pt 16 144)(line_width 1))
 	)
 	(port
 		(pt 0 160)
 		(input)
-		(text "stg_ena" (rect 0 0 31 12)(font "Arial" ))
-		(text "stg_ena" (rect 21 155 52 167)(font "Arial" ))
+		(text "stg_x" (rect 0 0 22 12)(font "Arial" ))
+		(text "stg_x" (rect 21 155 43 167)(font "Arial" ))
 		(line (pt 0 160)(pt 16 160)(line_width 1))
 	)
 	(port
 		(pt 0 176)
 		(input)
-		(text "stg_x" (rect 0 0 22 12)(font "Arial" ))
-		(text "stg_x" (rect 21 171 43 183)(font "Arial" ))
-		(line (pt 0 176)(pt 16 176)(line_width 1))
-	)
-	(port
-		(pt 0 192)
-		(input)
 		(text "reset" (rect 0 0 20 12)(font "Arial" ))
-		(text "reset" (rect 21 187 41 199)(font "Arial" ))
-		(line (pt 0 192)(pt 16 192)(line_width 1))
+		(text "reset" (rect 21 171 41 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
 	)
 	(port
 		(pt 312 32)
@@ -125,32 +118,25 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 312 80)
 		(output)
-		(text "pc_fetch_update_out[31..0]" (rect 0 0 108 12)(font "Arial" ))
-		(text "pc_fetch_update_out[31..0]" (rect 183 75 291 87)(font "Arial" ))
+		(text "prev_counter_out[1..0]" (rect 0 0 90 12)(font "Arial" ))
+		(text "prev_counter_out[1..0]" (rect 201 75 291 87)(font "Arial" ))
 		(line (pt 312 80)(pt 296 80)(line_width 3))
 	)
 	(port
 		(pt 312 96)
 		(output)
-		(text "prev_counter_out[1..0]" (rect 0 0 90 12)(font "Arial" ))
-		(text "prev_counter_out[1..0]" (rect 201 91 291 103)(font "Arial" ))
-		(line (pt 312 96)(pt 296 96)(line_width 3))
+		(text "prev_valid_out" (rect 0 0 60 12)(font "Arial" ))
+		(text "prev_valid_out" (rect 231 91 291 103)(font "Arial" ))
+		(line (pt 312 96)(pt 296 96)(line_width 1))
 	)
 	(port
 		(pt 312 112)
 		(output)
-		(text "prev_valid_out" (rect 0 0 60 12)(font "Arial" ))
-		(text "prev_valid_out" (rect 231 107 291 119)(font "Arial" ))
+		(text "prev_branch_prediction_out" (rect 0 0 112 12)(font "Arial" ))
+		(text "prev_branch_prediction_out" (rect 179 107 291 119)(font "Arial" ))
 		(line (pt 312 112)(pt 296 112)(line_width 1))
 	)
-	(port
-		(pt 312 128)
-		(output)
-		(text "prev_branch_prediction_out" (rect 0 0 112 12)(font "Arial" ))
-		(text "prev_branch_prediction_out" (rect 179 123 291 135)(font "Arial" ))
-		(line (pt 312 128)(pt 296 128)(line_width 1))
-	)
 	(drawing
-		(rectangle (rect 16 16 296 224)(line_width 1))
+		(rectangle (rect 16 16 296 192)(line_width 1))
 	)
 )
