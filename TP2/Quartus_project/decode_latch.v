@@ -1,5 +1,6 @@
 module decode_latch(
 	input wire [31:0] pc,
+	input wire branch_prediction,
 	input wire [4:0]  rs1,
 	input wire [4:0]  rs2,
 	input wire [4:0]  rd,
@@ -23,6 +24,7 @@ module decode_latch(
 	input wire reset,
 	
 	output reg [31:0] pc_out,
+	output reg branch_prediction_out,
 	output reg [4:0]  rs1_out,
 	output reg [4:0]  rs2_out,
 	output reg [4:0]  rd_out,
@@ -44,6 +46,7 @@ module decode_latch(
 always @(posedge stg_clk or posedge reset) begin
 	if(reset) begin
 		pc_out <= 0;
+		branch_prediction_out <= 0;
 		rs1_out <= 0;
 		rs2_out <= 0;
 		rd_out <= 0;
@@ -63,6 +66,7 @@ always @(posedge stg_clk or posedge reset) begin
 	end
 	else begin
 		pc_out <= pc;
+		branch_prediction_out <= branch_prediction;
         rs1_out <= rs1;
         rs2_out <= rs2;
         rd_out <= rd;
