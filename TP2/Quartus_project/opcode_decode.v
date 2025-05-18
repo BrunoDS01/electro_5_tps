@@ -25,9 +25,10 @@ parameter J_TYPE = 3'd5;
 /*
 OPDCODES
 */
-localparam OP = 6'b0110011;
-localparam LOAD = 6'b0000011;
-localparam STORE = 6'b0100011;
+localparam JAL = 7'b1101111;
+localparam OP = 7'b0110011;
+localparam LOAD = 7'b0000011;
+localparam STORE = 7'b0100011;
 
 always @(opcode) begin
 	case (opcode)
@@ -42,6 +43,16 @@ always @(opcode) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;		
 		
+		end
+		JAL: begin
+			instr_type = J_TYPE;
+			save_to_reg = 1'b0;
+			rs1_used = 1'b0;
+			rs2_used = 1'b0;
+			immediate_used = 1'b1;
+			is_branch = 1'b1;
+			rd_memory = 1'b0;
+			wr_memory = 1'b0;	
 		end
 		default: begin
 			instr_type = R_TYPE;
