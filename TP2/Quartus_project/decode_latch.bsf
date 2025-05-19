@@ -21,9 +21,9 @@ on the Quartus Prime software download page.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 272 416)
+	(rect 16 16 272 448)
 	(text "decode_latch" (rect 5 0 56 12)(font "Arial" ))
-	(text "inst" (rect 8 384 20 396)(font "Arial" ))
+	(text "inst" (rect 8 416 20 428)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -153,30 +153,37 @@ on the Quartus Prime software download page.
 	(port
 		(pt 0 320)
 		(input)
-		(text "stg_clk" (rect 0 0 28 12)(font "Arial" ))
-		(text "stg_clk" (rect 21 315 49 327)(font "Arial" ))
+		(text "is_alu_sum" (rect 0 0 46 12)(font "Arial" ))
+		(text "is_alu_sum" (rect 21 315 67 327)(font "Arial" ))
 		(line (pt 0 320)(pt 16 320)(line_width 1))
 	)
 	(port
 		(pt 0 336)
 		(input)
-		(text "stg_ena" (rect 0 0 31 12)(font "Arial" ))
-		(text "stg_ena" (rect 21 331 52 343)(font "Arial" ))
+		(text "stg_clk" (rect 0 0 28 12)(font "Arial" ))
+		(text "stg_clk" (rect 21 331 49 343)(font "Arial" ))
 		(line (pt 0 336)(pt 16 336)(line_width 1))
 	)
 	(port
 		(pt 0 352)
 		(input)
-		(text "stg_x" (rect 0 0 22 12)(font "Arial" ))
-		(text "stg_x" (rect 21 347 43 359)(font "Arial" ))
+		(text "stg_ena" (rect 0 0 31 12)(font "Arial" ))
+		(text "stg_ena" (rect 21 347 52 359)(font "Arial" ))
 		(line (pt 0 352)(pt 16 352)(line_width 1))
 	)
 	(port
 		(pt 0 368)
 		(input)
-		(text "reset" (rect 0 0 20 12)(font "Arial" ))
-		(text "reset" (rect 21 363 41 375)(font "Arial" ))
+		(text "stg_x" (rect 0 0 22 12)(font "Arial" ))
+		(text "stg_x" (rect 21 363 43 375)(font "Arial" ))
 		(line (pt 0 368)(pt 16 368)(line_width 1))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 379 41 391)(font "Arial" ))
+		(line (pt 0 384)(pt 16 384)(line_width 1))
 	)
 	(port
 		(pt 256 32)
@@ -304,7 +311,14 @@ on the Quartus Prime software download page.
 		(text "wr_memory_out" (rect 167 299 235 311)(font "Arial" ))
 		(line (pt 256 304)(pt 240 304)(line_width 1))
 	)
+	(port
+		(pt 256 320)
+		(output)
+		(text "is_alu_sum_out" (rect 0 0 63 12)(font "Arial" ))
+		(text "is_alu_sum_out" (rect 172 315 235 327)(font "Arial" ))
+		(line (pt 256 320)(pt 240 320)(line_width 1))
+	)
 	(drawing
-		(rectangle (rect 16 16 240 384)(line_width 1))
+		(rectangle (rect 16 16 240 416)(line_width 1))
 	)
 )

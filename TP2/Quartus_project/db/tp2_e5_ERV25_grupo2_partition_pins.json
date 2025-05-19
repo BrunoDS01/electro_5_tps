@@ -268,11 +268,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "instr_type[2]",
-					"strict" : false
-				},
-				{
-					"name" : "instr_type[0]",
+					"name" : "instr_type[1]",
 					"strict" : false
 				},
 				{

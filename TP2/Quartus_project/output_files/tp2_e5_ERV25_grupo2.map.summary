@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun May 18 13:43:35 2025
+Analysis & Synthesis Status : Successful - Sun May 18 21:03:05 2025
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : tp2_e5_ERV25_grupo2
 Top-level Entity Name : tp2_e5_ERV25_grupo2
 Family : Cyclone IV E
-Total logic elements : 285
-    Total combinational functions : 213
-    Dedicated logic registers : 135
-Total registers : 135
+Total logic elements : 286
+    Total combinational functions : 215
+    Dedicated logic registers : 136
+Total registers : 136
 Total pins : 4
 Total virtual pins : 259
 Total memory bits : 1,216

@@ -75,6 +75,11 @@ on the Quartus Prime software download page.
 		"101"
 		""
 		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"N_TYPE"
+		"111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
 		(rectangle (rect 16 16 184 64)(line_width 1))
 	)

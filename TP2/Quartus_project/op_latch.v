@@ -16,6 +16,8 @@ module op_latch(
 	input wire is_branch,
 	input wire rd_memory,
 	input wire wr_memory,
+	input wire is_alu_sum,
+
 
 	
 	input wire stg_clk,
@@ -39,7 +41,9 @@ module op_latch(
 	output reg immediate_used_out,
 	output reg is_branch_out,
 	output reg rd_memory_out,
-	output reg wr_memory_out
+	output reg wr_memory_out,
+	output reg is_alu_sum_out
+
 );
 
 always @(posedge stg_clk or posedge reset) begin
@@ -61,6 +65,7 @@ always @(posedge stg_clk or posedge reset) begin
 		is_branch_out <= 0;
 		rd_memory_out <= 0;
 		wr_memory_out <= 0;
+		is_alu_sum_out <= 0;
 	end
 	else begin
 		pc_out <= pc;
@@ -80,6 +85,7 @@ always @(posedge stg_clk or posedge reset) begin
         is_branch_out <= is_branch;
         rd_memory_out <= rd_memory;
         wr_memory_out <= wr_memory;
+		  is_alu_sum_out <= is_alu_sum;
 	end
 end
 

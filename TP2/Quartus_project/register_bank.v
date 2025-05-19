@@ -5,6 +5,9 @@ module register_bank(
     input wire [31:0] data_in,
     input wire [31:0] alu_out,
     input wire [4:0] rd,
+	 
+	 input wire save_to_reg,
+	 
 
     input wire stage_clk,
     input wire reset,
@@ -49,9 +52,9 @@ always @(posedge stage_clk or posedge reset) begin
         end
 	end
 	else begin
-		//x[rd] <= alu_out;
-		x[1] <= 32'd5;
-		x[2] <= 32'd7;
+		if(save_to_reg) begin
+			x[rd] <= alu_out;
+		end
 	end
 end
 
