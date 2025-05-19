@@ -651,7 +651,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect -1320 632 -1088 744)
+	(rect -1328 632 -1096 744)
 	(text "address_builder" (rect 5 0 81 10)(font "Arial" ))
 	(text "inst3" (rect 8 96 31 106)(font "Arial" ))
 	(port
@@ -729,7 +729,7 @@ on the Quartus Prime software download page.
 	(drawing
 		(rectangle (rect 16 16 216 96))
 	)
-	(annotation_block (parameter)(rect -1096 496 -912 632))
+	(annotation_block (parameter)(rect -1104 496 -920 632))
 )
 (symbol
 	(rect 336 -24 544 152)
@@ -2198,7 +2198,7 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(text "rs2_data_op[31..0]" (rect 436 1464 524 1476)(font "Intel Clear" ))
+	(text "rs2_data_op[31..0]" (rect 356 1464 444 1476)(font "Intel Clear" ))
 	(pt 288 1480)
 	(pt 472 1480)
 	(bus)
@@ -2362,36 +2362,6 @@ on the Quartus Prime software download page.
 	(text "flush_pipeline" (rect 621 360 688 372)(font "Intel Clear" ))
 	(pt 608 376)
 	(pt 736 376)
-)
-(connector
-	(text "rs1_op[31..0]" (rect -1383 680 -1322 692)(font "Intel Clear" ))
-	(pt -1384 696)
-	(pt -1320 696)
-	(bus)
-)
-(connector
-	(text "pc_op[31..0]" (rect -1378 664 -1321 676)(font "Intel Clear" ))
-	(pt -1320 680)
-	(pt -1384 680)
-	(bus)
-)
-(connector
-	(text "imm_op[31..0]" (rect -1378 648 -1310 660)(font "Intel Clear" ))
-	(pt -1320 664)
-	(pt -1384 664)
-	(bus)
-)
-(connector
-	(text "pc_target_ad[31..0]" (rect -1088 648 -996 660)(font "Intel Clear" ))
-	(pt -1088 664)
-	(pt -1048 664)
-	(bus)
-)
-(connector
-	(text "flag_branch_ad[1..0]" (rect -1088 664 -991 676)(font "Intel Clear" ))
-	(pt -1088 680)
-	(pt -1048 680)
-	(bus)
 )
 (connector
 	(text "pc_target_ad[31..0]" (rect -834 624 -742 636)(font "Intel Clear" ))
@@ -2643,12 +2613,6 @@ on the Quartus Prime software download page.
 	(pt 488 288)
 )
 (connector
-	(text "instr_type_op[2..0]" (rect -1412 696 -1324 708)(font "Intel Clear" ))
-	(pt -1320 712)
-	(pt -1392 712)
-	(bus)
-)
-(connector
 	(text "instr[19..15]" (rect 1766 32 1821 44)(font "Intel Clear" ))
 	(pt 1744 40)
 	(pt 1888 40)
@@ -2697,6 +2661,42 @@ on the Quartus Prime software download page.
 	(text "reset" (rect 1352 1184 1375 1196)(font "Intel Clear" ))
 	(pt 1432 1200)
 	(pt 1344 1200)
+)
+(connector
+	(text "pc_op[31..0]" (rect -1386 664 -1329 676)(font "Intel Clear" ))
+	(pt -1328 680)
+	(pt -1392 680)
+	(bus)
+)
+(connector
+	(text "imm_op[31..0]" (rect -1386 648 -1318 660)(font "Intel Clear" ))
+	(pt -1328 664)
+	(pt -1392 664)
+	(bus)
+)
+(connector
+	(text "instr_type_op[2..0]" (rect -1420 696 -1332 708)(font "Intel Clear" ))
+	(pt -1328 712)
+	(pt -1400 712)
+	(bus)
+)
+(connector
+	(text "rs1_data_op[31..0]" (rect -1391 680 -1303 692)(font "Intel Clear" ))
+	(pt -1392 696)
+	(pt -1328 696)
+	(bus)
+)
+(connector
+	(text "pc_target_ad[31..0]" (rect -1096 648 -1004 660)(font "Intel Clear" ))
+	(pt -1096 664)
+	(pt -1056 664)
+	(bus)
+)
+(connector
+	(text "flag_branch_ad[1..0]" (rect -1096 664 -999 676)(font "Intel Clear" ))
+	(pt -1096 680)
+	(pt -1056 680)
+	(bus)
 )
 (text "FETCH" (rect 376 -48 416 -34)(font "Intel Clear" (font_size 8)))
 (text "MEMORIA" (rect -488 -104 -431 -90)(font "Intel Clear" (font_size 8)))
