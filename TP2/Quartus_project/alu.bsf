@@ -21,9 +21,9 @@ on the Quartus Prime software download page.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 184 128)
+	(rect 16 16 208 160)
 	(text "alu" (rect 5 0 15 12)(font "Arial" ))
-	(text "inst" (rect 8 96 20 108)(font "Arial" ))
+	(text "inst" (rect 8 128 20 140)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -41,18 +41,68 @@ on the Quartus Prime software download page.
 	(port
 		(pt 0 64)
 		(input)
-		(text "funct[9..0]" (rect 0 0 40 12)(font "Arial" ))
-		(text "funct[9..0]" (rect 21 59 61 71)(font "Arial" ))
+		(text "funct3_[2..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "funct3_[2..0]" (rect 21 59 71 71)(font "Arial" ))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
-		(pt 168 32)
+		(pt 0 80)
+		(input)
+		(text "funct7_[6..0]" (rect 0 0 50 12)(font "Arial" ))
+		(text "funct7_[6..0]" (rect 21 75 71 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "instr_type[3..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "instr_type[3..0]" (rect 21 91 81 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 192 32)
 		(output)
 		(text "c[31..0]" (rect 0 0 28 12)(font "Arial" ))
-		(text "c[31..0]" (rect 119 27 147 39)(font "Arial" ))
-		(line (pt 168 32)(pt 152 32)(line_width 3))
+		(text "c[31..0]" (rect 143 27 171 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
+	(parameter
+		"R_TYPE"
+		"000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"I_TYPE"
+		"001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S_TYPE"
+		"010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"B_TYPE"
+		"011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"U_TYPE"
+		"100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"J_TYPE"
+		"101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"N_TYPE"
+		"111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
-		(rectangle (rect 16 16 152 96)(line_width 1))
+		(rectangle (rect 16 16 176 128)(line_width 1))
 	)
+	(annotation_block (parameter)(rect 208 -64 308 16))
 )

@@ -1,5 +1,5 @@
 Flow report for tp2_e5_ERV25_grupo2
-Sun May 18 21:03:45 2025
+Mon May 19 17:25:06 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -41,20 +41,20 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Sun May 18 21:03:45 2025           ;
+; Flow Status                        ; Successful - Mon May 19 17:25:06 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE22F17C8L                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 220 / 22,320 ( < 1 % )                          ;
-;     Total combinational functions  ; 216 / 22,320 ( < 1 % )                          ;
-;     Dedicated logic registers      ; 136 / 22,320 ( < 1 % )                          ;
-; Total registers                    ; 136                                             ;
+; Total logic elements               ; 77 / 22,320 ( < 1 % )                           ;
+;     Total combinational functions  ; 77 / 22,320 ( < 1 % )                           ;
+;     Dedicated logic registers      ; 31 / 22,320 ( < 1 % )                           ;
+; Total registers                    ; 31                                              ;
 ; Total pins                         ; 4 / 154 ( 3 % )                                 ;
 ; Total virtual pins                 ; 259                                             ;
-; Total memory bits                  ; 1,216 / 608,256 ( < 1 % )                       ;
+; Total memory bits                  ; 1,152 / 608,256 ( < 1 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                                 ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -65,7 +65,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/18/2025 21:02:39 ;
+; Start date & time ; 05/19/2025 17:24:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; tp2_e5_ERV25_grupo2 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 16342968034586.174761295925544         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 137392251093331.174768627627452        ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -107,12 +107,12 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:26     ; 1.0                     ; 4808 MB             ; 00:00:59                           ;
-; Fitter               ; 00:00:16     ; 1.1                     ; 5533 MB             ; 00:00:21                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4764 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:06     ; 1.4                     ; 4812 MB             ; 00:00:06                           ;
-; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4672 MB             ; 00:00:03                           ;
-; Total                ; 00:00:57     ; --                      ; --                  ; 00:01:31                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4804 MB             ; 00:00:27                           ;
+; Fitter               ; 00:00:07     ; 1.1                     ; 5455 MB             ; 00:00:08                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4766 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4803 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4674 MB             ; 00:00:01                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:39                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -121,11 +121,11 @@ on the Quartus Prime software download page.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-NN03L7M  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-NN03L7M  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-NN03L7M  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-NN03L7M  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-NN03L7M  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; LAPTOP-IQESHE48  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-IQESHE48  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-IQESHE48  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-IQESHE48  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-IQESHE48  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

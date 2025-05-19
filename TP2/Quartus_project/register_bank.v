@@ -6,7 +6,7 @@ module register_bank(
     input wire [31:0] alu_out,
     input wire [4:0] rd,
 	 
-	 input wire save_to_reg,
+	input wire save_to_reg,
 	 
 
     input wire stage_clk,

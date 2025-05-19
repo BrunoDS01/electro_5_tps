@@ -62,16 +62,23 @@ on the Quartus Prime software download page.
 	(port
 		(pt 0 112)
 		(input)
-		(text "stage_clk" (rect 0 0 37 12)(font "Arial" ))
-		(text "stage_clk" (rect 21 107 58 119)(font "Arial" ))
+		(text "save_to_reg" (rect 0 0 51 12)(font "Arial" ))
+		(text "save_to_reg" (rect 21 107 72 119)(font "Arial" ))
 		(line (pt 0 112)(pt 16 112)(line_width 1))
 	)
 	(port
 		(pt 0 128)
 		(input)
-		(text "reset" (rect 0 0 20 12)(font "Arial" ))
-		(text "reset" (rect 21 123 41 135)(font "Arial" ))
+		(text "stage_clk" (rect 0 0 37 12)(font "Arial" ))
+		(text "stage_clk" (rect 21 123 58 135)(font "Arial" ))
 		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 139 41 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 1))
 	)
 	(port
 		(pt 216 32)
