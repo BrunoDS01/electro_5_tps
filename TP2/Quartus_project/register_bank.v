@@ -53,7 +53,12 @@ always @(posedge stage_clk or posedge reset) begin
 	end
 	else begin
 		if(save_to_reg) begin
-			x[rd] <= alu_out;
+			if (rd != 0) begin
+				x[rd] <= alu_out;
+			end
+			else begin
+				x[rd] <= 32'd0;
+			end
 		end
 	end
 end

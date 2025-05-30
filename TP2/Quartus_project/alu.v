@@ -30,13 +30,15 @@ parameter N_TYPE = 3'd7;
 	FUNCT3_table
 */
 
-localparam ADD = 3'b000;
-localparam SHIFT = 3'b101;
+localparam ADD_SUB3 = 3'b000;
+localparam ADDI3 = 3'b000;
+localparam SHIFT3 = 3'b101;
 
 /*
 	FUNCT7_table
 */
-
+localparam ADD7 = 7'b0000000;
+localparam SUB7 = 7'b0100000;
 localparam SRL = 7'b0000000;
 localparam SRA = 7'b0100000;
 
@@ -44,14 +46,21 @@ always @(a, b, funct3_, funct7_, instr_type) begin
 	case (instr_type)
 		// R_TYPE corresponden a operaciones comunes que usan rs1 y rs2
 		R_TYPE: begin
-		
 			case (funct3_)
 			
-				ADD: begin
-					c = a + b;
+				ADD_SUB3: begin
+					if (funct7_ == ADD7) begin
+						c = a + b;
+					end
+					else if (funct7_ == SUB7) begin
+						c = a - b;
+					end
+					else begin
+						c = 32'd0;
+					end
 				end
 				
-				SHIFT: begin
+				SHIFT3: begin
 					if (funct7_ == SRL) begin
 						c = a >> b[4:0];
 					end
@@ -68,6 +77,19 @@ always @(a, b, funct3_, funct7_, instr_type) begin
 				end
 			
 			endcase
+		end
+		
+		I_TYPE: begin
+			case (funct3_)
+				ADDI3: begin
+					c = a + b;
+				end
+				
+				default: begin
+					c = 0;
+				end
+			endcase
+		
 		end
 		
 		default: begin

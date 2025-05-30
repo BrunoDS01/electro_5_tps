@@ -37,6 +37,14 @@ begin
 			a = rs1_data;
 			b = rs2_data;
 		end
+		I_TYPE: begin
+			a = rs1_data;
+			b = imm;
+		end
+		B_TYPE: begin
+			a = rs1_data;
+			b = rs2_data;
+		end
 		default: begin
 			a = 32'd0;
 			b = 32'd0;

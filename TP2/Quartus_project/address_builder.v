@@ -3,6 +3,7 @@ module  address_builder(
 	input wire  [31:0] pc,
 	input wire [31:0] rs1,
 	input wire [2:0] instr_type,
+	input wire is_branch,
 	
 	
 	output reg [31:0] pc_target,
@@ -20,7 +21,7 @@ parameter B_TYPE = 3'd3;
 parameter U_TYPE = 3'd4;
 parameter J_TYPE = 3'd5;
 
-always @(imm, pc, instr_type, rs1)
+always @(imm, pc, instr_type, rs1, is_branch)
 begin
 	case (instr_type)
 		J_TYPE: begin
@@ -28,10 +29,16 @@ begin
 			pc_target = pc + imm;
 			flag_branch = 2'b01;
 		end
-		I_TYPE:begin
-		
-			pc_target = rs1 + imm;
-			flag_branch = 2'b10;
+		I_TYPE: begin
+			// Si es un salto que se arma con el inmediato:
+			if (is_branch) begin
+				pc_target = rs1 + imm;
+				flag_branch = 2'b10;
+			end
+			else begin
+				pc_target = 32'd0;
+				flag_branch = 2'b00;
+			end
 			
 		end
 		B_TYPE: begin
