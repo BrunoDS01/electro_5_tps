@@ -71,25 +71,48 @@ always @(posedge stg_clk or posedge reset) begin
 		is_alu_sum_out <= 0;
 	end
 	else begin
-		pc_out <= pc;
-        rs1_out <= rs1;
-        rs2_out <= rs2;
-        rd_out <= rd;
-        funct3_out <= funct3_;
-		funct7_out <= funct7_;
-        imm_out <= imm;
-        instr_type_out <= instr_type;
-		rs1_data_out <= rs1_data;
-		rs2_data_out <= rs2_data;
+		if (stg_x) begin
+			pc_out <= 0;
+			rs1_out <= 0;
+			rs2_out <= 0;
+			rd_out <= 0;
+			funct3_out <= 0;
+			funct7_out <= 0;
+			imm_out <= 0;
+			instr_type_out <= 0;
+			rs1_data_out <= 0;
+			rs2_data_out <= 0;
 
-        save_to_reg_out <= save_to_reg;
-        rs1_used_out <= rs1_used;
-        rs2_used_out <= rs2_used;
-        immediate_used_out <= immediate_used;
-        is_branch_out <= is_branch;
-        rd_memory_out <= rd_memory;
-        wr_memory_out <= wr_memory;
-		  is_alu_sum_out <= is_alu_sum;
+			save_to_reg_out <= 0;
+			rs1_used_out <= 0;
+			rs2_used_out <= 0;
+			immediate_used_out <= 0;
+			is_branch_out <= 0;
+			rd_memory_out <= 0;
+			wr_memory_out <= 0;
+			is_alu_sum_out <= 0;
+
+		end else if (!stg_ena) begin
+			pc_out <= pc;
+			rs1_out <= rs1;
+			rs2_out <= rs2;
+			rd_out <= rd;
+			funct3_out <= funct3_;
+			funct7_out <= funct7_;
+			imm_out <= imm;
+			instr_type_out <= instr_type;
+			rs1_data_out <= rs1_data;
+			rs2_data_out <= rs2_data;
+
+			save_to_reg_out <= save_to_reg;
+			rs1_used_out <= rs1_used;
+			rs2_used_out <= rs2_used;
+			immediate_used_out <= immediate_used;
+			is_branch_out <= is_branch;
+			rd_memory_out <= rd_memory;
+			wr_memory_out <= wr_memory;
+			is_alu_sum_out <= is_alu_sum;
+		end
 	end
 end
 

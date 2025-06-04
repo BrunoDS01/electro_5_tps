@@ -70,106 +70,106 @@ CHIP  "tp2_e5_ERV25_grupo2"  ASSIGNED TO AN: EP4CE22F17C8L
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
-rs1_data_ex[20]              : A2        : output : 2.5 V             :         : 8         : N              
-rs2_data_ex[18]              : A3        : output : 2.5 V             :         : 8         : N              
-rs2_data_op[5]               : A4        : output : 2.5 V             :         : 8         : N              
-rs2_data_ex[11]              : A5        : output : 2.5 V             :         : 8         : N              
-rs2_data_op[18]              : A6        : output : 2.5 V             :         : 8         : N              
-rs1_data_op[1]               : A7        : output : 2.5 V             :         : 8         : N              
+rs1_data_op[15]              : A2        : output : 2.5 V             :         : 8         : N              
+rs1_data_op[18]              : A3        : output : 2.5 V             :         : 8         : N              
+rs1_data_ex[29]              : A4        : output : 2.5 V             :         : 8         : N              
+rs1_data_op[28]              : A5        : output : 2.5 V             :         : 8         : N              
+rs1_data_ex[13]              : A6        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[0]               : A7        : output : 2.5 V             :         : 8         : N              
 GND+                         : A8        :        :                   :         : 8         :                
 GND+                         : A9        :        :                   :         : 7         :                
-rs1_data_op[20]              : A10       : output : 2.5 V             :         : 7         : N              
-rs1_data_op[18]              : A11       : output : 2.5 V             :         : 7         : N              
-rs1_data_op[25]              : A12       : output : 2.5 V             :         : 7         : N              
-rs1_data_op[27]              : A13       : output : 2.5 V             :         : 7         : N              
-rs2_data_op[21]              : A14       : output : 2.5 V             :         : 7         : N              
-rs1_data_op[21]              : A15       : output : 2.5 V             :         : 7         : N              
+rs2_data_ex[8]               : A10       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[4]               : A11       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[3]               : A12       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[6]               : A13       : output : 2.5 V             :         : 7         : N              
+rs2_data_op[0]               : A14       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[27]              : A15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-rs1_data_op[11]              : B1        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B1        :        :                   :         : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
-rs1_data_ex[1]               : B3        : output : 2.5 V             :         : 8         : N              
-rs1_data_ex[7]               : B4        : output : 2.5 V             :         : 8         : N              
-rs2_data_ex[17]              : B5        : output : 2.5 V             :         : 8         : N              
-rs2_data_op[11]              : B6        : output : 2.5 V             :         : 8         : N              
-rs1_data_op[4]               : B7        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[29]              : B3        : output : 2.5 V             :         : 8         : N              
+rs1_data_op[13]              : B4        : output : 2.5 V             :         : 8         : N              
+rs1_data_ex[11]              : B5        : output : 2.5 V             :         : 8         : N              
+rs1_data_op[2]               : B6        : output : 2.5 V             :         : 8         : N              
+rs1_data_ex[2]               : B7        : output : 2.5 V             :         : 8         : N              
 GND+                         : B8        :        :                   :         : 8         :                
 GND+                         : B9        :        :                   :         : 7         :                
-rs1_data_op[5]               : B10       : output : 2.5 V             :         : 7         : N              
-rs1_data_op[2]               : B11       : output : 2.5 V             :         : 7         : N              
-rs1_data_op[24]              : B12       : output : 2.5 V             :         : 7         : N              
-rs1_data_ex[26]              : B13       : output : 2.5 V             :         : 7         : N              
-rs1_data_op[23]              : B14       : output : 2.5 V             :         : 7         : N              
+rs2_data_ex[26]              : B10       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[9]               : B11       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[8]               : B12       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[31]              : B13       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[17]              : B14       : output : 2.5 V             :         : 7         : N              
 GND                          : B15       : gnd    :                   :         :           :                
-rs1_data_ex[2]               : B16       : output : 2.5 V             :         : 6         : N              
+rs1_data_ex[19]              : B16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
-rs2_data_ex[21]              : C2        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+rs2_data_op[5]               : C2        : output : 2.5 V             :         : 1         : N              
+rs2_data_ex[7]               : C3        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
-rs2_data_op[12]              : C6        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[17]              : C6        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
-rs2_data_op[16]              : C8        : output : 2.5 V             :         : 8         : N              
-rs1_data_op[22]              : C9        : output : 2.5 V             :         : 7         : N              
+rs2_data_ex[14]              : C8        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[27]              : C9        : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
-rs1_data_op[16]              : C11       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[25]              : C11       : output : 2.5 V             :         : 7         : N              
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
-rs1_data_op[14]              : C14       : output : 2.5 V             :         : 7         : N              
-rs1_data_op[30]              : C15       : output : 2.5 V             :         : 6         : N              
-rs1_data_op[12]              : C16       : output : 2.5 V             :         : 6         : N              
-rs2_data_ex[19]              : D1        : output : 2.5 V             :         : 1         : N              
+rs2_data_op[1]               : C14       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[7]               : C15       : output : 2.5 V             :         : 6         : N              
+rs1_data_op[17]              : C16       : output : 2.5 V             :         : 6         : N              
+rs2_data_ex[12]              : D1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
-rs2_data_ex[2]               : D3        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[30]              : D3        : output : 2.5 V             :         : 8         : N              
 VCCD_PLL3                    : D4        : power  :                   : 1.0V    :           :                
-rs1_data_op[0]               : D5        : output : 2.5 V             :         : 8         : N              
-rs2_data_op[6]               : D6        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[6]               : D5        : output : 2.5 V             :         : 8         : N              
+rs1_data_op[29]              : D6        : output : 2.5 V             :         : 8         : N              
 GND                          : D7        : gnd    :                   :         :           :                
-rs1_data_op[8]               : D8        : output : 2.5 V             :         : 8         : N              
-rs1_data_op[3]               : D9        : output : 2.5 V             :         : 7         : N              
+rs2_data_ex[25]              : D8        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[20]              : D9        : output : 2.5 V             :         : 7         : N              
 GND                          : D10       : gnd    :                   :         :           :                
-rs1_data_op[29]              : D11       : output : 2.5 V             :         : 7         : N              
-rs1_data_ex[0]               : D12       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[14]              : D11       : output : 2.5 V             :         : 7         : N              
+rs2_data_op[30]              : D12       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : D13       : power  :                   : 1.0V    :           :                
-rs1_data_op[6]               : D14       : output : 2.5 V             :         : 7         : N              
-rs1_data_ex[3]               : D15       : output : 2.5 V             :         : 6         : N              
-rs1_data_ex[22]              : D16       : output : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7         :                
+rs2_data_op[26]              : D15       : output : 2.5 V             :         : 6         : N              
+rs1_data_ex[15]              : D16       : output : 2.5 V             :         : 6         : N              
 clk                          : E1        : input  : 2.5 V             :         : 1         : N              
 GND                          : E2        : gnd    :                   :         :           :                
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                
 GNDA3                        : E5        : gnd    :                   :         :           :                
-rs2_data_op[28]              : E6        : output : 2.5 V             :         : 8         : N              
-rs1_data_op[17]              : E7        : output : 2.5 V             :         : 8         : N              
-rs2_data_op[2]               : E8        : output : 2.5 V             :         : 8         : N              
-rs1_data_op[13]              : E9        : output : 2.5 V             :         : 7         : N              
-take_new_pc                  : E10       : output : 2.5 V             :         : 7         : N              
-rs1_data_op[10]              : E11       : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[30]              : E6        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[16]              : E7        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[5]               : E8        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[9]               : E9        : output : 2.5 V             :         : 7         : N              
+rs1_data_ex[21]              : E10       : output : 2.5 V             :         : 7         : N              
+rs2_data_ex[1]               : E11       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
 VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
 GND+                         : E15       :        :                   :         : 6         :                
 GND+                         : E16       :        :                   :         : 6         :                
-rs2_data_ex[29]              : F1        : output : 2.5 V             :         : 1         : N              
-rs2_data_op[24]              : F2        : output : 2.5 V             :         : 1         : N              
-rs2_data_ex[10]              : F3        : output : 2.5 V             :         : 1         : N              
+take_new_pc                  : F1        : output : 2.5 V             :         : 1         : N              
+rs1_data_op[11]              : F2        : output : 2.5 V             :         : 1         : N              
+rs2_data_ex[31]              : F3        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : F4        :        :                   :         : 1         :                
 VCCA3                        : F5        : power  :                   : 2.5V    :           :                
 GND                          : F6        : gnd    :                   :         :           :                
 VCCINT                       : F7        : power  :                   : 1.0V    :           :                
-rs2_data_ex[16]              : F8        : output : 2.5 V             :         : 8         : N              
-rs1_data_op[15]              : F9        : output : 2.5 V             :         : 7         : N              
+rs2_data_ex[21]              : F8        : output : 2.5 V             :         : 8         : N              
+rs2_data_ex[11]              : F9        : output : 2.5 V             :         : 7         : N              
 GND                          : F10       : gnd    :                   :         :           :                
 VCCINT                       : F11       : power  :                   : 1.0V    :           :                
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
-rs1_data_ex[19]              : F13       : output : 2.5 V             :         : 6         : N              
-rs1_data_op[19]              : F14       : output : 2.5 V             :         : 6         : N              
-branch_result                : F15       : output : 2.5 V             :         : 6         : N              
+rs2_data_ex[18]              : F13       : output : 2.5 V             :         : 6         : N              
+rs2_data_ex[23]              : F14       : output : 2.5 V             :         : 6         : N              
+rs1_data_ex[28]              : F15       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
-rs2_data_ex[24]              : G1        : output : 2.5 V             :         : 1         : N              
-rs2_data_op[30]              : G2        : output : 2.5 V             :         : 1         : N              
+rs1_data_op[6]               : G1        : output : 2.5 V             :         : 1         : N              
+rs2_data_ex[22]              : G2        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
 GND                          : G4        : gnd    :                   :         :           :                
-rs2_data_op[17]              : G5        : output : 2.5 V             :         : 1         : N              
+rs1_data_op[23]              : G5        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : G6        : power  :                   : 1.0V    :           :                
 VCCINT                       : G7        : power  :                   : 1.0V    :           :                
 VCCINT                       : G8        : power  :                   : 1.0V    :           :                
@@ -179,8 +179,8 @@ GND                          : G11       : gnd    :                   :         
 MSEL2                        : G12       :        :                   :         : 6         :                
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
-rs1_data_op[28]              : G15       : output : 2.5 V             :         : 6         : N              
-rs1_data_op[7]               : G16       : output : 2.5 V             :         : 6         : N              
+rs1_data_ex[22]              : G15       : output : 2.5 V             :         : 6         : N              
+rs1_data_op[25]              : G16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
 TCK                          : H3        : input  :                   :         : 1         :                
@@ -197,8 +197,8 @@ MSEL0                        : H13       :        :                   :         
 CONF_DONE                    : H14       :        :                   :         : 6         :                
 GND                          : H15       : gnd    :                   :         :           :                
 GND                          : H16       : gnd    :                   :         :           :                
-rs2_data_ex[25]              : J1        : output : 2.5 V             :         : 2         : N              
-rs2_data_ex[5]               : J2        : output : 2.5 V             :         : 2         : N              
+rs1_data_op[4]               : J1        : output : 2.5 V             :         : 2         : N              
+branch_result                : J2        : output : 2.5 V             :         : 2         : N              
 nCE                          : J3        :        :                   :         : 1         :                
 TDO                          : J4        : output :                   :         : 1         :                
 TMS                          : J5        : input  :                   :         : 1         :                
@@ -209,15 +209,15 @@ GND                          : J9        : gnd    :                   :         
 GND                          : J10       : gnd    :                   :         :           :                
 GND                          : J11       : gnd    :                   :         :           :                
 VCCINT                       : J12       : power  :                   : 1.0V    :           :                
-rs1_data_ex[5]               : J13       : output : 2.5 V             :         : 5         : N              
-rs2_data_op[7]               : J14       : output : 2.5 V             :         : 5         : N              
-rs2_data_op[31]              : J15       : output : 2.5 V             :         : 5         : N              
-rs1_data_ex[17]              : J16       : output : 2.5 V             :         : 5         : N              
-rs2_data_ex[20]              : K1        : output : 2.5 V             :         : 2         : N              
-rs2_data_op[9]               : K2        : output : 2.5 V             :         : 2         : N              
+rs1_data_ex[16]              : J13       : output : 2.5 V             :         : 5         : N              
+rs1_data_ex[18]              : J14       : output : 2.5 V             :         : 5         : N              
+rs1_data_op[3]               : J15       : output : 2.5 V             :         : 5         : N              
+rs2_data_op[20]              : J16       : output : 2.5 V             :         : 5         : N              
+rs2_data_op[13]              : K1        : output : 2.5 V             :         : 2         : N              
+rs1_data_op[1]               : K2        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
 GND                          : K4        : gnd    :                   :         :           :                
-rs1_data_ex[11]              : K5        : output : 2.5 V             :         : 2         : N              
+rs2_data_ex[28]              : K5        : output : 2.5 V             :         : 2         : N              
 GND                          : K6        : gnd    :                   :         :           :                
 VCCINT                       : K7        : power  :                   : 1.0V    :           :                
 GND                          : K8        : gnd    :                   :         :           :                
@@ -227,101 +227,101 @@ VCCINT                       : K11       : power  :                   : 1.0V    
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-rs1_data_ex[18]              : K15       : output : 2.5 V             :         : 5         : N              
-rs1_data_ex[13]              : K16       : output : 2.5 V             :         : 5         : N              
-rs2_data_op[8]               : L1        : output : 2.5 V             :         : 2         : N              
-rs2_data_op[26]              : L2        : output : 2.5 V             :         : 2         : N              
-rs2_data_ex[12]              : L3        : output : 2.5 V             :         : 2         : N              
-rs2_data_ex[8]               : L4        : output : 2.5 V             :         : 2         : N              
+rs1_data_ex[12]              : K15       : output : 2.5 V             :         : 5         : N              
+rs1_data_ex[5]               : K16       : output : 2.5 V             :         : 5         : N              
+rs2_data_op[14]              : L1        : output : 2.5 V             :         : 2         : N              
+rs2_data_op[8]               : L2        : output : 2.5 V             :         : 2         : N              
+rs2_data_op[7]               : L3        : output : 2.5 V             :         : 2         : N              
+rs1_data_op[31]              : L4        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 VCCINT                       : L6        : power  :                   : 1.0V    :           :                
-rs2_data_op[13]              : L7        : output : 2.5 V             :         : 3         : N              
-rs2_data_op[29]              : L8        : output : 2.5 V             :         : 3         : N              
+rs2_data_op[24]              : L7        : output : 2.5 V             :         : 3         : N              
+rs2_data_op[16]              : L8        : output : 2.5 V             :         : 3         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 VCCA4                        : L12       : power  :                   : 2.5V    :           :                
-rs1_data_ex[23]              : L13       : output : 2.5 V             :         : 5         : N              
-rs1_data_ex[6]               : L14       : output : 2.5 V             :         : 5         : N              
-rs1_data_ex[31]              : L15       : output : 2.5 V             :         : 5         : N              
-rs2_data_ex[27]              : L16       : output : 2.5 V             :         : 5         : N              
+rs1_data_ex[24]              : L13       : output : 2.5 V             :         : 5         : N              
+rs2_data_op[2]               : L14       : output : 2.5 V             :         : 5         : N              
+rs1_data_ex[26]              : L15       : output : 2.5 V             :         : 5         : N              
+rs1_data_ex[10]              : L16       : output : 2.5 V             :         : 5         : N              
 GND+                         : M1        :        :                   :         : 2         :                
 reset                        : M2        : input  : 2.5 V             :         : 2         : N              
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GNDA1                        : M5        : gnd    :                   :         :           :                
-rs2_data_op[25]              : M6        : output : 2.5 V             :         : 3         : N              
-rs2_data_ex[30]              : M7        : output : 2.5 V             :         : 3         : N              
-rs2_data_op[4]               : M8        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[21]              : M6        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[16]              : M7        : output : 2.5 V             :         : 3         : N              
+rs2_data_op[10]              : M8        : output : 2.5 V             :         : 3         : N              
 VCCINT                       : M9        : power  :                   : 1.0V    :           :                
-rs1_data_ex[29]              : M10       : output : 2.5 V             :         : 4         : N              
+rs2_data_ex[19]              : M10       : output : 2.5 V             :         : 4         : N              
 VCCINT                       : M11       : power  :                   : 1.0V    :           :                
 GNDA4                        : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
 VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
 GND+                         : M15       :        :                   :         : 5         :                
 GND+                         : M16       :        :                   :         : 5         :                
-rs2_data_ex[1]               : N1        : output : 2.5 V             :         : 2         : N              
-rs2_data_ex[23]              : N2        : output : 2.5 V             :         : 2         : N              
-rs1_data_ex[30]              : N3        : output : 2.5 V             :         : 3         : N              
+rs2_data_op[9]               : N1        : output : 2.5 V             :         : 2         : N              
+rs2_data_op[29]              : N2        : output : 2.5 V             :         : 2         : N              
+rs2_data_op[22]              : N3        : output : 2.5 V             :         : 3         : N              
 VCCD_PLL1                    : N4        : power  :                   : 1.0V    :           :                
-rs2_data_op[10]              : N5        : output : 2.5 V             :         : 3         : N              
-rs2_data_ex[0]               : N6        : output : 2.5 V             :         : 3         : N              
+rs2_data_op[6]               : N5        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[20]              : N6        : output : 2.5 V             :         : 3         : N              
 GND                          : N7        : gnd    :                   :         :           :                
-rs2_data_ex[13]              : N8        : output : 2.5 V             :         : 3         : N              
-rs2_data_ex[4]               : N9        : output : 2.5 V             :         : 4         : N              
+rs2_data_ex[10]              : N8        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[5]               : N9        : output : 2.5 V             :         : 4         : N              
 GND                          : N10       : gnd    :                   :         :           :                
-rs1_data_op[31]              : N11       : output : 2.5 V             :         : 4         : N              
-rs1_data_ex[10]              : N12       : output : 2.5 V             :         : 4         : N              
+rs2_data_ex[3]               : N11       : output : 2.5 V             :         : 4         : N              
+rs2_data_op[28]              : N12       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : N13       : power  :                   : 1.0V    :           :                
-rs1_data_op[9]               : N14       : output : 2.5 V             :         : 5         : N              
-rs1_data_ex[8]               : N15       : output : 2.5 V             :         : 5         : N              
-rs1_data_ex[21]              : N16       : output : 2.5 V             :         : 5         : N              
-rs2_data_op[0]               : P1        : output : 2.5 V             :         : 2         : N              
-rs2_data_ex[22]              : P2        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : P3        :        :                   :         : 3         :                
+rs2_data_op[31]              : N14       : output : 2.5 V             :         : 5         : N              
+rs2_data_op[3]               : N15       : output : 2.5 V             :         : 5         : N              
+rs1_data_ex[1]               : N16       : output : 2.5 V             :         : 5         : N              
+rs2_data_ex[13]              : P1        : output : 2.5 V             :         : 2         : N              
+rs2_data_op[17]              : P2        : output : 2.5 V             :         : 2         : N              
+rs2_data_op[21]              : P3        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
 GND                          : P5        : gnd    :                   :         :           :                
-rs1_data_ex[9]               : P6        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[7]               : P6        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
-rs1_data_ex[28]              : P8        : output : 2.5 V             :         : 3         : N              
-rs2_data_ex[26]              : P9        : output : 2.5 V             :         : 4         : N              
+rs1_data_op[10]              : P8        : output : 2.5 V             :         : 3         : N              
+rs1_data_ex[0]               : P9        : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
-rs2_data_ex[7]               : P11       : output : 2.5 V             :         : 4         : N              
+rs2_data_op[19]              : P11       : output : 2.5 V             :         : 4         : N              
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
-rs1_data_ex[12]              : P14       : output : 2.5 V             :         : 4         : N              
-rs1_data_ex[16]              : P15       : output : 2.5 V             :         : 5         : N              
-rs2_data_op[15]              : P16       : output : 2.5 V             :         : 5         : N              
-rs1_data_ex[4]               : R1        : output : 2.5 V             :         : 2         : N              
+rs2_data_op[18]              : P14       : output : 2.5 V             :         : 4         : N              
+rs2_data_op[25]              : P15       : output : 2.5 V             :         : 5         : N              
+rs2_data_ex[24]              : P16       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
 GND                          : R2        : gnd    :                   :         :           :                
-rs2_data_ex[14]              : R3        : output : 2.5 V             :         : 3         : N              
-rs1_data_ex[24]              : R4        : output : 2.5 V             :         : 3         : N              
-rs2_data_op[14]              : R5        : output : 2.5 V             :         : 3         : N              
-rs2_data_op[19]              : R6        : output : 2.5 V             :         : 3         : N              
-rs2_data_ex[9]               : R7        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[30]              : R3        : output : 2.5 V             :         : 3         : N              
+rs2_data_op[27]              : R4        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[0]               : R5        : output : 2.5 V             :         : 3         : N              
+rs2_data_op[12]              : R6        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[12]              : R7        : output : 2.5 V             :         : 3         : N              
 GND+                         : R8        :        :                   :         : 3         :                
 GND+                         : R9        :        :                   :         : 4         :                
-rs2_data_op[23]              : R10       : output : 2.5 V             :         : 4         : N              
-rs1_data_ex[14]              : R11       : output : 2.5 V             :         : 4         : N              
-rs2_data_ex[31]              : R12       : output : 2.5 V             :         : 4         : N              
-rs1_data_op[26]              : R13       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4         :                
+rs1_data_ex[20]              : R10       : output : 2.5 V             :         : 4         : N              
+rs1_data_op[24]              : R11       : output : 2.5 V             :         : 4         : N              
+rs2_data_ex[15]              : R12       : output : 2.5 V             :         : 4         : N              
+rs2_data_op[15]              : R13       : output : 2.5 V             :         : 4         : N              
+rs1_data_op[27]              : R14       : output : 2.5 V             :         : 4         : N              
 GND                          : R15       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
+rs2_data_ex[4]               : R16       : output : 2.5 V             :         : 5         : N              
 VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
-rs1_data_ex[25]              : T2        : output : 2.5 V             :         : 3         : N              
-rs2_data_ex[28]              : T3        : output : 2.5 V             :         : 3         : N              
-rs2_data_ex[3]               : T4        : output : 2.5 V             :         : 3         : N              
-rs2_data_ex[6]               : T5        : output : 2.5 V             :         : 3         : N              
-rs2_data_op[20]              : T6        : output : 2.5 V             :         : 3         : N              
-rs2_data_op[3]               : T7        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[9]               : T2        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : T3        :        :                   :         : 3         :                
+rs1_data_op[8]               : T4        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[26]              : T5        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[22]              : T6        : output : 2.5 V             :         : 3         : N              
+rs1_data_op[19]              : T7        : output : 2.5 V             :         : 3         : N              
 GND+                         : T8        :        :                   :         : 3         :                
 GND+                         : T9        :        :                   :         : 4         :                
-rs2_data_ex[15]              : T10       : output : 2.5 V             :         : 4         : N              
-rs2_data_op[27]              : T11       : output : 2.5 V             :         : 4         : N              
-rs2_data_op[1]               : T12       : output : 2.5 V             :         : 4         : N              
-rs1_data_ex[27]              : T13       : output : 2.5 V             :         : 4         : N              
-rs1_data_ex[15]              : T14       : output : 2.5 V             :         : 4         : N              
-rs2_data_op[22]              : T15       : output : 2.5 V             :         : 4         : N              
+rs2_data_op[4]               : T10       : output : 2.5 V             :         : 4         : N              
+rs1_data_op[14]              : T11       : output : 2.5 V             :         : 4         : N              
+rs2_data_op[11]              : T12       : output : 2.5 V             :         : 4         : N              
+rs2_data_ex[2]               : T13       : output : 2.5 V             :         : 4         : N              
+rs2_data_op[23]              : T14       : output : 2.5 V             :         : 4         : N              
+rs1_data_ex[23]              : T15       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

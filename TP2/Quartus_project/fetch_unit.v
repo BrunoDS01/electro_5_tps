@@ -25,8 +25,13 @@ always @(posedge stage_clk or posedge reset) begin
 		instr <= 32'd0;
 	end
 	else begin
-		pc <= pc_next;
-		instr <= instr_in;
+		if (stage_x) begin
+			pc <= 32'd0;
+			instr <= 32'd0;
+		end else if (!stage_ena) begin
+			pc <= pc_next;
+			instr <= instr_in;
+		end
 	end
 end
 

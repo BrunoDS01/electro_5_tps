@@ -21,9 +21,15 @@ always @(posedge stg_clk or posedge reset) begin
 		save_to_reg_out <= 0;
 	end
 	else begin
-		rd_out <= rd;
-		c_out <= c;
-		save_to_reg_out <= save_to_reg;
+		if (stg_x) begin
+			rd_out <= 0;
+			c_out <= 0;
+			save_to_reg_out <= 0;
+		end else if (!stg_ena) begin
+			rd_out <= rd;
+			c_out <= c;
+			save_to_reg_out <= save_to_reg;
+		end
 	end
 end
 

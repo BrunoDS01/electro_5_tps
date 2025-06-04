@@ -101,4 +101,5 @@ set_instance_assignment -name VIRTUAL_PIN ON -to pc
 set_instance_assignment -name VIRTUAL_PIN ON -to inst_in
 set_global_assignment -name VECTOR_WAVEFORM_FILE add_sub.vwf
 set_instance_assignment -name VIRTUAL_PIN ON -to imm
+set_global_assignment -name VERILOG_FILE pipeline_control.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tp2_e5_ERV25_grupo2
-Thu May 29 20:50:19 2025
+Wed Jun  4 16:56:36 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -21,10 +21,10 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
  13. Source assignments for bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated
  14. Source assignments for ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated
  15. Parameter Settings for User Entity Instance: bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component
- 16. Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component
+ 16. Parameter Settings for User Entity Instance: opcode_decode:inst5
  17. Parameter Settings for User Entity Instance: alu:inst17
  18. Parameter Settings for User Entity Instance: operand_build:inst12
- 19. Parameter Settings for User Entity Instance: opcode_decode:inst5
+ 19. Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component
  20. Parameter Settings for User Entity Instance: immediate_builder:inst4
  21. Parameter Settings for User Entity Instance: address_builder:inst2
  22. altsyncram Parameter Settings by Entity Instance
@@ -57,15 +57,15 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu May 29 20:50:19 2025           ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun  4 16:56:36 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 3,335                                           ;
-;     Total combinational functions  ; 2,159                                           ;
-;     Dedicated logic registers      ; 1,408                                           ;
-; Total registers                    ; 1408                                            ;
+; Total logic elements               ; 3,462                                           ;
+;     Total combinational functions  ; 2,392                                           ;
+;     Dedicated logic registers      ; 1,413                                           ;
+; Total registers                    ; 1413                                            ;
 ; Total pins                         ; 132                                             ;
 ; Total virtual pins                 ; 323                                             ;
 ; Total memory bits                  ; 66,752                                          ;
@@ -206,6 +206,7 @@ on the Quartus Prime software download page.
 ; ad_latch.v                                                                          ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ad_latch.v                ;         ;
 ; next_pc_decision_module.v                                                           ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/next_pc_decision_module.v ;         ;
 ; branch_result_module.v                                                              ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/branch_result_module.v    ;         ;
+; pipeline_control.v                                                                  ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/pipeline_control.v        ;         ;
 ; altsyncram.tdf                                                                      ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf                                   ;         ;
 ; stratix_ram_block.inc                                                               ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                            ;         ;
 ; lpm_mux.inc                                                                         ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc                                      ;         ;
@@ -226,20 +227,20 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,335     ;
+; Estimated Total logic elements              ; 3,462     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2159      ;
+; Total combinational functions               ; 2392      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1800      ;
-;     -- 3 input functions                    ; 207       ;
-;     -- <=2 input functions                  ; 152       ;
+;     -- 4 input functions                    ; 1837      ;
+;     -- 3 input functions                    ; 215       ;
+;     -- <=2 input functions                  ; 340       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2008      ;
+;     -- normal mode                          ; 2241      ;
 ;     -- arithmetic mode                      ; 151       ;
 ;                                             ;           ;
-; Total registers                             ; 1408      ;
-;     -- Dedicated logic registers            ; 1408      ;
+; Total registers                             ; 1413      ;
+;     -- Dedicated logic registers            ; 1413      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; Virtual pins                                ; 323       ;
@@ -249,9 +250,9 @@ on the Quartus Prime software download page.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1459      ;
-; Total fan-out                               ; 14653     ;
-; Average fan-out                             ; 3.48      ;
+; Maximum fan-out                             ; 1464      ;
+; Total fan-out                               ; 15379     ;
+; Average fan-out                             ; 3.46      ;
 +---------------------------------------------+-----------+
 
 
@@ -260,25 +261,27 @@ on the Quartus Prime software download page.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                        ; Entity Name             ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |tp2_e5_ERV25_grupo2                         ; 2159 (1)            ; 1408 (0)                  ; 66752       ; 0            ; 0       ; 0         ; 132  ; 323          ; |tp2_e5_ERV25_grupo2                                                                                                       ; tp2_e5_ERV25_grupo2     ; work         ;
+; |tp2_e5_ERV25_grupo2                         ; 2392 (1)            ; 1413 (0)                  ; 66752       ; 0            ; 0       ; 0         ; 132  ; 323          ; |tp2_e5_ERV25_grupo2                                                                                                       ; tp2_e5_ERV25_grupo2     ; work         ;
 ;    |ad_latch:inst15|                         ; 0 (0)               ; 70 (70)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ad_latch:inst15                                                                                       ; ad_latch                ; work         ;
 ;    |address_builder:inst2|                   ; 99 (99)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_builder:inst2                                                                                 ; address_builder         ; work         ;
-;    |alu:inst17|                              ; 328 (328)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu:inst17                                                                                            ; alu                     ; work         ;
+;    |alu:inst17|                              ; 329 (329)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu:inst17                                                                                            ; alu                     ; work         ;
 ;    |alu_latch:inst18|                        ; 0 (0)               ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu_latch:inst18                                                                                      ; alu_latch               ; work         ;
-;    |bht_btb_module:inst11|                   ; 7 (0)               ; 0 (0)                     ; 1216        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11                                                                                 ; bht_btb_module          ; work         ;
+;    |bht_btb_module:inst11|                   ; 7 (0)               ; 5 (0)                     ; 1216        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11                                                                                 ; bht_btb_module          ; work         ;
 ;       |bht_btb_ram:inst|                     ; 0 (0)               ; 0 (0)                     ; 1216        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|bht_btb_ram:inst                                                                ; bht_btb_ram             ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 1216        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component                                ; altsyncram              ; work         ;
 ;             |altsyncram_c2o1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 1216        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated ; altsyncram_c2o1         ; work         ;
 ;       |bht_btb_wr_data_builder:inst4|        ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|bht_btb_wr_data_builder:inst4                                                   ; bht_btb_wr_data_builder ; work         ;
 ;       |prediction_module:inst3|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|prediction_module:inst3                                                         ; prediction_module       ; work         ;
+;       |tag_latch:inst2|                      ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|tag_latch:inst2                                                                 ; tag_latch               ; work         ;
 ;    |branch_result_module:inst8|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|branch_result_module:inst8                                                                            ; branch_result_module    ; work         ;
-;    |decode_latch:inst1|                      ; 2 (2)               ; 98 (98)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|decode_latch:inst1                                                                                    ; decode_latch            ; work         ;
+;    |decode_latch:inst1|                      ; 105 (105)           ; 98 (98)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|decode_latch:inst1                                                                                    ; decode_latch            ; work         ;
 ;    |fetch_unit:inst6|                        ; 80 (80)             ; 64 (64)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst6                                                                                      ; fetch_unit              ; work         ;
-;    |immediate_builder:inst4|                 ; 39 (39)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4                                                                               ; immediate_builder       ; work         ;
+;    |immediate_builder:inst4|                 ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4                                                                               ; immediate_builder       ; work         ;
 ;    |next_pc_decision_module:inst9|           ; 68 (68)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9                                                                         ; next_pc_decision_module ; work         ;
-;    |op_latch:inst16|                         ; 0 (0)               ; 115 (115)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|op_latch:inst16                                                                                       ; op_latch                ; work         ;
-;    |opcode_decode:inst5|                     ; 15 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|opcode_decode:inst5                                                                                   ; opcode_decode           ; work         ;
+;    |op_latch:inst16|                         ; 115 (115)           ; 115 (115)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|op_latch:inst16                                                                                       ; op_latch                ; work         ;
+;    |opcode_decode:inst5|                     ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|opcode_decode:inst5                                                                                   ; opcode_decode           ; work         ;
 ;    |operand_build:inst12|                    ; 96 (96)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|operand_build:inst12                                                                                  ; operand_build           ; work         ;
+;    |pipeline_control:inst19|                 ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|pipeline_control:inst19                                                                               ; pipeline_control        ; work         ;
 ;    |ram_principal:inst|                      ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ram_principal:inst                                                                                    ; ram_principal           ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ram_principal:inst|altsyncram:altsyncram_component                                                    ; altsyncram              ; work         ;
 ;          |altsyncram_akl2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated                     ; altsyncram_akl2         ; work         ;
@@ -308,19 +311,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------+------------------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                        ;
-+--------------------------------------------------+----------------------------------------+
-; Register name                                    ; Reason for Removal                     ;
-+--------------------------------------------------+----------------------------------------+
-; op_latch:inst16|instr_type_out[3]                ; Stuck at GND due to stuck port data_in ;
-; bht_btb_module:inst11|tag_latch:inst2|out_tag[4] ; Merged with fetch_unit:inst6|pc[12]    ;
-; bht_btb_module:inst11|tag_latch:inst2|out_tag[3] ; Merged with fetch_unit:inst6|pc[11]    ;
-; bht_btb_module:inst11|tag_latch:inst2|out_tag[2] ; Merged with fetch_unit:inst6|pc[10]    ;
-; bht_btb_module:inst11|tag_latch:inst2|out_tag[1] ; Merged with fetch_unit:inst6|pc[9]     ;
-; bht_btb_module:inst11|tag_latch:inst2|out_tag[0] ; Merged with fetch_unit:inst6|pc[8]     ;
-; Total Number of Removed Registers = 6            ;                                        ;
-+--------------------------------------------------+----------------------------------------+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; op_latch:inst16|instr_type_out[3]     ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -328,12 +326,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1408  ;
+; Total registers                              ; 1413  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 1408  ;
+; Number of registers using Asynchronous Clear ; 1413  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1024  ;
+; Number of registers using Clock Enable       ; 1185  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -343,24 +341,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[19] ;
+; 3:1                ; 98 bits   ; 196 LEs       ; 98 LEs               ; 98 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst1|imm_out[23]           ;
+; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[14] ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux6             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux14            ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[12] ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 64 LEs               ; 96 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst12|Selector30          ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux7             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|pipeline_control:inst19|fetch_halt       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux18            ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[9]  ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 64 LEs               ; 96 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst12|Selector0           ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst2|Add0               ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst2|Add0               ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux5             ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux3             ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
-; 9:1                ; 32 bits   ; 192 LEs       ; 32 LEs               ; 160 LEs                ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst2|Mux8               ;
+; 9:1                ; 32 bits   ; 192 LEs       ; 32 LEs               ; 160 LEs                ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst2|Mux10              ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux22            ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst20|rs1_data[4]         ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst20|rs2_data[9]         ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux21            ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst20|rs1_data[7]         ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst20|rs2_data[9]         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 
 
@@ -443,6 +443,54 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: opcode_decode:inst5 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; R_TYPE         ; 000   ; Unsigned Binary                         ;
+; I_TYPE         ; 001   ; Unsigned Binary                         ;
+; S_TYPE         ; 010   ; Unsigned Binary                         ;
+; B_TYPE         ; 011   ; Unsigned Binary                         ;
+; U_TYPE         ; 100   ; Unsigned Binary                         ;
+; J_TYPE         ; 101   ; Unsigned Binary                         ;
+; N_TYPE         ; 111   ; Unsigned Binary                         ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------+
+; Parameter Settings for User Entity Instance: alu:inst17 ;
++----------------+-------+--------------------------------+
+; Parameter Name ; Value ; Type                           ;
++----------------+-------+--------------------------------+
+; R_TYPE         ; 000   ; Unsigned Binary                ;
+; I_TYPE         ; 001   ; Unsigned Binary                ;
+; S_TYPE         ; 010   ; Unsigned Binary                ;
+; B_TYPE         ; 011   ; Unsigned Binary                ;
+; U_TYPE         ; 100   ; Unsigned Binary                ;
+; J_TYPE         ; 101   ; Unsigned Binary                ;
+; N_TYPE         ; 111   ; Unsigned Binary                ;
++----------------+-------+--------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: operand_build:inst12 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; R_TYPE         ; 000   ; Unsigned Binary                          ;
+; I_TYPE         ; 001   ; Unsigned Binary                          ;
+; S_TYPE         ; 010   ; Unsigned Binary                          ;
+; B_TYPE         ; 011   ; Unsigned Binary                          ;
+; U_TYPE         ; 100   ; Unsigned Binary                          ;
+; J_TYPE         ; 101   ; Unsigned Binary                          ;
+; N_TYPE         ; 111   ; Unsigned Binary                          ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component ;
 +------------------------------------+----------------------------+-------------------------------+
@@ -501,54 +549,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; DEVICE_FAMILY                      ; Cyclone IV E               ; Untyped                       ;
 ; CBXI_PARAMETER                     ; altsyncram_akl2            ; Untyped                       ;
 +------------------------------------+----------------------------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------+
-; Parameter Settings for User Entity Instance: alu:inst17 ;
-+----------------+-------+--------------------------------+
-; Parameter Name ; Value ; Type                           ;
-+----------------+-------+--------------------------------+
-; R_TYPE         ; 000   ; Unsigned Binary                ;
-; I_TYPE         ; 001   ; Unsigned Binary                ;
-; S_TYPE         ; 010   ; Unsigned Binary                ;
-; B_TYPE         ; 011   ; Unsigned Binary                ;
-; U_TYPE         ; 100   ; Unsigned Binary                ;
-; J_TYPE         ; 101   ; Unsigned Binary                ;
-; N_TYPE         ; 111   ; Unsigned Binary                ;
-+----------------+-------+--------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: operand_build:inst12 ;
-+----------------+-------+------------------------------------------+
-; Parameter Name ; Value ; Type                                     ;
-+----------------+-------+------------------------------------------+
-; R_TYPE         ; 000   ; Unsigned Binary                          ;
-; I_TYPE         ; 001   ; Unsigned Binary                          ;
-; S_TYPE         ; 010   ; Unsigned Binary                          ;
-; B_TYPE         ; 011   ; Unsigned Binary                          ;
-; U_TYPE         ; 100   ; Unsigned Binary                          ;
-; J_TYPE         ; 101   ; Unsigned Binary                          ;
-; N_TYPE         ; 111   ; Unsigned Binary                          ;
-+----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: opcode_decode:inst5 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; R_TYPE         ; 000   ; Unsigned Binary                         ;
-; I_TYPE         ; 001   ; Unsigned Binary                         ;
-; S_TYPE         ; 010   ; Unsigned Binary                         ;
-; B_TYPE         ; 011   ; Unsigned Binary                         ;
-; U_TYPE         ; 100   ; Unsigned Binary                         ;
-; J_TYPE         ; 101   ; Unsigned Binary                         ;
-; N_TYPE         ; 111   ; Unsigned Binary                         ;
-+----------------+-------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -620,23 +620,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 455                         ;
-; cycloneiii_ff         ; 1408                        ;
-;     CLR               ; 384                         ;
-;     ENA CLR           ; 1024                        ;
-; cycloneiii_lcell_comb ; 2161                        ;
+; cycloneiii_ff         ; 1413                        ;
+;     CLR               ; 228                         ;
+;     ENA CLR           ; 1185                        ;
+; cycloneiii_lcell_comb ; 2392                        ;
 ;     arith             ; 151                         ;
 ;         2 data inputs ; 58                          ;
 ;         3 data inputs ; 93                          ;
-;     normal            ; 2010                        ;
+;     normal            ; 2241                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 89                          ;
-;         3 data inputs ; 114                         ;
-;         4 data inputs ; 1800                        ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 279                         ;
+;         3 data inputs ; 122                         ;
+;         4 data inputs ; 1837                        ;
 ; cycloneiii_ram_block  ; 51                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 11.10                       ;
-; Average LUT depth     ; 6.83                        ;
+; Average LUT depth     ; 6.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -645,7 +645,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:05     ;
+; Top            ; 00:00:06     ;
 +----------------+--------------+
 
 
@@ -655,7 +655,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu May 29 20:50:00 2025
+    Info: Processing started: Wed Jun  4 16:56:16 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -713,6 +713,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file next_pc
     Info (12023): Found entity 1: next_pc_decision_module File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/next_pc_decision_module.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file branch_result_module.v
     Info (12023): Found entity 1: branch_result_module File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/branch_result_module.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pipeline_control.v
+    Info (12023): Found entity 1: pipeline_control File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/pipeline_control.v Line: 1
 Info (12127): Elaborating entity "tp2_e5_ERV25_grupo2" for the top level hierarchy
 Info (12128): Elaborating entity "next_pc_decision_module" for hierarchy "next_pc_decision_module:inst9"
 Info (12128): Elaborating entity "branch_result_module" for hierarchy "branch_result_module:inst8"
@@ -750,6 +752,15 @@ Info (12128): Elaborating entity "bht_btb_wr_data_builder" for hierarchy "bht_bt
 Info (12128): Elaborating entity "tag_latch" for hierarchy "bht_btb_module:inst11|tag_latch:inst2"
 Info (12128): Elaborating entity "pc_target_concat" for hierarchy "bht_btb_module:inst11|pc_target_concat:inst5"
 Info (12128): Elaborating entity "fetch_unit" for hierarchy "fetch_unit:inst6"
+Info (12128): Elaborating entity "pipeline_control" for hierarchy "pipeline_control:inst19"
+Info (12128): Elaborating entity "opcode_decode" for hierarchy "opcode_decode:inst5"
+Info (12128): Elaborating entity "op_latch" for hierarchy "op_latch:inst16"
+Info (12128): Elaborating entity "register_bank" for hierarchy "register_bank:inst20"
+Warning (10034): Output port "data_out" at register_bank.v(17) has no driver File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v Line: 17
+Warning (10034): Output port "memwrite" at register_bank.v(19) has no driver File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v Line: 19
+Info (12128): Elaborating entity "alu_latch" for hierarchy "alu_latch:inst18"
+Info (12128): Elaborating entity "alu" for hierarchy "alu:inst17"
+Info (12128): Elaborating entity "operand_build" for hierarchy "operand_build:inst12"
 Info (12128): Elaborating entity "ram_principal" for hierarchy "ram_principal:inst"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ram_principal:inst|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v Line: 98
 Info (12130): Elaborated megafunction instantiation "ram_principal:inst|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v Line: 98
@@ -784,14 +795,6 @@ Info (12133): Instantiated megafunction "ram_principal:inst|altsyncram:altsyncra
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_akl2.tdf
     Info (12023): Found entity 1: altsyncram_akl2 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_akl2.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_akl2" for hierarchy "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated" File: c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "register_bank" for hierarchy "register_bank:inst20"
-Warning (10034): Output port "data_out" at register_bank.v(17) has no driver File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v Line: 17
-Warning (10034): Output port "memwrite" at register_bank.v(19) has no driver File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v Line: 19
-Info (12128): Elaborating entity "op_latch" for hierarchy "op_latch:inst16"
-Info (12128): Elaborating entity "alu_latch" for hierarchy "alu_latch:inst18"
-Info (12128): Elaborating entity "alu" for hierarchy "alu:inst17"
-Info (12128): Elaborating entity "operand_build" for hierarchy "operand_build:inst12"
-Info (12128): Elaborating entity "opcode_decode" for hierarchy "opcode_decode:inst5"
 Info (12128): Elaborating entity "immediate_builder" for hierarchy "immediate_builder:inst4"
 Info (12128): Elaborating entity "address_builder" for hierarchy "address_builder:inst2"
 Info (12128): Elaborating entity "instruction_constant" for hierarchy "instruction_constant:inst10"
@@ -847,38 +850,6 @@ Info (15717): Design contains 323 virtual pins; timing numbers associated with p
     Info (15719): Pin "pc_next[2]" is virtual output pin
     Info (15719): Pin "pc_next[1]" is virtual output pin
     Info (15719): Pin "pc_next[0]" is virtual output pin
-    Info (15719): Pin "inst_in[31]" is virtual output pin
-    Info (15719): Pin "inst_in[30]" is virtual output pin
-    Info (15719): Pin "inst_in[29]" is virtual output pin
-    Info (15719): Pin "inst_in[28]" is virtual output pin
-    Info (15719): Pin "inst_in[27]" is virtual output pin
-    Info (15719): Pin "inst_in[26]" is virtual output pin
-    Info (15719): Pin "inst_in[25]" is virtual output pin
-    Info (15719): Pin "inst_in[24]" is virtual output pin
-    Info (15719): Pin "inst_in[23]" is virtual output pin
-    Info (15719): Pin "inst_in[22]" is virtual output pin
-    Info (15719): Pin "inst_in[21]" is virtual output pin
-    Info (15719): Pin "inst_in[20]" is virtual output pin
-    Info (15719): Pin "inst_in[19]" is virtual output pin
-    Info (15719): Pin "inst_in[18]" is virtual output pin
-    Info (15719): Pin "inst_in[17]" is virtual output pin
-    Info (15719): Pin "inst_in[16]" is virtual output pin
-    Info (15719): Pin "inst_in[15]" is virtual output pin
-    Info (15719): Pin "inst_in[14]" is virtual output pin
-    Info (15719): Pin "inst_in[13]" is virtual output pin
-    Info (15719): Pin "inst_in[12]" is virtual output pin
-    Info (15719): Pin "inst_in[11]" is virtual output pin
-    Info (15719): Pin "inst_in[10]" is virtual output pin
-    Info (15719): Pin "inst_in[9]" is virtual output pin
-    Info (15719): Pin "inst_in[8]" is virtual output pin
-    Info (15719): Pin "inst_in[7]" is virtual output pin
-    Info (15719): Pin "inst_in[6]" is virtual output pin
-    Info (15719): Pin "inst_in[5]" is virtual output pin
-    Info (15719): Pin "inst_in[4]" is virtual output pin
-    Info (15719): Pin "inst_in[3]" is virtual output pin
-    Info (15719): Pin "inst_in[2]" is virtual output pin
-    Info (15719): Pin "inst_in[1]" is virtual output pin
-    Info (15719): Pin "inst_in[0]" is virtual output pin
     Info (15719): Pin "imm_op[31]" is virtual output pin
     Info (15719): Pin "imm_op[30]" is virtual output pin
     Info (15719): Pin "imm_op[29]" is virtual output pin
@@ -1007,6 +978,38 @@ Info (15717): Design contains 323 virtual pins; timing numbers associated with p
     Info (15719): Pin "c[2]" is virtual output pin
     Info (15719): Pin "c[1]" is virtual output pin
     Info (15719): Pin "c[0]" is virtual output pin
+    Info (15719): Pin "inst_in[31]" is virtual output pin
+    Info (15719): Pin "inst_in[30]" is virtual output pin
+    Info (15719): Pin "inst_in[29]" is virtual output pin
+    Info (15719): Pin "inst_in[28]" is virtual output pin
+    Info (15719): Pin "inst_in[27]" is virtual output pin
+    Info (15719): Pin "inst_in[26]" is virtual output pin
+    Info (15719): Pin "inst_in[25]" is virtual output pin
+    Info (15719): Pin "inst_in[24]" is virtual output pin
+    Info (15719): Pin "inst_in[23]" is virtual output pin
+    Info (15719): Pin "inst_in[22]" is virtual output pin
+    Info (15719): Pin "inst_in[21]" is virtual output pin
+    Info (15719): Pin "inst_in[20]" is virtual output pin
+    Info (15719): Pin "inst_in[19]" is virtual output pin
+    Info (15719): Pin "inst_in[18]" is virtual output pin
+    Info (15719): Pin "inst_in[17]" is virtual output pin
+    Info (15719): Pin "inst_in[16]" is virtual output pin
+    Info (15719): Pin "inst_in[15]" is virtual output pin
+    Info (15719): Pin "inst_in[14]" is virtual output pin
+    Info (15719): Pin "inst_in[13]" is virtual output pin
+    Info (15719): Pin "inst_in[12]" is virtual output pin
+    Info (15719): Pin "inst_in[11]" is virtual output pin
+    Info (15719): Pin "inst_in[10]" is virtual output pin
+    Info (15719): Pin "inst_in[9]" is virtual output pin
+    Info (15719): Pin "inst_in[8]" is virtual output pin
+    Info (15719): Pin "inst_in[7]" is virtual output pin
+    Info (15719): Pin "inst_in[6]" is virtual output pin
+    Info (15719): Pin "inst_in[5]" is virtual output pin
+    Info (15719): Pin "inst_in[4]" is virtual output pin
+    Info (15719): Pin "inst_in[3]" is virtual output pin
+    Info (15719): Pin "inst_in[2]" is virtual output pin
+    Info (15719): Pin "inst_in[1]" is virtual output pin
+    Info (15719): Pin "inst_in[0]" is virtual output pin
     Info (15719): Pin "pc_new[31]" is virtual output pin
     Info (15719): Pin "pc_new[30]" is virtual output pin
     Info (15719): Pin "pc_new[29]" is virtual output pin
@@ -1138,15 +1141,15 @@ Info (15717): Design contains 323 virtual pins; timing numbers associated with p
     Info (15719): Pin "pc_target_ad[2]" is virtual output pin
     Info (15719): Pin "pc_target_ad[1]" is virtual output pin
     Info (15719): Pin "pc_target_ad[0]" is virtual output pin
-Info (21057): Implemented 4067 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4096 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 130 output pins
-    Info (21061): Implemented 3884 logic cells
+    Info (21061): Implemented 3913 logic cells
     Info (21064): Implemented 51 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
     Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Thu May 29 20:50:19 2025
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Processing ended: Wed Jun  4 16:56:36 2025
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:36
 
 
