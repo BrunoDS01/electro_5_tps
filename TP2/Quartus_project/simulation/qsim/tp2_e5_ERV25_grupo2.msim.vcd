@@ -3,7 +3,7 @@ $comment
 		vcd file tp2_e5_ERV25_grupo2.msim.vcd -direction
 $end
 $date
-	Thu Jun 05 13:17:18 2025
+	Thu Jun 05 17:38:07 2025
 $end
 $version
 	ModelSim Version 2020.1

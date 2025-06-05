@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition"
 
-// DATE "06/05/2025 13:17:14"
+// DATE "06/05/2025 17:38:02"
 
 // 
 // Device: Altera EP4CE22F17C8L Package FBGA256
@@ -10847,7 +10847,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .port_a_address_clear = "none";
@@ -11016,7 +11016,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .port_a_address_clear = "none";
@@ -11203,7 +11203,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .data_interleave
 defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .port_a_address_clear = "none";
@@ -11372,7 +11372,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .data_interleave
 defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .port_a_address_clear = "none";
@@ -11541,7 +11541,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .data_interleave
 defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .port_a_address_clear = "none";
@@ -11760,7 +11760,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .port_a_address_clear = "none";
@@ -11993,7 +11993,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .port_a_address_clear = "none";
@@ -12310,7 +12310,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .port_a_address_clear = "none";
@@ -13565,7 +13565,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .port_a_address_clear = "none";
@@ -13796,7 +13796,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .port_a_address_clear = "none";
@@ -13879,7 +13879,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .port_a_address_clear = "none";
@@ -15057,7 +15057,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .port_a_address_clear = "none";
@@ -16171,7 +16171,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .port_a_address_clear = "none";
@@ -18444,7 +18444,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .port_a_address_clear = "none";
@@ -18696,7 +18696,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .port_a_address_clear = "none";
@@ -19135,7 +19135,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .port_a_address_clear = "none";
@@ -19370,7 +19370,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .port_a_address_clear = "none";
@@ -19755,7 +19755,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .port_a_address_clear = "none";
@@ -19872,7 +19872,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a18 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a18 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a18 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a18 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a18 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a18 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a18 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a18 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a18 .port_a_address_clear = "none";
@@ -37212,7 +37212,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a2 .data_interleave
 defparam \inst|altsyncram_component|auto_generated|ram_block1a2 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a2 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a2 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a2 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a2 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a2 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a2 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a2 .port_a_address_clear = "none";
@@ -37343,7 +37343,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a3 .data_interleave
 defparam \inst|altsyncram_component|auto_generated|ram_block1a3 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a3 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a3 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a3 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a3 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a3 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a3 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a3 .port_a_address_clear = "none";
@@ -60079,7 +60079,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .port_a_address_clear = "none";
@@ -65655,7 +65655,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a13 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a13 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a13 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a13 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a13 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a13 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a13 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a13 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a13 .port_a_address_clear = "none";
@@ -67021,7 +67021,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a14 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a14 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a14 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a14 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a14 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a14 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a14 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a14 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a14 .port_a_address_clear = "none";
@@ -67816,7 +67816,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .port_a_address_clear = "none";
@@ -68186,7 +68186,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .data_interleave
 defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
@@ -68524,7 +68524,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a6 .data_interleave
 defparam \inst|altsyncram_component|auto_generated|ram_block1a6 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a6 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a6 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a6 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a6 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a6 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a6 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a6 .port_a_address_clear = "none";
@@ -68771,7 +68771,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .data_interleave
 defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .port_a_address_clear = "none";
@@ -69825,7 +69825,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a15 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a15 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a15 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a15 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a15 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a15 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a15 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a15 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a15 .port_a_address_clear = "none";
@@ -70742,7 +70742,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a19 .data_interleav
 defparam \inst|altsyncram_component|auto_generated|ram_block1a19 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a19 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a19 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a19 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a19 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a19 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a19 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a19 .port_a_address_clear = "none";
@@ -71718,7 +71718,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .data_interleave
 defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .port_a_address_clear = "none";
@@ -72062,7 +72062,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .data_interleave
 defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .data_interleave_width_in_bits = 1;
 defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .init_file = "../Python/program_word.hex";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .init_file_layout = "port_a";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated|ALTSYNCRAM";
+defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .logical_ram_name = "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated|ALTSYNCRAM";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .mixed_port_feed_through_mode = "dont_care";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .operation_mode = "bidir_dual_port";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .port_a_address_clear = "none";
