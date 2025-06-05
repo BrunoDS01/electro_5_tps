@@ -101,7 +101,7 @@ always @(posedge stg_clk or posedge reset) begin
 			wr_memory_out <= 0;
 			is_alu_sum_out <= 0;
 			
-		end else if (!stg_ena) begin
+		end else if (stg_ena) begin
 			branch_prediction_out <= branch_prediction;
 			valid_out <= valid;
 			counter_out <= counter;

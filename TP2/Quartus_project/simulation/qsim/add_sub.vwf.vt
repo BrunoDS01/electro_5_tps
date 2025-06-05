@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/29/2025 20:52:38"
+// Generated on "06/05/2025 13:17:12"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          tp2_e5_ERV25_grupo2
 // 
@@ -36,6 +36,9 @@ reg reset;
 wire branch_result;
 wire [31:0] c;
 wire [31:0] c_write_back;
+wire dec_ena;
+wire dec_nop;
+wire fetch_ena;
 wire [31:0] imm;
 wire [31:0] imm_op;
 wire [31:0] inst_in;
@@ -47,8 +50,11 @@ wire [31:0] pc_op;
 wire [31:0] pc_target_ad;
 wire [31:0] rs1_data_ex;
 wire [31:0] rs1_data_op;
+wire [4:0] rs1_op;
 wire [31:0] rs2_data_ex;
 wire [31:0] rs2_data_op;
+wire [4:0] rs2_op;
+wire save_to_reg_write_back;
 wire take_new_pc;
 
 // assign statements (if any)                          
@@ -58,6 +64,9 @@ tp2_e5_ERV25_grupo2 i1 (
 	.c(c),
 	.c_write_back(c_write_back),
 	.clk(clk),
+	.dec_ena(dec_ena),
+	.dec_nop(dec_nop),
+	.fetch_ena(fetch_ena),
 	.imm(imm),
 	.imm_op(imm_op),
 	.inst_in(inst_in),
@@ -70,8 +79,11 @@ tp2_e5_ERV25_grupo2 i1 (
 	.reset(reset),
 	.rs1_data_ex(rs1_data_ex),
 	.rs1_data_op(rs1_data_op),
+	.rs1_op(rs1_op),
 	.rs2_data_ex(rs2_data_ex),
 	.rs2_data_op(rs2_data_op),
+	.rs2_op(rs2_op),
+	.save_to_reg_write_back(save_to_reg_write_back),
 	.take_new_pc(take_new_pc)
 );
 initial 
@@ -90,8 +102,9 @@ end
 // reset
 initial
 begin
-	reset = 1'b1;
-	reset = #50000 1'b0;
+	reset = 1'b0;
+	reset = #10000 1'b1;
+	reset = #30000 1'b0;
 end 
 endmodule
 

@@ -92,7 +92,7 @@ always @(posedge stg_clk or posedge reset) begin
 			wr_memory_out <= 0;
 			is_alu_sum_out <= 0;
 
-		end else if (!stg_ena) begin
+		end else if (stg_ena) begin
 			pc_out <= pc;
 			rs1_out <= rs1;
 			rs2_out <= rs2;

@@ -101,7 +101,7 @@ always @(opcode, funct3) begin
 
 			end
 			save_to_reg = 1'b1;
-			rs1_used = 1'b0;
+			rs1_used = 1'b1;
 			rs2_used = 1'b0;
 			is_branch = 1'b0;
 			rd_memory = 1'b0;
@@ -135,7 +135,7 @@ always @(opcode, funct3) begin
 
 		OP: begin
 			instr_type = R_TYPE;
-			save_to_reg = 1'b0;
+			save_to_reg = 1'b1;
 			rs1_used = 1'b1;
 			rs2_used = 1'b1;
 			immediate_used = 1'b0;

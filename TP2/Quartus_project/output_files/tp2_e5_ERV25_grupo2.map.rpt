@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tp2_e5_ERV25_grupo2
-Wed Jun  4 16:56:36 2025
+Thu Jun  5 13:16:53 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -17,20 +17,21 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
   9. Analysis & Synthesis IP Cores Summary
  10. Registers Removed During Synthesis
  11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated
- 14. Source assignments for ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated
- 15. Parameter Settings for User Entity Instance: bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component
- 16. Parameter Settings for User Entity Instance: opcode_decode:inst5
- 17. Parameter Settings for User Entity Instance: alu:inst17
- 18. Parameter Settings for User Entity Instance: operand_build:inst12
- 19. Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component
- 20. Parameter Settings for User Entity Instance: immediate_builder:inst4
- 21. Parameter Settings for User Entity Instance: address_builder:inst2
- 22. altsyncram Parameter Settings by Entity Instance
- 23. Post-Synthesis Netlist Statistics for Top Partition
- 24. Elapsed Time Per Partition
- 25. Analysis & Synthesis Messages
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated
+ 15. Source assignments for ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated
+ 16. Parameter Settings for User Entity Instance: bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component
+ 17. Parameter Settings for User Entity Instance: opcode_decode:inst5
+ 18. Parameter Settings for User Entity Instance: alu:inst17
+ 19. Parameter Settings for User Entity Instance: operand_build:inst12
+ 20. Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component
+ 21. Parameter Settings for User Entity Instance: immediate_builder:inst4
+ 22. Parameter Settings for User Entity Instance: address_builder:inst2
+ 23. altsyncram Parameter Settings by Entity Instance
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -57,17 +58,17 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun  4 16:56:36 2025           ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun  5 13:16:52 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 3,462                                           ;
-;     Total combinational functions  ; 2,392                                           ;
-;     Dedicated logic registers      ; 1,413                                           ;
-; Total registers                    ; 1413                                            ;
-; Total pins                         ; 132                                             ;
-; Total virtual pins                 ; 323                                             ;
+; Total logic elements               ; 3,526                                           ;
+;     Total combinational functions  ; 2,458                                           ;
+;     Dedicated logic registers      ; 1,446                                           ;
+; Total registers                    ; 1446                                            ;
+; Total pins                         ; 469                                             ;
+; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 66,752                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
@@ -173,8 +174,8 @@ on the Quartus Prime software download page.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
-;     Processor 3            ;   0.1%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processor 3            ;   0.2%      ;
 ;     Processor 4            ;   0.1%      ;
 +----------------------------+-------------+
 
@@ -227,32 +228,31 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 3,462     ;
+; Estimated Total logic elements              ; 3,526     ;
 ;                                             ;           ;
-; Total combinational functions               ; 2392      ;
+; Total combinational functions               ; 2458      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 1837      ;
-;     -- 3 input functions                    ; 215       ;
-;     -- <=2 input functions                  ; 340       ;
+;     -- 4 input functions                    ; 1976      ;
+;     -- 3 input functions                    ; 291       ;
+;     -- <=2 input functions                  ; 191       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2241      ;
+;     -- normal mode                          ; 2307      ;
 ;     -- arithmetic mode                      ; 151       ;
 ;                                             ;           ;
-; Total registers                             ; 1413      ;
-;     -- Dedicated logic registers            ; 1413      ;
+; Total registers                             ; 1446      ;
+;     -- Dedicated logic registers            ; 1446      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; Virtual pins                                ; 323       ;
-; I/O pins                                    ; 132       ;
+; I/O pins                                    ; 469       ;
 ; Total memory bits                           ; 66752     ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1464      ;
-; Total fan-out                               ; 15379     ;
-; Average fan-out                             ; 3.46      ;
+; Maximum fan-out                             ; 1497      ;
+; Total fan-out                               ; 16315     ;
+; Average fan-out                             ; 3.33      ;
 +---------------------------------------------+-----------+
 
 
@@ -261,11 +261,11 @@ on the Quartus Prime software download page.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                        ; Entity Name             ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |tp2_e5_ERV25_grupo2                         ; 2392 (1)            ; 1413 (0)                  ; 66752       ; 0            ; 0       ; 0         ; 132  ; 323          ; |tp2_e5_ERV25_grupo2                                                                                                       ; tp2_e5_ERV25_grupo2     ; work         ;
+; |tp2_e5_ERV25_grupo2                         ; 2458 (1)            ; 1446 (0)                  ; 66752       ; 0            ; 0       ; 0         ; 469  ; 0            ; |tp2_e5_ERV25_grupo2                                                                                                       ; tp2_e5_ERV25_grupo2     ; work         ;
 ;    |ad_latch:inst15|                         ; 0 (0)               ; 70 (70)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ad_latch:inst15                                                                                       ; ad_latch                ; work         ;
 ;    |address_builder:inst2|                   ; 99 (99)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_builder:inst2                                                                                 ; address_builder         ; work         ;
-;    |alu:inst17|                              ; 329 (329)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu:inst17                                                                                            ; alu                     ; work         ;
-;    |alu_latch:inst18|                        ; 0 (0)               ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu_latch:inst18                                                                                      ; alu_latch               ; work         ;
+;    |alu:inst17|                              ; 330 (330)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu:inst17                                                                                            ; alu                     ; work         ;
+;    |alu_latch:inst18|                        ; 0 (0)               ; 38 (38)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu_latch:inst18                                                                                      ; alu_latch               ; work         ;
 ;    |bht_btb_module:inst11|                   ; 7 (0)               ; 5 (0)                     ; 1216        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11                                                                                 ; bht_btb_module          ; work         ;
 ;       |bht_btb_ram:inst|                     ; 0 (0)               ; 0 (0)                     ; 1216        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|bht_btb_ram:inst                                                                ; bht_btb_ram             ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 1216        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component                                ; altsyncram              ; work         ;
@@ -275,17 +275,17 @@ on the Quartus Prime software download page.
 ;       |tag_latch:inst2|                      ; 0 (0)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|tag_latch:inst2                                                                 ; tag_latch               ; work         ;
 ;    |branch_result_module:inst8|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|branch_result_module:inst8                                                                            ; branch_result_module    ; work         ;
 ;    |decode_latch:inst1|                      ; 105 (105)           ; 98 (98)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|decode_latch:inst1                                                                                    ; decode_latch            ; work         ;
-;    |fetch_unit:inst6|                        ; 80 (80)             ; 64 (64)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst6                                                                                      ; fetch_unit              ; work         ;
+;    |fetch_unit:inst3|                        ; 140 (140)           ; 96 (96)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst3                                                                                      ; fetch_unit              ; work         ;
 ;    |immediate_builder:inst4|                 ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4                                                                               ; immediate_builder       ; work         ;
 ;    |next_pc_decision_module:inst9|           ; 68 (68)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9                                                                         ; next_pc_decision_module ; work         ;
 ;    |op_latch:inst16|                         ; 115 (115)           ; 115 (115)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|op_latch:inst16                                                                                       ; op_latch                ; work         ;
-;    |opcode_decode:inst5|                     ; 11 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|opcode_decode:inst5                                                                                   ; opcode_decode           ; work         ;
+;    |opcode_decode:inst5|                     ; 14 (14)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|opcode_decode:inst5                                                                                   ; opcode_decode           ; work         ;
 ;    |operand_build:inst12|                    ; 96 (96)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|operand_build:inst12                                                                                  ; operand_build           ; work         ;
-;    |pipeline_control:inst19|                 ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|pipeline_control:inst19                                                                               ; pipeline_control        ; work         ;
+;    |pipeline_control:inst7|                  ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|pipeline_control:inst7                                                                                ; pipeline_control        ; work         ;
 ;    |ram_principal:inst|                      ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ram_principal:inst                                                                                    ; ram_principal           ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ram_principal:inst|altsyncram:altsyncram_component                                                    ; altsyncram              ; work         ;
 ;          |altsyncram_akl2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ram_principal:inst|altsyncram:altsyncram_component|altsyncram_akl2:auto_generated                     ; altsyncram_akl2         ; work         ;
-;    |register_bank:inst20|                    ; 1423 (1423)         ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|register_bank:inst20                                                                                  ; register_bank           ; work         ;
+;    |register_bank:inst20|                    ; 1422 (1422)         ; 1024 (1024)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|register_bank:inst20                                                                                  ; register_bank           ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -326,14 +326,53 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1413  ;
+; Total registers                              ; 1446  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 1413  ;
+; Number of registers using Asynchronous Clear ; 1446  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1185  ;
+; Number of registers using Clock Enable       ; 1215  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++---------------------------------------------------+
+; Inverted Register Statistics                      ;
++-----------------------------------------+---------+
+; Inverted Register                       ; Fan out ;
++-----------------------------------------+---------+
+; fetch_unit:inst3|pc[31]                 ; 4       ;
+; fetch_unit:inst3|pc[30]                 ; 4       ;
+; fetch_unit:inst3|pc[29]                 ; 4       ;
+; fetch_unit:inst3|pc[28]                 ; 4       ;
+; fetch_unit:inst3|pc[27]                 ; 4       ;
+; fetch_unit:inst3|pc[26]                 ; 4       ;
+; fetch_unit:inst3|pc[25]                 ; 4       ;
+; fetch_unit:inst3|pc[24]                 ; 4       ;
+; fetch_unit:inst3|pc[23]                 ; 4       ;
+; fetch_unit:inst3|pc[22]                 ; 4       ;
+; fetch_unit:inst3|pc[21]                 ; 4       ;
+; fetch_unit:inst3|pc[20]                 ; 4       ;
+; fetch_unit:inst3|pc[19]                 ; 4       ;
+; fetch_unit:inst3|pc[18]                 ; 4       ;
+; fetch_unit:inst3|pc[17]                 ; 4       ;
+; fetch_unit:inst3|pc[16]                 ; 4       ;
+; fetch_unit:inst3|pc[15]                 ; 4       ;
+; fetch_unit:inst3|pc[14]                 ; 4       ;
+; fetch_unit:inst3|pc[13]                 ; 4       ;
+; fetch_unit:inst3|pc[12]                 ; 4       ;
+; fetch_unit:inst3|pc[11]                 ; 4       ;
+; fetch_unit:inst3|pc[10]                 ; 4       ;
+; fetch_unit:inst3|pc[9]                  ; 4       ;
+; fetch_unit:inst3|pc[8]                  ; 4       ;
+; fetch_unit:inst3|pc[7]                  ; 4       ;
+; fetch_unit:inst3|pc[6]                  ; 4       ;
+; fetch_unit:inst3|pc[5]                  ; 4       ;
+; fetch_unit:inst3|pc[4]                  ; 4       ;
+; fetch_unit:inst3|pc[3]                  ; 4       ;
+; fetch_unit:inst3|pc[2]                  ; 4       ;
+; Total number of inverted registers = 30 ;         ;
++-----------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -341,26 +380,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
-; 3:1                ; 98 bits   ; 196 LEs       ; 98 LEs               ; 98 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst1|imm_out[23]           ;
+; 3:1                ; 98 bits   ; 196 LEs       ; 98 LEs               ; 98 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst1|pc_out[30]            ;
+; 3:1                ; 115 bits  ; 230 LEs       ; 115 LEs              ; 115 LEs                ; Yes        ; |tp2_e5_ERV25_grupo2|op_latch:inst16|rs2_data_out[25]         ;
 ; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[14] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|pipeline_control:inst7|op_ena            ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux7             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|pipeline_control:inst19|fetch_halt       ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux18            ;
-; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[9]  ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux9             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux14            ;
+; 4:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[4]  ;
 ; 8:1                ; 32 bits   ; 160 LEs       ; 64 LEs               ; 96 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst12|Selector0           ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst2|Add0               ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst2|Add0               ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux3             ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux1             ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
-; 9:1                ; 32 bits   ; 192 LEs       ; 32 LEs               ; 160 LEs                ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst2|Mux10              ;
+; 9:1                ; 32 bits   ; 192 LEs       ; 32 LEs               ; 160 LEs                ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst2|Mux14              ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux21            ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst20|rs1_data[7]         ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux23            ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst20|rs1_data[31]        ;
 ; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|c                             ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst20|rs2_data[9]         ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst20|rs2_data[19]        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------+
 
 
@@ -619,24 +659,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 455                         ;
-; cycloneiii_ff         ; 1413                        ;
-;     CLR               ; 228                         ;
-;     ENA CLR           ; 1185                        ;
-; cycloneiii_lcell_comb ; 2392                        ;
+; boundary_port         ; 469                         ;
+; cycloneiii_ff         ; 1446                        ;
+;     CLR               ; 231                         ;
+;     ENA CLR           ; 1215                        ;
+; cycloneiii_lcell_comb ; 2489                        ;
 ;     arith             ; 151                         ;
 ;         2 data inputs ; 58                          ;
 ;         3 data inputs ; 93                          ;
-;     normal            ; 2241                        ;
+;     normal            ; 2338                        ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 279                         ;
-;         3 data inputs ; 122                         ;
-;         4 data inputs ; 1837                        ;
+;         1 data inputs ; 63                          ;
+;         2 data inputs ; 100                         ;
+;         3 data inputs ; 198                         ;
+;         4 data inputs ; 1976                        ;
 ; cycloneiii_ram_block  ; 51                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 11.10                       ;
-; Average LUT depth     ; 6.89                        ;
+; Average LUT depth     ; 6.78                        ;
 +-----------------------+-----------------------------+
 
 
@@ -645,7 +685,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:10     ;
 +----------------+--------------+
 
 
@@ -655,7 +695,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Wed Jun  4 16:56:16 2025
+    Info: Processing started: Thu Jun  5 13:16:27 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -751,8 +791,9 @@ Info (12128): Elaborating entity "altsyncram_c2o1" for hierarchy "bht_btb_module
 Info (12128): Elaborating entity "bht_btb_wr_data_builder" for hierarchy "bht_btb_module:inst11|bht_btb_wr_data_builder:inst4"
 Info (12128): Elaborating entity "tag_latch" for hierarchy "bht_btb_module:inst11|tag_latch:inst2"
 Info (12128): Elaborating entity "pc_target_concat" for hierarchy "bht_btb_module:inst11|pc_target_concat:inst5"
-Info (12128): Elaborating entity "fetch_unit" for hierarchy "fetch_unit:inst6"
-Info (12128): Elaborating entity "pipeline_control" for hierarchy "pipeline_control:inst19"
+Info (12128): Elaborating entity "fetch_unit" for hierarchy "fetch_unit:inst3"
+Warning (10235): Verilog HDL Always Construct warning at fetch_unit.v(43): variable "stage_ena" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/fetch_unit.v Line: 43
+Info (12128): Elaborating entity "pipeline_control" for hierarchy "pipeline_control:inst7"
 Info (12128): Elaborating entity "opcode_decode" for hierarchy "opcode_decode:inst5"
 Info (12128): Elaborating entity "op_latch" for hierarchy "op_latch:inst16"
 Info (12128): Elaborating entity "register_bank" for hierarchy "register_bank:inst20"
@@ -814,342 +855,20 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[29]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 879
         Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[30]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 908
         Warning (14320): Synthesized away node "bht_btb_module:inst11|bht_btb_ram:inst|altsyncram:altsyncram_component|altsyncram_c2o1:auto_generated|q_b[31]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_c2o1.tdf Line: 937
+Info (13000): Registers with preset signals will power-up high File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/fetch_unit.v Line: 30
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (15717): Design contains 323 virtual pins; timing numbers associated with paths containing virtual pins are estimates
-    Info (15719): Pin "pc_next[31]" is virtual output pin
-    Info (15719): Pin "pc_next[30]" is virtual output pin
-    Info (15719): Pin "pc_next[29]" is virtual output pin
-    Info (15719): Pin "pc_next[28]" is virtual output pin
-    Info (15719): Pin "pc_next[27]" is virtual output pin
-    Info (15719): Pin "pc_next[26]" is virtual output pin
-    Info (15719): Pin "pc_next[25]" is virtual output pin
-    Info (15719): Pin "pc_next[24]" is virtual output pin
-    Info (15719): Pin "pc_next[23]" is virtual output pin
-    Info (15719): Pin "pc_next[22]" is virtual output pin
-    Info (15719): Pin "pc_next[21]" is virtual output pin
-    Info (15719): Pin "pc_next[20]" is virtual output pin
-    Info (15719): Pin "pc_next[19]" is virtual output pin
-    Info (15719): Pin "pc_next[18]" is virtual output pin
-    Info (15719): Pin "pc_next[17]" is virtual output pin
-    Info (15719): Pin "pc_next[16]" is virtual output pin
-    Info (15719): Pin "pc_next[15]" is virtual output pin
-    Info (15719): Pin "pc_next[14]" is virtual output pin
-    Info (15719): Pin "pc_next[13]" is virtual output pin
-    Info (15719): Pin "pc_next[12]" is virtual output pin
-    Info (15719): Pin "pc_next[11]" is virtual output pin
-    Info (15719): Pin "pc_next[10]" is virtual output pin
-    Info (15719): Pin "pc_next[9]" is virtual output pin
-    Info (15719): Pin "pc_next[8]" is virtual output pin
-    Info (15719): Pin "pc_next[7]" is virtual output pin
-    Info (15719): Pin "pc_next[6]" is virtual output pin
-    Info (15719): Pin "pc_next[5]" is virtual output pin
-    Info (15719): Pin "pc_next[4]" is virtual output pin
-    Info (15719): Pin "pc_next[3]" is virtual output pin
-    Info (15719): Pin "pc_next[2]" is virtual output pin
-    Info (15719): Pin "pc_next[1]" is virtual output pin
-    Info (15719): Pin "pc_next[0]" is virtual output pin
-    Info (15719): Pin "imm_op[31]" is virtual output pin
-    Info (15719): Pin "imm_op[30]" is virtual output pin
-    Info (15719): Pin "imm_op[29]" is virtual output pin
-    Info (15719): Pin "imm_op[28]" is virtual output pin
-    Info (15719): Pin "imm_op[27]" is virtual output pin
-    Info (15719): Pin "imm_op[26]" is virtual output pin
-    Info (15719): Pin "imm_op[25]" is virtual output pin
-    Info (15719): Pin "imm_op[24]" is virtual output pin
-    Info (15719): Pin "imm_op[23]" is virtual output pin
-    Info (15719): Pin "imm_op[22]" is virtual output pin
-    Info (15719): Pin "imm_op[21]" is virtual output pin
-    Info (15719): Pin "imm_op[20]" is virtual output pin
-    Info (15719): Pin "imm_op[19]" is virtual output pin
-    Info (15719): Pin "imm_op[18]" is virtual output pin
-    Info (15719): Pin "imm_op[17]" is virtual output pin
-    Info (15719): Pin "imm_op[16]" is virtual output pin
-    Info (15719): Pin "imm_op[15]" is virtual output pin
-    Info (15719): Pin "imm_op[14]" is virtual output pin
-    Info (15719): Pin "imm_op[13]" is virtual output pin
-    Info (15719): Pin "imm_op[12]" is virtual output pin
-    Info (15719): Pin "imm_op[11]" is virtual output pin
-    Info (15719): Pin "imm_op[10]" is virtual output pin
-    Info (15719): Pin "imm_op[9]" is virtual output pin
-    Info (15719): Pin "imm_op[8]" is virtual output pin
-    Info (15719): Pin "imm_op[7]" is virtual output pin
-    Info (15719): Pin "imm_op[6]" is virtual output pin
-    Info (15719): Pin "imm_op[5]" is virtual output pin
-    Info (15719): Pin "imm_op[4]" is virtual output pin
-    Info (15719): Pin "imm_op[3]" is virtual output pin
-    Info (15719): Pin "imm_op[2]" is virtual output pin
-    Info (15719): Pin "imm_op[1]" is virtual output pin
-    Info (15719): Pin "imm_op[0]" is virtual output pin
-    Info (15719): Pin "pc_op[31]" is virtual output pin
-    Info (15719): Pin "pc_op[30]" is virtual output pin
-    Info (15719): Pin "pc_op[29]" is virtual output pin
-    Info (15719): Pin "pc_op[28]" is virtual output pin
-    Info (15719): Pin "pc_op[27]" is virtual output pin
-    Info (15719): Pin "pc_op[26]" is virtual output pin
-    Info (15719): Pin "pc_op[25]" is virtual output pin
-    Info (15719): Pin "pc_op[24]" is virtual output pin
-    Info (15719): Pin "pc_op[23]" is virtual output pin
-    Info (15719): Pin "pc_op[22]" is virtual output pin
-    Info (15719): Pin "pc_op[21]" is virtual output pin
-    Info (15719): Pin "pc_op[20]" is virtual output pin
-    Info (15719): Pin "pc_op[19]" is virtual output pin
-    Info (15719): Pin "pc_op[18]" is virtual output pin
-    Info (15719): Pin "pc_op[17]" is virtual output pin
-    Info (15719): Pin "pc_op[16]" is virtual output pin
-    Info (15719): Pin "pc_op[15]" is virtual output pin
-    Info (15719): Pin "pc_op[14]" is virtual output pin
-    Info (15719): Pin "pc_op[13]" is virtual output pin
-    Info (15719): Pin "pc_op[12]" is virtual output pin
-    Info (15719): Pin "pc_op[11]" is virtual output pin
-    Info (15719): Pin "pc_op[10]" is virtual output pin
-    Info (15719): Pin "pc_op[9]" is virtual output pin
-    Info (15719): Pin "pc_op[8]" is virtual output pin
-    Info (15719): Pin "pc_op[7]" is virtual output pin
-    Info (15719): Pin "pc_op[6]" is virtual output pin
-    Info (15719): Pin "pc_op[5]" is virtual output pin
-    Info (15719): Pin "pc_op[4]" is virtual output pin
-    Info (15719): Pin "pc_op[3]" is virtual output pin
-    Info (15719): Pin "pc_op[2]" is virtual output pin
-    Info (15719): Pin "pc_op[1]" is virtual output pin
-    Info (15719): Pin "pc_op[0]" is virtual output pin
-    Info (15719): Pin "c_write_back[31]" is virtual output pin
-    Info (15719): Pin "c_write_back[30]" is virtual output pin
-    Info (15719): Pin "c_write_back[29]" is virtual output pin
-    Info (15719): Pin "c_write_back[28]" is virtual output pin
-    Info (15719): Pin "c_write_back[27]" is virtual output pin
-    Info (15719): Pin "c_write_back[26]" is virtual output pin
-    Info (15719): Pin "c_write_back[25]" is virtual output pin
-    Info (15719): Pin "c_write_back[24]" is virtual output pin
-    Info (15719): Pin "c_write_back[23]" is virtual output pin
-    Info (15719): Pin "c_write_back[22]" is virtual output pin
-    Info (15719): Pin "c_write_back[21]" is virtual output pin
-    Info (15719): Pin "c_write_back[20]" is virtual output pin
-    Info (15719): Pin "c_write_back[19]" is virtual output pin
-    Info (15719): Pin "c_write_back[18]" is virtual output pin
-    Info (15719): Pin "c_write_back[17]" is virtual output pin
-    Info (15719): Pin "c_write_back[16]" is virtual output pin
-    Info (15719): Pin "c_write_back[15]" is virtual output pin
-    Info (15719): Pin "c_write_back[14]" is virtual output pin
-    Info (15719): Pin "c_write_back[13]" is virtual output pin
-    Info (15719): Pin "c_write_back[12]" is virtual output pin
-    Info (15719): Pin "c_write_back[11]" is virtual output pin
-    Info (15719): Pin "c_write_back[10]" is virtual output pin
-    Info (15719): Pin "c_write_back[9]" is virtual output pin
-    Info (15719): Pin "c_write_back[8]" is virtual output pin
-    Info (15719): Pin "c_write_back[7]" is virtual output pin
-    Info (15719): Pin "c_write_back[6]" is virtual output pin
-    Info (15719): Pin "c_write_back[5]" is virtual output pin
-    Info (15719): Pin "c_write_back[4]" is virtual output pin
-    Info (15719): Pin "c_write_back[3]" is virtual output pin
-    Info (15719): Pin "c_write_back[2]" is virtual output pin
-    Info (15719): Pin "c_write_back[1]" is virtual output pin
-    Info (15719): Pin "c_write_back[0]" is virtual output pin
-    Info (15719): Pin "c[31]" is virtual output pin
-    Info (15719): Pin "c[30]" is virtual output pin
-    Info (15719): Pin "c[29]" is virtual output pin
-    Info (15719): Pin "c[28]" is virtual output pin
-    Info (15719): Pin "c[27]" is virtual output pin
-    Info (15719): Pin "c[26]" is virtual output pin
-    Info (15719): Pin "c[25]" is virtual output pin
-    Info (15719): Pin "c[24]" is virtual output pin
-    Info (15719): Pin "c[23]" is virtual output pin
-    Info (15719): Pin "c[22]" is virtual output pin
-    Info (15719): Pin "c[21]" is virtual output pin
-    Info (15719): Pin "c[20]" is virtual output pin
-    Info (15719): Pin "c[19]" is virtual output pin
-    Info (15719): Pin "c[18]" is virtual output pin
-    Info (15719): Pin "c[17]" is virtual output pin
-    Info (15719): Pin "c[16]" is virtual output pin
-    Info (15719): Pin "c[15]" is virtual output pin
-    Info (15719): Pin "c[14]" is virtual output pin
-    Info (15719): Pin "c[13]" is virtual output pin
-    Info (15719): Pin "c[12]" is virtual output pin
-    Info (15719): Pin "c[11]" is virtual output pin
-    Info (15719): Pin "c[10]" is virtual output pin
-    Info (15719): Pin "c[9]" is virtual output pin
-    Info (15719): Pin "c[8]" is virtual output pin
-    Info (15719): Pin "c[7]" is virtual output pin
-    Info (15719): Pin "c[6]" is virtual output pin
-    Info (15719): Pin "c[5]" is virtual output pin
-    Info (15719): Pin "c[4]" is virtual output pin
-    Info (15719): Pin "c[3]" is virtual output pin
-    Info (15719): Pin "c[2]" is virtual output pin
-    Info (15719): Pin "c[1]" is virtual output pin
-    Info (15719): Pin "c[0]" is virtual output pin
-    Info (15719): Pin "inst_in[31]" is virtual output pin
-    Info (15719): Pin "inst_in[30]" is virtual output pin
-    Info (15719): Pin "inst_in[29]" is virtual output pin
-    Info (15719): Pin "inst_in[28]" is virtual output pin
-    Info (15719): Pin "inst_in[27]" is virtual output pin
-    Info (15719): Pin "inst_in[26]" is virtual output pin
-    Info (15719): Pin "inst_in[25]" is virtual output pin
-    Info (15719): Pin "inst_in[24]" is virtual output pin
-    Info (15719): Pin "inst_in[23]" is virtual output pin
-    Info (15719): Pin "inst_in[22]" is virtual output pin
-    Info (15719): Pin "inst_in[21]" is virtual output pin
-    Info (15719): Pin "inst_in[20]" is virtual output pin
-    Info (15719): Pin "inst_in[19]" is virtual output pin
-    Info (15719): Pin "inst_in[18]" is virtual output pin
-    Info (15719): Pin "inst_in[17]" is virtual output pin
-    Info (15719): Pin "inst_in[16]" is virtual output pin
-    Info (15719): Pin "inst_in[15]" is virtual output pin
-    Info (15719): Pin "inst_in[14]" is virtual output pin
-    Info (15719): Pin "inst_in[13]" is virtual output pin
-    Info (15719): Pin "inst_in[12]" is virtual output pin
-    Info (15719): Pin "inst_in[11]" is virtual output pin
-    Info (15719): Pin "inst_in[10]" is virtual output pin
-    Info (15719): Pin "inst_in[9]" is virtual output pin
-    Info (15719): Pin "inst_in[8]" is virtual output pin
-    Info (15719): Pin "inst_in[7]" is virtual output pin
-    Info (15719): Pin "inst_in[6]" is virtual output pin
-    Info (15719): Pin "inst_in[5]" is virtual output pin
-    Info (15719): Pin "inst_in[4]" is virtual output pin
-    Info (15719): Pin "inst_in[3]" is virtual output pin
-    Info (15719): Pin "inst_in[2]" is virtual output pin
-    Info (15719): Pin "inst_in[1]" is virtual output pin
-    Info (15719): Pin "inst_in[0]" is virtual output pin
-    Info (15719): Pin "pc_new[31]" is virtual output pin
-    Info (15719): Pin "pc_new[30]" is virtual output pin
-    Info (15719): Pin "pc_new[29]" is virtual output pin
-    Info (15719): Pin "pc_new[28]" is virtual output pin
-    Info (15719): Pin "pc_new[27]" is virtual output pin
-    Info (15719): Pin "pc_new[26]" is virtual output pin
-    Info (15719): Pin "pc_new[25]" is virtual output pin
-    Info (15719): Pin "pc_new[24]" is virtual output pin
-    Info (15719): Pin "pc_new[23]" is virtual output pin
-    Info (15719): Pin "pc_new[22]" is virtual output pin
-    Info (15719): Pin "pc_new[21]" is virtual output pin
-    Info (15719): Pin "pc_new[20]" is virtual output pin
-    Info (15719): Pin "pc_new[19]" is virtual output pin
-    Info (15719): Pin "pc_new[18]" is virtual output pin
-    Info (15719): Pin "pc_new[17]" is virtual output pin
-    Info (15719): Pin "pc_new[16]" is virtual output pin
-    Info (15719): Pin "pc_new[15]" is virtual output pin
-    Info (15719): Pin "pc_new[14]" is virtual output pin
-    Info (15719): Pin "pc_new[13]" is virtual output pin
-    Info (15719): Pin "pc_new[12]" is virtual output pin
-    Info (15719): Pin "pc_new[11]" is virtual output pin
-    Info (15719): Pin "pc_new[10]" is virtual output pin
-    Info (15719): Pin "pc_new[9]" is virtual output pin
-    Info (15719): Pin "pc_new[8]" is virtual output pin
-    Info (15719): Pin "pc_new[7]" is virtual output pin
-    Info (15719): Pin "pc_new[6]" is virtual output pin
-    Info (15719): Pin "pc_new[5]" is virtual output pin
-    Info (15719): Pin "pc_new[4]" is virtual output pin
-    Info (15719): Pin "pc_new[3]" is virtual output pin
-    Info (15719): Pin "pc_new[2]" is virtual output pin
-    Info (15719): Pin "pc_new[1]" is virtual output pin
-    Info (15719): Pin "pc_new[0]" is virtual output pin
-    Info (15719): Pin "imm[31]" is virtual output pin
-    Info (15719): Pin "imm[30]" is virtual output pin
-    Info (15719): Pin "imm[29]" is virtual output pin
-    Info (15719): Pin "imm[28]" is virtual output pin
-    Info (15719): Pin "imm[27]" is virtual output pin
-    Info (15719): Pin "imm[26]" is virtual output pin
-    Info (15719): Pin "imm[25]" is virtual output pin
-    Info (15719): Pin "imm[24]" is virtual output pin
-    Info (15719): Pin "imm[23]" is virtual output pin
-    Info (15719): Pin "imm[22]" is virtual output pin
-    Info (15719): Pin "imm[21]" is virtual output pin
-    Info (15719): Pin "imm[20]" is virtual output pin
-    Info (15719): Pin "imm[19]" is virtual output pin
-    Info (15719): Pin "imm[18]" is virtual output pin
-    Info (15719): Pin "imm[17]" is virtual output pin
-    Info (15719): Pin "imm[16]" is virtual output pin
-    Info (15719): Pin "imm[15]" is virtual output pin
-    Info (15719): Pin "imm[14]" is virtual output pin
-    Info (15719): Pin "imm[13]" is virtual output pin
-    Info (15719): Pin "imm[12]" is virtual output pin
-    Info (15719): Pin "imm[11]" is virtual output pin
-    Info (15719): Pin "imm[10]" is virtual output pin
-    Info (15719): Pin "imm[9]" is virtual output pin
-    Info (15719): Pin "imm[8]" is virtual output pin
-    Info (15719): Pin "imm[7]" is virtual output pin
-    Info (15719): Pin "imm[6]" is virtual output pin
-    Info (15719): Pin "imm[5]" is virtual output pin
-    Info (15719): Pin "imm[4]" is virtual output pin
-    Info (15719): Pin "imm[3]" is virtual output pin
-    Info (15719): Pin "imm[2]" is virtual output pin
-    Info (15719): Pin "imm[1]" is virtual output pin
-    Info (15719): Pin "imm[0]" is virtual output pin
-    Info (15719): Pin "instr_type[2]" is virtual output pin
-    Info (15719): Pin "instr_type[1]" is virtual output pin
-    Info (15719): Pin "instr_type[0]" is virtual output pin
-    Info (15719): Pin "pc[31]" is virtual output pin
-    Info (15719): Pin "pc[30]" is virtual output pin
-    Info (15719): Pin "pc[29]" is virtual output pin
-    Info (15719): Pin "pc[28]" is virtual output pin
-    Info (15719): Pin "pc[27]" is virtual output pin
-    Info (15719): Pin "pc[26]" is virtual output pin
-    Info (15719): Pin "pc[25]" is virtual output pin
-    Info (15719): Pin "pc[24]" is virtual output pin
-    Info (15719): Pin "pc[23]" is virtual output pin
-    Info (15719): Pin "pc[22]" is virtual output pin
-    Info (15719): Pin "pc[21]" is virtual output pin
-    Info (15719): Pin "pc[20]" is virtual output pin
-    Info (15719): Pin "pc[19]" is virtual output pin
-    Info (15719): Pin "pc[18]" is virtual output pin
-    Info (15719): Pin "pc[17]" is virtual output pin
-    Info (15719): Pin "pc[16]" is virtual output pin
-    Info (15719): Pin "pc[15]" is virtual output pin
-    Info (15719): Pin "pc[14]" is virtual output pin
-    Info (15719): Pin "pc[13]" is virtual output pin
-    Info (15719): Pin "pc[12]" is virtual output pin
-    Info (15719): Pin "pc[11]" is virtual output pin
-    Info (15719): Pin "pc[10]" is virtual output pin
-    Info (15719): Pin "pc[9]" is virtual output pin
-    Info (15719): Pin "pc[8]" is virtual output pin
-    Info (15719): Pin "pc[7]" is virtual output pin
-    Info (15719): Pin "pc[6]" is virtual output pin
-    Info (15719): Pin "pc[5]" is virtual output pin
-    Info (15719): Pin "pc[4]" is virtual output pin
-    Info (15719): Pin "pc[3]" is virtual output pin
-    Info (15719): Pin "pc[2]" is virtual output pin
-    Info (15719): Pin "pc[1]" is virtual output pin
-    Info (15719): Pin "pc[0]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[31]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[30]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[29]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[28]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[27]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[26]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[25]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[24]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[23]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[22]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[21]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[20]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[19]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[18]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[17]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[16]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[15]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[14]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[13]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[12]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[11]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[10]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[9]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[8]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[7]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[6]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[5]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[4]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[3]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[2]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[1]" is virtual output pin
-    Info (15719): Pin "pc_target_ad[0]" is virtual output pin
-Info (21057): Implemented 4096 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4168 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 130 output pins
-    Info (21061): Implemented 3913 logic cells
+    Info (21059): Implemented 467 output pins
+    Info (21061): Implemented 3648 logic cells
     Info (21064): Implemented 51 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
     Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Wed Jun  4 16:56:36 2025
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Processing ended: Thu Jun  5 13:16:53 2025
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:39
 
 

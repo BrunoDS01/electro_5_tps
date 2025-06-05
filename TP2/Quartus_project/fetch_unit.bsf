@@ -94,6 +94,13 @@ on the Quartus Prime software download page.
 		(text "pc[31..0]" (rect 154 59 187 71)(font "Arial" ))
 		(line (pt 208 64)(pt 192 64)(line_width 3))
 	)
+	(port
+		(pt 208 80)
+		(output)
+		(text "pc_dec[31..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "pc_dec[31..0]" (rect 134 75 187 87)(font "Arial" ))
+		(line (pt 208 80)(pt 192 80)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 192 160)(line_width 1))
 	)

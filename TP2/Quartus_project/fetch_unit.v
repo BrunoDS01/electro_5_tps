@@ -14,37 +14,45 @@ module fetch_unit (
 
 	output reg [31:0] instr,
 	output reg [31:0] pc_next,
-	output reg [31:0] pc
+	output reg [31:0] pc,
+	output reg [31:0] pc_dec
 );
 
 
 
 always @(posedge stage_clk or posedge reset) begin
 	if (reset) begin
-		pc <= 32'd0;
+		pc <= -4;
+		pc_dec <= 0;
 		instr <= 32'd0;
 	end
 	else begin
 		if (stage_x) begin
 			pc <= 32'd0;
+			pc_dec <= 32'd0;
 			instr <= 32'd0;
-		end else if (!stage_ena) begin
+		end else if (stage_ena) begin
 			pc <= pc_next;
+			pc_dec <= pc;
 			instr <= instr_in;
 		end
 	end
 end
 
 always @(take_new_pc, pc_new, pc) begin
-	if (take_new_pc)  
-	begin
+	if (!stage_ena) begin
+		// Si stage está inhabilitado, PC next no debe incrementarse,
+		// Para mantener la lectura de la instrucción
+		pc_next = pc;
+	end
+	else if (take_new_pc) begin
+		// Si hay que tomar el salto
 		pc_next = pc_new;
 	end
-	// La predicción fue errónea 
-	else
-	begin
+	else begin
+		// Si no hay que tomar el salto
 		pc_next = pc + 32'd4;
-	end 		
+	end
 end
 
 
