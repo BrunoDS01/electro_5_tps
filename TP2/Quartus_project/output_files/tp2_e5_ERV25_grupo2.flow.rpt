@@ -1,5 +1,5 @@
 Flow report for tp2_e5_ERV25_grupo2
-Thu Jun  5 23:13:28 2025
+Fri Jun  6 13:29:43 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -41,17 +41,17 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Flow Failed - Thu Jun  5 23:13:28 2025          ;
+; Flow Status                        ; Flow Failed - Fri Jun  6 13:29:43 2025          ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE22F17C8L                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 3,537 / 22,320 ( 16 % )                         ;
-;     Total combinational functions  ; 2,468 / 22,320 ( 11 % )                         ;
-;     Dedicated logic registers      ; 1,448 / 22,320 ( 6 % )                          ;
-; Total registers                    ; 1448                                            ;
+; Total logic elements               ; 3,610 / 22,320 ( 16 % )                         ;
+;     Total combinational functions  ; 2,536 / 22,320 ( 11 % )                         ;
+;     Dedicated logic registers      ; 1,486 / 22,320 ( 7 % )                          ;
+; Total registers                    ; 1486                                            ;
 ; Total pins                         ; 469 / 154 ( 305 % )                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 66,752 / 608,256 ( 11 % )                       ;
@@ -65,7 +65,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/05/2025 23:13:02 ;
+; Start date & time ; 06/06/2025 13:29:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; tp2_e5_ERV25_grupo2 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 37714650087763.174917598211912         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 37714650087763.174922736009392         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -107,9 +107,9 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4822 MB             ; 00:00:31                           ;
+; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 4822 MB             ; 00:00:31                           ;
 ; Fitter               ; 00:00:04     ; 1.0                     ; 4902 MB             ; 00:00:04                           ;
-; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:35                           ;
+; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

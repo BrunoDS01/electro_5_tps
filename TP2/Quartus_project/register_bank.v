@@ -14,9 +14,7 @@ module register_bank(
     input wire reset,
 
     output reg [31:0] rs1_data,
-    output reg [31:0] rs2_data,
-    output reg [31:0] data_out,
-	output reg memwrite
+    output reg [31:0] rs2_data
 );
 
 reg [31:0] x[0:31];

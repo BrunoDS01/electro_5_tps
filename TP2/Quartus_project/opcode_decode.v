@@ -58,10 +58,6 @@ localparam RESERV_3 = 	7'b1110111;
 localparam CUSTM_3 = 	7'b1111011;
 
 
-
-
-
-
 always @(opcode, funct3) begin
 	case (opcode)
 		LOAD: begin
@@ -195,8 +191,6 @@ always @(opcode, funct3) begin
 			is_alu_sum = 1'b1;
 
 		end
-
-
 
 		default: begin
 			instr_type = N_TYPE;

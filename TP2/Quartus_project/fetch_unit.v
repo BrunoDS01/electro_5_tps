@@ -39,7 +39,7 @@ always @(posedge stage_clk or posedge reset) begin
 	end
 end
 
-always @(take_new_pc, pc_new, pc) begin
+always @(take_new_pc, pc_new, pc, stage_ena) begin
 	if (!stage_ena) begin
 		// Si stage está inhabilitado, PC next no debe incrementarse,
 		// Para mantener la lectura de la instrucción

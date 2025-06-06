@@ -1,0 +1,32 @@
+module byte_enable_module(
+	input wire [2:0] funct3_,
+	input wire [31:0] address_target,
+
+	output reg [3:0] byte_ena
+);
+
+/*
+	FUNCT3_table
+*/
+
+localparam LB = 3'b000;
+localparam LH = 3'b001;
+localparam LW = 3'b010;
+localparam LBU = 3'b100;
+localparam LHU = 3'b101;
+
+always @(funct3_, address_target) begin
+	if (funct3_ == LB || funct3_ == LBU) begin
+		byte_ena = ;
+	end
+	else if (funct3_ == LH || funct3_ == LHU) begin
+
+	end
+	else if (funct3_ == LW) begin
+	end
+	else begin
+	end
+
+end
+
+endmodule

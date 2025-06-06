@@ -102,22 +102,6 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect -1176 792 -1000 808)
-	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
-	(text "pc_target_ad[31..0]" (rect 90 0 185 10)(font "Arial" ))
-	(pt 0 8)
-	(drawing
-		(line (pt 0 8)(pt 52 8))
-		(line (pt 52 4)(pt 78 4))
-		(line (pt 52 12)(pt 78 12))
-		(line (pt 52 12)(pt 52 4))
-		(line (pt 78 4)(pt 82 8))
-		(line (pt 82 8)(pt 78 12))
-		(line (pt 78 12)(pt 82 8))
-	)
-)
-(pin
-	(output)
 	(rect -1384 832 -1208 848)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "imm_op[31..0]" (rect 90 0 160 10)(font "Arial" ))
@@ -409,6 +393,22 @@ on the Quartus Prime software download page.
 	(rect 40 1312 255 1328)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "save_to_reg_write_back" (rect 90 0 209 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -1176 792 -975 808)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "address_target[31..0]" (rect 90 0 195 10)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -1712,94 +1712,6 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect -1328 632 -1096 776)
-	(text "address_builder" (rect 5 0 81 10)(font "Arial" ))
-	(text "inst2" (rect 8 128 30 140)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "imm[31..0]" (rect 0 0 53 10)(font "Arial" ))
-		(text "imm[31..0]" (rect 21 27 74 37)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "pc[31..0]" (rect 0 0 43 10)(font "Arial" ))
-		(text "pc[31..0]" (rect 21 43 64 53)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "rs1[31..0]" (rect 0 0 47 10)(font "Arial" ))
-		(text "rs1[31..0]" (rect 21 59 68 69)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "instr_type[2..0]" (rect 0 0 75 10)(font "Arial" ))
-		(text "instr_type[2..0]" (rect 21 75 96 85)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
-	)
-	(port
-		(pt 0 96)
-		(input)
-		(text "is_branch" (rect 0 0 47 10)(font "Arial" ))
-		(text "is_branch" (rect 21 91 68 101)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96))
-	)
-	(port
-		(pt 232 32)
-		(output)
-		(text "pc_target[31..0]" (rect 0 0 77 10)(font "Arial" ))
-		(text "pc_target[31..0]" (rect 146 27 223 37)(font "Arial" ))
-		(line (pt 232 32)(pt 216 32)(line_width 3))
-	)
-	(port
-		(pt 232 48)
-		(output)
-		(text "flag_branch[1..0]" (rect 0 0 83 10)(font "Arial" ))
-		(text "flag_branch[1..0]" (rect 141 43 224 53)(font "Arial" ))
-		(line (pt 232 48)(pt 216 48)(line_width 3))
-	)
-	(parameter
-		"R_TYPE"
-		"000"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"I_TYPE"
-		"001"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"S_TYPE"
-		"010"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"B_TYPE"
-		"011"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"U_TYPE"
-		"100"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(parameter
-		"J_TYPE"
-		"101"
-		""
-		(type "PARAMETER_UNSIGNED_BIN")	)
-	(drawing
-		(rectangle (rect 16 16 216 128))
-	)
-	(annotation_block (parameter)(rect -1096 528 -912 632))
-)
-(symbol
 	(rect 2624 856 2824 1096)
 	(text "pipeline_control" (rect 5 0 80 10)(font "Arial" ))
 	(text "inst7" (rect 8 224 30 236)(font "Intel Clear" ))
@@ -2182,143 +2094,59 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect -736 592 -424 832)
-	(text "ad_latch" (rect 5 0 46 10)(font "Arial" ))
-	(text "inst13" (rect 8 224 36 236)(font "Intel Clear" ))
+	(rect -992 1528 -776 1672)
+	(text "mem_latch" (rect 5 0 59 10)(font "Arial" ))
+	(text "inst24" (rect 8 128 36 140)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "prev_pc[31..0]" (rect 0 0 71 10)(font "Arial" ))
-		(text "prev_pc[31..0]" (rect 21 27 92 37)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
+		(text "rd_memory" (rect 0 0 56 10)(font "Arial" ))
+		(text "rd_memory" (rect 21 27 77 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "pc_target_ad[31..0]" (rect 0 0 95 10)(font "Arial" ))
-		(text "pc_target_ad[31..0]" (rect 21 43 116 53)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
+		(text "stg_clk" (rect 0 0 35 10)(font "Arial" ))
+		(text "stg_clk" (rect 21 43 56 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "flag_branch_ad[1..0]" (rect 0 0 101 10)(font "Arial" ))
-		(text "flag_branch_ad[1..0]" (rect 21 59 122 69)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
+		(text "stg_ena" (rect 0 0 38 10)(font "Arial" ))
+		(text "stg_ena" (rect 21 59 59 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "prev_counter[1..0]" (rect 0 0 90 10)(font "Arial" ))
-		(text "prev_counter[1..0]" (rect 21 75 111 85)(font "Arial" ))
-		(line (pt 0 80)(pt 16 80)(line_width 3))
+		(text "stg_x" (rect 0 0 27 10)(font "Arial" ))
+		(text "stg_x" (rect 21 75 48 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "prev_valid" (rect 0 0 51 10)(font "Arial" ))
-		(text "prev_valid" (rect 21 91 72 101)(font "Arial" ))
+		(text "reset" (rect 0 0 24 10)(font "Arial" ))
+		(text "reset" (rect 21 91 45 101)(font "Arial" ))
 		(line (pt 0 96)(pt 16 96))
 	)
 	(port
-		(pt 0 112)
-		(input)
-		(text "prev_branch_prediction" (rect 0 0 114 10)(font "Arial" ))
-		(text "prev_branch_prediction" (rect 21 107 135 117)(font "Arial" ))
-		(line (pt 0 112)(pt 16 112))
-	)
-	(port
-		(pt 0 128)
-		(input)
-		(text "rd_memory" (rect 0 0 56 10)(font "Arial" ))
-		(text "rd_memory" (rect 21 123 77 133)(font "Arial" ))
-		(line (pt 0 128)(pt 16 128))
-	)
-	(port
-		(pt 0 144)
-		(input)
-		(text "stg_clk" (rect 0 0 35 10)(font "Arial" ))
-		(text "stg_clk" (rect 21 139 56 149)(font "Arial" ))
-		(line (pt 0 144)(pt 16 144))
-	)
-	(port
-		(pt 0 160)
-		(input)
-		(text "stg_ena" (rect 0 0 38 10)(font "Arial" ))
-		(text "stg_ena" (rect 21 155 59 165)(font "Arial" ))
-		(line (pt 0 160)(pt 16 160))
-	)
-	(port
-		(pt 0 176)
-		(input)
-		(text "stg_x" (rect 0 0 27 10)(font "Arial" ))
-		(text "stg_x" (rect 21 171 48 181)(font "Arial" ))
-		(line (pt 0 176)(pt 16 176))
-	)
-	(port
-		(pt 0 192)
-		(input)
-		(text "reset" (rect 0 0 24 10)(font "Arial" ))
-		(text "reset" (rect 21 187 45 197)(font "Arial" ))
-		(line (pt 0 192)(pt 16 192))
-	)
-	(port
-		(pt 312 32)
-		(output)
-		(text "prev_pc_out[31..0]" (rect 0 0 93 10)(font "Arial" ))
-		(text "prev_pc_out[31..0]" (rect 213 27 306 37)(font "Arial" ))
-		(line (pt 312 32)(pt 296 32)(line_width 3))
-	)
-	(port
-		(pt 312 48)
-		(output)
-		(text "pc_target_ad_out[31..0]" (rect 0 0 116 10)(font "Arial" ))
-		(text "pc_target_ad_out[31..0]" (rect 193 43 309 53)(font "Arial" ))
-		(line (pt 312 48)(pt 296 48)(line_width 3))
-	)
-	(port
-		(pt 312 64)
-		(output)
-		(text "flag_branch_ad_out[1..0]" (rect 0 0 122 10)(font "Arial" ))
-		(text "flag_branch_ad_out[1..0]" (rect 188 59 310 69)(font "Arial" ))
-		(line (pt 312 64)(pt 296 64)(line_width 3))
-	)
-	(port
-		(pt 312 80)
-		(output)
-		(text "prev_counter_out[1..0]" (rect 0 0 112 10)(font "Arial" ))
-		(text "prev_counter_out[1..0]" (rect 197 75 309 85)(font "Arial" ))
-		(line (pt 312 80)(pt 296 80)(line_width 3))
-	)
-	(port
-		(pt 312 96)
-		(output)
-		(text "prev_valid_out" (rect 0 0 73 10)(font "Arial" ))
-		(text "prev_valid_out" (rect 230 91 303 101)(font "Arial" ))
-		(line (pt 312 96)(pt 296 96))
-	)
-	(port
-		(pt 312 112)
-		(output)
-		(text "prev_branch_prediction_out" (rect 0 0 135 10)(font "Arial" ))
-		(text "prev_branch_prediction_out" (rect 177 107 312 117)(font "Arial" ))
-		(line (pt 312 112)(pt 296 112))
-	)
-	(port
-		(pt 312 128)
+		(pt 216 32)
 		(output)
 		(text "rd_memory_out" (rect 0 0 77 10)(font "Arial" ))
-		(text "rd_memory_out" (rect 226 123 303 133)(font "Arial" ))
-		(line (pt 312 128)(pt 296 128))
+		(text "rd_memory_out" (rect 130 27 207 37)(font "Arial" ))
+		(line (pt 216 32)(pt 200 32))
 	)
 	(drawing
-		(rectangle (rect 16 16 296 224))
+		(rectangle (rect 16 16 200 128))
 	)
 )
 (symbol
 	(rect 72 1432 320 1640)
 	(text "register_bank" (rect 5 0 71 10)(font "Arial" ))
-	(text "inst15" (rect 8 192 36 204)(font "Intel Clear" ))
+	(text "inst28" (rect 8 192 36 204)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -2396,22 +2224,351 @@ on the Quartus Prime software download page.
 		(text "rs2_data[31..0]" (rect 165 43 239 53)(font "Arial" ))
 		(line (pt 248 48)(pt 232 48)(line_width 3))
 	)
-	(port
-		(pt 248 64)
-		(output)
-		(text "data_out[31..0]" (rect 0 0 74 10)(font "Arial" ))
-		(text "data_out[31..0]" (rect 165 59 239 69)(font "Arial" ))
-		(line (pt 248 64)(pt 232 64)(line_width 3))
-	)
-	(port
-		(pt 248 80)
-		(output)
-		(text "memwrite" (rect 0 0 47 10)(font "Arial" ))
-		(text "memwrite" (rect 188 75 235 85)(font "Arial" ))
-		(line (pt 248 80)(pt 232 80))
-	)
 	(drawing
 		(rectangle (rect 16 16 232 192))
+	)
+)
+(symbol
+	(rect -736 592 -424 864)
+	(text "address_latch" (rect 5 0 73 10)(font "Arial" ))
+	(text "inst29" (rect 8 256 36 268)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "prev_pc[31..0]" (rect 0 0 71 10)(font "Arial" ))
+		(text "prev_pc[31..0]" (rect 21 27 92 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "address_target[31..0]" (rect 0 0 105 10)(font "Arial" ))
+		(text "address_target[31..0]" (rect 21 43 126 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "flag_branch[1..0]" (rect 0 0 83 10)(font "Arial" ))
+		(text "flag_branch[1..0]" (rect 21 59 104 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "prev_counter[1..0]" (rect 0 0 90 10)(font "Arial" ))
+		(text "prev_counter[1..0]" (rect 21 75 111 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "prev_valid" (rect 0 0 51 10)(font "Arial" ))
+		(text "prev_valid" (rect 21 91 72 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "prev_branch_prediction" (rect 0 0 114 10)(font "Arial" ))
+		(text "prev_branch_prediction" (rect 21 107 135 117)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "rd_memory" (rect 0 0 56 10)(font "Arial" ))
+		(text "rd_memory" (rect 21 123 77 133)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "wr_memory" (rect 0 0 57 10)(font "Arial" ))
+		(text "wr_memory" (rect 21 139 78 149)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "funct3_[2..0]" (rect 0 0 63 10)(font "Arial" ))
+		(text "funct3_[2..0]" (rect 21 155 84 165)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "rs2_data[31..0]" (rect 0 0 74 10)(font "Arial" ))
+		(text "rs2_data[31..0]" (rect 21 171 95 181)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "stg_clk" (rect 0 0 35 10)(font "Arial" ))
+		(text "stg_clk" (rect 21 187 56 197)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "stg_ena" (rect 0 0 38 10)(font "Arial" ))
+		(text "stg_ena" (rect 21 203 59 213)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "stg_x" (rect 0 0 27 10)(font "Arial" ))
+		(text "stg_x" (rect 21 219 48 229)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "reset" (rect 0 0 24 10)(font "Arial" ))
+		(text "reset" (rect 21 235 45 245)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 312 32)
+		(output)
+		(text "prev_pc_out[31..0]" (rect 0 0 93 10)(font "Arial" ))
+		(text "prev_pc_out[31..0]" (rect 213 27 306 37)(font "Arial" ))
+		(line (pt 312 32)(pt 296 32)(line_width 3))
+	)
+	(port
+		(pt 312 48)
+		(output)
+		(text "address_target_out[31..0]" (rect 0 0 126 10)(font "Arial" ))
+		(text "address_target_out[31..0]" (rect 185 43 311 53)(font "Arial" ))
+		(line (pt 312 48)(pt 296 48)(line_width 3))
+	)
+	(port
+		(pt 312 64)
+		(output)
+		(text "flag_branch_out[1..0]" (rect 0 0 105 10)(font "Arial" ))
+		(text "flag_branch_out[1..0]" (rect 203 59 308 69)(font "Arial" ))
+		(line (pt 312 64)(pt 296 64)(line_width 3))
+	)
+	(port
+		(pt 312 80)
+		(output)
+		(text "prev_counter_out[1..0]" (rect 0 0 112 10)(font "Arial" ))
+		(text "prev_counter_out[1..0]" (rect 197 75 309 85)(font "Arial" ))
+		(line (pt 312 80)(pt 296 80)(line_width 3))
+	)
+	(port
+		(pt 312 96)
+		(output)
+		(text "prev_valid_out" (rect 0 0 73 10)(font "Arial" ))
+		(text "prev_valid_out" (rect 230 91 303 101)(font "Arial" ))
+		(line (pt 312 96)(pt 296 96))
+	)
+	(port
+		(pt 312 112)
+		(output)
+		(text "prev_branch_prediction_out" (rect 0 0 135 10)(font "Arial" ))
+		(text "prev_branch_prediction_out" (rect 177 107 312 117)(font "Arial" ))
+		(line (pt 312 112)(pt 296 112))
+	)
+	(port
+		(pt 312 128)
+		(output)
+		(text "rd_memory_out" (rect 0 0 77 10)(font "Arial" ))
+		(text "rd_memory_out" (rect 226 123 303 133)(font "Arial" ))
+		(line (pt 312 128)(pt 296 128))
+	)
+	(port
+		(pt 312 144)
+		(output)
+		(text "wr_memory_out" (rect 0 0 79 10)(font "Arial" ))
+		(text "wr_memory_out" (rect 225 139 304 149)(font "Arial" ))
+		(line (pt 312 144)(pt 296 144))
+	)
+	(port
+		(pt 312 160)
+		(output)
+		(text "funct3_out[2..0]" (rect 0 0 79 10)(font "Arial" ))
+		(text "funct3_out[2..0]" (rect 225 155 304 165)(font "Arial" ))
+		(line (pt 312 160)(pt 296 160)(line_width 3))
+	)
+	(port
+		(pt 312 176)
+		(output)
+		(text "rs2_data_out[31..0]" (rect 0 0 95 10)(font "Arial" ))
+		(text "rs2_data_out[31..0]" (rect 211 171 306 181)(font "Arial" ))
+		(line (pt 312 176)(pt 296 176)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 296 256))
+	)
+)
+(symbol
+	(rect -992 1328 -744 1440)
+	(text "store_data_module" (rect 5 0 98 10)(font "Arial" ))
+	(text "inst30" (rect 8 96 36 108)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "funct3_[2..0]" (rect 0 0 63 10)(font "Arial" ))
+		(text "funct3_[2..0]" (rect 21 27 84 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "address_target[31..0]" (rect 0 0 105 10)(font "Arial" ))
+		(text "address_target[31..0]" (rect 21 43 126 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "rs2_data[31..0]" (rect 0 0 74 10)(font "Arial" ))
+		(text "rs2_data[31..0]" (rect 21 59 95 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "byte_ena[3..0]" (rect 0 0 71 10)(font "Arial" ))
+		(text "byte_ena[3..0]" (rect 167 27 238 37)(font "Arial" ))
+		(line (pt 248 32)(pt 232 32)(line_width 3))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "store_data[31..0]" (rect 0 0 83 10)(font "Arial" ))
+		(text "store_data[31..0]" (rect 157 43 240 53)(font "Arial" ))
+		(line (pt 248 48)(pt 232 48)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 232 96))
+	)
+)
+(symbol
+	(rect -1328 632 -1080 776)
+	(text "address_builder" (rect 5 0 81 10)(font "Arial" ))
+	(text "inst31" (rect 8 128 36 140)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "imm[31..0]" (rect 0 0 53 10)(font "Arial" ))
+		(text "imm[31..0]" (rect 21 27 74 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "pc[31..0]" (rect 0 0 43 10)(font "Arial" ))
+		(text "pc[31..0]" (rect 21 43 64 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "rs1[31..0]" (rect 0 0 47 10)(font "Arial" ))
+		(text "rs1[31..0]" (rect 21 59 68 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "instr_type[2..0]" (rect 0 0 75 10)(font "Arial" ))
+		(text "instr_type[2..0]" (rect 21 75 96 85)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "is_branch" (rect 0 0 47 10)(font "Arial" ))
+		(text "is_branch" (rect 21 91 68 101)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "address_target[31..0]" (rect 0 0 105 10)(font "Arial" ))
+		(text "address_target[31..0]" (rect 139 27 244 37)(font "Arial" ))
+		(line (pt 248 32)(pt 232 32)(line_width 3))
+	)
+	(port
+		(pt 248 48)
+		(output)
+		(text "flag_branch[1..0]" (rect 0 0 83 10)(font "Arial" ))
+		(text "flag_branch[1..0]" (rect 157 43 240 53)(font "Arial" ))
+		(line (pt 248 48)(pt 232 48)(line_width 3))
+	)
+	(parameter
+		"R_TYPE"
+		"000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"I_TYPE"
+		"001"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S_TYPE"
+		"010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"B_TYPE"
+		"011"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"U_TYPE"
+		"100"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"J_TYPE"
+		"101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 232 128))
+	)
+	(annotation_block (parameter)(rect -1080 528 -896 632))
+)
+(symbol
+	(rect -1008 1736 -760 1848)
+	(text "load_data_module" (rect 5 0 93 10)(font "Arial" ))
+	(text "inst32" (rect 8 96 36 108)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "funct3_[2..0]" (rect 0 0 63 10)(font "Arial" ))
+		(text "funct3_[2..0]" (rect 21 27 84 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "address_target[31..0]" (rect 0 0 105 10)(font "Arial" ))
+		(text "address_target[31..0]" (rect 21 43 126 53)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "mem_data[31..0]" (rect 0 0 83 10)(font "Arial" ))
+		(text "mem_data[31..0]" (rect 21 59 104 69)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 248 32)
+		(output)
+		(text "load_data[31..0]" (rect 0 0 79 10)(font "Arial" ))
+		(text "load_data[31..0]" (rect 161 27 240 37)(font "Arial" ))
+		(line (pt 248 32)(pt 232 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 232 96))
 	)
 )
 (connector
@@ -2444,12 +2601,6 @@ on the Quartus Prime software download page.
 	(text "pc_next[12..2]" (rect -488 -48 -422 -36)(font "Intel Clear" ))
 	(pt -400 -32)
 	(pt -456 -32)
-	(bus)
-)
-(connector
-	(text "data_out[31..0]" (rect -543 0 -472 12)(font "Intel Clear" ))
-	(pt -400 16)
-	(pt -552 16)
 	(bus)
 )
 (connector
@@ -2543,12 +2694,6 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(text "pc_add_build_target[31..0]" (rect 209 344 336 356)(font "Intel Clear" ))
-	(pt 192 360)
-	(pt 320 360)
-	(bus)
-)
-(connector
 	(text "prev_branch_prediction" (rect 208 376 318 388)(font "Intel Clear" ))
 	(pt 320 392)
 	(pt 192 392)
@@ -2611,18 +2756,6 @@ on the Quartus Prime software download page.
 	(pt 736 376)
 )
 (connector
-	(text "pc_target_ad[31..0]" (rect -834 624 -742 636)(font "Intel Clear" ))
-	(pt -736 640)
-	(pt -864 640)
-	(bus)
-)
-(connector
-	(text "flag_branch_ad[1..0]" (rect -850 640 -753 652)(font "Intel Clear" ))
-	(pt -736 656)
-	(pt -880 656)
-	(bus)
-)
-(connector
 	(text "pc_op[31..0]" (rect -810 608 -753 620)(font "Intel Clear" ))
 	(pt -736 624)
 	(pt -832 624)
@@ -2632,12 +2765,6 @@ on the Quartus Prime software download page.
 	(text "prev_pc[31..0]" (rect -410 608 -343 620)(font "Intel Clear" ))
 	(pt -424 624)
 	(pt -360 624)
-	(bus)
-)
-(connector
-	(text "pc_add_build_target[31..0]" (rect -403 624 -276 636)(font "Intel Clear" ))
-	(pt -424 640)
-	(pt -360 640)
 	(bus)
 )
 (connector
@@ -2660,12 +2787,6 @@ on the Quartus Prime software download page.
 	(text "flag_add_build_branch[0]" (rect 152 816 274 828)(font "Intel Clear" ))
 	(pt 128 832)
 	(pt 272 832)
-)
-(connector
-	(text "pc_add_build_target[31..0]" (rect 150 800 277 812)(font "Intel Clear" ))
-	(pt 272 816)
-	(pt 128 816)
-	(bus)
 )
 (connector
 	(text "prev_pc[31..0]" (rect 138 784 205 796)(font "Intel Clear" ))
@@ -2798,12 +2919,6 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(text "pc_target_ad[31..0]" (rect -1256 784 -1164 796)(font "Intel Clear" ))
-	(pt -1176 800)
-	(pt -1264 800)
-	(bus)
-)
-(connector
 	(text "imm_op[31..0]" (rect -1472 824 -1404 836)(font "Intel Clear" ))
 	(pt -1384 840)
 	(pt -1480 840)
@@ -2881,18 +2996,6 @@ on the Quartus Prime software download page.
 	(text "rs1_data_op[31..0]" (rect -1391 680 -1303 692)(font "Intel Clear" ))
 	(pt -1392 696)
 	(pt -1328 696)
-	(bus)
-)
-(connector
-	(text "pc_target_ad[31..0]" (rect -1096 648 -1004 660)(font "Intel Clear" ))
-	(pt -1096 664)
-	(pt -1056 664)
-	(bus)
-)
-(connector
-	(text "flag_branch_ad[1..0]" (rect -1096 664 -999 676)(font "Intel Clear" ))
-	(pt -1096 680)
-	(pt -1056 680)
 	(bus)
 )
 (connector
@@ -3512,16 +3615,6 @@ on the Quartus Prime software download page.
 	(pt 2224 248)
 )
 (connector
-	(text "reset" (rect -776 768 -753 780)(font "Intel Clear" ))
-	(pt -784 784)
-	(pt -736 784)
-)
-(connector
-	(text "clk" (rect -800 720 -786 732)(font "Intel Clear" ))
-	(pt -736 736)
-	(pt -808 736)
-)
-(connector
 	(text "rd_memory_op" (rect -802 704 -729 716)(font "Intel Clear" ))
 	(pt -736 720)
 	(pt -808 720)
@@ -3544,12 +3637,6 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(text "data_out[31..0]" (rect 335 1480 406 1492)(font "Intel Clear" ))
-	(pt 320 1496)
-	(pt 440 1496)
-	(bus)
-)
-(connector
 	(text "data_in[31..0]" (rect -23 1480 41 1492)(font "Intel Clear" ))
 	(pt 72 1496)
 	(pt -40 1496)
@@ -3566,19 +3653,194 @@ on the Quartus Prime software download page.
 	(pt 72 1576)
 )
 (connector
-	(text "rd_memory_mem" (rect -18 1544 68 1556)(font "Intel Clear" ))
+	(text "data_in[31..0]" (rect -136 0 -72 12)(font "Intel Clear" ))
+	(pt -144 16)
+	(pt -80 16)
+	(bus)
+)
+(connector
+	(text "flag_branch[1..0]" (rect -850 640 -770 652)(font "Intel Clear" ))
+	(pt -736 656)
+	(pt -880 656)
+	(bus)
+)
+(connector
+	(text "address_target[31..0]" (rect -834 624 -734 636)(font "Intel Clear" ))
+	(pt -736 640)
+	(pt -864 640)
+	(bus)
+)
+(connector
+	(text "add_build_target[31..0]" (rect -403 624 -293 636)(font "Intel Clear" ))
+	(pt -424 640)
+	(pt -360 640)
+	(bus)
+)
+(connector
+	(text "add_build_target[31..0]" (rect 150 800 260 812)(font "Intel Clear" ))
+	(pt 272 816)
+	(pt 128 816)
+	(bus)
+)
+(connector
+	(text "wr_memory" (rect 1249 208 1306 220)(font "Intel Clear" ))
+	(pt 1232 224)
+	(pt 1328 224)
+)
+(connector
+	(text "wr_memory" (rect 1804 248 1861 260)(font "Intel Clear" ))
+	(pt 1888 264)
+	(pt 1784 264)
+)
+(connector
+	(text "wr_memory_op" (rect 2161 248 2236 260)(font "Intel Clear" ))
+	(pt 2144 264)
+	(pt 2224 264)
+)
+(connector
+	(text "wr_memory_op" (rect -812 720 -737 732)(font "Intel Clear" ))
+	(pt -736 736)
+	(pt -824 736)
+)
+(connector
+	(text "wr_memory_mem" (rect -404 720 -316 732)(font "Intel Clear" ))
+	(pt -424 736)
+	(pt -344 736)
+)
+(connector
+	(text "wr_memory_mem" (rect -534 32 -446 44)(font "Intel Clear" ))
+	(pt -400 48)
+	(pt -552 48)
+)
+(connector
+	(text "funct3_op[2..0]" (rect -804 736 -734 748)(font "Intel Clear" ))
+	(pt -736 752)
+	(pt -808 752)
+	(bus)
+)
+(connector
+	(text "funct3_mem[2..0]" (rect -413 736 -330 748)(font "Intel Clear" ))
+	(pt -424 752)
+	(pt -352 752)
+	(bus)
+)
+(connector
+	(text "byte_ena[3..0]" (rect -505 56 -437 68)(font "Intel Clear" ))
+	(pt -400 72)
+	(pt -528 72)
+	(bus)
+)
+(connector
+	(text "funct3_mem[2..0]" (rect -1102 1344 -1019 1356)(font "Intel Clear" ))
+	(pt -992 1360)
+	(pt -1120 1360)
+	(bus)
+)
+(connector
+	(text "add_build_target[31..0]" (rect -1109 1360 -999 1372)(font "Intel Clear" ))
+	(pt -992 1376)
+	(pt -1120 1376)
+	(bus)
+)
+(connector
+	(text "clk" (rect -1064 1560 -1050 1572)(font "Intel Clear" ))
+	(pt -992 1576)
+	(pt -1072 1576)
+)
+(connector
+	(text "reset" (rect -1054 1608 -1031 1620)(font "Intel Clear" ))
+	(pt -992 1624)
+	(pt -1072 1624)
+)
+(connector
+	(text "rd_memory_mem" (rect -1065 1544 -979 1556)(font "Intel Clear" ))
+	(pt -992 1560)
+	(pt -1072 1560)
+)
+(connector
+	(text "rd_memory_wb" (rect -751 1544 -676 1556)(font "Intel Clear" ))
+	(pt -776 1560)
+	(pt -656 1560)
+)
+(connector
+	(text "rd_memory_wb" (rect -18 1544 57 1556)(font "Intel Clear" ))
 	(pt 72 1560)
 	(pt -48 1560)
 )
 (connector
-	(text "memwrite" (rect 346 1496 394 1508)(font "Intel Clear" ))
-	(pt 320 1512)
-	(pt 424 1512)
+	(text "reset" (rect -776 816 -753 828)(font "Intel Clear" ))
+	(pt -784 832)
+	(pt -736 832)
 )
 (connector
-	(text "data_in[31..0]" (rect -136 0 -72 12)(font "Intel Clear" ))
-	(pt -144 16)
-	(pt -80 16)
+	(text "clk" (rect -792 768 -778 780)(font "Intel Clear" ))
+	(pt -736 784)
+	(pt -800 784)
+)
+(connector
+	(text "rs2_data_op[31..0]" (rect -825 752 -737 764)(font "Intel Clear" ))
+	(pt -736 768)
+	(pt -832 768)
+	(bus)
+)
+(connector
+	(text "rs2_data_mem[31..0]" (rect -398 752 -297 764)(font "Intel Clear" ))
+	(pt -424 768)
+	(pt -312 768)
+	(bus)
+)
+(connector
+	(text "byte_ena[3..0]" (rect -735 1344 -667 1356)(font "Intel Clear" ))
+	(pt -744 1360)
+	(pt -664 1360)
+	(bus)
+)
+(connector
+	(text "rs2_data_mem[31..0]" (rect -1106 1376 -1005 1388)(font "Intel Clear" ))
+	(pt -992 1392)
+	(pt -1120 1392)
+	(bus)
+)
+(connector
+	(text "store_data[31..0]" (rect -726 1360 -646 1372)(font "Intel Clear" ))
+	(pt -744 1376)
+	(pt -664 1376)
+	(bus)
+)
+(connector
+	(text "store_data[31..0]" (rect -543 0 -463 12)(font "Intel Clear" ))
+	(pt -400 16)
+	(pt -552 16)
+	(bus)
+)
+(connector
+	(text "add_build_target[12..2]" (rect -550 16 -440 28)(font "Intel Clear" ))
+	(pt -400 32)
+	(pt -552 32)
+	(bus)
+)
+(connector
+	(text "address_target[31..0]" (rect -1056 648 -956 660)(font "Intel Clear" ))
+	(pt -1080 664)
+	(pt -1056 664)
+	(bus)
+)
+(connector
+	(text "flag_branch[1..0]" (rect -1048 664 -968 676)(font "Intel Clear" ))
+	(pt -1032 680)
+	(pt -1080 680)
+	(bus)
+)
+(connector
+	(text "address_target[31..0]" (rect -1256 784 -1156 796)(font "Intel Clear" ))
+	(pt -1176 800)
+	(pt -1264 800)
+	(bus)
+)
+(connector
+	(text "add_build_target[31..0]" (rect 209 344 319 356)(font "Intel Clear" ))
+	(pt 192 360)
+	(pt 320 360)
 	(bus)
 )
 (text "FETCH" (rect 376 -48 416 -34)(font "Intel Clear" (font_size 8)))
@@ -3589,6 +3851,7 @@ on the Quartus Prime software download page.
 (text "BANCO DE REGISTROS" (rect -176 1280 -38 1294)(font "Intel Clear" (font_size 8)))
 (text "ADDRRESS BUILDER" (rect -1448 536 -1325 550)(font "Intel Clear" (font_size 8)))
 (text "PREDICTOR" (rect 224 720 294 734)(font "Intel Clear" (font_size 8)))
+(text "MEMORY READ" (rect -1224 1280 -1134 1294)(font "Intel Clear" (font_size 8)))
 (rectangle (rect 104 -192 808 560))
 (rectangle (rect -584 -128 -56 208))
 (rectangle (rect 2424 696 2976 1304))
@@ -3598,3 +3861,4 @@ on the Quartus Prime software download page.
 (rectangle (rect -176 1272 616 1904))
 (rectangle (rect -1496 448 -256 968))
 (rectangle (rect 120 680 760 992))
+(rectangle (rect -1280 1264 -424 1944))
