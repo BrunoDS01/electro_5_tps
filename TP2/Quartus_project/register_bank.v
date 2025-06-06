@@ -7,6 +7,7 @@ module register_bank(
     input wire [4:0] rd,
 	 
 	input wire save_to_reg,
+	input wire save_from_memory,
 	 
 
     input wire stage_clk,
@@ -52,7 +53,17 @@ always @(posedge stage_clk or posedge reset) begin
         end
 	end
 	else begin
-		if(save_to_reg) begin
+		if(save_from_memory) begin
+			// Guardado desde memoria
+			if (rd != 0) begin
+				x[rd] <= data_in;
+			end
+			else begin
+				x[rd] <= 32'd0;
+			end
+		end
+		else if(save_to_reg) begin
+			// Guardado desde ALU
 			if (rd != 0) begin
 				x[rd] <= alu_out;
 			end

@@ -1,5 +1,5 @@
 Flow report for tp2_e5_ERV25_grupo2
-Thu Jun  5 17:38:02 2025
+Thu Jun  5 23:13:28 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -41,17 +41,17 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Jun  5 17:38:02 2025           ;
+; Flow Status                        ; Flow Failed - Thu Jun  5 23:13:28 2025          ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE22F17C8L                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 3,526 / 22,320 ( 16 % )                         ;
-;     Total combinational functions  ; 2,458 / 22,320 ( 11 % )                         ;
-;     Dedicated logic registers      ; 1,446 / 22,320 ( 6 % )                          ;
-; Total registers                    ; 1446                                            ;
+; Total logic elements               ; 3,537 / 22,320 ( 16 % )                         ;
+;     Total combinational functions  ; 2,468 / 22,320 ( 11 % )                         ;
+;     Dedicated logic registers      ; 1,448 / 22,320 ( 6 % )                          ;
+; Total registers                    ; 1448                                            ;
 ; Total pins                         ; 469 / 154 ( 305 % )                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 66,752 / 608,256 ( 11 % )                       ;
@@ -65,7 +65,7 @@ on the Quartus Prime software download page.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/05/2025 17:36:46 ;
+; Start date & time ; 06/05/2025 23:13:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; tp2_e5_ERV25_grupo2 ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ on the Quartus Prime software download page.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 37714650087763.174915580619620         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 37714650087763.174917598211912         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -107,11 +107,9 @@ on the Quartus Prime software download page.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4822 MB             ; 00:00:34                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4822 MB             ; 00:00:31                           ;
 ; Fitter               ; 00:00:04     ; 1.0                     ; 4902 MB             ; 00:00:04                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4673 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4690 MB             ; 00:00:01                           ;
-; Total                ; 00:00:25     ; --                      ; --                  ; 00:00:40                           ;
+; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -122,8 +120,6 @@ on the Quartus Prime software download page.
 +----------------------+------------------+------------+------------+----------------+
 ; Analysis & Synthesis ; LAPTOP-IQESHE48  ; Windows 10 ; 10.0       ; x86_64         ;
 ; Fitter               ; LAPTOP-IQESHE48  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-IQESHE48  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-IQESHE48  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -132,8 +128,6 @@ on the Quartus Prime software download page.
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 quartus_fit --read_settings_files=off --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2 --vector_source="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/add_sub.vwf" --testbench_file="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/add_sub.vwf.vt"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/" tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 
 
 

@@ -1,5 +1,5 @@
 Fitter report for tp2_e5_ERV25_grupo2
-Thu Jun  5 17:37:10 2025
+Thu Jun  5 23:13:28 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -58,17 +58,17 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Failed - Thu Jun  5 17:37:10 2025               ;
+; Fitter Status                      ; Failed - Thu Jun  5 23:13:28 2025               ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE22F17C8L                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 3,526 / 22,320 ( 16 % )                         ;
-;     Total combinational functions  ; 2,458 / 22,320 ( 11 % )                         ;
-;     Dedicated logic registers      ; 1,446 / 22,320 ( 6 % )                          ;
-; Total registers                    ; 1446                                            ;
+; Total logic elements               ; 3,537 / 22,320 ( 16 % )                         ;
+;     Total combinational functions  ; 2,468 / 22,320 ( 11 % )                         ;
+;     Dedicated logic registers      ; 1,448 / 22,320 ( 6 % )                          ;
+; Total registers                    ; 1448                                            ;
 ; Total pins                         ; 469 / 154 ( 305 % )                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 66,752 / 608,256 ( 11 % )                       ;
@@ -183,23 +183,23 @@ on the Quartus Prime software download page.
 +---------------------------------------------+---------------------------+
 ; Resource                                    ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Total logic elements                        ; 3,526 / 22,320 ( 16 % )   ;
-;     -- Combinational with no register       ; 2080                      ;
-;     -- Register only                        ; 1068                      ;
-;     -- Combinational with a register        ; 378                       ;
+; Total logic elements                        ; 3,537 / 22,320 ( 16 % )   ;
+;     -- Combinational with no register       ; 2089                      ;
+;     -- Register only                        ; 1069                      ;
+;     -- Combinational with a register        ; 379                       ;
 ;                                             ;                           ;
 ; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 1976                      ;
-;     -- 3 input functions                    ; 291                       ;
-;     -- <=2 input functions                  ; 191                       ;
-;     -- Register only                        ; 1068                      ;
+;     -- 4 input functions                    ; 2019                      ;
+;     -- 3 input functions                    ; 257                       ;
+;     -- <=2 input functions                  ; 192                       ;
+;     -- Register only                        ; 1069                      ;
 ;                                             ;                           ;
 ; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 2307                      ;
+;     -- normal mode                          ; 2317                      ;
 ;     -- arithmetic mode                      ; 151                       ;
 ;                                             ;                           ;
-; Total registers*                            ; 1,446 / 23,018 ( 6 % )    ;
-;     -- Dedicated logic registers            ; 1,446 / 22,320 ( 6 % )    ;
+; Total registers*                            ; 1,448 / 23,018 ( 6 % )    ;
+;     -- Dedicated logic registers            ; 1,448 / 22,320 ( 6 % )    ;
 ;     -- I/O registers                        ; 0 / 698 ( 0 % )           ;
 ;                                             ;                           ;
 ; Total LABs                                  ; Not available             ;
@@ -220,10 +220,10 @@ on the Quartus Prime software download page.
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )             ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )             ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )             ;
-; Maximum fan-out                             ; 1497                      ;
-; Highest non-global fan-out                  ; 1497                      ;
-; Total fan-out                               ; 16320                     ;
-; Average fan-out                             ; 3.33                      ;
+; Maximum fan-out                             ; 1499                      ;
+; Highest non-global fan-out                  ; 1499                      ;
+; Total fan-out                               ; 17425                     ;
+; Average fan-out                             ; 3.55                      ;
 +---------------------------------------------+---------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -234,8 +234,8 @@ on the Quartus Prime software download page.
 +-------+------------+----------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name  ; Pin #      ; I/O Bank ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------+------------+----------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clk   ; Unassigned ; --       ; 1497                  ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; reset ; Unassigned ; --       ; 1446                  ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; clk   ; Unassigned ; --       ; 1499                  ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; reset ; Unassigned ; --       ; 1448                  ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
 +-------+------------+----------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -1964,8 +1964,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                        ; Entity Name             ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |tp2_e5_ERV25_grupo2                         ; 0 (0)       ; 1446 (0)                  ; 0 (0)         ; 66752       ; 0            ; 0       ; 0         ; 469  ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2                                                                                                       ; tp2_e5_ERV25_grupo2     ; work         ;
-;    |ad_latch:inst15|                         ; 0 (0)       ; 70 (70)                   ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|ad_latch:inst15                                                                                       ; ad_latch                ; work         ;
+; |tp2_e5_ERV25_grupo2                         ; 0 (0)       ; 1448 (0)                  ; 0 (0)         ; 66752       ; 0            ; 0       ; 0         ; 469  ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2                                                                                                       ; tp2_e5_ERV25_grupo2     ; work         ;
+;    |ad_latch:inst13|                         ; 0 (0)       ; 71 (71)                   ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|ad_latch:inst13                                                                                       ; ad_latch                ; work         ;
 ;    |address_builder:inst2|                   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|address_builder:inst2                                                                                 ; address_builder         ; work         ;
 ;    |alu:inst17|                              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|alu:inst17                                                                                            ; alu                     ; work         ;
 ;    |alu_latch:inst18|                        ; 0 (0)       ; 38 (38)                   ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|alu_latch:inst18                                                                                      ; alu_latch               ; work         ;
@@ -1977,7 +1977,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;       |prediction_module:inst3|              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|prediction_module:inst3                                                         ; prediction_module       ; work         ;
 ;       |tag_latch:inst2|                      ; 0 (0)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|bht_btb_module:inst11|tag_latch:inst2                                                                 ; tag_latch               ; work         ;
 ;    |branch_result_module:inst8|              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|branch_result_module:inst8                                                                            ; branch_result_module    ; work         ;
-;    |decode_latch:inst1|                      ; 0 (0)       ; 98 (98)                   ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|decode_latch:inst1                                                                                    ; decode_latch            ; work         ;
+;    |decode_latch:inst1|                      ; 0 (0)       ; 99 (99)                   ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|decode_latch:inst1                                                                                    ; decode_latch            ; work         ;
 ;    |fetch_unit:inst3|                        ; 0 (0)       ; 96 (96)                   ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst3                                                                                      ; fetch_unit              ; work         ;
 ;    |immediate_builder:inst4|                 ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4                                                                               ; immediate_builder       ; work         ;
 ;    |next_pc_decision_module:inst9|           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9                                                                         ; next_pc_decision_module ; work         ;
@@ -1988,7 +1988,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;    |ram_principal:inst|                      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|ram_principal:inst                                                                                    ; ram_principal           ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|ram_principal:inst|altsyncram:altsyncram_component                                                    ; altsyncram              ; work         ;
 ;          |altsyncram_u8p2:auto_generated|    ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated                     ; altsyncram_u8p2         ; work         ;
-;    |register_bank:inst20|                    ; 0 (0)       ; 1024 (1024)               ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|register_bank:inst20                                                                                  ; register_bank           ; work         ;
+;    |register_bank:inst15|                    ; 0 (0)       ; 1024 (1024)               ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|register_bank:inst15                                                                                  ; register_bank           ; work         ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2485,54 +2485,57 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                  ; Location   ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +---------------------------------------+------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; ad_latch:inst15|flag_branch_ad_out[0] ; Unassigned ; 24      ; Write enable ; no     ; --                   ; --               ; --                        ;
-; clk                                   ; Unassigned ; 1497    ; Clock        ; no     ; --                   ; --               ; --                        ;
-; decode_latch:inst1|pc_out[30]~0       ; Unassigned ; 97      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; ad_latch:inst13|flag_branch_ad_out[0] ; Unassigned ; 24      ; Write enable ; no     ; --                   ; --               ; --                        ;
+; clk                                   ; Unassigned ; 1499    ; Clock        ; no     ; --                   ; --               ; --                        ;
+; decode_latch:inst1|pc_out[19]~0       ; Unassigned ; 98      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; pipeline_control:inst7|dec_nop~3      ; Unassigned ; 9       ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 ; pipeline_control:inst7|fetch_ena~0    ; Unassigned ; 129     ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~1       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~10      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~11      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~13      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~15      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~16      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~17      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~19      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~21      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~22      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~23      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~24      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~25      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~26      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~27      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~28      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~29      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~3       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~30      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~31      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~32      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~33      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~34      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~35      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~36      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~37      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~38      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~39      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~4       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~5       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~7       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst20|Decoder0~9       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; reset                                 ; Unassigned ; 1446    ; Async. clear ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|Equal2~1         ; Unassigned ; 1024    ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[0][17]~27      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[10][25]~17     ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[11][22]~20     ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[12][21]~31     ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[13][20]~29     ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[14][6]~30      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[15][6]~32      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[16][6]~11      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[17][6]~7       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[18][1]~3       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[19][7]~15      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[1][2]~26       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[20][7]~9       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[21][10]~6      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[22][20]~1      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[23][26]~14     ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[24][11]~10     ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[25][24]~5      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[26][25]~2      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[27][25]~13     ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[28][25]~12     ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[29][29]~8      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[2][10]~25      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[30][21]~4      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[31][4]~16      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[3][10]~28      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[4][0]~23       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[5][0]~21       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[6][31]~22      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[7][27]~24      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[8][13]~19      ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst15|x[9][9]~18       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; reset                                 ; Unassigned ; 1448    ; Async. clear ; no     ; --                   ; --               ; --                        ;
 +---------------------------------------+------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
-+---------------------------------+
-; Non-Global High Fan-Out Signals ;
-+-------------+-------------------+
-; Name        ; Fan-Out           ;
-+-------------+-------------------+
-; clk~input   ; 1497              ;
-; reset~input ; 1446              ;
-+-------------+-------------------+
++-----------------------------------------+
+; Non-Global High Fan-Out Signals         ;
++-------------------------------+---------+
+; Name                          ; Fan-Out ;
++-------------------------------+---------+
+; clk~input                     ; 1499    ;
+; reset~input                   ; 1448    ;
+; register_bank:inst15|Equal2~1 ; 1024    ;
++-------------------------------+---------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -3409,12 +3412,12 @@ Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Ass
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Critical Warning (169085): No exact pin location assignment(s) for 469 pins of 469 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Error (169282): There are 467 IO output pads in the design, but only 139 IO output pad locations available on the device.
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Error (171000): Can't fit design in device
 Error: Quartus Prime Fitter was unsuccessful. 2 errors, 5 warnings
     Error: Peak virtual memory: 4902 megabytes
-    Error: Processing ended: Thu Jun  5 17:37:10 2025
-    Error: Elapsed time: 00:00:04
+    Error: Processing ended: Thu Jun  5 23:13:29 2025
+    Error: Elapsed time: 00:00:05
     Error: Total CPU time (on all processors): 00:00:04
 
 
