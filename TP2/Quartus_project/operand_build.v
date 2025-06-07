@@ -33,17 +33,29 @@ always @(
 )
 begin
 	case (instr_type)
-		R_TYPE: begin
+		R_TYPE: begin // ADD SUB
 			a = rs1_data;
 			b = rs2_data;
 		end
-		I_TYPE: begin
+		I_TYPE: begin //ADDI, LW, JALR
 			a = rs1_data;
 			b = imm;
 		end
-		B_TYPE: begin
+		S_TYPE: begin // //SW
+			a = rs1_data;
+			b = imm;
+		end
+		B_TYPE: begin //BEQ BNE
 			a = rs1_data;
 			b = rs2_data;
+		end
+		U_TYPE: begin //LUI AUIPC
+			a = imm;
+			b = 32'd0;
+		end
+		J_TYPE: begin //JAL
+			a = pc;
+			b = imm;
 		end
 		default: begin
 			a = 32'd0;

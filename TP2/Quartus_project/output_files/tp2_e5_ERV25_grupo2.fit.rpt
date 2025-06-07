@@ -1,5 +1,5 @@
 Fitter report for tp2_e5_ERV25_grupo2
-Sat Jun  7 00:47:59 2025
+Sat Jun  7 10:23:21 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -58,7 +58,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Failed - Sat Jun  7 00:47:59 2025               ;
+; Fitter Status                      ; Failed - Sat Jun  7 10:23:21 2025               ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
@@ -4139,12 +4139,12 @@ Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Ass
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Critical Warning (169085): No exact pin location assignment(s) for 614 pins of 614 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Error (169282): There are 612 IO output pads in the design, but only 139 IO output pad locations available on the device.
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Error (171000): Can't fit design in device
 Error: Quartus Prime Fitter was unsuccessful. 2 errors, 4 warnings
-    Error: Peak virtual memory: 4902 megabytes
-    Error: Processing ended: Sat Jun  7 00:47:59 2025
-    Error: Elapsed time: 00:00:05
-    Error: Total CPU time (on all processors): 00:00:04
+    Error: Peak virtual memory: 4981 megabytes
+    Error: Processing ended: Sat Jun  7 10:23:21 2025
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:06
 
 

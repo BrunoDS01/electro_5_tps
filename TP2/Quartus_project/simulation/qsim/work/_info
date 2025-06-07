@@ -148,23 +148,23 @@ R9
 R10
 R11
 vtp2_e5_ERV25_grupo2
-Z15 !s110 1749268139
+Z15 !s110 1749304009
 !i10b 1
 !s100 R3d1>HC33Rg292MJ7FTKN3
 R2
 IG^9T?z138:Lk:1_UEBE4O3
 R3
-R0
-w1749268136
+Z16 dC:/Users/agust/Documents/electro_5_tps/TP2/Quartus_project/simulation/qsim
+w1749304007
 R4
 R5
-!i122 290
+!i122 292
 L0 32 84264
 R6
 r1
 !s85 0
 31
-!s108 1749268138.000000
+Z17 !s108 1749304009.000000
 R8
 R9
 !i113 1
@@ -178,17 +178,17 @@ R15
 R2
 IiSgnCBl7dWb_4Szg[C:702
 R3
-R0
-w1749268134
+R16
+w1749304006
 8add_sub.vwf.vt
 Fadd_sub.vwf.vt
-!i122 291
+!i122 293
 L0 30 98
 R6
 r1
 !s85 0
 31
-!s108 1749268139.000000
+R17
 !s107 add_sub.vwf.vt|
 !s90 -work|work|add_sub.vwf.vt|
 !i113 1
