@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/05/2025 17:38:00"
+// Generated on "06/06/2025 21:18:46"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          tp2_e5_ERV25_grupo2
 // 
@@ -33,9 +33,12 @@ module tp2_e5_ERV25_grupo2_vlg_vec_tst();
 reg clk;
 reg reset;
 // wires                                               
+wire [31:0] add_build_target;
+wire [31:0] address_target;
 wire branch_result;
 wire [31:0] c;
 wire [31:0] c_write_back;
+wire [31:0] data_in;
 wire dec_ena;
 wire dec_nop;
 wire fetch_ena;
@@ -43,27 +46,35 @@ wire [31:0] imm;
 wire [31:0] imm_op;
 wire [31:0] inst_in;
 wire [2:0] instr_type;
+wire [31:0] load_data;
 wire [31:0] pc;
 wire [31:0] pc_new;
 wire [31:0] pc_next;
 wire [31:0] pc_op;
-wire [31:0] pc_target_ad;
+wire rd_memory_wb;
 wire [31:0] rs1_data_ex;
 wire [31:0] rs1_data_op;
+wire [4:0] rs1_dec;
 wire [4:0] rs1_op;
 wire [31:0] rs2_data_ex;
 wire [31:0] rs2_data_op;
+wire [4:0] rs2_dec;
 wire [4:0] rs2_op;
 wire save_to_reg_write_back;
+wire [31:0] store_data;
 wire take_new_pc;
+wire wr_memory_mem;
 
 // assign statements (if any)                          
 tp2_e5_ERV25_grupo2 i1 (
 // port map - connection between master ports and signals/registers   
+	.add_build_target(add_build_target),
+	.address_target(address_target),
 	.branch_result(branch_result),
 	.c(c),
 	.c_write_back(c_write_back),
 	.clk(clk),
+	.data_in(data_in),
 	.dec_ena(dec_ena),
 	.dec_nop(dec_nop),
 	.fetch_ena(fetch_ena),
@@ -71,24 +82,29 @@ tp2_e5_ERV25_grupo2 i1 (
 	.imm_op(imm_op),
 	.inst_in(inst_in),
 	.instr_type(instr_type),
+	.load_data(load_data),
 	.pc(pc),
 	.pc_new(pc_new),
 	.pc_next(pc_next),
 	.pc_op(pc_op),
-	.pc_target_ad(pc_target_ad),
+	.rd_memory_wb(rd_memory_wb),
 	.reset(reset),
 	.rs1_data_ex(rs1_data_ex),
 	.rs1_data_op(rs1_data_op),
+	.rs1_dec(rs1_dec),
 	.rs1_op(rs1_op),
 	.rs2_data_ex(rs2_data_ex),
 	.rs2_data_op(rs2_data_op),
+	.rs2_dec(rs2_dec),
 	.rs2_op(rs2_op),
 	.save_to_reg_write_back(save_to_reg_write_back),
-	.take_new_pc(take_new_pc)
+	.store_data(store_data),
+	.take_new_pc(take_new_pc),
+	.wr_memory_mem(wr_memory_mem)
 );
 initial 
 begin 
-#1000000 $finish;
+#10000000 $finish;
 end 
 
 // clk

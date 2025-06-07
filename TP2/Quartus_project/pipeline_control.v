@@ -8,6 +8,9 @@ module pipeline_control(
     input wire rd_used_op,
     input wire [4:0] rd_ex,
     input wire rd_used_ex,
+	
+	input wire rd_memory_op,
+	input wire rd_memory_mem,
 
     output reg fetch_ena,
     output reg dec_ena,
@@ -37,9 +40,9 @@ always @(
     // RS - RD
     
 	// Si la instrucción debe leer algún registro, y no es el registro nulo que nunca se modifica
-    if ((rs1_used_dec == 1'b1 && rs1_dec != 0) || (rs2_used_dec == 1'b1 && rs2_dec != 0)) begin
+    if ((rs1_used_dec == 1'b1) || (rs2_used_dec == 1'b1)) begin
         // DEC - OP
-        if(rd_used_op == 1'b1 && ((rs1_dec == rd_op) || (rs2_dec == rd_op))) begin
+        if(((rd_used_op == 1'b1 || rd_memory_op == 1'b1) && rd_op != 0) && ((rs1_dec == rd_op) || (rs2_dec == rd_op))) begin
             fetch_ena = 1'b0;
             dec_ena = 1'b0;
             op_ena = 1'b1;
@@ -55,7 +58,7 @@ always @(
             mem_nop = 1'b0;
             
         end
-        else if(rd_used_ex == 1'b1 && ((rs1_dec == rd_ex) || (rs2_dec == rd_ex))) begin
+        else if(((rd_used_ex == 1'b1 || rd_memory_mem == 1'b1) && rd_ex != 0) && ((rs1_dec == rd_ex) || (rs2_dec == rd_ex))) begin
             fetch_ena = 1'b0;
             dec_ena = 1'b0;
             op_ena = 1'b0;

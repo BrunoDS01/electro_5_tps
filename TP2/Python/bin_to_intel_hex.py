@@ -18,6 +18,9 @@ instructions = [
     0x00A00093,  # ADDI x1, x0, 10
     0x00D00113,  # ADDI x2, x0, 13
     0x002081B3,  # ADD x3, x1, x2
+    0x3e302423, # sw x3, 1000(x0)
+    0x3e802203, # lw x4, 1000(x0)
+    0x000202b3  # add x5, x4, x0
 ]
 
 with open("program_word.hex", "w") as f:
