@@ -35,7 +35,9 @@ always @(
     rs1_used_dec,
     rs2_used_dec,
     rd_used_op,
-    rd_used_ex
+    rd_used_ex,
+	rd_memory_op,
+	rd_memory_mem
 ) begin
     // RS - RD
     

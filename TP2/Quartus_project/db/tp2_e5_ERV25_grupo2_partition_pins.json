@@ -1564,6 +1564,26 @@
 					"strict" : false
 				},
 				{
+					"name" : "rd_write_back[4]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_write_back[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_write_back[2]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_write_back[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rd_write_back[0]",
+					"strict" : false
+				},
+				{
 					"name" : "rs1_op[4]",
 					"strict" : false
 				},

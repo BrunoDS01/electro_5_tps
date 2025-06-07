@@ -1,5 +1,5 @@
 Fitter report for tp2_e5_ERV25_grupo2
-Fri Jun  6 21:23:46 2025
+Sat Jun  7 00:47:59 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -58,7 +58,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Failed - Fri Jun  6 21:23:46 2025               ;
+; Fitter Status                      ; Failed - Sat Jun  7 00:47:59 2025               ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
@@ -69,7 +69,7 @@ on the Quartus Prime software download page.
 ;     Total combinational functions  ; 2,667 / 22,320 ( 12 % )                         ;
 ;     Dedicated logic registers      ; 1,456 / 22,320 ( 7 % )                          ;
 ; Total registers                    ; 1456                                            ;
-; Total pins                         ; 609 / 154 ( 395 % )                             ;
+; Total pins                         ; 614 / 154 ( 399 % )                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 66,752 / 608,256 ( 11 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                                 ;
@@ -204,7 +204,7 @@ on the Quartus Prime software download page.
 ;                                             ;                           ;
 ; Total LABs                                  ; Not available             ;
 ; Virtual pins                                ; 0                         ;
-; I/O pins                                    ; 609 / 154 ( 395 % )       ;
+; I/O pins                                    ; 614 / 154 ( 399 % )       ;
 ;     -- Clock pins                           ; 0 / 7 ( 0 % )             ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )             ;
 ;                                             ;                           ;
@@ -222,7 +222,7 @@ on the Quartus Prime software download page.
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )             ;
 ; Maximum fan-out                             ; 1507                      ;
 ; Highest non-global fan-out                  ; 1507                      ;
-; Total fan-out                               ; 18852                     ;
+; Total fan-out                               ; 18862                     ;
 ; Average fan-out                             ; 3.49                      ;
 +---------------------------------------------+---------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
@@ -668,6 +668,11 @@ on the Quartus Prime software download page.
 ; pc_op[8]               ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; pc_op[9]               ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; rd_memory_wb           ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rd_write_back[0]       ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rd_write_back[1]       ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rd_write_back[2]       ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rd_write_back[3]       ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; rd_write_back[4]       ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; rs1_data_ex[0]         ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; rs1_data_ex[10]        ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 ; rs1_data_ex[11]        ; Unassigned ; --       ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
@@ -883,7 +888,7 @@ on the Quartus Prime software download page.
 ; 6        ; 0 / 13 ( 0 % ) ; 2.5V          ; --           ;
 ; 7        ; 0 / 24 ( 0 % ) ; 2.5V          ; --           ;
 ; 8        ; 0 / 24 ( 0 % ) ; 2.5V          ; --           ;
-; Unknown  ; 614            ; --            ;              ;
+; Unknown  ; 619            ; --            ;              ;
 +----------+----------------+---------------+--------------+
 
 
@@ -1548,6 +1553,11 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; store_data[2]          ; Incomplete set of assignments ;
 ; store_data[1]          ; Incomplete set of assignments ;
 ; store_data[0]          ; Incomplete set of assignments ;
+; rd_write_back[4]       ; Incomplete set of assignments ;
+; rd_write_back[3]       ; Incomplete set of assignments ;
+; rd_write_back[2]       ; Incomplete set of assignments ;
+; rd_write_back[1]       ; Incomplete set of assignments ;
+; rd_write_back[0]       ; Incomplete set of assignments ;
 ; rs1_op[4]              ; Incomplete set of assignments ;
 ; rs1_op[3]              ; Incomplete set of assignments ;
 ; rs1_op[2]              ; Incomplete set of assignments ;
@@ -2157,6 +2167,11 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; store_data[2]          ; Missing location assignment   ;
 ; store_data[1]          ; Missing location assignment   ;
 ; store_data[0]          ; Missing location assignment   ;
+; rd_write_back[4]       ; Missing location assignment   ;
+; rd_write_back[3]       ; Missing location assignment   ;
+; rd_write_back[2]       ; Missing location assignment   ;
+; rd_write_back[1]       ; Missing location assignment   ;
+; rd_write_back[0]       ; Missing location assignment   ;
 ; rs1_op[4]              ; Missing location assignment   ;
 ; rs1_op[3]              ; Missing location assignment   ;
 ; rs1_op[2]              ; Missing location assignment   ;
@@ -2384,7 +2399,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                        ; Entity Name             ; Library Name ;
 +----------------------------------------------+-------------+---------------------------+---------------+-------------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
-; |tp2_e5_ERV25_grupo2                         ; 0 (0)       ; 1456 (0)                  ; 0 (0)         ; 66752       ; 0            ; 0       ; 0         ; 609  ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2                                                                                                       ; tp2_e5_ERV25_grupo2     ; work         ;
+; |tp2_e5_ERV25_grupo2                         ; 0 (0)       ; 1456 (0)                  ; 0 (0)         ; 66752       ; 0            ; 0       ; 0         ; 614  ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2                                                                                                       ; tp2_e5_ERV25_grupo2     ; work         ;
 ;    |address_builder:inst31|                  ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|address_builder:inst31                                                                                ; address_builder         ; work         ;
 ;    |address_latch:inst29|                    ; 0 (0)       ; 107 (107)                 ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|address_latch:inst29                                                                                  ; address_latch           ; work         ;
 ;    |alu:inst17|                              ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |tp2_e5_ERV25_grupo2|alu:inst17                                                                                            ; alu                     ; work         ;
@@ -2811,6 +2826,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; store_data[2]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; store_data[1]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; store_data[0]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; rd_write_back[4]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; rd_write_back[3]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; rd_write_back[2]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; rd_write_back[1]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; rd_write_back[0]       ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; rs1_op[4]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; rs1_op[3]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; rs1_op[2]              ; Output   ; --            ; --            ; --                    ; --  ; --   ;
@@ -3119,8 +3139,8 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ;   Addr   ;              +0              ;              +1              ;              +2              ;              +3              ;              +4              ;              +5              ;              +6              ;              +7              ;
 +----------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+
-;0;(00000000000000000000000000010011) (23) (19) (13)    ;(00000000101000000000000010010011) (50000223) (10485907) (A00093)   ;(00000000110100000000000100010011) (64000423) (13631763) (D00113)   ;(00000000001000001000000110110011) (10100663) (2130355) (2081B3)   ;(00111110001100000010010000100011) (-975912549) (1043342371) (3E302423)   ;(00111110100000000010001000000011) (-949913589) (1048584707) (3E802203)   ;(00000000000000100000001010110011) (401263) (131763) (202B3)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
-;8;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
+;0;(00000000000000000000000000010011) (23) (19) (13)    ;(00000000101000000000000010010011) (50000223) (10485907) (A00093)   ;(00000000110100000000000100010011) (64000423) (13631763) (D00113)   ;(00000000001000001000000110110011) (10100663) (2130355) (2081B3)   ;(00111110001100000010010000100011) (-975912549) (1043342371) (3E302423)   ;(00111110100000000010001000000011) (-949913589) (1048584707) (3E802203)   ;(00000000000000100000001010110011) (401263) (131763) (202B3)   ;(00111110010100000000011010100011) (-965931349) (1045431971) (3E5006A3)   ;
+;8;(00111110110100000000001100000011) (-925933189) (1053819651) (3ED00303)    ;(00000000000000110000001100010011) (601423) (197395) (30313)   ;(11111111111100000000001100010011) (-3776355) (-1047789) (-15-15-12-14-13)   ;(00111110011000000001100100100011) (-959920149) (1046485283) (3E601923)   ;(00111111001000000001001100000011) (-879923189) (1059066627) (3F201303)   ;(00000000000000110000001110010011) (601623) (197523) (30393)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
 ;16;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
 ;24;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
 ;32;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
@@ -3434,9 +3454,9 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +------------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules              ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +------------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 2            ; 0            ; 0            ; 0            ; 607          ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Unchecked        ; 0            ; 0            ; 0            ; 0            ; 0            ; 609       ; 0            ; 0            ; 609       ; 609       ; 0            ; 607          ; 0            ; 0            ; 2            ; 0            ; 607          ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 609       ; 0            ; 0            ;
-; Total Inapplicable     ; 609          ; 609          ; 609          ; 609          ; 609          ; 0         ; 609          ; 609          ; 0         ; 0         ; 609          ; 2            ; 609          ; 609          ; 607          ; 609          ; 2            ; 607          ; 609          ; 609          ; 609          ; 2            ; 609          ; 609          ; 609          ; 609          ; 609          ; 0         ; 609          ; 609          ;
+; Total Pass             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 2            ; 0            ; 0            ; 0            ; 612          ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
+; Total Unchecked        ; 0            ; 0            ; 0            ; 0            ; 0            ; 614       ; 0            ; 0            ; 614       ; 614       ; 0            ; 612          ; 0            ; 0            ; 2            ; 0            ; 612          ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 614       ; 0            ; 0            ;
+; Total Inapplicable     ; 614          ; 614          ; 614          ; 614          ; 614          ; 0         ; 614          ; 614          ; 0         ; 0         ; 614          ; 2            ; 614          ; 614          ; 612          ; 614          ; 2            ; 612          ; 614          ; 614          ; 614          ; 2            ; 614          ; 614          ; 614          ; 614          ; 614          ; 0         ; 614          ; 614          ;
 ; Total Fail             ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; take_new_pc            ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
 ; branch_result          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
@@ -3828,6 +3848,11 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 ; store_data[2]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
 ; store_data[1]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
 ; store_data[0]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
+; rd_write_back[4]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
+; rd_write_back[3]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
+; rd_write_back[2]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
+; rd_write_back[1]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
+; rd_write_back[0]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
 ; rs1_op[4]              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
 ; rs1_op[3]              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
 ; rs1_op[2]              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ; Unchecked ; Unchecked ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked    ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Unchecked ; Inapplicable ; Inapplicable ;
@@ -4112,13 +4137,13 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_nCEO~ is reserved at location F16
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
-Critical Warning (169085): No exact pin location assignment(s) for 609 pins of 609 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
-Error (169282): There are 607 IO output pads in the design, but only 139 IO output pad locations available on the device.
+Critical Warning (169085): No exact pin location assignment(s) for 614 pins of 614 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Error (169282): There are 612 IO output pads in the design, but only 139 IO output pad locations available on the device.
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Error (171000): Can't fit design in device
 Error: Quartus Prime Fitter was unsuccessful. 2 errors, 4 warnings
     Error: Peak virtual memory: 4902 megabytes
-    Error: Processing ended: Fri Jun  6 21:23:46 2025
+    Error: Processing ended: Sat Jun  7 00:47:59 2025
     Error: Elapsed time: 00:00:05
     Error: Total CPU time (on all processors): 00:00:04
 

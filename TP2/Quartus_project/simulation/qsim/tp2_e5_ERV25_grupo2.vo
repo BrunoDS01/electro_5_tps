@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition"
 
-// DATE "06/06/2025 21:18:47"
+// DATE "06/07/2025 00:48:56"
 
 // 
 // Device: Altera EP4CE22F17C8L Package FBGA256
@@ -50,6 +50,7 @@ module tp2_e5_ERV25_grupo2 (
 	data_in,
 	wr_memory_mem,
 	store_data,
+	rd_write_back,
 	rs1_op,
 	rs2_op,
 	rs2_data_op,
@@ -83,6 +84,7 @@ output 	[31:0] load_data;
 output 	[31:0] data_in;
 output 	wr_memory_mem;
 output 	[31:0] store_data;
+output 	[4:0] rd_write_back;
 output 	[4:0] rs1_op;
 output 	[4:0] rs2_op;
 output 	[31:0] rs2_data_op;
@@ -98,7 +100,7 @@ output 	[4:0] rs1_dec;
 output 	[4:0] rs2_dec;
 
 // Design Ports Information
-// take_new_pc	// branch_result	// pc_next[31]	// pc_next[30]	// pc_next[29]	// pc_next[28]	// pc_next[27]	// pc_next[26]	// pc_next[25]	// pc_next[24]	// pc_next[23]	// pc_next[22]	// pc_next[21]	// pc_next[20]	// pc_next[19]	// pc_next[18]	// pc_next[17]	// pc_next[16]	// pc_next[15]	// pc_next[14]	// pc_next[13]	// pc_next[12]	// pc_next[11]	// pc_next[10]	// pc_next[9]	// pc_next[8]	// pc_next[7]	// pc_next[6]	// pc_next[5]	// pc_next[4]	// pc_next[3]	// pc_next[2]	// pc_next[1]	// pc_next[0]	// fetch_ena	// imm_op[31]	// imm_op[30]	// imm_op[29]	// imm_op[28]	// imm_op[27]	// imm_op[26]	// imm_op[25]	// imm_op[24]	// imm_op[23]	// imm_op[22]	// imm_op[21]	// imm_op[20]	// imm_op[19]	// imm_op[18]	// imm_op[17]	// imm_op[16]	// imm_op[15]	// imm_op[14]	// imm_op[13]	// imm_op[12]	// imm_op[11]	// imm_op[10]	// imm_op[9]	// imm_op[8]	// imm_op[7]	// imm_op[6]	// imm_op[5]	// imm_op[4]	// imm_op[3]	// imm_op[2]	// imm_op[1]	// imm_op[0]	// pc_op[31]	// pc_op[30]	// pc_op[29]	// pc_op[28]	// pc_op[27]	// pc_op[26]	// pc_op[25]	// pc_op[24]	// pc_op[23]	// pc_op[22]	// pc_op[21]	// pc_op[20]	// pc_op[19]	// pc_op[18]	// pc_op[17]	// pc_op[16]	// pc_op[15]	// pc_op[14]	// pc_op[13]	// pc_op[12]	// pc_op[11]	// pc_op[10]	// pc_op[9]	// pc_op[8]	// pc_op[7]	// pc_op[6]	// pc_op[5]	// pc_op[4]	// pc_op[3]	// pc_op[2]	// pc_op[1]	// pc_op[0]	// rs1_data_op[31]	// rs1_data_op[30]	// rs1_data_op[29]	// rs1_data_op[28]	// rs1_data_op[27]	// rs1_data_op[26]	// rs1_data_op[25]	// rs1_data_op[24]	// rs1_data_op[23]	// rs1_data_op[22]	// rs1_data_op[21]	// rs1_data_op[20]	// rs1_data_op[19]	// rs1_data_op[18]	// rs1_data_op[17]	// rs1_data_op[16]	// rs1_data_op[15]	// rs1_data_op[14]	// rs1_data_op[13]	// rs1_data_op[12]	// rs1_data_op[11]	// rs1_data_op[10]	// rs1_data_op[9]	// rs1_data_op[8]	// rs1_data_op[7]	// rs1_data_op[6]	// rs1_data_op[5]	// rs1_data_op[4]	// rs1_data_op[3]	// rs1_data_op[2]	// rs1_data_op[1]	// rs1_data_op[0]	// save_to_reg_write_back	// c[31]	// c[30]	// c[29]	// c[28]	// c[27]	// c[26]	// c[25]	// c[24]	// c[23]	// c[22]	// c[21]	// c[20]	// c[19]	// c[18]	// c[17]	// c[16]	// c[15]	// c[14]	// c[13]	// c[12]	// c[11]	// c[10]	// c[9]	// c[8]	// c[7]	// c[6]	// c[5]	// c[4]	// c[3]	// c[2]	// c[1]	// c[0]	// rs1_data_ex[31]	// rs1_data_ex[30]	// rs1_data_ex[29]	// rs1_data_ex[28]	// rs1_data_ex[27]	// rs1_data_ex[26]	// rs1_data_ex[25]	// rs1_data_ex[24]	// rs1_data_ex[23]	// rs1_data_ex[22]	// rs1_data_ex[21]	// rs1_data_ex[20]	// rs1_data_ex[19]	// rs1_data_ex[18]	// rs1_data_ex[17]	// rs1_data_ex[16]	// rs1_data_ex[15]	// rs1_data_ex[14]	// rs1_data_ex[13]	// rs1_data_ex[12]	// rs1_data_ex[11]	// rs1_data_ex[10]	// rs1_data_ex[9]	// rs1_data_ex[8]	// rs1_data_ex[7]	// rs1_data_ex[6]	// rs1_data_ex[5]	// rs1_data_ex[4]	// rs1_data_ex[3]	// rs1_data_ex[2]	// rs1_data_ex[1]	// rs1_data_ex[0]	// rs2_data_ex[31]	// rs2_data_ex[30]	// rs2_data_ex[29]	// rs2_data_ex[28]	// rs2_data_ex[27]	// rs2_data_ex[26]	// rs2_data_ex[25]	// rs2_data_ex[24]	// rs2_data_ex[23]	// rs2_data_ex[22]	// rs2_data_ex[21]	// rs2_data_ex[20]	// rs2_data_ex[19]	// rs2_data_ex[18]	// rs2_data_ex[17]	// rs2_data_ex[16]	// rs2_data_ex[15]	// rs2_data_ex[14]	// rs2_data_ex[13]	// rs2_data_ex[12]	// rs2_data_ex[11]	// rs2_data_ex[10]	// rs2_data_ex[9]	// rs2_data_ex[8]	// rs2_data_ex[7]	// rs2_data_ex[6]	// rs2_data_ex[5]	// rs2_data_ex[4]	// rs2_data_ex[3]	// rs2_data_ex[2]	// rs2_data_ex[1]	// rs2_data_ex[0]	// rd_memory_wb	// add_build_target[31]	// add_build_target[30]	// add_build_target[29]	// add_build_target[28]	// add_build_target[27]	// add_build_target[26]	// add_build_target[25]	// add_build_target[24]	// add_build_target[23]	// add_build_target[22]	// add_build_target[21]	// add_build_target[20]	// add_build_target[19]	// add_build_target[18]	// add_build_target[17]	// add_build_target[16]	// add_build_target[15]	// add_build_target[14]	// add_build_target[13]	// add_build_target[12]	// add_build_target[11]	// add_build_target[10]	// add_build_target[9]	// add_build_target[8]	// add_build_target[7]	// add_build_target[6]	// add_build_target[5]	// add_build_target[4]	// add_build_target[3]	// add_build_target[2]	// add_build_target[1]	// add_build_target[0]	// c_write_back[31]	// c_write_back[30]	// c_write_back[29]	// c_write_back[28]	// c_write_back[27]	// c_write_back[26]	// c_write_back[25]	// c_write_back[24]	// c_write_back[23]	// c_write_back[22]	// c_write_back[21]	// c_write_back[20]	// c_write_back[19]	// c_write_back[18]	// c_write_back[17]	// c_write_back[16]	// c_write_back[15]	// c_write_back[14]	// c_write_back[13]	// c_write_back[12]	// c_write_back[11]	// c_write_back[10]	// c_write_back[9]	// c_write_back[8]	// c_write_back[7]	// c_write_back[6]	// c_write_back[5]	// c_write_back[4]	// c_write_back[3]	// c_write_back[2]	// c_write_back[1]	// c_write_back[0]	// load_data[31]	// load_data[30]	// load_data[29]	// load_data[28]	// load_data[27]	// load_data[26]	// load_data[25]	// load_data[24]	// load_data[23]	// load_data[22]	// load_data[21]	// load_data[20]	// load_data[19]	// load_data[18]	// load_data[17]	// load_data[16]	// load_data[15]	// load_data[14]	// load_data[13]	// load_data[12]	// load_data[11]	// load_data[10]	// load_data[9]	// load_data[8]	// load_data[7]	// load_data[6]	// load_data[5]	// load_data[4]	// load_data[3]	// load_data[2]	// load_data[1]	// load_data[0]	// data_in[31]	// data_in[30]	// data_in[29]	// data_in[28]	// data_in[27]	// data_in[26]	// data_in[25]	// data_in[24]	// data_in[23]	// data_in[22]	// data_in[21]	// data_in[20]	// data_in[19]	// data_in[18]	// data_in[17]	// data_in[16]	// data_in[15]	// data_in[14]	// data_in[13]	// data_in[12]	// data_in[11]	// data_in[10]	// data_in[9]	// data_in[8]	// data_in[7]	// data_in[6]	// data_in[5]	// data_in[4]	// data_in[3]	// data_in[2]	// data_in[1]	// data_in[0]	// wr_memory_mem	// store_data[31]	// store_data[30]	// store_data[29]	// store_data[28]	// store_data[27]	// store_data[26]	// store_data[25]	// store_data[24]	// store_data[23]	// store_data[22]	// store_data[21]	// store_data[20]	// store_data[19]	// store_data[18]	// store_data[17]	// store_data[16]	// store_data[15]	// store_data[14]	// store_data[13]	// store_data[12]	// store_data[11]	// store_data[10]	// store_data[9]	// store_data[8]	// store_data[7]	// store_data[6]	// store_data[5]	// store_data[4]	// store_data[3]	// store_data[2]	// store_data[1]	// store_data[0]	// rs1_op[4]	// rs1_op[3]	// rs1_op[2]	// rs1_op[1]	// rs1_op[0]	// rs2_op[4]	// rs2_op[3]	// rs2_op[2]	// rs2_op[1]	// rs2_op[0]	// rs2_data_op[31]	// rs2_data_op[30]	// rs2_data_op[29]	// rs2_data_op[28]	// rs2_data_op[27]	// rs2_data_op[26]	// rs2_data_op[25]	// rs2_data_op[24]	// rs2_data_op[23]	// rs2_data_op[22]	// rs2_data_op[21]	// rs2_data_op[20]	// rs2_data_op[19]	// rs2_data_op[18]	// rs2_data_op[17]	// rs2_data_op[16]	// rs2_data_op[15]	// rs2_data_op[14]	// rs2_data_op[13]	// rs2_data_op[12]	// rs2_data_op[11]	// rs2_data_op[10]	// rs2_data_op[9]	// rs2_data_op[8]	// rs2_data_op[7]	// rs2_data_op[6]	// rs2_data_op[5]	// rs2_data_op[4]	// rs2_data_op[3]	// rs2_data_op[2]	// rs2_data_op[1]	// rs2_data_op[0]	// inst_in[31]	// inst_in[30]	// inst_in[29]	// inst_in[28]	// inst_in[27]	// inst_in[26]	// inst_in[25]	// inst_in[24]	// inst_in[23]	// inst_in[22]	// inst_in[21]	// inst_in[20]	// inst_in[19]	// inst_in[18]	// inst_in[17]	// inst_in[16]	// inst_in[15]	// inst_in[14]	// inst_in[13]	// inst_in[12]	// inst_in[11]	// inst_in[10]	// inst_in[9]	// inst_in[8]	// inst_in[7]	// inst_in[6]	// inst_in[5]	// inst_in[4]	// inst_in[3]	// inst_in[2]	// inst_in[1]	// inst_in[0]	// pc_new[31]	// pc_new[30]	// pc_new[29]	// pc_new[28]	// pc_new[27]	// pc_new[26]	// pc_new[25]	// pc_new[24]	// pc_new[23]	// pc_new[22]	// pc_new[21]	// pc_new[20]	// pc_new[19]	// pc_new[18]	// pc_new[17]	// pc_new[16]	// pc_new[15]	// pc_new[14]	// pc_new[13]	// pc_new[12]	// pc_new[11]	// pc_new[10]	// pc_new[9]	// pc_new[8]	// pc_new[7]	// pc_new[6]	// pc_new[5]	// pc_new[4]	// pc_new[3]	// pc_new[2]	// pc_new[1]	// pc_new[0]	// dec_ena	// dec_nop	// imm[31]	// imm[30]	// imm[29]	// imm[28]	// imm[27]	// imm[26]	// imm[25]	// imm[24]	// imm[23]	// imm[22]	// imm[21]	// imm[20]	// imm[19]	// imm[18]	// imm[17]	// imm[16]	// imm[15]	// imm[14]	// imm[13]	// imm[12]	// imm[11]	// imm[10]	// imm[9]	// imm[8]	// imm[7]	// imm[6]	// imm[5]	// imm[4]	// imm[3]	// imm[2]	// imm[1]	// imm[0]	// instr_type[2]	// instr_type[1]	// instr_type[0]	// address_target[31]	// address_target[30]	// address_target[29]	// address_target[28]	// address_target[27]	// address_target[26]	// address_target[25]	// address_target[24]	// address_target[23]	// address_target[22]	// address_target[21]	// address_target[20]	// address_target[19]	// address_target[18]	// address_target[17]	// address_target[16]	// address_target[15]	// address_target[14]	// address_target[13]	// address_target[12]	// address_target[11]	// address_target[10]	// address_target[9]	// address_target[8]	// address_target[7]	// address_target[6]	// address_target[5]	// address_target[4]	// address_target[3]	// address_target[2]	// address_target[1]	// address_target[0]	// pc[31]	// pc[30]	// pc[29]	// pc[28]	// pc[27]	// pc[26]	// pc[25]	// pc[24]	// pc[23]	// pc[22]	// pc[21]	// pc[20]	// pc[19]	// pc[18]	// pc[17]	// pc[16]	// pc[15]	// pc[14]	// pc[13]	// pc[12]	// pc[11]	// pc[10]	// pc[9]	// pc[8]	// pc[7]	// pc[6]	// pc[5]	// pc[4]	// pc[3]	// pc[2]	// pc[1]	// pc[0]	// rs1_dec[4]	// rs1_dec[3]	// rs1_dec[2]	// rs1_dec[1]	// rs1_dec[0]	// rs2_dec[4]	// rs2_dec[3]	// rs2_dec[2]	// rs2_dec[1]	// rs2_dec[0]	// clk	// reset	
+// take_new_pc	// branch_result	// pc_next[31]	// pc_next[30]	// pc_next[29]	// pc_next[28]	// pc_next[27]	// pc_next[26]	// pc_next[25]	// pc_next[24]	// pc_next[23]	// pc_next[22]	// pc_next[21]	// pc_next[20]	// pc_next[19]	// pc_next[18]	// pc_next[17]	// pc_next[16]	// pc_next[15]	// pc_next[14]	// pc_next[13]	// pc_next[12]	// pc_next[11]	// pc_next[10]	// pc_next[9]	// pc_next[8]	// pc_next[7]	// pc_next[6]	// pc_next[5]	// pc_next[4]	// pc_next[3]	// pc_next[2]	// pc_next[1]	// pc_next[0]	// fetch_ena	// imm_op[31]	// imm_op[30]	// imm_op[29]	// imm_op[28]	// imm_op[27]	// imm_op[26]	// imm_op[25]	// imm_op[24]	// imm_op[23]	// imm_op[22]	// imm_op[21]	// imm_op[20]	// imm_op[19]	// imm_op[18]	// imm_op[17]	// imm_op[16]	// imm_op[15]	// imm_op[14]	// imm_op[13]	// imm_op[12]	// imm_op[11]	// imm_op[10]	// imm_op[9]	// imm_op[8]	// imm_op[7]	// imm_op[6]	// imm_op[5]	// imm_op[4]	// imm_op[3]	// imm_op[2]	// imm_op[1]	// imm_op[0]	// pc_op[31]	// pc_op[30]	// pc_op[29]	// pc_op[28]	// pc_op[27]	// pc_op[26]	// pc_op[25]	// pc_op[24]	// pc_op[23]	// pc_op[22]	// pc_op[21]	// pc_op[20]	// pc_op[19]	// pc_op[18]	// pc_op[17]	// pc_op[16]	// pc_op[15]	// pc_op[14]	// pc_op[13]	// pc_op[12]	// pc_op[11]	// pc_op[10]	// pc_op[9]	// pc_op[8]	// pc_op[7]	// pc_op[6]	// pc_op[5]	// pc_op[4]	// pc_op[3]	// pc_op[2]	// pc_op[1]	// pc_op[0]	// rs1_data_op[31]	// rs1_data_op[30]	// rs1_data_op[29]	// rs1_data_op[28]	// rs1_data_op[27]	// rs1_data_op[26]	// rs1_data_op[25]	// rs1_data_op[24]	// rs1_data_op[23]	// rs1_data_op[22]	// rs1_data_op[21]	// rs1_data_op[20]	// rs1_data_op[19]	// rs1_data_op[18]	// rs1_data_op[17]	// rs1_data_op[16]	// rs1_data_op[15]	// rs1_data_op[14]	// rs1_data_op[13]	// rs1_data_op[12]	// rs1_data_op[11]	// rs1_data_op[10]	// rs1_data_op[9]	// rs1_data_op[8]	// rs1_data_op[7]	// rs1_data_op[6]	// rs1_data_op[5]	// rs1_data_op[4]	// rs1_data_op[3]	// rs1_data_op[2]	// rs1_data_op[1]	// rs1_data_op[0]	// save_to_reg_write_back	// c[31]	// c[30]	// c[29]	// c[28]	// c[27]	// c[26]	// c[25]	// c[24]	// c[23]	// c[22]	// c[21]	// c[20]	// c[19]	// c[18]	// c[17]	// c[16]	// c[15]	// c[14]	// c[13]	// c[12]	// c[11]	// c[10]	// c[9]	// c[8]	// c[7]	// c[6]	// c[5]	// c[4]	// c[3]	// c[2]	// c[1]	// c[0]	// rs1_data_ex[31]	// rs1_data_ex[30]	// rs1_data_ex[29]	// rs1_data_ex[28]	// rs1_data_ex[27]	// rs1_data_ex[26]	// rs1_data_ex[25]	// rs1_data_ex[24]	// rs1_data_ex[23]	// rs1_data_ex[22]	// rs1_data_ex[21]	// rs1_data_ex[20]	// rs1_data_ex[19]	// rs1_data_ex[18]	// rs1_data_ex[17]	// rs1_data_ex[16]	// rs1_data_ex[15]	// rs1_data_ex[14]	// rs1_data_ex[13]	// rs1_data_ex[12]	// rs1_data_ex[11]	// rs1_data_ex[10]	// rs1_data_ex[9]	// rs1_data_ex[8]	// rs1_data_ex[7]	// rs1_data_ex[6]	// rs1_data_ex[5]	// rs1_data_ex[4]	// rs1_data_ex[3]	// rs1_data_ex[2]	// rs1_data_ex[1]	// rs1_data_ex[0]	// rs2_data_ex[31]	// rs2_data_ex[30]	// rs2_data_ex[29]	// rs2_data_ex[28]	// rs2_data_ex[27]	// rs2_data_ex[26]	// rs2_data_ex[25]	// rs2_data_ex[24]	// rs2_data_ex[23]	// rs2_data_ex[22]	// rs2_data_ex[21]	// rs2_data_ex[20]	// rs2_data_ex[19]	// rs2_data_ex[18]	// rs2_data_ex[17]	// rs2_data_ex[16]	// rs2_data_ex[15]	// rs2_data_ex[14]	// rs2_data_ex[13]	// rs2_data_ex[12]	// rs2_data_ex[11]	// rs2_data_ex[10]	// rs2_data_ex[9]	// rs2_data_ex[8]	// rs2_data_ex[7]	// rs2_data_ex[6]	// rs2_data_ex[5]	// rs2_data_ex[4]	// rs2_data_ex[3]	// rs2_data_ex[2]	// rs2_data_ex[1]	// rs2_data_ex[0]	// rd_memory_wb	// add_build_target[31]	// add_build_target[30]	// add_build_target[29]	// add_build_target[28]	// add_build_target[27]	// add_build_target[26]	// add_build_target[25]	// add_build_target[24]	// add_build_target[23]	// add_build_target[22]	// add_build_target[21]	// add_build_target[20]	// add_build_target[19]	// add_build_target[18]	// add_build_target[17]	// add_build_target[16]	// add_build_target[15]	// add_build_target[14]	// add_build_target[13]	// add_build_target[12]	// add_build_target[11]	// add_build_target[10]	// add_build_target[9]	// add_build_target[8]	// add_build_target[7]	// add_build_target[6]	// add_build_target[5]	// add_build_target[4]	// add_build_target[3]	// add_build_target[2]	// add_build_target[1]	// add_build_target[0]	// c_write_back[31]	// c_write_back[30]	// c_write_back[29]	// c_write_back[28]	// c_write_back[27]	// c_write_back[26]	// c_write_back[25]	// c_write_back[24]	// c_write_back[23]	// c_write_back[22]	// c_write_back[21]	// c_write_back[20]	// c_write_back[19]	// c_write_back[18]	// c_write_back[17]	// c_write_back[16]	// c_write_back[15]	// c_write_back[14]	// c_write_back[13]	// c_write_back[12]	// c_write_back[11]	// c_write_back[10]	// c_write_back[9]	// c_write_back[8]	// c_write_back[7]	// c_write_back[6]	// c_write_back[5]	// c_write_back[4]	// c_write_back[3]	// c_write_back[2]	// c_write_back[1]	// c_write_back[0]	// load_data[31]	// load_data[30]	// load_data[29]	// load_data[28]	// load_data[27]	// load_data[26]	// load_data[25]	// load_data[24]	// load_data[23]	// load_data[22]	// load_data[21]	// load_data[20]	// load_data[19]	// load_data[18]	// load_data[17]	// load_data[16]	// load_data[15]	// load_data[14]	// load_data[13]	// load_data[12]	// load_data[11]	// load_data[10]	// load_data[9]	// load_data[8]	// load_data[7]	// load_data[6]	// load_data[5]	// load_data[4]	// load_data[3]	// load_data[2]	// load_data[1]	// load_data[0]	// data_in[31]	// data_in[30]	// data_in[29]	// data_in[28]	// data_in[27]	// data_in[26]	// data_in[25]	// data_in[24]	// data_in[23]	// data_in[22]	// data_in[21]	// data_in[20]	// data_in[19]	// data_in[18]	// data_in[17]	// data_in[16]	// data_in[15]	// data_in[14]	// data_in[13]	// data_in[12]	// data_in[11]	// data_in[10]	// data_in[9]	// data_in[8]	// data_in[7]	// data_in[6]	// data_in[5]	// data_in[4]	// data_in[3]	// data_in[2]	// data_in[1]	// data_in[0]	// wr_memory_mem	// store_data[31]	// store_data[30]	// store_data[29]	// store_data[28]	// store_data[27]	// store_data[26]	// store_data[25]	// store_data[24]	// store_data[23]	// store_data[22]	// store_data[21]	// store_data[20]	// store_data[19]	// store_data[18]	// store_data[17]	// store_data[16]	// store_data[15]	// store_data[14]	// store_data[13]	// store_data[12]	// store_data[11]	// store_data[10]	// store_data[9]	// store_data[8]	// store_data[7]	// store_data[6]	// store_data[5]	// store_data[4]	// store_data[3]	// store_data[2]	// store_data[1]	// store_data[0]	// rd_write_back[4]	// rd_write_back[3]	// rd_write_back[2]	// rd_write_back[1]	// rd_write_back[0]	// rs1_op[4]	// rs1_op[3]	// rs1_op[2]	// rs1_op[1]	// rs1_op[0]	// rs2_op[4]	// rs2_op[3]	// rs2_op[2]	// rs2_op[1]	// rs2_op[0]	// rs2_data_op[31]	// rs2_data_op[30]	// rs2_data_op[29]	// rs2_data_op[28]	// rs2_data_op[27]	// rs2_data_op[26]	// rs2_data_op[25]	// rs2_data_op[24]	// rs2_data_op[23]	// rs2_data_op[22]	// rs2_data_op[21]	// rs2_data_op[20]	// rs2_data_op[19]	// rs2_data_op[18]	// rs2_data_op[17]	// rs2_data_op[16]	// rs2_data_op[15]	// rs2_data_op[14]	// rs2_data_op[13]	// rs2_data_op[12]	// rs2_data_op[11]	// rs2_data_op[10]	// rs2_data_op[9]	// rs2_data_op[8]	// rs2_data_op[7]	// rs2_data_op[6]	// rs2_data_op[5]	// rs2_data_op[4]	// rs2_data_op[3]	// rs2_data_op[2]	// rs2_data_op[1]	// rs2_data_op[0]	// inst_in[31]	// inst_in[30]	// inst_in[29]	// inst_in[28]	// inst_in[27]	// inst_in[26]	// inst_in[25]	// inst_in[24]	// inst_in[23]	// inst_in[22]	// inst_in[21]	// inst_in[20]	// inst_in[19]	// inst_in[18]	// inst_in[17]	// inst_in[16]	// inst_in[15]	// inst_in[14]	// inst_in[13]	// inst_in[12]	// inst_in[11]	// inst_in[10]	// inst_in[9]	// inst_in[8]	// inst_in[7]	// inst_in[6]	// inst_in[5]	// inst_in[4]	// inst_in[3]	// inst_in[2]	// inst_in[1]	// inst_in[0]	// pc_new[31]	// pc_new[30]	// pc_new[29]	// pc_new[28]	// pc_new[27]	// pc_new[26]	// pc_new[25]	// pc_new[24]	// pc_new[23]	// pc_new[22]	// pc_new[21]	// pc_new[20]	// pc_new[19]	// pc_new[18]	// pc_new[17]	// pc_new[16]	// pc_new[15]	// pc_new[14]	// pc_new[13]	// pc_new[12]	// pc_new[11]	// pc_new[10]	// pc_new[9]	// pc_new[8]	// pc_new[7]	// pc_new[6]	// pc_new[5]	// pc_new[4]	// pc_new[3]	// pc_new[2]	// pc_new[1]	// pc_new[0]	// dec_ena	// dec_nop	// imm[31]	// imm[30]	// imm[29]	// imm[28]	// imm[27]	// imm[26]	// imm[25]	// imm[24]	// imm[23]	// imm[22]	// imm[21]	// imm[20]	// imm[19]	// imm[18]	// imm[17]	// imm[16]	// imm[15]	// imm[14]	// imm[13]	// imm[12]	// imm[11]	// imm[10]	// imm[9]	// imm[8]	// imm[7]	// imm[6]	// imm[5]	// imm[4]	// imm[3]	// imm[2]	// imm[1]	// imm[0]	// instr_type[2]	// instr_type[1]	// instr_type[0]	// address_target[31]	// address_target[30]	// address_target[29]	// address_target[28]	// address_target[27]	// address_target[26]	// address_target[25]	// address_target[24]	// address_target[23]	// address_target[22]	// address_target[21]	// address_target[20]	// address_target[19]	// address_target[18]	// address_target[17]	// address_target[16]	// address_target[15]	// address_target[14]	// address_target[13]	// address_target[12]	// address_target[11]	// address_target[10]	// address_target[9]	// address_target[8]	// address_target[7]	// address_target[6]	// address_target[5]	// address_target[4]	// address_target[3]	// address_target[2]	// address_target[1]	// address_target[0]	// pc[31]	// pc[30]	// pc[29]	// pc[28]	// pc[27]	// pc[26]	// pc[25]	// pc[24]	// pc[23]	// pc[22]	// pc[21]	// pc[20]	// pc[19]	// pc[18]	// pc[17]	// pc[16]	// pc[15]	// pc[14]	// pc[13]	// pc[12]	// pc[11]	// pc[10]	// pc[9]	// pc[8]	// pc[7]	// pc[6]	// pc[5]	// pc[4]	// pc[3]	// pc[2]	// pc[1]	// pc[0]	// rs1_dec[4]	// rs1_dec[3]	// rs1_dec[2]	// rs1_dec[1]	// rs1_dec[0]	// rs2_dec[4]	// rs2_dec[3]	// rs2_dec[2]	// rs2_dec[1]	// rs2_dec[0]	// clk	// reset	
 
 wire gnd;
 wire vcc;
@@ -3981,8 +3983,8 @@ wire \inst31|Mux31~2_combout ;
 wire [31:0] \inst3|pc ;
 wire [31:0] \inst|altsyncram_component|auto_generated|q_a ;
 wire [1:0] \inst29|flag_branch_out ;
-wire [4:0] \inst18|rd_out ;
 wire [2:0] \inst1|instr_type_out ;
+wire [4:0] \inst18|rd_out ;
 wire [31:0] \inst11|inst|altsyncram_component|auto_generated|q_b ;
 wire [31:0] \inst|altsyncram_component|auto_generated|q_b ;
 wire [4:0] \inst11|inst2|out_tag ;
@@ -8940,6 +8942,66 @@ defparam \store_data[0]~output .bus_hold = "false";
 defparam \store_data[0]~output .open_drain_output = "false";
 // synopsys translate_on
 
+cycloneive_io_obuf \rd_write_back[4]~output (
+	.i(\inst18|rd_out [4]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(rd_write_back[4]),
+	.obar());
+// synopsys translate_off
+defparam \rd_write_back[4]~output .bus_hold = "false";
+defparam \rd_write_back[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \rd_write_back[3]~output (
+	.i(\inst18|rd_out [3]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(rd_write_back[3]),
+	.obar());
+// synopsys translate_off
+defparam \rd_write_back[3]~output .bus_hold = "false";
+defparam \rd_write_back[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \rd_write_back[2]~output (
+	.i(\inst18|rd_out [2]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(rd_write_back[2]),
+	.obar());
+// synopsys translate_off
+defparam \rd_write_back[2]~output .bus_hold = "false";
+defparam \rd_write_back[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \rd_write_back[1]~output (
+	.i(\inst18|rd_out [1]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(rd_write_back[1]),
+	.obar());
+// synopsys translate_off
+defparam \rd_write_back[1]~output .bus_hold = "false";
+defparam \rd_write_back[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+cycloneive_io_obuf \rd_write_back[0]~output (
+	.i(\inst18|rd_out [0]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(rd_write_back[0]),
+	.obar());
+// synopsys translate_off
+defparam \rd_write_back[0]~output .bus_hold = "false";
+defparam \rd_write_back[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
 cycloneive_io_obuf \rs1_op[4]~output (
 	.i(\inst1|rs1_out [4]),
 	.oe(vcc),
@@ -13314,7 +13376,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a31 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400;
 // synopsys translate_on
 
 dffeas \inst3|instr[31] (
@@ -13469,7 +13531,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a29 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001DB0;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[29]~6 (
@@ -13570,7 +13632,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .port_b_read_dur
 defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .mem_init0 = 2048'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004F;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a4 .mem_init0 = 2048'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000264F;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[20]~15 (
@@ -13775,7 +13837,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a22 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000D84;
 // synopsys translate_on
 
 dffeas \inst3|instr[22] (
@@ -13980,7 +14042,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .port_b_read_dur
 defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .mem_init0 = 2048'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004A;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a7 .mem_init0 = 2048'h000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000020CA;
 // synopsys translate_on
 
 cycloneive_ram_block \inst|altsyncram_component|auto_generated|ram_block1a23 (
@@ -14049,7 +14111,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000026;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a23 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000526;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[7]~0 (
@@ -14266,7 +14328,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a17 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002240;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[17]~18 (
@@ -14385,7 +14447,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a16 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002200;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[16]~19 (
@@ -14768,7 +14830,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .port_b_read_dur
 defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000058;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a5 .mem_init0 = 2048'h000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008D8;
 // synopsys translate_on
 
 cycloneive_ram_block \inst|altsyncram_component|auto_generated|ram_block1a21 (
@@ -14837,7 +14899,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .mem_init0 = 2048'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001A;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a21 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001C1A;
 // synopsys translate_on
 
 cycloneive_ram_block \inst|altsyncram_component|auto_generated|ram_block1a13 (
@@ -15074,7 +15136,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a25 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001DB0;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[25]~10 (
@@ -18243,7 +18305,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a20 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000594;
 // synopsys translate_on
 
 dffeas \inst3|instr[20] (
@@ -20341,7 +20403,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a24 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001400;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[24]~11 (
@@ -25979,7 +26041,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a30 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000400;
 // synopsys translate_on
 
 dffeas \inst3|instr[30] (
@@ -30314,7 +30376,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a26 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001DB0;
 // synopsys translate_on
 
 dffeas \inst3|instr[26] (
@@ -38040,7 +38102,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a28 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001DB0;
 // synopsys translate_on
 
 dffeas \inst3|instr[28] (
@@ -51983,7 +52045,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .port_b_read_dur
 defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .mem_init0 = 2048'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000C;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a8 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003F0C;
 // synopsys translate_on
 
 dffeas \inst3|instr[8] (
@@ -55879,7 +55941,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000030;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a27 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001DB0;
 // synopsys translate_on
 
 dffeas \inst3|instr[27] (
@@ -58221,7 +58283,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a10 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000090;
 // synopsys translate_on
 
 dffeas \inst3|instr[10] (
@@ -59084,7 +59146,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .port_b_read_dur
 defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000060;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a9 .mem_init0 = 2048'h000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000037E0;
 // synopsys translate_on
 
 dffeas \inst3|instr[9] (
@@ -60806,7 +60868,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a12 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001800;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[4]~48 (
@@ -66495,7 +66557,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_dur
 defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 2048'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007F;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a0 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003FFF;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[0]~60 (
@@ -67295,7 +67357,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .port_b_read_du
 defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a11 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[3]~51 (
@@ -68810,7 +68872,7 @@ defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .port_b_read_dur
 defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .port_b_read_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .port_b_write_enable_clock = "clock0";
 defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .ram_block_type = "M9K";
-defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .mem_init0 = 2048'h0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007F;
+defparam \inst|altsyncram_component|auto_generated|ram_block1a1 .mem_init0 = 2048'h00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003FFF;
 // synopsys translate_on
 
 cycloneive_lcell_comb \inst32|load_data[1]~57 (

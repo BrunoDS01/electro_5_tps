@@ -95,4 +95,35 @@ set_global_assignment -name VERILOG_FILE mem_latch.v
 set_global_assignment -name VERILOG_FILE address_latch.v
 set_global_assignment -name VERILOG_FILE store_data_module.v
 set_global_assignment -name VERILOG_FILE load_data_module.v
+set_instance_assignment -name VIRTUAL_PIN OFF -to dec_ena
+set_instance_assignment -name VIRTUAL_PIN OFF -to dec_nop
+set_instance_assignment -name VIRTUAL_PIN OFF -to fetch_ena
+set_instance_assignment -name VIRTUAL_PIN OFF -to rd_memory_wb
+set_instance_assignment -name VIRTUAL_PIN OFF -to save_to_reg_write_back
+set_instance_assignment -name VIRTUAL_PIN OFF -to take_new_pc
+set_instance_assignment -name VIRTUAL_PIN OFF -to wr_memory_mem
+set_instance_assignment -name VIRTUAL_PIN OFF -to add_build_target
+set_instance_assignment -name VIRTUAL_PIN OFF -to address_target
+set_instance_assignment -name VIRTUAL_PIN OFF -to c
+set_instance_assignment -name VIRTUAL_PIN OFF -to c_write_back
+set_instance_assignment -name VIRTUAL_PIN OFF -to data_in
+set_instance_assignment -name VIRTUAL_PIN OFF -to imm
+set_instance_assignment -name VIRTUAL_PIN OFF -to imm_op
+set_instance_assignment -name VIRTUAL_PIN OFF -to inst_in
+set_instance_assignment -name VIRTUAL_PIN OFF -to instr_type
+set_instance_assignment -name VIRTUAL_PIN OFF -to load_data
+set_instance_assignment -name VIRTUAL_PIN OFF -to pc
+set_instance_assignment -name VIRTUAL_PIN OFF -to pc_new
+set_instance_assignment -name VIRTUAL_PIN OFF -to pc_next
+set_instance_assignment -name VIRTUAL_PIN OFF -to pc_op
+set_instance_assignment -name VIRTUAL_PIN OFF -to rs1_data_ex
+set_instance_assignment -name VIRTUAL_PIN OFF -to rs1_data_op
+set_instance_assignment -name VIRTUAL_PIN OFF -to rs1_dec
+set_instance_assignment -name VIRTUAL_PIN OFF -to rs1_op
+set_instance_assignment -name VIRTUAL_PIN OFF -to rs2_data_ex
+set_instance_assignment -name VIRTUAL_PIN OFF -to rs2_data_op
+set_instance_assignment -name VIRTUAL_PIN OFF -to rs2_dec
+set_instance_assignment -name VIRTUAL_PIN OFF -to rs2_op
+set_instance_assignment -name VIRTUAL_PIN OFF -to store_data
+set_instance_assignment -name VIRTUAL_PIN OFF -to branch_result
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

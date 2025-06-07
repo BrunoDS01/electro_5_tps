@@ -20,7 +20,14 @@ instructions = [
     0x002081B3,  # ADD x3, x1, x2
     0x3e302423, # sw x3, 1000(x0)
     0x3e802203, # lw x4, 1000(x0)
-    0x000202b3  # add x5, x4, x0
+    0x000202b3,  # add x5, x4, x0
+    0x3e5006a3, # sb x5, 1005(x0)
+    0x3ed00303, # lb x6, 1005(x0)
+    0x00030313, # addi x6, x6, 0
+    0xfff00313, # addi x6, x0, -1
+    0x3e601923, # sh x6, 1010(x0)
+    0x3f201303, # lh x6, 1010(x0)
+    0x00030393, # addi x7, x6, 0
 ]
 
 with open("program_word.hex", "w") as f:
