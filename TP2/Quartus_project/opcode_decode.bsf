@@ -97,8 +97,8 @@ on the Quartus Prime software download page.
 	(port
 		(pt 216 160)
 		(output)
-		(text "is_alu_sum" (rect 0 0 46 12)(font "Arial" ))
-		(text "is_alu_sum" (rect 149 155 195 167)(font "Arial" ))
+		(text "shamt_used" (rect 0 0 49 12)(font "Arial" ))
+		(text "shamt_used" (rect 146 155 195 167)(font "Arial" ))
 		(line (pt 216 160)(pt 200 160)(line_width 1))
 	)
 	(parameter

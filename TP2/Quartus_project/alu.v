@@ -84,7 +84,7 @@ always @(a, b, funct3_, funct7_, instr_type) begin
 					if (funct7_ == SRL) begin
 						c = a >> b[4:0]; // SRL (Shift Right Logical)
 					end else if (funct7_ == SRA) begin
-						c = a >>> b[4:0]; // SRA (Shift Right Arithmetic)
+						c = $signed(a) >>> b[4:0]; // SRA (Shift Right Arithmetic)
 					end else begin
 						c = 0;
 					end

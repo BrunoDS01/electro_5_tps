@@ -7,6 +7,9 @@ module operand_build(
 	
 	input wire [3:0] instr_type,
 	
+	input wire [4:0] rs2,
+	input wire shamt_used,
+	
 	output reg [31:0] a,
 	output reg [31:0] b
 
@@ -29,13 +32,21 @@ always @(
 	rs1_data,
 	rs2_data,
 	pc,
-	imm
+	imm,
+	rs2,
+	shamt_used
 )
 begin
 	case (instr_type)
 		R_TYPE: begin // ADD SUB
-			a = rs1_data;
-			b = rs2_data;
+			if (shamt_used) begin
+				a = rs1_data;
+				b = rs2; // rs2 se usa como shamt
+			end
+			else begin
+				a = rs1_data;
+				b = rs2_data;
+			end
 		end
 		I_TYPE: begin //ADDI, LW, JALR
 			a = rs1_data;

@@ -148,23 +148,23 @@ R9
 R10
 R11
 vtp2_e5_ERV25_grupo2
-Z15 !s110 1749304009
+Z15 !s110 1749740616
 !i10b 1
-!s100 R3d1>HC33Rg292MJ7FTKN3
+!s100 5;8?n@mdXlM1I7Un=P1Fo3
 R2
-IG^9T?z138:Lk:1_UEBE4O3
+IzU4G?nHlLC]PXO16^LR_`2
 R3
-Z16 dC:/Users/agust/Documents/electro_5_tps/TP2/Quartus_project/simulation/qsim
-w1749304007
+R0
+w1749740613
 R4
 R5
-!i122 292
-L0 32 84264
+!i122 308
+L0 32 93664
 R6
 r1
 !s85 0
 31
-Z17 !s108 1749304009.000000
+!s108 1749740615.000000
 R8
 R9
 !i113 1
@@ -174,23 +174,23 @@ ntp2_e5_@e@r@v25_grupo2
 vtp2_e5_ERV25_grupo2_vlg_vec_tst
 R15
 !i10b 1
-!s100 S]g;6heA_YNCD>XBk@8_41
+!s100 k>a1[>hBB<n5Eff]lbAkX3
 R2
-IiSgnCBl7dWb_4Szg[C:702
+IaXlbIP6kD=`1B:8iQ6D8B1
 R3
-R16
-w1749304006
-8add_sub.vwf.vt
-Fadd_sub.vwf.vt
-!i122 293
-L0 30 98
+R0
+w1749740611
+8COMPLETE_SIM.vwf.vt
+FCOMPLETE_SIM.vwf.vt
+!i122 309
+L0 30 108
 R6
 r1
 !s85 0
 31
-R17
-!s107 add_sub.vwf.vt|
-!s90 -work|work|add_sub.vwf.vt|
+!s108 1749740616.000000
+!s107 COMPLETE_SIM.vwf.vt|
+!s90 -work|work|COMPLETE_SIM.vwf.vt|
 !i113 1
 R10
 R11
