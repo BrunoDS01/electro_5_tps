@@ -14,15 +14,25 @@ def to_intel_hex_line(address: int, data: bytes) -> str:
 
 # Instrucciones RISC-V en big endian
 instructions = [
-    0x00000013,  # NOP
-    0x0ff00093, # addi x1, x0, 0xff (0000 1111 1111)
-    0x00309113, # slli x2, x1, 3
-    0x0040d113, # srli x2, x1, 4
-    0x4040d113, # srai x2, x1, 4
-    0xf9c00093, # addi x1, x0, -100
-    0x4020d113, # srai x2, x1, 2 (-25)
-    0x0020d113, # srli x2, x1, 2 (tiene que ser -25, pero con 2 ceros al principio)
-    0x00109113, # slli x2, x1, 1 (-200)
+    0xfe200113, # addi x2, x0, -30
+    0xff600093, # addi x1, x0, -10
+    0x20208423, # sb x2, 520(x1)
+    0x20808183, # lb x3, 520(x1)
+    0x00018193, # addi x3, x3, 0
+
+    0x20209923, # sh x2, 530(x1)
+    0x21209183, # lh x3, 530(x1)
+    0x00018193, # addi x3, x3, 0
+
+    0x2420ac23, # sw x2, 600(x1)
+    0x2580a183, # lw x3, 600(x1)
+    0x00018193, # addi x3, x3, 0
+
+    0x2080c183, # lbu x3, 520(x1)
+    0x00018193, # addi x3, x3, 0
+
+    0x2120d183, # lhu x3, 530(x1)
+    0x00018193, # addi x3, x3, 0
   ]
 
 with open("program_word.hex", "w") as f:
@@ -92,4 +102,73 @@ SLLI/SRLI/SRAI
     0x4020d113, # srai x2, x1, 2 (-25)
     0x0020d113, # srli x2, x1, 2 (tiene que ser -25, pero con 2 ceros al principio)
     0x00109113, # slli x2, x1, 1 (-200)
-    """
+    
+ADD/SUB
+    0x00000013,  # NOP
+    0x02d00093, # addi x1, x0, 45
+    0x06400113, # addi x2, x0, 100
+    0x001101b3, # add x3, x2, x1
+    0xfff00093, # addi x1, x0, -1
+    0x001101b3, # add x3, x2, x1
+    0x01900093, # addi x1, x0, 25
+    0x401101b3, # sub x3, x2, x1
+    0x402081b3, # sub x3, x1, x2
+    
+SLL/SRL/SRA
+    0x00000013, # NOP
+    0xff600093, # addi x1, x0, -10
+    0x00300113, # addi x2, x0, 3
+    0x002091b3, # sll x3, x1, x2
+    0x0020d1b3, # srl x3, x1, x2
+    0x4020d1b3, # sra x3, x1, x2
+
+SLT/SLTU
+    0x00000013, # NOP
+    0x0c800093, # addi x1, x0, 200
+    0x0c700113, # addi x2, x0, 199
+    0x0020a1b3, # slt x3, x1, x2 (0)
+    0x001121b3, # slt x3, x2, x1
+    
+    0xff600093, # addi x1, x0, -10
+    0xff500113, # addi x2, x0, -11
+    0x0020a1b3, # slt x3, x1, x2 (0)
+    0x001121b3, # slt x3, x2, x1
+    0x0c800093, # addi x1, x0, 200
+    0x0020a1b3, # slt x3, x1, x2 (0)
+    0x001121b3, # slt x3, x2, x1
+
+    0x00a00093, # addi x1, x0, 10
+    0x00900113, # addi x2, x0, 9
+    0x0020b1b3, # sltu x3, x1, x2
+    0x001131b3, # sltu x3, x2, x1
+
+XOR/OR/AND
+    0x00000013, # NOP
+    0x07700093, # addi x1, x0, 0x77 (0111 0111)
+    0x0aa00093, # addi x1, x0, 0xAA (1010 1010)
+    0x001141b3, # xor x3, x2, x1 (1101 1101)
+    0x001161b3, # or x3, x2, x1 (1111 1111)
+    0x001171b3, # and x3, x2, x1 (0010 0010)
+
+LOAD STORE: 
+    0xfe200113, # addi x2, x0, -30
+    0xff600093, # addi x1, x0, -10
+    0x20208423, # sb x2, 520(x1)
+    0x20808183, # lb x3, 520(x1)
+    0x00018193, # addi x3, x3, 0
+
+    0x20209923, # sh x2, 530(x1)
+    0x21209183, # lh x3, 530(x1)
+    0x00018193, # addi x3, x3, 0
+
+    0x2420ac23, # sw x2, 600(x1)
+    0x2580a183, # lw x3, 600(x1)
+    0x00018193, # addi x3, x3, 0
+
+    0x2080c183, # lbu x3, 520(x1)
+    0x00018193, # addi x3, x3, 0
+
+    0x2120d183, # lhu x3, 530(x1)
+    0x00018193, # addi x3, x3, 0
+
+"""

@@ -131,7 +131,7 @@ always @(a, b, funct3_, funct7_, instr_type) begin
 					if (funct7_ == SRL) begin
 						c = a >> b[4:0]; // SRLI
 					end else if (funct7_ == SRA) begin
-						c = a >>> b[4:0]; // SRAI
+						c = $signed(a) >>> b[4:0]; // SRAI
 					end else begin
 						c = 0;
 					end

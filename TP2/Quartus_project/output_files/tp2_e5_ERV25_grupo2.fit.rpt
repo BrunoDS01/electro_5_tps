@@ -1,5 +1,5 @@
 Fitter report for tp2_e5_ERV25_grupo2
-Thu Jun 12 12:02:43 2025
+Thu Jun 12 18:40:01 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -58,15 +58,15 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Failed - Thu Jun 12 12:02:43 2025               ;
+; Fitter Status                      ; Failed - Thu Jun 12 18:40:01 2025               ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE22F17C8L                                   ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 4,201 / 22,320 ( 19 % )                         ;
-;     Total combinational functions  ; 3,163 / 22,320 ( 14 % )                         ;
+; Total logic elements               ; 4,150 / 22,320 ( 19 % )                         ;
+;     Total combinational functions  ; 3,112 / 22,320 ( 14 % )                         ;
 ;     Dedicated logic registers      ; 1,463 / 22,320 ( 7 % )                          ;
 ; Total registers                    ; 1463                                            ;
 ; Total pins                         ; 692 / 154 ( 449 % )                             ;
@@ -183,19 +183,19 @@ on the Quartus Prime software download page.
 +---------------------------------------------+---------------------------+
 ; Resource                                    ; Usage                     ;
 +---------------------------------------------+---------------------------+
-; Total logic elements                        ; 4,201 / 22,320 ( 19 % )   ;
-;     -- Combinational with no register       ; 2738                      ;
+; Total logic elements                        ; 4,150 / 22,320 ( 19 % )   ;
+;     -- Combinational with no register       ; 2687                      ;
 ;     -- Register only                        ; 1038                      ;
 ;     -- Combinational with a register        ; 425                       ;
 ;                                             ;                           ;
 ; Logic element usage by number of LUT inputs ;                           ;
-;     -- 4 input functions                    ; 2306                      ;
-;     -- 3 input functions                    ; 582                       ;
-;     -- <=2 input functions                  ; 275                       ;
+;     -- 4 input functions                    ; 2309                      ;
+;     -- 3 input functions                    ; 562                       ;
+;     -- <=2 input functions                  ; 241                       ;
 ;     -- Register only                        ; 1038                      ;
 ;                                             ;                           ;
 ; Logic elements by mode                      ;                           ;
-;     -- normal mode                          ; 2950                      ;
+;     -- normal mode                          ; 2899                      ;
 ;     -- arithmetic mode                      ; 213                       ;
 ;                                             ;                           ;
 ; Total registers*                            ; 1,463 / 23,018 ( 6 % )    ;
@@ -222,8 +222,8 @@ on the Quartus Prime software download page.
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )             ;
 ; Maximum fan-out                             ; 1514                      ;
 ; Highest non-global fan-out                  ; 1514                      ;
-; Total fan-out                               ; 20649                     ;
-; Average fan-out                             ; 3.40                      ;
+; Total fan-out                               ; 20533                     ;
+; Average fan-out                             ; 3.41                      ;
 +---------------------------------------------+---------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -3388,7 +3388,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; pipeline_control:inst2|fetch_ena~0      ; Unassigned ; 109     ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; pipeline_control:inst2|op_nop~1         ; Unassigned ; 34      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|Equal2~1           ; Unassigned ; 1024    ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst28|x[0][20]~27        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst28|x[0][12]~27        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[10][19]~17       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[11][25]~20       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[12][28]~31       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
@@ -3399,7 +3399,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; register_bank:inst28|x[17][14]~7        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[18][22]~3        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[19][22]~15       ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst28|x[1][22]~26        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst28|x[1][12]~26        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[20][22]~9        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[21][6]~6         ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[22][13]~1        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
@@ -3414,9 +3414,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; register_bank:inst28|x[30][8]~4         ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[31][8]~16        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[3][12]~28        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst28|x[4][12]~23        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst28|x[5][12]~21        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; register_bank:inst28|x[6][27]~22        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst28|x[4][8]~23         ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst28|x[5][14]~21        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; register_bank:inst28|x[6][11]~22        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[7][19]~24        ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[8][6]~19         ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; register_bank:inst28|x[9][4]~18         ; Unassigned ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
@@ -3452,8 +3452,8 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ;   Addr   ;              +0              ;              +1              ;              +2              ;              +3              ;              +4              ;              +5              ;              +6              ;              +7              ;
 +----------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+
-;0;(00000000000000000000000000010011) (23) (19) (13)    ;(00001111111100000000000010010011) (1774000223) (267387027) (FF00093)   ;(00000000001100001001000100010011) (14110423) (3182867) (309113)   ;(00000000010000001101000100010011) (20150423) (4247827) (40D113)   ;(01000000010000001101000100010011) (-2127333225) (1077989651) (4040D113)   ;(11111001110000000000000010010011) (-617777555) (-104857453) (-6-3-15-15-15-6-13)   ;(01000000001000001101000100010011) (-2137333225) (1075892499) (4020D113)   ;(00000000001000001101000100010011) (10150423) (2150675) (20D113)   ;
-;8;(00000000000100001001000100010011) (4110423) (1085715) (109113)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
+;0;(11111110001000000000000100010011) (-167777355) (-31457005) (-1-13-15-15-14-14-13)    ;(11111111011000000000000010010011) (-47777555) (-10485613) (-9-15-15-15-6-13)   ;(00100000001000001000010000100011) (-284865253) (539001891) (20208423)   ;(00100000100000001000000110000011) (-254866693) (545292675) (20808183)   ;(00000000000000011000000110010011) (300623) (98707) (18193)   ;(00100000001000001001100100100011) (-284852853) (539007267) (20209923)   ;(00100001001000001001000110000011) (-184856693) (555782531) (21209183)   ;(00000000000000011000000110010011) (300623) (98707) (18193)   ;
+;8;(00100100001000001010110000100011) (115158747) (606120995) (2420AC23)    ;(00100101100000001010000110000011) (245153307) (629186947) (2580A183)   ;(00000000000000011000000110010011) (300623) (98707) (18193)   ;(00100000100000001100000110000011) (-254826693) (545309059) (2080C183)   ;(00000000000000011000000110010011) (300623) (98707) (18193)   ;(00100001001000001101000110000011) (-184816693) (555798915) (2120D183)   ;(00000000000000011000000110010011) (300623) (98707) (18193)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
 ;16;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
 ;24;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
 ;32;(00000000000000000000000000000000) (0) (0) (00)    ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
@@ -4530,14 +4530,14 @@ Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Ass
 Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
 Critical Warning (169085): No exact pin location assignment(s) for 692 pins of 692 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Error (169282): There are 690 IO output pads in the design, but only 139 IO output pad locations available on the device.
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Error (171000): Can't fit design in device
 Warning (169069): Following 1 pins have nothing, GND, or VCC driving datain port -- changes to this connectivity may change fitting results
     Info (169070): Pin instr_type_ex[3] has GND driving its datain port
 Error: Quartus Prime Fitter was unsuccessful. 2 errors, 5 warnings
     Error: Peak virtual memory: 4902 megabytes
-    Error: Processing ended: Thu Jun 12 12:02:44 2025
-    Error: Elapsed time: 00:00:07
-    Error: Total CPU time (on all processors): 00:00:06
+    Error: Processing ended: Thu Jun 12 18:40:01 2025
+    Error: Elapsed time: 00:00:05
+    Error: Total CPU time (on all processors): 00:00:04
 
 
