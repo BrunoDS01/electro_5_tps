@@ -28,10 +28,12 @@ begin
 			// Si es un salto que se arma con el inmediato:
 			if (is_branch) begin
 				flag_branch = 2'b10;
+				address_target = (rs1 + imm) & ~32'd1; // esto es especificación para JALR
 			end
 			else begin
 				// Si no es un salto
 				flag_branch = 2'b00;
+				address_target = rs1 + imm;
 			end
 		end
 		B_TYPE: begin

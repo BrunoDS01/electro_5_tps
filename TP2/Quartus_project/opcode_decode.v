@@ -10,7 +10,8 @@ module opcode_decode(
 	output reg is_branch,
 	output reg rd_memory,
 	output reg wr_memory,
-	output reg shamt_used
+	output reg shamt_used,
+	output reg inc_pc
 );
 
 /*
@@ -70,6 +71,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b1;
 			wr_memory = 1'b0;	
 			shamt_used = 1'b0;
+			inc_pc = 1'b0;
 		end
 
 		MISC_MEM: begin
@@ -82,6 +84,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;	
 			shamt_used = 1'b0;
+			inc_pc = 1'b0;
 		end
 
 		OP_IMM: begin
@@ -104,6 +107,7 @@ always @(opcode, funct3) begin
 			is_branch = 1'b0;
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;
+			inc_pc = 1'b0;
 
 		end
 
@@ -117,6 +121,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;	
 			shamt_used = 1'b0;
+			inc_pc = 1'b0;
 		end
 
 		STORE: begin
@@ -129,6 +134,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b1;	
 			shamt_used = 1'b0;
+			inc_pc = 1'b0;
 		end
 
 		OP: begin
@@ -141,6 +147,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;	
 			shamt_used = 1'b0;
+			inc_pc = 1'b0;
 		
 		end
 
@@ -154,6 +161,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;	
 			shamt_used = 1'b0;
+			inc_pc = 1'b0;
 		end
 
 		BRANCH: begin
@@ -166,6 +174,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;
 			shamt_used = 1'b0;
+			inc_pc = 1'b0;
 		end
 
 		JALR: begin
@@ -178,6 +187,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;
 			shamt_used = 1'b0;
+			inc_pc = 1'b1;
 
 		end
 
@@ -191,6 +201,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;	
 			shamt_used = 1'b0;
+			inc_pc = 1'b1;
 
 		end
 
@@ -204,6 +215,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;
 			shamt_used = 1'b0;
+			inc_pc = 1'b0;
 
 		end
 	endcase

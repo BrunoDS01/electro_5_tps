@@ -7,7 +7,7 @@ module tag_latch(
 
 always @(posedge clk or posedge reset) begin
 	if (reset) begin
-		out_tag <= 27'd0;
+		out_tag <= 24'd0;
 	end
 	else begin
 		out_tag <= in_tag;

@@ -20,6 +20,7 @@ module decode_latch(
 	input wire rd_memory,
 	input wire wr_memory,
 	input wire shamt_used,
+	input wire inc_pc,
 
 	
 	input wire stg_clk,
@@ -48,7 +49,8 @@ module decode_latch(
 	output reg is_branch_out,
 	output reg rd_memory_out,
 	output reg wr_memory_out,
-	output reg shamt_used_out
+	output reg shamt_used_out,
+	output reg inc_pc_out
 );
 
 always @(posedge stg_clk or posedge reset) begin
@@ -75,6 +77,7 @@ always @(posedge stg_clk or posedge reset) begin
 		rd_memory_out <= 0;
 		wr_memory_out <= 0;
 		shamt_used_out <= 0;
+		inc_pc_out <= 0;
 	end
 	else begin
 		if (stg_x) begin
@@ -100,6 +103,7 @@ always @(posedge stg_clk or posedge reset) begin
 			rd_memory_out <= 0;
 			wr_memory_out <= 0;
 			shamt_used_out <= 0;
+			inc_pc_out <= 0;
 			
 		end else if (stg_ena) begin
 			branch_prediction_out <= branch_prediction;
@@ -125,6 +129,7 @@ always @(posedge stg_clk or posedge reset) begin
 			rd_memory_out <= rd_memory;
 			wr_memory_out <= wr_memory;
 			shamt_used_out <= shamt_used;
+			inc_pc_out <= inc_pc;
 		end
 
 		  

@@ -4,7 +4,9 @@ module fetch_unit (
 	// PC para reemplazar al existente en caso de salto o error de predicción
 	input wire [31:0] pc_new,	
 	// Indicador de tener que reemplazar pc
-	input wire take_new_pc,			
+	input wire take_new_pc,
+
+	input wire branch_prediction,
 	
 	input wire stage_clk,
 	input wire reset,	
@@ -15,7 +17,8 @@ module fetch_unit (
 	output reg [31:0] instr,
 	output reg [31:0] pc_next,
 	output reg [31:0] pc,
-	output reg [31:0] pc_dec
+	output reg [31:0] pc_dec,
+	output reg branch_prediction_dec
 );
 
 
@@ -25,16 +28,25 @@ always @(posedge stage_clk or posedge reset) begin
 		pc <= -4;
 		pc_dec <= 0;
 		instr <= 32'd0;
+		branch_prediction_dec <= 1'b0;
 	end
 	else begin
 		if (stage_x) begin
-			pc <= 32'd0;
+			// Si hay un NOP, PC hay que actualizarlo con PC_NEXT, pero PC_DEC no.
+			// INST hay que setearlo en 0, para que sea efectivo el NOP
+			
+			// branch prediction va a la par con pc (pc_next => pc => pc_dec)
+			pc <= pc_next;
 			pc_dec <= 32'd0;
 			instr <= 32'd0;
+			branch_prediction_dec <= 1'b0;
+		
 		end else if (stage_ena) begin
 			pc <= pc_next;
 			pc_dec <= pc;
 			instr <= instr_in;
+			branch_prediction_fetch <= branch_prediction;
+			branch_prediction_dec <= branch_prediction_fetch;
 		end
 	end
 end

@@ -108,7 +108,7 @@ always @(a, b, funct3_, funct7_, instr_type) begin
 		I_TYPE: begin
 			case (funct3_)
 				ADD_SUB3: begin
-					c = a + b; // ADDI
+					c = a + b; // ADDI (o JALR, sumará PC con 4)
 				end
 				
 				SLL3: begin
@@ -174,9 +174,9 @@ always @(a, b, funct3_, funct7_, instr_type) begin
 			c = b; // LUI y AUIPC usan directamente el valor inmediato
 		end
 		
-		// J_TYPE: JAL/JALR (manejo de direcciones)
+		// J_TYPE: JAL (manejo de direcciones)
 		J_TYPE: begin
-			c = a + b; // Nueva dirección de salto
+			c = a + b; // PC se le suma 4
 		end
 		
 		// N_TYPE: NOP

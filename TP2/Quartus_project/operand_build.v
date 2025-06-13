@@ -9,6 +9,7 @@ module operand_build(
 	
 	input wire [4:0] rs2,
 	input wire shamt_used,
+	input wire inc_pc,
 	
 	output reg [31:0] a,
 	output reg [31:0] b
@@ -34,7 +35,8 @@ always @(
 	pc,
 	imm,
 	rs2,
-	shamt_used
+	shamt_used,
+	inc_pc
 )
 begin
 	case (instr_type)
@@ -49,8 +51,16 @@ begin
 			end
 		end
 		I_TYPE: begin //ADDI, LW, JALR
-			a = rs1_data;
-			b = imm;
+			if (inc_pc) begin
+				// Si es JALR, debe sumar 4 al pc
+				a = pc;
+				b = 4;
+			end
+			else begin
+				b = imm;
+				a = rs1_data;
+			end
+		
 		end
 		S_TYPE: begin // //SW
 			a = rs1_data;
@@ -66,7 +76,7 @@ begin
 		end
 		J_TYPE: begin //JAL
 			a = pc;
-			b = imm;
+			b = 4;
 		end
 		default: begin
 			a = 32'd0;

@@ -28,7 +28,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Fri Jun 13 00:14:06 2025
+    Info: Processing started: Fri Jun 13 01:51:19 2025
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2 --vector_source="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/COMPLETE_SIM.vwf" --testbench_file="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/COMPLETE_SIM.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -36,7 +36,7 @@ Warning (18236): Number of processors has not been specified which may cause ove
 
 r source file when writing test bench files
 
-ile when writing test bench files
+g test bench files
 
 1]" in vector source file when writing test bench files
 
@@ -48,17 +48,15 @@ ut pin "rs1_data_ex[30]" in vector source file when writing test bench files
 
 iting test bench files
 
-ing output pin "data_in[19]" in vector source file when writing test bench files
-
-load_data[13]" in vector source file when writing test bench files
-
-riting test bench files
+ files
 
 when writing test bench files
 
-]" in vector source file when writing test bench files
+ta[60]" in vector source file when writing test bench files
 
-ht_wr_data[22]" in vector source file when writing test bench files
+01005): Ignoring output pin "ram_update_out[51]" in vector source file when writing test bench files
+
+
 
 Completed successfully. 
 
@@ -87,14 +85,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Fri Jun 13 00:14:08 2025
+    Info: Processing started: Fri Jun 13 01:51:21 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/" tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file tp2_e5_ERV25_grupo2.vo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4690 megabytes
-    Info: Processing ended: Fri Jun 13 00:14:10 2025
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Fri Jun 13 01:51:22 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -121,7 +119,7 @@ Reading pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 00:14:12 on Jun 13,2025
+# Start time: 01:51:24 on Jun 13,2025
 # vlog -work work tp2_e5_ERV25_grupo2.vo 
 
 # -- Compiling module tp2_e5_ERV25_grupo2
@@ -131,16 +129,15 @@ Reading pref.tcl
 # Top level modules:
 # 	tp2_e5_ERV25_grupo2
 
-# End time: 00:14:13 on Jun 13,2025, Elapsed time: 0:00:01
+# End time: 01:51:25 on Jun 13,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 00:14:13 on Jun 13,2025
+# Start time: 01:51:25 on Jun 13,2025
 # vlog -work work COMPLETE_SIM.vwf.vt 
 
 # init_auxdbinfo(): DATABASE ERROR: (sqlite3_exec): file is not a database
-
 # flat_compact(): DATABASE ERROR: cannot open auxiliary database for write at path=D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/work (auxid=1, gen=90)
 
 # -- Compiling module tp2_e5_ERV25_grupo2_vlg_vec_tst
@@ -150,11 +147,12 @@ Reading pref.tcl
 # Top level modules:
 # 	tp2_e5_ERV25_grupo2_vlg_vec_tst
 
-# End time: 00:14:13 on Jun 13,2025, Elapsed time: 0:00:00
+# End time: 01:51:25 on Jun 13,2025, Elapsed time: 0:00:00
+
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.tp2_e5_ERV25_grupo2_vlg_vec_tst 
-# Start time: 00:14:13 on Jun 13,2025
+# Start time: 01:51:25 on Jun 13,2025
 # Loading work.tp2_e5_ERV25_grupo2_vlg_vec_tst
 # Loading work.tp2_e5_ERV25_grupo2
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -165,7 +163,7 @@ Reading pref.tcl
 # Loading cycloneive_ver.cycloneive_ram_register
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
 # Loading altera_ver.PRIM_GDFF_LOW
-# ** Warning: Design size of 17874 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 17750 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 
 # after#27
@@ -186,28 +184,10 @@ Reading pref.tcl
 
 # Simulation time: 0 ps
 
-# Simulation time: 6275000 ps
-
-# Simulation time: 6275000 ps
-
-# Simulation time: 6275000 ps
-
-# Simulation time: 6275000 ps
-
-# Simulation time: 6275000 ps
-
-# Simulation time: 6275000 ps
-
-# Simulation time: 6275000 ps
-
-# ** Note: $stop    : COMPLETE_SIM.vwf.vt(131)
+# ** Note: $finish    : COMPLETE_SIM.vwf.vt(131)
 #    Time: 10 us  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst
 
-# Break in Module tp2_e5_ERV25_grupo2_vlg_vec_tst at COMPLETE_SIM.vwf.vt line 131
-
-# Stopped at COMPLETE_SIM.vwf.vt line 131
-
-# End time: 00:14:54 on Jun 13,2025, Elapsed time: 0:00:41
+# End time: 01:51:48 on Jun 13,2025, Elapsed time: 0:00:23
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -220,7 +200,135 @@ Reading D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_pr
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/tp2_e5_ERV25_grupo2_20250613001454.sim.vwf
+Warning: ram_update_out[63] - signal not found in VCD.
+
+Warning: ram_update_out[62] - signal not found in VCD.
+
+Warning: ram_update_out[61] - signal not found in VCD.
+
+Warning: ram_update_out[60] - signal not found in VCD.
+
+Warning: ram_update_out[59] - signal not found in VCD.
+
+Warning: ram_update_out[58] - signal not found in VCD.
+
+Warning: ram_update_out[57] - signal not found in VCD.
+
+Warning: ram_update_out[56] - signal not found in VCD.
+
+Warning: ram_update_out[55] - signal not found in VCD.
+
+Warning: ram_update_out[54] - signal not found in VCD.
+
+Warning: ram_update_out[53] - signal not found in VCD.
+
+Warning: ram_update_out[52] - signal not found in VCD.
+
+Warning: ram_update_out[51] - signal not found in VCD.
+
+Warning: ram_update_out[50] - signal not found in VCD.
+
+Warning: ram_update_out[49] - signal not found in VCD.
+
+Warning: ram_update_out[48] - signal not found in VCD.
+
+Warning: ram_update_out[47] - signal not found in VCD.
+
+Warning: ram_update_out[46] - signal not found in VCD.
+
+Warning: ram_update_out[45] - signal not found in VCD.
+
+Warning: ram_update_out[44] - signal not found in VCD.
+
+Warning: ram_update_out[43] - signal not found in VCD.
+
+Warning: ram_update_out[42] - signal not found in VCD.
+
+Warning: ram_update_out[41] - signal not found in VCD.
+
+Warning: ram_update_out[40] - signal not found in VCD.
+
+Warning: ram_update_out[39] - signal not found in VCD.
+
+Warning: ram_update_out[38] - signal not found in VCD.
+
+Warning: ram_update_out[37] - signal not found in VCD.
+
+Warning: ram_update_out[36] - signal not found in VCD.
+
+Warning: ram_update_out[35] - signal not found in VCD.
+
+Warning: ram_update_out[34] - signal not found in VCD.
+
+Warning: ram_update_out[33] - signal not found in VCD.
+
+Warning: ram_update_out[32] - signal not found in VCD.
+
+Warning: ram_update_out[31] - signal not found in VCD.
+
+Warning: ram_update_out[30] - signal not found in VCD.
+
+Warning: ram_update_out[29] - signal not found in VCD.
+
+Warning: ram_update_out[28] - signal not found in VCD.
+
+Warning: ram_update_out[27] - signal not found in VCD.
+
+Warning: ram_update_out[26] - signal not found in VCD.
+
+Warning: ram_update_out[25] - signal not found in VCD.
+
+Warning: ram_update_out[24] - signal not found in VCD.
+
+Warning: ram_update_out[23] - signal not found in VCD.
+
+Warning: ram_update_out[22] - signal not found in VCD.
+
+Warning: ram_update_out[21] - signal not found in VCD.
+
+Warning: ram_update_out[20] - signal not found in VCD.
+
+Warning: ram_update_out[19] - signal not found in VCD.
+
+Warning: ram_update_out[18] - signal not found in VCD.
+
+Warning: ram_update_out[17] - signal not found in VCD.
+
+Warning: ram_update_out[16] - signal not found in VCD.
+
+Warning: ram_update_out[15] - signal not found in VCD.
+
+Warning: ram_update_out[14] - signal not found in VCD.
+
+Warning: ram_update_out[13] - signal not found in VCD.
+
+Warning: ram_update_out[12] - signal not found in VCD.
+
+Warning: ram_update_out[11] - signal not found in VCD.
+
+Warning: ram_update_out[10] - signal not found in VCD.
+
+Warning: ram_update_out[9] - signal not found in VCD.
+
+Warning: ram_update_out[8] - signal not found in VCD.
+
+Warning: ram_update_out[7] - signal not found in VCD.
+
+Warning: ram_update_out[6] - signal not found in VCD.
+
+Warning: ram_update_out[5] - signal not found in VCD.
+
+Warning: ram_update_out[4] - signal not found in VCD.
+
+Warning: ram_update_out[3] - signal not found in VCD.
+
+Warning: ram_update_out[2] - signal not found in VCD.
+
+Warning: ram_update_out[1] - signal not found in VCD.
+
+Warning: ram_update_out[0] - signal not found in VCD.
+
+Writing the resulting VWF to D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/tp2_e5_ERV25_grupo2_20250613015149.sim.vwf
 
 Finished VCD to VWF conversion.
 

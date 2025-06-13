@@ -95,6 +95,13 @@ on the Quartus Prime software download page.
 		(line (pt 0 176)(pt 16 176)(line_width 1))
 	)
 	(port
+		(pt 0 192)
+		(input)
+		(text "flush_pipeline" (rect 0 0 51 12)(font "Arial" ))
+		(text "flush_pipeline" (rect 21 187 72 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
 		(pt 216 32)
 		(output)
 		(text "fetch_ena" (rect 0 0 40 12)(font "Arial" ))

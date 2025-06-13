@@ -101,6 +101,13 @@ on the Quartus Prime software download page.
 		(text "shamt_used" (rect 146 155 195 167)(font "Arial" ))
 		(line (pt 216 160)(pt 200 160)(line_width 1))
 	)
+	(port
+		(pt 216 176)
+		(output)
+		(text "inc_pc" (rect 0 0 25 12)(font "Arial" ))
+		(text "inc_pc" (rect 170 171 195 183)(font "Arial" ))
+		(line (pt 216 176)(pt 200 176)(line_width 1))
+	)
 	(parameter
 		"R_TYPE"
 		"000"
