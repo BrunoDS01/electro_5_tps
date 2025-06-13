@@ -28,31 +28,37 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Fri Jun 13 01:51:19 2025
+    Info: Processing started: Fri Jun 13 02:11:02 2025
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2 --vector_source="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/COMPLETE_SIM.vwf" --testbench_file="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/COMPLETE_SIM.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
  "address_target[12]" in vector source file when writing test bench files
 
-r source file when writing test bench files
+iles
 
 g test bench files
 
 1]" in vector source file when writing test bench files
 
-ut pin "rs1_data_ex[30]" in vector source file when writing test bench files
+5): Ignoring output pin "pc_next[4]" in vector source file when writing test bench files
 
- "rs1_data_op[25]" in vector source file when writing test bench files
+ut pin "rs1_data_ex[30]" in vector source file when writing test bench files
 
  writing test bench files
 
-iting test bench files
+ng test bench files
+
+ing output pin "data_in[19]" in vector source file when writing test bench files
+
+load_data[13]" in vector source file when writing test bench files
 
  files
 
-when writing test bench files
+riting test bench files
 
-ta[60]" in vector source file when writing test bench files
+]" in vector source file when writing test bench files
+
+ht_wr_data[22]" in vector source file when writing test bench files
 
 01005): Ignoring output pin "ram_update_out[51]" in vector source file when writing test bench files
 
@@ -85,14 +91,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Fri Jun 13 01:51:21 2025
+    Info: Processing started: Fri Jun 13 02:11:03 2025
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/" tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file tp2_e5_ERV25_grupo2.vo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4690 megabytes
-    Info: Processing ended: Fri Jun 13 01:51:22 2025
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Fri Jun 13 02:11:05 2025
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
@@ -119,7 +125,7 @@ Reading pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 01:51:24 on Jun 13,2025
+# Start time: 02:11:06 on Jun 13,2025
 # vlog -work work tp2_e5_ERV25_grupo2.vo 
 
 # -- Compiling module tp2_e5_ERV25_grupo2
@@ -129,15 +135,17 @@ Reading pref.tcl
 # Top level modules:
 # 	tp2_e5_ERV25_grupo2
 
-# End time: 01:51:25 on Jun 13,2025, Elapsed time: 0:00:01
+# End time: 02:11:07 on Jun 13,2025, Elapsed time: 0:00:01
+
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 01:51:25 on Jun 13,2025
+# Start time: 02:11:07 on Jun 13,2025
 # vlog -work work COMPLETE_SIM.vwf.vt 
 
 # init_auxdbinfo(): DATABASE ERROR: (sqlite3_exec): file is not a database
+
 # flat_compact(): DATABASE ERROR: cannot open auxiliary database for write at path=D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/work (auxid=1, gen=90)
 
 # -- Compiling module tp2_e5_ERV25_grupo2_vlg_vec_tst
@@ -147,12 +155,12 @@ Reading pref.tcl
 # Top level modules:
 # 	tp2_e5_ERV25_grupo2_vlg_vec_tst
 
-# End time: 01:51:25 on Jun 13,2025, Elapsed time: 0:00:00
+# End time: 02:11:07 on Jun 13,2025, Elapsed time: 0:00:00
 
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.tp2_e5_ERV25_grupo2_vlg_vec_tst 
-# Start time: 01:51:25 on Jun 13,2025
+# Start time: 02:11:07 on Jun 13,2025
 # Loading work.tp2_e5_ERV25_grupo2_vlg_vec_tst
 # Loading work.tp2_e5_ERV25_grupo2
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -184,10 +192,14 @@ Reading pref.tcl
 
 # Simulation time: 0 ps
 
-# ** Note: $finish    : COMPLETE_SIM.vwf.vt(131)
+# Simulation time: 7875000 ps
+
+# Simulation time: 7875000 ps
+
+# ** Note: $finish    : COMPLETE_SIM.vwf.vt(133)
 #    Time: 10 us  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst
 
-# End time: 01:51:48 on Jun 13,2025, Elapsed time: 0:00:23
+# End time: 02:11:35 on Jun 13,2025, Elapsed time: 0:00:28
 # Errors: 0, Warnings: 1
 
 Completed successfully. 
@@ -328,7 +340,7 @@ Warning: ram_update_out[1] - signal not found in VCD.
 
 Warning: ram_update_out[0] - signal not found in VCD.
 
-Writing the resulting VWF to D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/tp2_e5_ERV25_grupo2_20250613015149.sim.vwf
+Writing the resulting VWF to D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/tp2_e5_ERV25_grupo2_20250613021135.sim.vwf
 
 Finished VCD to VWF conversion.
 

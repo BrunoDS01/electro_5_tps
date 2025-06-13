@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tp2_e5_ERV25_grupo2
-Fri Jun 13 02:00:48 2025
+Fri Jun 13 02:10:46 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -58,15 +58,15 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Jun 13 02:00:48 2025           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 13 02:10:46 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 4,367                                           ;
-;     Total combinational functions  ; 3,309                                           ;
-;     Dedicated logic registers      ; 1,542                                           ;
-; Total registers                    ; 1542                                            ;
+; Total logic elements               ; 4,368                                           ;
+;     Total combinational functions  ; 3,310                                           ;
+;     Dedicated logic registers      ; 1,541                                           ;
+; Total registers                    ; 1541                                            ;
 ; Total pins                         ; 798                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 69,312                                          ;
@@ -230,20 +230,20 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 4,367     ;
+; Estimated Total logic elements              ; 4,368     ;
 ;                                             ;           ;
-; Total combinational functions               ; 3309      ;
+; Total combinational functions               ; 3310      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2353      ;
+;     -- 4 input functions                    ; 2354      ;
 ;     -- 3 input functions                    ; 574       ;
 ;     -- <=2 input functions                  ; 382       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 3065      ;
+;     -- normal mode                          ; 3066      ;
 ;     -- arithmetic mode                      ; 244       ;
 ;                                             ;           ;
-; Total registers                             ; 1542      ;
-;     -- Dedicated logic registers            ; 1542      ;
+; Total registers                             ; 1541      ;
+;     -- Dedicated logic registers            ; 1541      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 798       ;
@@ -252,8 +252,8 @@ on the Quartus Prime software download page.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1633      ;
-; Total fan-out                               ; 22158     ;
+; Maximum fan-out                             ; 1632      ;
+; Total fan-out                               ; 22159     ;
 ; Average fan-out                             ; 3.39      ;
 +---------------------------------------------+-----------+
 
@@ -263,9 +263,9 @@ on the Quartus Prime software download page.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                           ; Entity Name               ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
-; |tp2_e5_ERV25_grupo2                         ; 3309 (1)            ; 1542 (0)                  ; 69312       ; 0            ; 0       ; 0         ; 798  ; 0            ; |tp2_e5_ERV25_grupo2                                                                                                          ; tp2_e5_ERV25_grupo2       ; work         ;
+; |tp2_e5_ERV25_grupo2                         ; 3310 (1)            ; 1541 (0)                  ; 69312       ; 0            ; 0       ; 0         ; 798  ; 0            ; |tp2_e5_ERV25_grupo2                                                                                                          ; tp2_e5_ERV25_grupo2       ; work         ;
 ;    |address_builder:inst31|                  ; 100 (100)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_builder:inst31                                                                                   ; address_builder           ; work         ;
-;    |address_latch:inst29|                    ; 99 (99)             ; 104 (104)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_latch:inst29                                                                                     ; address_latch             ; work         ;
+;    |address_latch:inst29|                    ; 101 (101)           ; 104 (104)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_latch:inst29                                                                                     ; address_latch             ; work         ;
 ;    |alu:inst17|                              ; 735 (735)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu:inst17                                                                                               ; alu                       ; work         ;
 ;    |alu_latch:inst18|                        ; 0 (0)               ; 38 (38)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu_latch:inst18                                                                                         ; alu_latch                 ; work         ;
 ;    |bht_btb_module_2:inst21|                 ; 26 (0)              ; 86 (0)                    ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21                                                                                  ; bht_btb_module_2          ; work         ;
@@ -277,12 +277,12 @@ on the Quartus Prime software download page.
 ;       |tag_latch:inst6|                      ; 0 (0)               ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|tag_latch:inst6                                                                  ; tag_latch                 ; work         ;
 ;    |branch_result_module:inst8|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|branch_result_module:inst8                                                                               ; branch_result_module      ; work         ;
 ;    |decode_latch:inst23|                     ; 101 (101)           ; 99 (99)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|decode_latch:inst23                                                                                      ; decode_latch              ; work         ;
-;    |fetch_unit:inst33|                       ; 218 (218)           ; 98 (98)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst33                                                                                        ; fetch_unit                ; work         ;
+;    |fetch_unit:inst34|                       ; 249 (249)           ; 97 (97)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34                                                                                        ; fetch_unit                ; work         ;
 ;    |immediate_builder:inst4|                 ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4                                                                                  ; immediate_builder         ; work         ;
 ;    |load_data_module:inst32|                 ; 65 (65)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|load_data_module:inst32                                                                                  ; load_data_module          ; work         ;
 ;    |mem_latch:inst35|                        ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|mem_latch:inst35                                                                                         ; mem_latch                 ; work         ;
-;    |next_pc_decision_module:inst9|           ; 156 (156)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9                                                                            ; next_pc_decision_module   ; work         ;
-;    |op_latch:inst24|                         ; 90 (90)             ; 87 (87)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|op_latch:inst24                                                                                          ; op_latch                  ; work         ;
+;    |next_pc_decision_module:inst9|           ; 126 (126)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9                                                                            ; next_pc_decision_module   ; work         ;
+;    |op_latch:inst24|                         ; 88 (88)             ; 87 (87)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|op_latch:inst24                                                                                          ; op_latch                  ; work         ;
 ;    |opcode_decode:inst22|                    ; 22 (22)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|opcode_decode:inst22                                                                                     ; opcode_decode             ; work         ;
 ;    |operand_build:inst25|                    ; 136 (136)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|operand_build:inst25                                                                                     ; operand_build             ; work         ;
 ;    |pipeline_control:inst26|                 ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|pipeline_control:inst26                                                                                  ; pipeline_control          ; work         ;
@@ -323,72 +323,72 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------------+----------------------------------------------------+
 ; bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8|wr_pc_target_update_reg[1] ; Merged with mem_latch:inst35|address_target_out[1] ;
 ; bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8|wr_pc_target_update_reg[0] ; Merged with mem_latch:inst35|address_target_out[0] ;
-; op_latch:inst24|pc_out[28]                                                         ; Merged with address_latch:inst29|prev_pc_out[28]   ;
-; op_latch:inst24|pc_out[24]                                                         ; Merged with address_latch:inst29|prev_pc_out[24]   ;
-; op_latch:inst24|pc_out[20]                                                         ; Merged with address_latch:inst29|prev_pc_out[20]   ;
-; op_latch:inst24|pc_out[16]                                                         ; Merged with address_latch:inst29|prev_pc_out[16]   ;
-; op_latch:inst24|pc_out[12]                                                         ; Merged with address_latch:inst29|prev_pc_out[12]   ;
-; op_latch:inst24|pc_out[8]                                                          ; Merged with address_latch:inst29|prev_pc_out[8]    ;
-; op_latch:inst24|pc_out[4]                                                          ; Merged with address_latch:inst29|prev_pc_out[4]    ;
-; op_latch:inst24|pc_out[0]                                                          ; Merged with address_latch:inst29|prev_pc_out[0]    ;
-; op_latch:inst24|funct3_out[1]                                                      ; Merged with address_latch:inst29|funct3_out[1]     ;
-; op_latch:inst24|rs2_data_out[21]                                                   ; Merged with address_latch:inst29|rs2_data_out[21]  ;
-; op_latch:inst24|rs2_data_out[24]                                                   ; Merged with address_latch:inst29|rs2_data_out[24]  ;
-; op_latch:inst24|rs2_data_out[23]                                                   ; Merged with address_latch:inst29|rs2_data_out[23]  ;
 ; op_latch:inst24|rs2_data_out[20]                                                   ; Merged with address_latch:inst29|rs2_data_out[20]  ;
 ; op_latch:inst24|rs2_data_out[18]                                                   ; Merged with address_latch:inst29|rs2_data_out[18]  ;
-; op_latch:inst24|rs2_data_out[17]                                                   ; Merged with address_latch:inst29|rs2_data_out[17]  ;
 ; op_latch:inst24|rs2_data_out[16]                                                   ; Merged with address_latch:inst29|rs2_data_out[16]  ;
-; op_latch:inst24|rs2_data_out[13]                                                   ; Merged with address_latch:inst29|rs2_data_out[13]  ;
 ; op_latch:inst24|rs2_data_out[12]                                                   ; Merged with address_latch:inst29|rs2_data_out[12]  ;
 ; op_latch:inst24|rs2_data_out[8]                                                    ; Merged with address_latch:inst29|rs2_data_out[8]   ;
-; op_latch:inst24|rs2_data_out[5]                                                    ; Merged with address_latch:inst29|rs2_data_out[5]   ;
 ; op_latch:inst24|rs2_data_out[4]                                                    ; Merged with address_latch:inst29|rs2_data_out[4]   ;
 ; op_latch:inst24|rs2_data_out[2]                                                    ; Merged with address_latch:inst29|rs2_data_out[2]   ;
 ; op_latch:inst24|rs2_data_out[30]                                                   ; Merged with address_latch:inst29|rs2_data_out[30]  ;
-; op_latch:inst24|rs2_data_out[28]                                                   ; Merged with address_latch:inst29|rs2_data_out[28]  ;
+; op_latch:inst24|rs2_data_out[24]                                                   ; Merged with address_latch:inst29|rs2_data_out[24]  ;
 ; op_latch:inst24|rs2_data_out[22]                                                   ; Merged with address_latch:inst29|rs2_data_out[22]  ;
+; op_latch:inst24|rs2_data_out[19]                                                   ; Merged with address_latch:inst29|rs2_data_out[19]  ;
+; op_latch:inst24|rs2_data_out[17]                                                   ; Merged with address_latch:inst29|rs2_data_out[17]  ;
+; op_latch:inst24|rs2_data_out[10]                                                   ; Merged with address_latch:inst29|rs2_data_out[10]  ;
+; op_latch:inst24|rs2_data_out[14]                                                   ; Merged with address_latch:inst29|rs2_data_out[14]  ;
+; op_latch:inst24|rs2_data_out[27]                                                   ; Merged with address_latch:inst29|rs2_data_out[27]  ;
 ; op_latch:inst24|rs2_data_out[6]                                                    ; Merged with address_latch:inst29|rs2_data_out[6]   ;
 ; op_latch:inst24|rs2_data_out[26]                                                   ; Merged with address_latch:inst29|rs2_data_out[26]  ;
-; op_latch:inst24|rs2_data_out[14]                                                   ; Merged with address_latch:inst29|rs2_data_out[14]  ;
-; op_latch:inst24|rs2_data_out[10]                                                   ; Merged with address_latch:inst29|rs2_data_out[10]  ;
-; op_latch:inst24|rs2_data_out[15]                                                   ; Merged with address_latch:inst29|rs2_data_out[15]  ;
+; op_latch:inst24|rs2_data_out[25]                                                   ; Merged with address_latch:inst29|rs2_data_out[25]  ;
+; op_latch:inst24|rs2_data_out[13]                                                   ; Merged with address_latch:inst29|rs2_data_out[13]  ;
+; op_latch:inst24|rs2_data_out[11]                                                   ; Merged with address_latch:inst29|rs2_data_out[11]  ;
+; op_latch:inst24|rs2_data_out[5]                                                    ; Merged with address_latch:inst29|rs2_data_out[5]   ;
 ; op_latch:inst24|pc_out[31]                                                         ; Merged with address_latch:inst29|prev_pc_out[31]   ;
 ; op_latch:inst24|pc_out[30]                                                         ; Merged with address_latch:inst29|prev_pc_out[30]   ;
 ; op_latch:inst24|pc_out[29]                                                         ; Merged with address_latch:inst29|prev_pc_out[29]   ;
+; op_latch:inst24|pc_out[28]                                                         ; Merged with address_latch:inst29|prev_pc_out[28]   ;
 ; op_latch:inst24|pc_out[27]                                                         ; Merged with address_latch:inst29|prev_pc_out[27]   ;
 ; op_latch:inst24|pc_out[26]                                                         ; Merged with address_latch:inst29|prev_pc_out[26]   ;
 ; op_latch:inst24|pc_out[25]                                                         ; Merged with address_latch:inst29|prev_pc_out[25]   ;
+; op_latch:inst24|pc_out[24]                                                         ; Merged with address_latch:inst29|prev_pc_out[24]   ;
 ; op_latch:inst24|pc_out[23]                                                         ; Merged with address_latch:inst29|prev_pc_out[23]   ;
 ; op_latch:inst24|pc_out[22]                                                         ; Merged with address_latch:inst29|prev_pc_out[22]   ;
 ; op_latch:inst24|pc_out[21]                                                         ; Merged with address_latch:inst29|prev_pc_out[21]   ;
+; op_latch:inst24|pc_out[20]                                                         ; Merged with address_latch:inst29|prev_pc_out[20]   ;
 ; op_latch:inst24|pc_out[19]                                                         ; Merged with address_latch:inst29|prev_pc_out[19]   ;
 ; op_latch:inst24|pc_out[18]                                                         ; Merged with address_latch:inst29|prev_pc_out[18]   ;
 ; op_latch:inst24|pc_out[17]                                                         ; Merged with address_latch:inst29|prev_pc_out[17]   ;
+; op_latch:inst24|pc_out[16]                                                         ; Merged with address_latch:inst29|prev_pc_out[16]   ;
 ; op_latch:inst24|pc_out[15]                                                         ; Merged with address_latch:inst29|prev_pc_out[15]   ;
 ; op_latch:inst24|pc_out[14]                                                         ; Merged with address_latch:inst29|prev_pc_out[14]   ;
 ; op_latch:inst24|pc_out[13]                                                         ; Merged with address_latch:inst29|prev_pc_out[13]   ;
+; op_latch:inst24|pc_out[12]                                                         ; Merged with address_latch:inst29|prev_pc_out[12]   ;
 ; op_latch:inst24|pc_out[11]                                                         ; Merged with address_latch:inst29|prev_pc_out[11]   ;
 ; op_latch:inst24|pc_out[10]                                                         ; Merged with address_latch:inst29|prev_pc_out[10]   ;
 ; op_latch:inst24|pc_out[9]                                                          ; Merged with address_latch:inst29|prev_pc_out[9]    ;
+; op_latch:inst24|pc_out[8]                                                          ; Merged with address_latch:inst29|prev_pc_out[8]    ;
 ; op_latch:inst24|pc_out[7]                                                          ; Merged with address_latch:inst29|prev_pc_out[7]    ;
 ; op_latch:inst24|pc_out[6]                                                          ; Merged with address_latch:inst29|prev_pc_out[6]    ;
 ; op_latch:inst24|pc_out[5]                                                          ; Merged with address_latch:inst29|prev_pc_out[5]    ;
+; op_latch:inst24|pc_out[4]                                                          ; Merged with address_latch:inst29|prev_pc_out[4]    ;
 ; op_latch:inst24|pc_out[3]                                                          ; Merged with address_latch:inst29|prev_pc_out[3]    ;
 ; op_latch:inst24|pc_out[2]                                                          ; Merged with address_latch:inst29|prev_pc_out[2]    ;
 ; op_latch:inst24|pc_out[1]                                                          ; Merged with address_latch:inst29|prev_pc_out[1]    ;
+; op_latch:inst24|pc_out[0]                                                          ; Merged with address_latch:inst29|prev_pc_out[0]    ;
 ; op_latch:inst24|rs2_data_out[31]                                                   ; Merged with address_latch:inst29|rs2_data_out[31]  ;
 ; op_latch:inst24|rs2_data_out[29]                                                   ; Merged with address_latch:inst29|rs2_data_out[29]  ;
-; op_latch:inst24|rs2_data_out[27]                                                   ; Merged with address_latch:inst29|rs2_data_out[27]  ;
-; op_latch:inst24|rs2_data_out[25]                                                   ; Merged with address_latch:inst29|rs2_data_out[25]  ;
-; op_latch:inst24|rs2_data_out[19]                                                   ; Merged with address_latch:inst29|rs2_data_out[19]  ;
-; op_latch:inst24|rs2_data_out[11]                                                   ; Merged with address_latch:inst29|rs2_data_out[11]  ;
+; op_latch:inst24|rs2_data_out[28]                                                   ; Merged with address_latch:inst29|rs2_data_out[28]  ;
+; op_latch:inst24|rs2_data_out[23]                                                   ; Merged with address_latch:inst29|rs2_data_out[23]  ;
+; op_latch:inst24|rs2_data_out[21]                                                   ; Merged with address_latch:inst29|rs2_data_out[21]  ;
+; op_latch:inst24|rs2_data_out[15]                                                   ; Merged with address_latch:inst29|rs2_data_out[15]  ;
 ; op_latch:inst24|rs2_data_out[9]                                                    ; Merged with address_latch:inst29|rs2_data_out[9]   ;
 ; op_latch:inst24|rs2_data_out[7]                                                    ; Merged with address_latch:inst29|rs2_data_out[7]   ;
 ; op_latch:inst24|rs2_data_out[3]                                                    ; Merged with address_latch:inst29|rs2_data_out[3]   ;
 ; op_latch:inst24|rs2_data_out[1]                                                    ; Merged with address_latch:inst29|rs2_data_out[1]   ;
 ; op_latch:inst24|rs2_data_out[0]                                                    ; Merged with address_latch:inst29|rs2_data_out[0]   ;
 ; op_latch:inst24|funct3_out[2]                                                      ; Merged with address_latch:inst29|funct3_out[2]     ;
+; op_latch:inst24|funct3_out[1]                                                      ; Merged with address_latch:inst29|funct3_out[1]     ;
 ; op_latch:inst24|funct3_out[0]                                                      ; Merged with address_latch:inst29|funct3_out[0]     ;
 ; op_latch:inst24|instr_type_out[3]                                                  ; Stuck at GND due to stuck port data_in             ;
 ; Total Number of Removed Registers = 70                                             ;                                                    ;
@@ -400,10 +400,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1542  ;
+; Total registers                              ; 1541  ;
 ; Number of registers using Synchronous Clear  ; 1031  ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 1542  ;
+; Number of registers using Asynchronous Clear ; 1541  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1212  ;
 ; Number of registers using Preset             ; 0     ;
@@ -415,36 +415,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------+---------+
 ; Inverted Register                       ; Fan out ;
 +-----------------------------------------+---------+
-; fetch_unit:inst33|pc[31]                ; 4       ;
-; fetch_unit:inst33|pc[30]                ; 4       ;
-; fetch_unit:inst33|pc[29]                ; 4       ;
-; fetch_unit:inst33|pc[28]                ; 4       ;
-; fetch_unit:inst33|pc[27]                ; 4       ;
-; fetch_unit:inst33|pc[26]                ; 4       ;
-; fetch_unit:inst33|pc[25]                ; 4       ;
-; fetch_unit:inst33|pc[24]                ; 4       ;
-; fetch_unit:inst33|pc[23]                ; 4       ;
-; fetch_unit:inst33|pc[22]                ; 4       ;
-; fetch_unit:inst33|pc[21]                ; 4       ;
-; fetch_unit:inst33|pc[20]                ; 4       ;
-; fetch_unit:inst33|pc[19]                ; 4       ;
-; fetch_unit:inst33|pc[18]                ; 4       ;
-; fetch_unit:inst33|pc[17]                ; 4       ;
-; fetch_unit:inst33|pc[16]                ; 4       ;
-; fetch_unit:inst33|pc[15]                ; 4       ;
-; fetch_unit:inst33|pc[14]                ; 4       ;
-; fetch_unit:inst33|pc[13]                ; 4       ;
-; fetch_unit:inst33|pc[12]                ; 4       ;
-; fetch_unit:inst33|pc[11]                ; 4       ;
-; fetch_unit:inst33|pc[10]                ; 4       ;
-; fetch_unit:inst33|pc[9]                 ; 4       ;
-; fetch_unit:inst33|pc[8]                 ; 4       ;
-; fetch_unit:inst33|pc[7]                 ; 4       ;
-; fetch_unit:inst33|pc[6]                 ; 4       ;
-; fetch_unit:inst33|pc[5]                 ; 4       ;
-; fetch_unit:inst33|pc[4]                 ; 4       ;
-; fetch_unit:inst33|pc[3]                 ; 4       ;
-; fetch_unit:inst33|pc[2]                 ; 4       ;
+; fetch_unit:inst34|pc[31]                ; 4       ;
+; fetch_unit:inst34|pc[30]                ; 4       ;
+; fetch_unit:inst34|pc[29]                ; 4       ;
+; fetch_unit:inst34|pc[28]                ; 4       ;
+; fetch_unit:inst34|pc[27]                ; 4       ;
+; fetch_unit:inst34|pc[26]                ; 4       ;
+; fetch_unit:inst34|pc[25]                ; 4       ;
+; fetch_unit:inst34|pc[24]                ; 4       ;
+; fetch_unit:inst34|pc[23]                ; 4       ;
+; fetch_unit:inst34|pc[22]                ; 4       ;
+; fetch_unit:inst34|pc[21]                ; 4       ;
+; fetch_unit:inst34|pc[20]                ; 4       ;
+; fetch_unit:inst34|pc[19]                ; 4       ;
+; fetch_unit:inst34|pc[18]                ; 4       ;
+; fetch_unit:inst34|pc[17]                ; 4       ;
+; fetch_unit:inst34|pc[16]                ; 4       ;
+; fetch_unit:inst34|pc[15]                ; 4       ;
+; fetch_unit:inst34|pc[14]                ; 4       ;
+; fetch_unit:inst34|pc[13]                ; 4       ;
+; fetch_unit:inst34|pc[12]                ; 4       ;
+; fetch_unit:inst34|pc[11]                ; 4       ;
+; fetch_unit:inst34|pc[10]                ; 4       ;
+; fetch_unit:inst34|pc[9]                 ; 4       ;
+; fetch_unit:inst34|pc[8]                 ; 4       ;
+; fetch_unit:inst34|pc[7]                 ; 4       ;
+; fetch_unit:inst34|pc[6]                 ; 4       ;
+; fetch_unit:inst34|pc[5]                 ; 4       ;
+; fetch_unit:inst34|pc[4]                 ; 4       ;
+; fetch_unit:inst34|pc[3]                 ; 4       ;
+; fetch_unit:inst34|pc[2]                 ; 4       ;
 ; Total number of inverted registers = 30 ;         ;
 +-----------------------------------------+---------+
 
@@ -454,68 +454,68 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
-; 3:1                ; 65 bits   ; 130 LEs       ; 65 LEs               ; 65 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst33|pc_dec[3]                                         ;
-; 3:1                ; 98 bits   ; 196 LEs       ; 98 LEs               ; 98 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst23|pc_out[23]                                      ;
+; 3:1                ; 65 bits   ; 130 LEs       ; 65 LEs               ; 65 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34|instr[27]                                         ;
+; 3:1                ; 98 bits   ; 196 LEs       ; 98 LEs               ; 98 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst23|pc_out[24]                                      ;
 ; 3:1                ; 189 bits  ; 378 LEs       ; 189 LEs              ; 189 LEs                ; Yes        ; |tp2_e5_ERV25_grupo2|address_latch:inst29|rs2_data_out[15]                               ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst33|pc[0]                                             ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[31][29]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[30][4]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[29][15]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[28][6]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[27][4]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[26][4]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[25][4]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[24][26]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[23][15]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[22][17]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[21][17]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[20][7]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[19][24]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[18][2]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[17][22]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[16][23]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[15][8]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[14][6]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[13][25]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[12][4]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[11][23]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[10][20]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[9][12]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[8][11]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[7][20]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[6][27]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[5][16]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[4][26]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[3][4]                                        ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[2][16]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[1][30]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[0][5]                                        ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst33|pc[4]                                             ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux7                                        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8|wr_data[58] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34|pc[1]                                             ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[31][25]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[30][5]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[29][12]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[28][15]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[27][14]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[26][14]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[25][1]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[24][6]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[23][11]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[22][11]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[21][0]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[20][6]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[19][2]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[18][18]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[17][29]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[16][0]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[15][6]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[14][20]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[13][14]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[12][31]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[11][4]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[10][14]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[9][14]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[8][5]                                        ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[7][17]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[6][13]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[5][19]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[4][10]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[3][20]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[2][29]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[1][22]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[0][22]                                       ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34|pc[29]                                            ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux6                                        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8|wr_data[57] ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux14                                       ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[5]                             ;
-; 8:1                ; 31 bits   ; 155 LEs       ; 62 LEs               ; 93 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst31|Mux10                                        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[23]                            ;
+; 8:1                ; 31 bits   ; 155 LEs       ; 62 LEs               ; 93 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst31|Mux28                                        ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|pipeline_control:inst26|op_nop                                      ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[9]                              ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux5                                        ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|load_data_module:inst32|load_data[10]                               ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|load_data_module:inst32|load_data[21]                               ;
-; 7:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux0                                           ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[14]                             ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux1                                        ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|load_data_module:inst32|load_data[9]                                ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|load_data_module:inst32|load_data[31]                               ;
+; 7:1                ; 31 bits   ; 124 LEs       ; 62 LEs               ; 62 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux19                                          ;
 ; 7:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|load_data_module:inst32|load_data[0]                                ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux23                                       ;
-; 8:1                ; 27 bits   ; 135 LEs       ; 54 LEs               ; 81 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux54                                          ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux63                                          ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst28|rs1_data[11]                                   ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[24]                             ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[17]                             ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst28|rs2_data[7]                                    ;
-; 22:1               ; 8 bits    ; 112 LEs       ; 64 LEs               ; 48 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux88                                                    ;
-; 23:1               ; 7 bits    ; 105 LEs       ; 63 LEs               ; 42 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux79                                                    ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux20                                       ;
+; 8:1                ; 27 bits   ; 135 LEs       ; 54 LEs               ; 81 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux49                                          ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux62                                          ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst28|rs1_data[18]                                   ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[26]                             ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[23]                             ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst28|rs2_data[0]                                    ;
+; 22:1               ; 8 bits    ; 112 LEs       ; 64 LEs               ; 48 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux84                                                    ;
+; 23:1               ; 7 bits    ; 105 LEs       ; 63 LEs               ; 42 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux76                                                    ;
 ; 23:1               ; 4 bits    ; 60 LEs        ; 36 LEs               ; 24 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux89                                                    ;
-; 24:1               ; 4 bits    ; 64 LEs        ; 36 LEs               ; 28 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux71                                                    ;
-; 24:1               ; 2 bits    ; 32 LEs        ; 18 LEs               ; 14 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux94                                                    ;
-; 25:1               ; 2 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux68                                                    ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 36 LEs               ; 28 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux72                                                    ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 18 LEs               ; 14 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux93                                                    ;
+; 25:1               ; 2 bits    ; 32 LEs        ; 20 LEs               ; 12 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux67                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 
 
@@ -775,21 +775,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 798                         ;
-; cycloneiii_ff         ; 1542                        ;
-;     CLR               ; 328                         ;
+; cycloneiii_ff         ; 1541                        ;
+;     CLR               ; 327                         ;
 ;     CLR SCLR          ; 2                           ;
 ;     ENA CLR           ; 183                         ;
 ;     ENA CLR SCLR      ; 1029                        ;
-; cycloneiii_lcell_comb ; 3341                        ;
+; cycloneiii_lcell_comb ; 3342                        ;
 ;     arith             ; 244                         ;
 ;         2 data inputs ; 58                          ;
 ;         3 data inputs ; 186                         ;
-;     normal            ; 3097                        ;
+;     normal            ; 3098                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 34                          ;
 ;         2 data inputs ; 321                         ;
 ;         3 data inputs ; 388                         ;
-;         4 data inputs ; 2353                        ;
+;         4 data inputs ; 2354                        ;
 ; cycloneiii_ram_block  ; 91                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 17.00                       ;
@@ -812,7 +812,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Fri Jun 13 02:00:25 2025
+    Info: Processing started: Fri Jun 13 02:10:25 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -889,7 +889,7 @@ Info (12128): Elaborating entity "alu" for hierarchy "alu:inst17"
 Info (12128): Elaborating entity "operand_build" for hierarchy "operand_build:inst25"
 Info (12128): Elaborating entity "op_latch" for hierarchy "op_latch:inst24"
 Info (12128): Elaborating entity "decode_latch" for hierarchy "decode_latch:inst23"
-Info (12128): Elaborating entity "fetch_unit" for hierarchy "fetch_unit:inst33"
+Info (12128): Elaborating entity "fetch_unit" for hierarchy "fetch_unit:inst34"
 Info (12128): Elaborating entity "bht_btb_module_2" for hierarchy "bht_btb_module_2:inst21"
 Info (12128): Elaborating entity "prediction_module" for hierarchy "bht_btb_module_2:inst21|prediction_module:inst7"
 Info (12128): Elaborating entity "bht_btb_ram" for hierarchy "bht_btb_module_2:inst21|bht_btb_ram:inst2"
@@ -982,7 +982,7 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_98h2:auto_generated|q_a[61]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_98h2.tdf Line: 2054
         Warning (14320): Synthesized away node "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_98h2:auto_generated|q_a[62]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_98h2.tdf Line: 2087
         Warning (14320): Synthesized away node "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_98h2:auto_generated|q_a[63]" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_98h2.tdf Line: 2120
-Info (13000): Registers with preset signals will power-up high File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/fetch_unit.v Line: 36
+Info (13000): Registers with preset signals will power-up high File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/fetch_unit.v Line: 34
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "instr_type_ex[3]" is stuck at GND
@@ -994,15 +994,15 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 5355 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 5354 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 796 output pins
-    Info (21061): Implemented 4466 logic cells
+    Info (21061): Implemented 4465 logic cells
     Info (21064): Implemented 91 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
     Info: Peak virtual memory: 4838 megabytes
-    Info: Processing ended: Fri Jun 13 02:00:48 2025
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:38
+    Info: Processing ended: Fri Jun 13 02:10:46 2025
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:36
 
 

@@ -111,16 +111,9 @@ on the Quartus Prime software download page.
 	(port
 		(pt 264 96)
 		(output)
-		(text "branch_prediction_fetch" (rect 0 0 95 12)(font "Arial" ))
-		(text "branch_prediction_fetch" (rect 148 91 243 103)(font "Arial" ))
-		(line (pt 264 96)(pt 248 96)(line_width 1))
-	)
-	(port
-		(pt 264 112)
-		(output)
 		(text "branch_prediction_dec" (rect 0 0 89 12)(font "Arial" ))
-		(text "branch_prediction_dec" (rect 154 107 243 119)(font "Arial" ))
-		(line (pt 264 112)(pt 248 112)(line_width 1))
+		(text "branch_prediction_dec" (rect 154 91 243 103)(font "Arial" ))
+		(line (pt 264 96)(pt 248 96)(line_width 1))
 	)
 	(drawing
 		(rectangle (rect 16 16 248 160)(line_width 1))

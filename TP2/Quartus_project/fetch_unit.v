@@ -45,8 +45,7 @@ always @(posedge stage_clk or posedge reset) begin
 			pc <= pc_next;
 			pc_dec <= pc;
 			instr <= instr_in;
-			branch_prediction_fetch <= branch_prediction;
-			branch_prediction_dec <= branch_prediction_fetch;
+			branch_prediction_dec <= branch_prediction;
 		end
 	end
 end

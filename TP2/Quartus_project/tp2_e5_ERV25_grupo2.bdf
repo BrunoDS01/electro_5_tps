@@ -2930,7 +2930,7 @@ on the Quartus Prime software download page.
 (symbol
 	(rect 344 -24 608 152)
 	(text "fetch_unit" (rect 5 0 54 10)(font "Arial" ))
-	(text "inst33" (rect 8 160 36 172)(font "Intel Clear" ))
+	(text "inst34" (rect 8 160 36 172)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -3018,16 +3018,9 @@ on the Quartus Prime software download page.
 	(port
 		(pt 264 96)
 		(output)
-		(text "branch_prediction_fetch" (rect 0 0 118 10)(font "Arial" ))
-		(text "branch_prediction_fetch" (rect 144 91 262 101)(font "Arial" ))
-		(line (pt 264 96)(pt 248 96))
-	)
-	(port
-		(pt 264 112)
-		(output)
 		(text "branch_prediction_dec" (rect 0 0 109 10)(font "Arial" ))
-		(text "branch_prediction_dec" (rect 151 107 260 117)(font "Arial" ))
-		(line (pt 264 112)(pt 248 112))
+		(text "branch_prediction_dec" (rect 151 91 260 101)(font "Arial" ))
+		(line (pt 264 96)(pt 248 96))
 	)
 	(drawing
 		(rectangle (rect 16 16 248 160))
@@ -4491,11 +4484,6 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(text "branch_prediction_dec" (rect 627 72 733 84)(font "Intel Clear" ))
-	(pt 608 88)
-	(pt 696 88)
-)
-(connector
 	(text "branch_prediction_dec" (rect 1765 -40 1871 -28)(font "Intel Clear" ))
 	(pt 1888 -24)
 	(pt 1768 -24)
@@ -4534,6 +4522,11 @@ on the Quartus Prime software download page.
 	(text "prev_branch_prediction" (rect 90 488 200 500)(font "Intel Clear" ))
 	(pt 200 504)
 	(pt 80 504)
+)
+(connector
+	(text "branch_prediction_dec" (rect 627 56 733 68)(font "Intel Clear" ))
+	(pt 608 72)
+	(pt 696 72)
 )
 (text "FETCH" (rect 376 -48 416 -34)(font "Intel Clear" (font_size 8)))
 (text "MEMORIA" (rect -488 -104 -431 -90)(font "Intel Clear" (font_size 8)))
