@@ -1,8 +1,8 @@
 module prediction_module(
 	input wire rd_valid,
-	input wire [4:0] rd_tag,
+	input wire [23:0] rd_tag,
 	input wire [1:0] rd_counter,
-	input wire [4:0] tag,
+	input wire [23:0] tag,
 	
 	output reg branch_prediction
 );

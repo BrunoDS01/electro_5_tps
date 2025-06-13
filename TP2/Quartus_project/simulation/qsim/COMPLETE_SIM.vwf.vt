@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/12/2025 18:40:49"
+// Generated on "06/13/2025 00:14:07"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          tp2_e5_ERV25_grupo2
 // 
@@ -37,6 +37,10 @@ wire [31:0] a;
 wire [31:0] add_build_target;
 wire [31:0] address_target;
 wire [31:0] b;
+wire [5:0] bht_wr_address;
+wire [63:0] bht_wr_data;
+wire bht_wr_enable;
+wire branch_prediction;
 wire branch_result;
 wire [31:0] c;
 wire [31:0] c_write_back;
@@ -56,6 +60,8 @@ wire [31:0] pc;
 wire [31:0] pc_new;
 wire [31:0] pc_next;
 wire [31:0] pc_op;
+wire [31:0] pc_target_prediction;
+wire [63:0] ram_update_out;
 wire rd_memory_wb;
 wire [4:0] rd_write_back;
 wire [31:0] rs1_data_ex;
@@ -78,6 +84,10 @@ tp2_e5_ERV25_grupo2 i1 (
 	.add_build_target(add_build_target),
 	.address_target(address_target),
 	.b(b),
+	.bht_wr_address(bht_wr_address),
+	.bht_wr_data(bht_wr_data),
+	.bht_wr_enable(bht_wr_enable),
+	.branch_prediction(branch_prediction),
 	.branch_result(branch_result),
 	.c(c),
 	.c_write_back(c_write_back),
@@ -98,6 +108,8 @@ tp2_e5_ERV25_grupo2 i1 (
 	.pc_new(pc_new),
 	.pc_next(pc_next),
 	.pc_op(pc_op),
+	.pc_target_prediction(pc_target_prediction),
+	.ram_update_out(ram_update_out),
 	.rd_memory_wb(rd_memory_wb),
 	.rd_write_back(rd_write_back),
 	.reset(reset),
@@ -116,7 +128,7 @@ tp2_e5_ERV25_grupo2 i1 (
 );
 initial 
 begin 
-#10000000 $finish;
+#10000000 $stop;
 end 
 
 // clk

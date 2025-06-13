@@ -10,7 +10,7 @@ always @(flag_add_build_branch, alu_branch_flag) begin
 	if (flag_add_build_branch == 2'b01 || flag_add_build_branch == 2'b10) begin
 		branch_result = 1'b1;
 	end
-	// Si es un salto conidicional, depende de la salida de la ALU
+	// Si es un salto condicional, depende de la salida de la ALU
 	else if(flag_add_build_branch == 2'b11) begin
 		branch_result = alu_branch_flag;	
 	end

@@ -27,15 +27,15 @@ on the Quartus Prime software download page.
 	(port
 		(pt 0 32)
 		(input)
-		(text "wr_pc_target_update[10..0]" (rect 0 0 108 12)(font "Arial" ))
-		(text "wr_pc_target_update[10..0]" (rect 21 27 129 39)(font "Arial" ))
+		(text "wr_pc_target_update[31..0]" (rect 0 0 108 12)(font "Arial" ))
+		(text "wr_pc_target_update[31..0]" (rect 21 27 129 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "wr_tag[4..0]" (rect 0 0 48 12)(font "Arial" ))
-		(text "wr_tag[4..0]" (rect 21 43 69 55)(font "Arial" ))
+		(text "wr_tag[23..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "wr_tag[23..0]" (rect 21 43 72 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 3))
 	)
 	(port
@@ -69,8 +69,8 @@ on the Quartus Prime software download page.
 	(port
 		(pt 264 32)
 		(output)
-		(text "wr_data[31..0]" (rect 0 0 55 12)(font "Arial" ))
-		(text "wr_data[31..0]" (rect 188 27 243 39)(font "Arial" ))
+		(text "wr_data[63..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "wr_data[63..0]" (rect 187 27 243 39)(font "Arial" ))
 		(line (pt 264 32)(pt 248 32)(line_width 3))
 	)
 	(port

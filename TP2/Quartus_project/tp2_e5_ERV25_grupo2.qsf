@@ -127,4 +127,6 @@ set_instance_assignment -name VIRTUAL_PIN OFF -to rs2_op
 set_instance_assignment -name VIRTUAL_PIN OFF -to store_data
 set_instance_assignment -name VIRTUAL_PIN OFF -to branch_result
 set_global_assignment -name VECTOR_WAVEFORM_FILE COMPLETE_SIM.vwf
+set_global_assignment -name BDF_FILE bht_btb_module_2.bdf
+set_global_assignment -name VERILOG_FILE bht_btb_wr_data_builder_2.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

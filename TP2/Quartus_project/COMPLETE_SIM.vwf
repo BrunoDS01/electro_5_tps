@@ -7286,6 +7286,1076 @@ SIGNAL("instr_type_ex[0]")
 	PARENT = "instr_type_ex";
 }
 
+SIGNAL("branch_prediction")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("pc_target_prediction")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 32;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("pc_target_prediction[31]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[30]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[29]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[28]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[27]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[26]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[25]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[24]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[23]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[22]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[21]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[20]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[19]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[18]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[17]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[16]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("pc_target_prediction[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "pc_target_prediction";
+}
+
+SIGNAL("bht_wr_address")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 6;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("bht_wr_address[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_address";
+}
+
+SIGNAL("bht_wr_address[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_address";
+}
+
+SIGNAL("bht_wr_address[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_address";
+}
+
+SIGNAL("bht_wr_address[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_address";
+}
+
+SIGNAL("bht_wr_address[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_address";
+}
+
+SIGNAL("bht_wr_address[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_address";
+}
+
+SIGNAL("bht_wr_data")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 64;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("bht_wr_data[63]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[62]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[61]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[60]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[59]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[58]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[57]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[56]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[55]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[54]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[53]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[52]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[51]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[50]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[49]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[48]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[47]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[46]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[45]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[44]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[43]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[42]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[41]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[40]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[39]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[38]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[37]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[36]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[35]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[34]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[33]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[32]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[31]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[30]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[29]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[28]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[27]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[26]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[25]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[24]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[23]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[22]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[21]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[20]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[19]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[18]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[17]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[16]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[15]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[14]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[13]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[12]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[11]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[10]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[9]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[8]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_data[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "bht_wr_data";
+}
+
+SIGNAL("bht_wr_enable")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
 TRANSITION_LIST("clk")
 {
 	NODE
@@ -13980,6 +15050,942 @@ TRANSITION_LIST("instr_type_ex[1]")
 }
 
 TRANSITION_LIST("instr_type_ex[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("branch_prediction")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[31]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[30]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[29]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[28]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[27]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[26]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[25]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[24]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[23]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[22]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[21]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("pc_target_prediction[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_address[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_address[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_address[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_address[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_address[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_address[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[63]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[62]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[61]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[60]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[59]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[58]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[57]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[56]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[55]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[54]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[53]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[52]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[51]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[50]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[49]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[48]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[47]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[46]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[45]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[44]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[43]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[42]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[41]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[40]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[39]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[38]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[37]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[36]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[35]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[34]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[33]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[32]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[31]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[30]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[29]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[28]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[27]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[26]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[25]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[24]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[23]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[22]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[21]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[20]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[19]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[18]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[17]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[16]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[15]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[14]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[13]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[12]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[11]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[10]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[9]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[8]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_data[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 10000.0;
+	}
+}
+
+TRANSITION_LIST("bht_wr_enable")
 {
 	NODE
 	{
@@ -21186,6 +23192,1074 @@ DISPLAY_LINE
 	TREE_INDEX = 720;
 	TREE_LEVEL = 1;
 	PARENT = 716;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "branch_prediction";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 721;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 722;
+	TREE_LEVEL = 0;
+	CHILDREN = 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[31]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 723;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[30]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 724;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[29]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 725;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[28]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 726;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[27]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 727;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[26]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 728;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[25]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 729;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[24]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 730;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[23]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 731;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[22]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 732;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[21]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 733;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[20]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 734;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[19]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 735;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[18]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 736;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[17]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 737;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[16]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 738;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 739;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 740;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 741;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 742;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 743;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 744;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 745;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 746;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 747;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 748;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 749;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 750;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 751;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 752;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 753;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "pc_target_prediction[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 754;
+	TREE_LEVEL = 1;
+	PARENT = 722;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_address";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 755;
+	TREE_LEVEL = 0;
+	CHILDREN = 756, 757, 758, 759, 760, 761;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_address[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 756;
+	TREE_LEVEL = 1;
+	PARENT = 755;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_address[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 757;
+	TREE_LEVEL = 1;
+	PARENT = 755;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_address[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 758;
+	TREE_LEVEL = 1;
+	PARENT = 755;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_address[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 759;
+	TREE_LEVEL = 1;
+	PARENT = 755;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_address[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 760;
+	TREE_LEVEL = 1;
+	PARENT = 755;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_address[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 761;
+	TREE_LEVEL = 1;
+	PARENT = 755;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 762;
+	TREE_LEVEL = 0;
+	CHILDREN = 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[63]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 763;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[62]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 764;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[61]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 765;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[60]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 766;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[59]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 767;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[58]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 768;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[57]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 769;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[56]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 770;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[55]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 771;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[54]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 772;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[53]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 773;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[52]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 774;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[51]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 775;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[50]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 776;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[49]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 777;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[48]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 778;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[47]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 779;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[46]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 780;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[45]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 781;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[44]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 782;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[43]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 783;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[42]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 784;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[41]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 785;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[40]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 786;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[39]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 787;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[38]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 788;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[37]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 789;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[36]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 790;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[35]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 791;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[34]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 792;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[33]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 793;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[32]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 794;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[31]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 795;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[30]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 796;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[29]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 797;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[28]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 798;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[27]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 799;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[26]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 800;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[25]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 801;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[24]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 802;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[23]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 803;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[22]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 804;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[21]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 805;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[20]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 806;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[19]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 807;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[18]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 808;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[17]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 809;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[16]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 810;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[15]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 811;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[14]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 812;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[13]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 813;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[12]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 814;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[11]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 815;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[10]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 816;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[9]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 817;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[8]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 818;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 819;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 820;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 821;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 822;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 823;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 824;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 825;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_data[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 826;
+	TREE_LEVEL = 1;
+	PARENT = 762;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "bht_wr_enable";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 827;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR

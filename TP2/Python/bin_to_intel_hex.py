@@ -14,25 +14,22 @@ def to_intel_hex_line(address: int, data: bytes) -> str:
 
 # Instrucciones RISC-V en big endian
 instructions = [
-    0xfe200113, # addi x2, x0, -30
-    0xff600093, # addi x1, x0, -10
-    0x20208423, # sb x2, 520(x1)
-    0x20808183, # lb x3, 520(x1)
-    0x00018193, # addi x3, x3, 0
-
-    0x20209923, # sh x2, 530(x1)
-    0x21209183, # lh x3, 530(x1)
-    0x00018193, # addi x3, x3, 0
-
-    0x2420ac23, # sw x2, 600(x1)
-    0x2580a183, # lw x3, 600(x1)
-    0x00018193, # addi x3, x3, 0
-
-    0x2080c183, # lbu x3, 520(x1)
-    0x00018193, # addi x3, x3, 0
-
-    0x2120d183, # lhu x3, 530(x1)
-    0x00018193, # addi x3, x3, 0
+    0x00000013, # NOP
+    0x01c000ef, # jal x1, 28
+    0x00000013, # NOP (4)
+    0x00000013, # NOP (8)
+    0x00000013, # NOP (12)
+    0x00000013, # NOP (16)
+    0x00000013, # NOP (20)
+    0x00000013, # NOP (24)
+    0xfe1ff0ef, # jal x1, -32 (28 saltaría a 0)
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
   ]
 
 with open("program_word.hex", "w") as f:
@@ -150,7 +147,8 @@ XOR/OR/AND
     0x001161b3, # or x3, x2, x1 (1111 1111)
     0x001171b3, # and x3, x2, x1 (0010 0010)
 
-LOAD STORE: 
+LOAD STORE:
+    0x00000013, # NOP
     0xfe200113, # addi x2, x0, -30
     0xff600093, # addi x1, x0, -10
     0x20208423, # sb x2, 520(x1)
@@ -171,4 +169,21 @@ LOAD STORE:
     0x2120d183, # lhu x3, 530(x1)
     0x00018193, # addi x3, x3, 0
 
+JAL y Predictor de saltos
+    0x00000013, # NOP
+    0x01c000ef, # jal x1, 28
+    0x00000013, # NOP (4)
+    0x00000013, # NOP (8)
+    0x00000013, # NOP (12)
+    0x00000013, # NOP (16)
+    0x00000013, # NOP (20)
+    0x00000013, # NOP (24)
+    0xfe1ff0ef, # jal x1, -32 (28 saltaría a 0)
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
 """
