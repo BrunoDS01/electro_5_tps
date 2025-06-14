@@ -14,19 +14,21 @@ def to_intel_hex_line(address: int, data: bytes) -> str:
 
 # Instrucciones RISC-V en big endian
 instructions = [
-    0x00000013, # NOP
-    0x01c000ef, # jal x1, 28
-    0x00000013, # NOP (4)
-    0x00000013, # NOP (8)
-    0x00000013, # NOP (12)
-    0x00000013, # NOP (16)
-    0x00000013, # NOP (20)
-    0x00000013, # NOP (24)
-    0xfe1ff0ef, # jal x1, -32 (28 saltaría a 0)
+        0x00000013, # NOP
+    0xff500093, # addi x1, x0, -11
+    0xf3800113, # addi x2, x0, -200
+    0x00208e63, # beq x1, x2, 28 (va a la linea 11)
+    0x02209263, # bne x1, x2, 36 (va a la linea 14)
     0x00000013, # NOP
     0x00000013, # NOP
     0x00000013, # NOP
     0x00000013, # NOP
+    0x00000013, # NOP
+    0xff400093, # addi x1, x0, -12
+    0xfc209ce3, # bne x1, x2, -40 (salta a la linea 2)
+    0x00000013, # NOP
+    0xf3800093, # addi x1, x0, -200
+    0xfc208ae3, # beq x1, x2, -44 (va a la linea 4)
     0x00000013, # NOP
     0x00000013, # NOP
     0x00000013, # NOP
@@ -186,4 +188,89 @@ JAL y Predictor de saltos
     0x00000013, # NOP
     0x00000013, # NOP
     0x00000013, # NOP
+
+JAL y JALR
+    0x00000013, # NOP
+    0x00018193, # addi x3, x3, 0
+    0x01c000ef, # jal x1, 28
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00008093, # addi x1, x1, 0
+    0x00a00113, # addi x2, x0, 10
+    0xff6101e7, # jalr x3, -10(x2)
+
+Branches
+
+
+    BEQ/BNE
+    0x00000013, # NOP
+    0xff500093, # addi x1, x0, -11
+    0xf3800113, # addi x2, x0, -200
+    0x00208e63, # beq x1, x2, 28 (va a la linea 11)
+    0x02209263, # bne x1, x2, 36 (va a la linea 14)
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0xff400093, # addi x1, x0, -12
+    0xfc209ce3, # bne x1, x2, -40 (salta a la linea 2)
+    0x00000013, # NOP
+    0xf3800093, # addi x1, x0, -200
+    0xfc208ae3, # beq x1, x2, -44 (va a la linea 4)
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+
+    BLT/BGE
+    0x00000013, # NOP
+    0xff500093, # addi x1, x0, -11
+    0xf3800113, # addi x2, x0, -200
+    0x0020ce63, # blt x1, x2, 28 (va a la linea 11)
+    0x0220d263, # bge x1, x2, 36 (va a la linea 14)
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0xff400093, # addi x1, x0, -12
+    0xfc20dce3, # bge x1, x2, -40 (salta a la linea 2)
+    0x00000013, # NOP
+    0xf3700093, # addi x1, x0, -201
+    0xfc20cae3, # blt x1, x2, -44 (va a la linea 4)
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+
+    BLTU/BGEU
+    0x00000013, # NOP
+    0xff500093, # addi x1, x0, -11
+    0x0c800113, # addi x2, x0, 200
+    0x00116e63, # bltu x2, x1, 28 (va a la linea 11)
+    0x02117263, # bgeu x2, x1, 36 (va a la linea 14)
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0xff400093, # addi x1, x0, -12
+    0xfc117ce3, # bgeu x2, x1, -40 (salta a la linea 2)
+    0x00000013, # NOP
+    0x0c900093, # addi x1, x0, s201
+    0xfc116ae3, # bltu x2, x1, -44 (va a la linea 4)
+    0x00000013, # NOP
+    0x00000013, # NOP
+    0x00000013, # NOP
+
+AUIPC/LUI
+    0x00000013, # NOP
+    0x0ff000b7, # lui x1, 0xFF00
+    0x00008093, # addi x1, x1, 0
+    0x0ff00117, # auipc x2, 65280
+    0x00010113, # addi x2, x2, 0
+
 """

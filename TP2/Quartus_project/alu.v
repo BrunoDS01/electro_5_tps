@@ -171,7 +171,7 @@ always @(a, b, funct3_, funct7_, instr_type) begin
 		
 		// U_TYPE: LUI y AUIPC
 		U_TYPE: begin
-			c = b; // LUI y AUIPC usan directamente el valor inmediato
+			c = a + b; // LUI y AUIPC realizan una suma
 		end
 		
 		// J_TYPE: JAL (manejo de direcciones)

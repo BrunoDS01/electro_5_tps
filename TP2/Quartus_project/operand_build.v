@@ -54,7 +54,7 @@ begin
 			if (inc_pc) begin
 				// Si es JALR, debe sumar 4 al pc
 				a = pc;
-				b = 4;
+				b = 32'd4;
 			end
 			else begin
 				b = imm;
@@ -71,12 +71,19 @@ begin
 			b = rs2_data;
 		end
 		U_TYPE: begin //LUI AUIPC
-			a = imm;
-			b = 32'd0;
+			if(inc_pc) begin
+				// JALR
+				a = pc;
+			end
+			else begin
+				// LUI
+				a = 32'd0;
+			end	
+			b = imm;
 		end
 		J_TYPE: begin //JAL
 			a = pc;
-			b = 4;
+			b = 32'd4;
 		end
 		default: begin
 			a = 32'd0;

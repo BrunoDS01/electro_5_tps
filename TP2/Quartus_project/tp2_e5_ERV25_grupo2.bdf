@@ -102,7 +102,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect -1384 832 -1208 848)
+	(rect -1520 1056 -1344 1072)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "imm_op[31..0]" (rect 90 0 160 10)(font "Arial" ))
 	(pt 0 8)
@@ -118,7 +118,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect -1384 928 -1208 944)
+	(rect -1520 1152 -1344 1168)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "pc_op[31..0]" (rect 90 0 151 10)(font "Arial" ))
 	(pt 0 8)
@@ -182,7 +182,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 280 608 456 624)
+	(rect 336 744 512 760)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "branch_result" (rect 90 0 156 10)(font "Arial" ))
 	(pt 0 8)
@@ -406,7 +406,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect -1176 792 -975 808)
+	(rect -1312 1016 -1111 1032)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "address_target[31..0]" (rect 90 0 195 10)(font "Arial" ))
 	(pt 0 8)
@@ -646,7 +646,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 664 616 886 632)
+	(rect -344 488 -122 504)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "pc_target_prediction[31..0]" (rect 90 0 216 12)(font "Intel Clear" ))
 	(pt 0 8)
@@ -662,7 +662,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 664 648 846 664)
+	(rect -344 520 -162 536)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "branch_prediction" (rect 90 0 176 10)(font "Arial" ))
 	(pt 0 8)
@@ -678,7 +678,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 632 808 830 824)
+	(rect -280 368 -82 384)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "bht_wr_address[5..0]" (rect 90 0 192 10)(font "Arial" ))
 	(pt 0 8)
@@ -694,7 +694,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 632 824 808 840)
+	(rect -280 384 -104 400)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "bht_wr_enable" (rect 90 0 161 12)(font "Intel Clear" ))
 	(pt 0 8)
@@ -710,7 +710,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 632 856 817 872)
+	(rect -280 416 -95 432)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "bht_wr_data[63..0]" (rect 90 0 179 12)(font "Intel Clear" ))
 	(pt 0 8)
@@ -742,9 +742,25 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 200 496 410 512)
+	(rect -344 576 -134 592)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "prev_branch_prediction" (rect 90 0 204 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect -568 744 -392 760)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "prev_pc[31..0]" (rect 90 0 161 10)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -774,7 +790,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect -72 584 192 664)
+	(rect -16 720 248 800)
 	(text "branch_result_module" (rect 5 0 112 10)(font "Arial" ))
 	(text "inst8" (rect 8 64 31 74)(font "Arial" ))
 	(port
@@ -1365,7 +1381,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect -736 592 -424 864)
+	(rect -872 816 -560 1088)
 	(text "address_latch" (rect 5 0 73 10)(font "Arial" ))
 	(text "inst29" (rect 8 256 36 268)(font "Intel Clear" ))
 	(port
@@ -1584,7 +1600,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect -1328 632 -1080 776)
+	(rect -1464 856 -1216 1000)
 	(text "address_builder" (rect 5 0 81 10)(font "Arial" ))
 	(text "inst31" (rect 8 128 36 140)(font "Intel Clear" ))
 	(port
@@ -1669,7 +1685,7 @@ on the Quartus Prime software download page.
 	(drawing
 		(rectangle (rect 16 16 232 128))
 	)
-	(annotation_block (parameter)(rect -1080 528 -896 632))
+	(annotation_block (parameter)(rect -1216 752 -1032 856))
 )
 (symbol
 	(rect -1008 1736 -760 1848)
@@ -1786,7 +1802,7 @@ on the Quartus Prime software download page.
 	)
 )
 (symbol
-	(rect 272 752 632 912)
+	(rect -640 312 -280 472)
 	(text "bht_btb_module_2" (rect 5 0 120 14)(font "Intel Clear" (font_size 8)))
 	(text "inst21" (rect 8 144 36 156)(font "Intel Clear" ))
 	(port
@@ -3154,18 +3170,6 @@ on the Quartus Prime software download page.
 	(pt 192 392)
 )
 (connector
-	(text "pc_next[31..0]" (rect 196 768 262 780)(font "Intel Clear" ))
-	(pt 272 784)
-	(pt 192 784)
-	(bus)
-)
-(connector
-	(text "pc_target_prediction[31..0]" (rect 635 768 761 780)(font "Intel Clear" ))
-	(pt 712 784)
-	(pt 632 784)
-	(bus)
-)
-(connector
 	(text "rs1_op[4..0]" (rect 2151 24 2206 36)(font "Intel Clear" ))
 	(pt 2144 40)
 	(pt 2200 40)
@@ -3211,59 +3215,9 @@ on the Quartus Prime software download page.
 	(pt 736 376)
 )
 (connector
-	(text "pc_op[31..0]" (rect -810 608 -753 620)(font "Intel Clear" ))
-	(pt -736 624)
-	(pt -832 624)
-	(bus)
-)
-(connector
-	(text "prev_pc[31..0]" (rect -410 608 -343 620)(font "Intel Clear" ))
-	(pt -424 624)
-	(pt -360 624)
-	(bus)
-)
-(connector
-	(text "flag_add_build_branch[1..0]" (rect -399 640 -266 652)(font "Intel Clear" ))
-	(pt -360 656)
-	(pt -424 656)
-	(bus)
-)
-(connector
-	(text "branch_result" (rect 202 832 266 844)(font "Intel Clear" ))
-	(pt 272 848)
-	(pt 192 848)
-)
-(connector
 	(text "branch_result" (rect 200 360 264 372)(font "Intel Clear" ))
 	(pt 320 376)
 	(pt 192 376)
-)
-(connector
-	(text "flag_add_build_branch[0]" (rect 152 816 274 828)(font "Intel Clear" ))
-	(pt 128 832)
-	(pt 272 832)
-)
-(connector
-	(text "prev_pc[31..0]" (rect 138 784 205 796)(font "Intel Clear" ))
-	(pt 272 800)
-	(pt 128 800)
-	(bus)
-)
-(connector
-	(text "branch_prediction" (rect 640 784 723 796)(font "Intel Clear" ))
-	(pt 712 800)
-	(pt 632 800)
-)
-(connector
-	(text "branch_result" (rect 209 600 273 612)(font "Intel Clear" ))
-	(pt 192 616)
-	(pt 280 616)
-)
-(connector
-	(text "flag_add_build_branch[1..0]" (rect -214 600 -81 612)(font "Intel Clear" ))
-	(pt -184 616)
-	(pt -72 616)
-	(bus)
 )
 (connector
 	(text "pc_op[31..0]" (rect 2152 8 2209 20)(font "Intel Clear" ))
@@ -3277,53 +3231,9 @@ on the Quartus Prime software download page.
 	(pt 2224 -24)
 )
 (connector
-	(text "prev_counter[1..0]" (rect -408 656 -322 668)(font "Intel Clear" ))
-	(pt -424 672)
-	(pt -320 672)
-	(bus)
-)
-(connector
-	(text "prev_valid" (rect -408 672 -358 684)(font "Intel Clear" ))
-	(pt -424 688)
-	(pt -344 688)
-)
-(connector
-	(text "prev_branch_prediction" (rect -392 688 -282 700)(font "Intel Clear" ))
-	(pt -424 704)
-	(pt -336 704)
-)
-(connector
-	(text "current_counter_op[1..0]" (rect -864 656 -749 668)(font "Intel Clear" ))
-	(pt -736 672)
-	(pt -872 672)
-	(bus)
-)
-(connector
-	(text "valid_op" (rect -838 672 -797 684)(font "Intel Clear" ))
-	(pt -872 688)
-	(pt -736 688)
-)
-(connector
-	(text "branch_prediction_op" (rect -840 688 -739 700)(font "Intel Clear" ))
-	(pt -848 704)
-	(pt -736 704)
-)
-(connector
 	(text "pc_new[31..0]" (rect 2360 32 2426 44)(font "Intel Clear" ))
 	(pt 2432 48)
 	(pt 2352 48)
-	(bus)
-)
-(connector
-	(text "imm_op[31..0]" (rect -1472 824 -1404 836)(font "Intel Clear" ))
-	(pt -1384 840)
-	(pt -1480 840)
-	(bus)
-)
-(connector
-	(text "pc_op[31..0]" (rect -1488 920 -1431 932)(font "Intel Clear" ))
-	(pt -1496 936)
-	(pt -1384 936)
 	(bus)
 )
 (connector
@@ -3353,30 +3263,6 @@ on the Quartus Prime software download page.
 	(text "instr[14..12]" (rect 934 112 989 124)(font "Intel Clear" ))
 	(pt 1016 128)
 	(pt 936 128)
-	(bus)
-)
-(connector
-	(text "pc_op[31..0]" (rect -1386 664 -1329 676)(font "Intel Clear" ))
-	(pt -1328 680)
-	(pt -1392 680)
-	(bus)
-)
-(connector
-	(text "imm_op[31..0]" (rect -1386 648 -1318 660)(font "Intel Clear" ))
-	(pt -1328 664)
-	(pt -1392 664)
-	(bus)
-)
-(connector
-	(text "instr_type_op[2..0]" (rect -1420 696 -1332 708)(font "Intel Clear" ))
-	(pt -1328 712)
-	(pt -1400 712)
-	(bus)
-)
-(connector
-	(text "rs1_data_op[31..0]" (rect -1391 680 -1303 692)(font "Intel Clear" ))
-	(pt -1392 696)
-	(pt -1328 696)
 	(bus)
 )
 (connector
@@ -3701,11 +3587,6 @@ on the Quartus Prime software download page.
 	(pt 2224 232)
 )
 (connector
-	(text "is_branch_op" (rect -1400 712 -1338 724)(font "Intel Clear" ))
-	(pt -1328 728)
-	(pt -1408 728)
-)
-(connector
 	(text "rs1_data_ex[31..0]" (rect 1347 1824 1434 1836)(font "Intel Clear" ))
 	(pt 1432 1840)
 	(pt 1352 1840)
@@ -3813,16 +3694,6 @@ on the Quartus Prime software download page.
 	(pt 2224 248)
 )
 (connector
-	(text "rd_memory_op" (rect -802 704 -729 716)(font "Intel Clear" ))
-	(pt -736 720)
-	(pt -808 720)
-)
-(connector
-	(text "rd_memory_mem" (rect -398 704 -312 716)(font "Intel Clear" ))
-	(pt -424 720)
-	(pt -336 720)
-)
-(connector
 	(text "rs1_data_op[31..0]" (rect 359 1448 447 1460)(font "Intel Clear" ))
 	(pt 320 1464)
 	(pt 472 1464)
@@ -3851,30 +3722,6 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(text "flag_branch[1..0]" (rect -850 640 -770 652)(font "Intel Clear" ))
-	(pt -736 656)
-	(pt -880 656)
-	(bus)
-)
-(connector
-	(text "address_target[31..0]" (rect -834 624 -734 636)(font "Intel Clear" ))
-	(pt -736 640)
-	(pt -864 640)
-	(bus)
-)
-(connector
-	(text "add_build_target[31..0]" (rect -403 624 -293 636)(font "Intel Clear" ))
-	(pt -424 640)
-	(pt -360 640)
-	(bus)
-)
-(connector
-	(text "add_build_target[31..0]" (rect 150 800 260 812)(font "Intel Clear" ))
-	(pt 272 816)
-	(pt 128 816)
-	(bus)
-)
-(connector
 	(text "wr_memory" (rect 1249 208 1306 220)(font "Intel Clear" ))
 	(pt 1232 224)
 	(pt 1328 224)
@@ -3890,31 +3737,9 @@ on the Quartus Prime software download page.
 	(pt 2224 264)
 )
 (connector
-	(text "wr_memory_op" (rect -812 720 -737 732)(font "Intel Clear" ))
-	(pt -736 736)
-	(pt -824 736)
-)
-(connector
-	(text "wr_memory_mem" (rect -404 720 -316 732)(font "Intel Clear" ))
-	(pt -424 736)
-	(pt -344 736)
-)
-(connector
 	(text "wr_memory_mem" (rect -534 32 -446 44)(font "Intel Clear" ))
 	(pt -400 48)
 	(pt -552 48)
-)
-(connector
-	(text "funct3_op[2..0]" (rect -804 736 -734 748)(font "Intel Clear" ))
-	(pt -736 752)
-	(pt -808 752)
-	(bus)
-)
-(connector
-	(text "funct3_mem[2..0]" (rect -413 736 -330 748)(font "Intel Clear" ))
-	(pt -424 752)
-	(pt -352 752)
-	(bus)
 )
 (connector
 	(text "byte_ena[3..0]" (rect -505 56 -437 68)(font "Intel Clear" ))
@@ -3945,28 +3770,6 @@ on the Quartus Prime software download page.
 	(pt -48 1560)
 )
 (connector
-	(text "reset" (rect -776 816 -753 828)(font "Intel Clear" ))
-	(pt -784 832)
-	(pt -736 832)
-)
-(connector
-	(text "clk" (rect -792 768 -778 780)(font "Intel Clear" ))
-	(pt -736 784)
-	(pt -800 784)
-)
-(connector
-	(text "rs2_data_op[31..0]" (rect -825 752 -737 764)(font "Intel Clear" ))
-	(pt -736 768)
-	(pt -832 768)
-	(bus)
-)
-(connector
-	(text "rs2_data_mem[31..0]" (rect -398 752 -297 764)(font "Intel Clear" ))
-	(pt -424 768)
-	(pt -312 768)
-	(bus)
-)
-(connector
 	(text "byte_ena[3..0]" (rect -735 1344 -667 1356)(font "Intel Clear" ))
 	(pt -744 1360)
 	(pt -664 1360)
@@ -3994,24 +3797,6 @@ on the Quartus Prime software download page.
 	(text "add_build_target[12..2]" (rect -550 16 -440 28)(font "Intel Clear" ))
 	(pt -400 32)
 	(pt -552 32)
-	(bus)
-)
-(connector
-	(text "address_target[31..0]" (rect -1056 648 -956 660)(font "Intel Clear" ))
-	(pt -1080 664)
-	(pt -1056 664)
-	(bus)
-)
-(connector
-	(text "flag_branch[1..0]" (rect -1048 664 -968 676)(font "Intel Clear" ))
-	(pt -1032 680)
-	(pt -1080 680)
-	(bus)
-)
-(connector
-	(text "address_target[31..0]" (rect -1256 784 -1156 796)(font "Intel Clear" ))
-	(pt -1176 800)
-	(pt -1264 800)
 	(bus)
 )
 (connector
@@ -4136,16 +3921,6 @@ on the Quartus Prime software download page.
 	(bus)
 )
 (connector
-	(text "op_ena" (rect -800 784 -765 796)(font "Intel Clear" ))
-	(pt -736 800)
-	(pt -808 800)
-)
-(connector
-	(text "op_nop" (rect -800 800 -765 812)(font "Intel Clear" ))
-	(pt -736 816)
-	(pt -808 816)
-)
-(connector
 	(text "rd_write_back[4..0]" (rect -28 1272 62 1284)(font "Intel Clear" ))
 	(pt -48 1288)
 	(pt 56 1288)
@@ -4233,32 +4008,6 @@ on the Quartus Prime software download page.
 	(pt 1128 1768)
 	(pt 1008 1768)
 	(bus)
-)
-(connector
-	(text "clk" (rect 253 848 267 860)(font "Intel Clear" ))
-	(pt 232 864)
-	(pt 272 864)
-)
-(connector
-	(text "reset" (rect 234 864 257 876)(font "Intel Clear" ))
-	(pt 224 880)
-	(pt 272 880)
-)
-(connector
-	(text "c[0]" (rect -164 616 -147 628)(font "Intel Clear" ))
-	(pt -72 632)
-	(pt -184 632)
-)
-(connector
-	(text "pc_target_prediction[31..0]" (rect 559 600 685 612)(font "Intel Clear" ))
-	(pt 664 624)
-	(pt 568 624)
-	(bus)
-)
-(connector
-	(text "branch_prediction" (rect 580 640 663 652)(font "Intel Clear" ))
-	(pt 664 656)
-	(pt 552 656)
 )
 (connector
 	(text "inc_pc" (rect 1249 240 1278 252)(font "Intel Clear" ))
@@ -4519,14 +4268,287 @@ on the Quartus Prime software download page.
 	(pt 256 40)
 )
 (connector
-	(text "prev_branch_prediction" (rect 90 488 200 500)(font "Intel Clear" ))
-	(pt 200 504)
-	(pt 80 504)
-)
-(connector
 	(text "branch_prediction_dec" (rect 627 56 733 68)(font "Intel Clear" ))
 	(pt 608 72)
 	(pt 696 72)
+)
+(connector
+	(text "pc_op[31..0]" (rect -946 832 -889 844)(font "Intel Clear" ))
+	(pt -872 848)
+	(pt -968 848)
+	(bus)
+)
+(connector
+	(text "prev_pc[31..0]" (rect -546 832 -479 844)(font "Intel Clear" ))
+	(pt -560 848)
+	(pt -496 848)
+	(bus)
+)
+(connector
+	(text "flag_add_build_branch[1..0]" (rect -535 864 -402 876)(font "Intel Clear" ))
+	(pt -496 880)
+	(pt -560 880)
+	(bus)
+)
+(connector
+	(text "prev_counter[1..0]" (rect -544 880 -458 892)(font "Intel Clear" ))
+	(pt -560 896)
+	(pt -456 896)
+	(bus)
+)
+(connector
+	(text "prev_valid" (rect -544 896 -494 908)(font "Intel Clear" ))
+	(pt -560 912)
+	(pt -480 912)
+)
+(connector
+	(text "prev_branch_prediction" (rect -528 912 -418 924)(font "Intel Clear" ))
+	(pt -560 928)
+	(pt -472 928)
+)
+(connector
+	(text "current_counter_op[1..0]" (rect -1000 880 -885 892)(font "Intel Clear" ))
+	(pt -872 896)
+	(pt -1008 896)
+	(bus)
+)
+(connector
+	(text "valid_op" (rect -974 896 -933 908)(font "Intel Clear" ))
+	(pt -1008 912)
+	(pt -872 912)
+)
+(connector
+	(text "branch_prediction_op" (rect -976 912 -875 924)(font "Intel Clear" ))
+	(pt -984 928)
+	(pt -872 928)
+)
+(connector
+	(text "imm_op[31..0]" (rect -1608 1048 -1540 1060)(font "Intel Clear" ))
+	(pt -1520 1064)
+	(pt -1616 1064)
+	(bus)
+)
+(connector
+	(text "pc_op[31..0]" (rect -1624 1144 -1567 1156)(font "Intel Clear" ))
+	(pt -1632 1160)
+	(pt -1520 1160)
+	(bus)
+)
+(connector
+	(text "pc_op[31..0]" (rect -1522 888 -1465 900)(font "Intel Clear" ))
+	(pt -1464 904)
+	(pt -1528 904)
+	(bus)
+)
+(connector
+	(text "imm_op[31..0]" (rect -1522 872 -1454 884)(font "Intel Clear" ))
+	(pt -1464 888)
+	(pt -1528 888)
+	(bus)
+)
+(connector
+	(text "instr_type_op[2..0]" (rect -1556 920 -1468 932)(font "Intel Clear" ))
+	(pt -1464 936)
+	(pt -1536 936)
+	(bus)
+)
+(connector
+	(text "rs1_data_op[31..0]" (rect -1527 904 -1439 916)(font "Intel Clear" ))
+	(pt -1528 920)
+	(pt -1464 920)
+	(bus)
+)
+(connector
+	(text "is_branch_op" (rect -1536 936 -1474 948)(font "Intel Clear" ))
+	(pt -1464 952)
+	(pt -1544 952)
+)
+(connector
+	(text "rd_memory_op" (rect -938 928 -865 940)(font "Intel Clear" ))
+	(pt -872 944)
+	(pt -944 944)
+)
+(connector
+	(text "rd_memory_mem" (rect -534 928 -448 940)(font "Intel Clear" ))
+	(pt -560 944)
+	(pt -472 944)
+)
+(connector
+	(text "flag_branch[1..0]" (rect -986 864 -906 876)(font "Intel Clear" ))
+	(pt -872 880)
+	(pt -1016 880)
+	(bus)
+)
+(connector
+	(text "address_target[31..0]" (rect -970 848 -870 860)(font "Intel Clear" ))
+	(pt -872 864)
+	(pt -1000 864)
+	(bus)
+)
+(connector
+	(text "add_build_target[31..0]" (rect -539 848 -429 860)(font "Intel Clear" ))
+	(pt -560 864)
+	(pt -496 864)
+	(bus)
+)
+(connector
+	(text "wr_memory_op" (rect -948 944 -873 956)(font "Intel Clear" ))
+	(pt -872 960)
+	(pt -960 960)
+)
+(connector
+	(text "wr_memory_mem" (rect -540 944 -452 956)(font "Intel Clear" ))
+	(pt -560 960)
+	(pt -480 960)
+)
+(connector
+	(text "funct3_op[2..0]" (rect -940 960 -870 972)(font "Intel Clear" ))
+	(pt -872 976)
+	(pt -944 976)
+	(bus)
+)
+(connector
+	(text "funct3_mem[2..0]" (rect -549 960 -466 972)(font "Intel Clear" ))
+	(pt -560 976)
+	(pt -488 976)
+	(bus)
+)
+(connector
+	(text "reset" (rect -912 1040 -889 1052)(font "Intel Clear" ))
+	(pt -920 1056)
+	(pt -872 1056)
+)
+(connector
+	(text "clk" (rect -928 992 -914 1004)(font "Intel Clear" ))
+	(pt -872 1008)
+	(pt -936 1008)
+)
+(connector
+	(text "rs2_data_op[31..0]" (rect -961 976 -873 988)(font "Intel Clear" ))
+	(pt -872 992)
+	(pt -968 992)
+	(bus)
+)
+(connector
+	(text "rs2_data_mem[31..0]" (rect -534 976 -433 988)(font "Intel Clear" ))
+	(pt -560 992)
+	(pt -448 992)
+	(bus)
+)
+(connector
+	(text "address_target[31..0]" (rect -1192 872 -1092 884)(font "Intel Clear" ))
+	(pt -1216 888)
+	(pt -1192 888)
+	(bus)
+)
+(connector
+	(text "flag_branch[1..0]" (rect -1184 888 -1104 900)(font "Intel Clear" ))
+	(pt -1168 904)
+	(pt -1216 904)
+	(bus)
+)
+(connector
+	(text "address_target[31..0]" (rect -1392 1008 -1292 1020)(font "Intel Clear" ))
+	(pt -1312 1024)
+	(pt -1400 1024)
+	(bus)
+)
+(connector
+	(text "op_ena" (rect -936 1008 -901 1020)(font "Intel Clear" ))
+	(pt -872 1024)
+	(pt -944 1024)
+)
+(connector
+	(text "op_nop" (rect -936 1024 -901 1036)(font "Intel Clear" ))
+	(pt -872 1040)
+	(pt -944 1040)
+)
+(connector
+	(text "prev_pc[31..0]" (rect -612 736 -545 748)(font "Intel Clear" ))
+	(pt -568 752)
+	(pt -624 752)
+	(bus)
+)
+(connector
+	(text "pc_next[31..0]" (rect -716 328 -650 340)(font "Intel Clear" ))
+	(pt -640 344)
+	(pt -720 344)
+	(bus)
+)
+(connector
+	(text "pc_target_prediction[31..0]" (rect -277 328 -151 340)(font "Intel Clear" ))
+	(pt -200 344)
+	(pt -280 344)
+	(bus)
+)
+(connector
+	(text "branch_result" (rect -710 392 -646 404)(font "Intel Clear" ))
+	(pt -640 408)
+	(pt -720 408)
+)
+(connector
+	(text "flag_add_build_branch[0]" (rect -760 376 -638 388)(font "Intel Clear" ))
+	(pt -784 392)
+	(pt -640 392)
+)
+(connector
+	(text "prev_pc[31..0]" (rect -774 344 -707 356)(font "Intel Clear" ))
+	(pt -640 360)
+	(pt -784 360)
+	(bus)
+)
+(connector
+	(text "branch_prediction" (rect -272 344 -189 356)(font "Intel Clear" ))
+	(pt -200 360)
+	(pt -280 360)
+)
+(connector
+	(text "add_build_target[31..0]" (rect -762 360 -652 372)(font "Intel Clear" ))
+	(pt -640 376)
+	(pt -784 376)
+	(bus)
+)
+(connector
+	(text "clk" (rect -659 408 -645 420)(font "Intel Clear" ))
+	(pt -680 424)
+	(pt -640 424)
+)
+(connector
+	(text "reset" (rect -678 424 -655 436)(font "Intel Clear" ))
+	(pt -688 440)
+	(pt -640 440)
+)
+(connector
+	(text "pc_target_prediction[31..0]" (rect -449 472 -323 484)(font "Intel Clear" ))
+	(pt -344 496)
+	(pt -440 496)
+	(bus)
+)
+(connector
+	(text "branch_prediction" (rect -428 512 -345 524)(font "Intel Clear" ))
+	(pt -344 528)
+	(pt -456 528)
+)
+(connector
+	(text "branch_result" (rect 265 736 329 748)(font "Intel Clear" ))
+	(pt 248 752)
+	(pt 336 752)
+)
+(connector
+	(text "flag_add_build_branch[1..0]" (rect -158 736 -25 748)(font "Intel Clear" ))
+	(pt -128 752)
+	(pt -16 752)
+	(bus)
+)
+(connector
+	(text "c[0]" (rect -108 752 -91 764)(font "Intel Clear" ))
+	(pt -16 768)
+	(pt -128 768)
+)
+(connector
+	(text "prev_branch_prediction" (rect -454 568 -344 580)(font "Intel Clear" ))
+	(pt -344 584)
+	(pt -464 584)
 )
 (text "FETCH" (rect 376 -48 416 -34)(font "Intel Clear" (font_size 8)))
 (text "MEMORIA" (rect -488 -104 -431 -90)(font "Intel Clear" (font_size 8)))
@@ -4534,8 +4556,8 @@ on the Quartus Prime software download page.
 (text "OPERAND" (rect 968 800 1028 814)(font "Intel Clear" (font_size 8)))
 (text "EXECUTE / ALU" (rect 984 1616 1076 1630)(font "Intel Clear" (font_size 8)))
 (text "BANCO DE REGISTROS" (rect -176 1280 -38 1294)(font "Intel Clear" (font_size 8)))
-(text "ADDRRESS BUILDER" (rect -1448 536 -1325 550)(font "Intel Clear" (font_size 8)))
-(text "PREDICTOR" (rect 224 720 294 734)(font "Intel Clear" (font_size 8)))
+(text "ADDRRESS BUILDER" (rect -1584 760 -1461 774)(font "Intel Clear" (font_size 8)))
+(text "PREDICTOR" (rect -688 280 -618 294)(font "Intel Clear" (font_size 8)))
 (text "MEMORY READ" (rect -1224 1280 -1134 1294)(font "Intel Clear" (font_size 8)))
 (line (pt 2520 296)(pt 2456 296))
 (line (pt 2488 296)(pt 2488 248))
@@ -4557,7 +4579,7 @@ on the Quartus Prime software download page.
 (rectangle (rect 920 768 2224 1360))
 (rectangle (rect 944 1592 2248 1912))
 (rectangle (rect -176 1272 616 1904))
-(rectangle (rect -1496 448 -256 968))
-(rectangle (rect 120 680 760 992))
+(rectangle (rect -1632 672 -392 1192))
+(rectangle (rect -808 248 -40 552))
 (rectangle (rect -1280 1264 -424 1944))
 (rectangle (rect 2520 272 2640 312))

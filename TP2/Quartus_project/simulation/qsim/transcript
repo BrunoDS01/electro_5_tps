@@ -1,51 +1,75 @@
 # do tp2_e5_ERV25_grupo2.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:11:06 on Jun 13,2025
+# Start time: 02:15:13 on Jun 14,2025
 # vlog -work work tp2_e5_ERV25_grupo2.vo 
 # -- Compiling module tp2_e5_ERV25_grupo2
+# -- Compiling module hard_block
 # 
 # Top level modules:
 # 	tp2_e5_ERV25_grupo2
-# End time: 02:11:07 on Jun 13,2025, Elapsed time: 0:00:01
+# End time: 02:15:14 on Jun 14,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 02:11:07 on Jun 13,2025
-# vlog -work work COMPLETE_SIM.vwf.vt 
+# Start time: 02:15:14 on Jun 14,2025
+# vlog -work work JUMP_SIM.vwf.vt 
 # init_auxdbinfo(): DATABASE ERROR: (sqlite3_exec): file is not a database
 # flat_compact(): DATABASE ERROR: cannot open auxiliary database for write at path=D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/work (auxid=1, gen=90)
 # -- Compiling module tp2_e5_ERV25_grupo2_vlg_vec_tst
 # 
 # Top level modules:
 # 	tp2_e5_ERV25_grupo2_vlg_vec_tst
-# End time: 02:11:07 on Jun 13,2025, Elapsed time: 0:00:00
+# End time: 02:15:15 on Jun 14,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.tp2_e5_ERV25_grupo2_vlg_vec_tst 
-# Start time: 02:11:07 on Jun 13,2025
+# Start time: 02:15:15 on Jun 14,2025
 # Loading work.tp2_e5_ERV25_grupo2_vlg_vec_tst
 # Loading work.tp2_e5_ERV25_grupo2
+# Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading altera_ver.dffeas
 # Loading cycloneive_ver.cycloneive_ram_block
 # Loading cycloneive_ver.cycloneive_ram_register
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading instances from tp2_e5_ERV25_grupo2_v.sdo
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'i1'.  Expected 47, found 35.
+#    Time: 0 ps  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst/i1 File: JUMP_SIM.vwf.vt Line: 71
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'take_new_pc'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'branch_result'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'branch_prediction'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'flush_pipeline'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'save_to_reg_write_back'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'rd_memory_wb'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'wr_memory_mem'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'fetch_ena'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'dec_ena'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'dec_nop'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'prev_branch_prediction'.
+# ** Warning: (vsim-3722) JUMP_SIM.vwf.vt(71): [TFMPC] - Missing connection for port 'bht_wr_enable'.
 # Loading altera_ver.PRIM_GDFF_LOW
-# ** Warning: Design size of 17750 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 15824 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
-# after#27
-# Simulation time: 0 ps
-# Simulation time: 0 ps
-# Simulation time: 0 ps
-# Simulation time: 0 ps
-# Simulation time: 0 ps
-# Simulation time: 0 ps
-# Simulation time: 0 ps
-# Simulation time: 0 ps
-# Simulation time: 7875000 ps
-# Simulation time: 7875000 ps
-# ** Note: $finish    : COMPLETE_SIM.vwf.vt(133)
+# Loading timing data from tp2_e5_ERV25_grupo2_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst File: JUMP_SIM.vwf.vt
+# after#28
+# Simulation time: 2246 ps
+# Simulation time: 2246 ps
+# Simulation time: 2246 ps
+# Simulation time: 2246 ps
+# Simulation time: 2246 ps
+# Simulation time: 2246 ps
+# Simulation time: 2246 ps
+# Simulation time: 2246 ps
+# Simulation time: 8880208 ps
+# ** Note: $finish    : JUMP_SIM.vwf.vt(111)
 #    Time: 10 us  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst
-# End time: 02:11:35 on Jun 13,2025, Elapsed time: 0:00:28
-# Errors: 0, Warnings: 1
+# End time: 02:15:40 on Jun 14,2025, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 14

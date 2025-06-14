@@ -121,7 +121,7 @@ always @(opcode, funct3) begin
 			rd_memory = 1'b0;
 			wr_memory = 1'b0;	
 			shamt_used = 1'b0;
-			inc_pc = 1'b0;
+			inc_pc = 1'b1;
 		end
 
 		STORE: begin
