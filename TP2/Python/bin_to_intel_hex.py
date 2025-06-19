@@ -14,24 +14,16 @@ def to_intel_hex_line(address: int, data: bytes) -> str:
 
 # Instrucciones RISC-V en big endian
 instructions = [
-        0x00000013, # NOP
-    0xff500093, # addi x1, x0, -11
-    0xf3800113, # addi x2, x0, -200
-    0x00208e63, # beq x1, x2, 28 (va a la linea 11)
-    0x02209263, # bne x1, x2, 36 (va a la linea 14)
     0x00000013, # NOP
-    0x00000013, # NOP
-    0x00000013, # NOP
-    0x00000013, # NOP
-    0x00000013, # NOP
-    0xff400093, # addi x1, x0, -12
-    0xfc209ce3, # bne x1, x2, -40 (salta a la linea 2)
-    0x00000013, # NOP
-    0xf3800093, # addi x1, x0, -200
-    0xfc208ae3, # beq x1, x2, -44 (va a la linea 4)
-    0x00000013, # NOP
-    0x00000013, # NOP
-    0x00000013, # NOP
+    0x00000093,
+    0x00100113,
+    0x00a00213,
+    0x002081b3,
+    0x00010093,
+    0x00018113,
+    0xfff20213,
+    0xfe0218e3,
+    0X00018193
   ]
 
 with open("program_word.hex", "w") as f:
@@ -272,5 +264,32 @@ AUIPC/LUI
     0x00008093, # addi x1, x1, 0
     0x0ff00117, # auipc x2, 65280
     0x00010113, # addi x2, x2, 0
+
+FIBONACCI
+
+   /*Fiboncacci*/
+   addi x1, x0, 0
+   addi x2, x0, 1
+   addi x4, x0, 10       /*x4 = 10 repeticiones*/
+
+loop:
+ 	add x3, x1, x2     /*x3=x1+x2*/
+   	addi x1, x2, 0 		/*x1=x2*/
+   	addi x2, x3, 0		/*x2=x3*/
+   	addi x4, x4, -1
+   	bne	x4, x0, loop
+    
+    addi x3, x3, 0
+
+
+    00000093
+    00100113
+    00a00213
+    002081b3
+    00010093
+    00018113
+    fff20213
+    fe0218e3
+    00018193
 
 """

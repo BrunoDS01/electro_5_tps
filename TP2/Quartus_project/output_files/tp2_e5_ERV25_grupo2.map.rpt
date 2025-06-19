@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tp2_e5_ERV25_grupo2
-Sat Jun 14 02:14:00 2025
+Thu Jun 19 18:04:49 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -19,14 +19,14 @@ Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
  11. General Register Statistics
  12. Inverted Register Statistics
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_98h2:auto_generated
- 15. Source assignments for ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated
+ 14. Source assignments for ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated
+ 15. Source assignments for bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_98h2:auto_generated
  16. Parameter Settings for User Entity Instance: alu:inst17
  17. Parameter Settings for User Entity Instance: operand_build:inst25
- 18. Parameter Settings for User Entity Instance: bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component
- 19. Parameter Settings for User Entity Instance: opcode_decode:inst22
- 20. Parameter Settings for User Entity Instance: address_builder:inst31
- 21. Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component
+ 18. Parameter Settings for User Entity Instance: opcode_decode:inst22
+ 19. Parameter Settings for User Entity Instance: address_builder:inst31
+ 20. Parameter Settings for User Entity Instance: ram_principal:inst|altsyncram:altsyncram_component
+ 21. Parameter Settings for User Entity Instance: bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component
  22. Parameter Settings for User Entity Instance: immediate_builder:inst4
  23. altsyncram Parameter Settings by Entity Instance
  24. Post-Synthesis Netlist Statistics for Top Partition
@@ -58,17 +58,17 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 14 02:14:00 2025           ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 19 18:04:49 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 4,287                                           ;
-;     Total combinational functions  ; 3,229                                           ;
+; Total logic elements               ; 4,182                                           ;
+;     Total combinational functions  ; 3,124                                           ;
 ;     Dedicated logic registers      ; 1,541                                           ;
 ; Total registers                    ; 1541                                            ;
-; Total pins                         ; 2                                               ;
-; Total virtual pins                 ; 828                                             ;
+; Total pins                         ; 6                                               ;
+; Total virtual pins                 ; 572                                             ;
 ; Total memory bits                  ; 69,312                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
 ; Total PLLs                         ; 0                                               ;
@@ -219,9 +219,9 @@ on the Quartus Prime software download page.
 ; altrom.inc                       ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altrom.inc                                         ;         ;
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altram.inc                                         ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc                                       ;         ;
-; db/altsyncram_98h2.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_98h2.tdf      ;         ;
 ; db/altsyncram_u8p2.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_u8p2.tdf      ;         ;
 ; ../Python/program_word.hex       ; yes             ; Auto-Found Memory Initialization File  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Python/program_word.hex                     ;         ;
+; db/altsyncram_98h2.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_98h2.tdf      ;         ;
 +----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
@@ -230,32 +230,32 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 4,287     ;
+; Estimated Total logic elements              ; 4,182     ;
 ;                                             ;           ;
-; Total combinational functions               ; 3229      ;
+; Total combinational functions               ; 3124      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2220      ;
-;     -- 3 input functions                    ; 623       ;
-;     -- <=2 input functions                  ; 386       ;
+;     -- 4 input functions                    ; 2195      ;
+;     -- 3 input functions                    ; 549       ;
+;     -- <=2 input functions                  ; 380       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2985      ;
+;     -- normal mode                          ; 2880      ;
 ;     -- arithmetic mode                      ; 244       ;
 ;                                             ;           ;
 ; Total registers                             ; 1541      ;
 ;     -- Dedicated logic registers            ; 1541      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; Virtual pins                                ; 828       ;
-; I/O pins                                    ; 2         ;
+; Virtual pins                                ; 572       ;
+; I/O pins                                    ; 6         ;
 ; Total memory bits                           ; 69312     ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 1632      ;
-; Total fan-out                               ; 21014     ;
-; Average fan-out                             ; 3.69      ;
+; Total fan-out                               ; 20441     ;
+; Average fan-out                             ; 3.83      ;
 +---------------------------------------------+-----------+
 
 
@@ -264,29 +264,29 @@ on the Quartus Prime software download page.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                           ; Entity Name               ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
-; |tp2_e5_ERV25_grupo2                         ; 3229 (1)            ; 1541 (0)                  ; 69312       ; 0            ; 0       ; 0         ; 2    ; 828          ; |tp2_e5_ERV25_grupo2                                                                                                          ; tp2_e5_ERV25_grupo2       ; work         ;
-;    |address_builder:inst31|                  ; 100 (100)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_builder:inst31                                                                                   ; address_builder           ; work         ;
-;    |address_latch:inst29|                    ; 101 (101)           ; 104 (104)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_latch:inst29                                                                                     ; address_latch             ; work         ;
-;    |alu:inst17|                              ; 711 (711)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu:inst17                                                                                               ; alu                       ; work         ;
+; |tp2_e5_ERV25_grupo2                         ; 3124 (1)            ; 1541 (0)                  ; 69312       ; 0            ; 0       ; 0         ; 6    ; 572          ; |tp2_e5_ERV25_grupo2                                                                                                          ; tp2_e5_ERV25_grupo2       ; work         ;
+;    |address_builder:inst31|                  ; 99 (99)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_builder:inst31                                                                                   ; address_builder           ; work         ;
+;    |address_latch:inst29|                    ; 102 (102)           ; 104 (104)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_latch:inst29                                                                                     ; address_latch             ; work         ;
+;    |alu:inst17|                              ; 712 (712)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu:inst17                                                                                               ; alu                       ; work         ;
 ;    |alu_latch:inst18|                        ; 0 (0)               ; 38 (38)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu_latch:inst18                                                                                         ; alu_latch                 ; work         ;
-;    |bht_btb_module_2:inst21|                 ; 26 (0)              ; 86 (0)                    ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21                                                                                  ; bht_btb_module_2          ; work         ;
+;    |bht_btb_module_2:inst21|                 ; 26 (0)              ; 88 (0)                    ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21                                                                                  ; bht_btb_module_2          ; work         ;
 ;       |bht_btb_ram:inst2|                    ; 0 (0)               ; 0 (0)                     ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|bht_btb_ram:inst2                                                                ; bht_btb_ram               ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component                                ; altsyncram                ; work         ;
 ;             |altsyncram_98h2:auto_generated| ; 0 (0)               ; 0 (0)                     ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_98h2:auto_generated ; altsyncram_98h2           ; work         ;
-;       |bht_btb_wr_data_builder_2:inst8|      ; 9 (9)               ; 62 (62)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8                                                  ; bht_btb_wr_data_builder_2 ; work         ;
+;       |bht_btb_wr_data_builder_2:inst8|      ; 9 (9)               ; 64 (64)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8                                                  ; bht_btb_wr_data_builder_2 ; work         ;
 ;       |prediction_module:inst7|              ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|prediction_module:inst7                                                          ; prediction_module         ; work         ;
 ;       |tag_latch:inst6|                      ; 0 (0)               ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|tag_latch:inst6                                                                  ; tag_latch                 ; work         ;
-;    |branch_result_module:inst8|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|branch_result_module:inst8                                                                               ; branch_result_module      ; work         ;
-;    |decode_latch:inst23|                     ; 102 (102)           ; 99 (99)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|decode_latch:inst23                                                                                      ; decode_latch              ; work         ;
-;    |fetch_unit:inst34|                       ; 250 (250)           ; 97 (97)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34                                                                                        ; fetch_unit                ; work         ;
-;    |immediate_builder:inst4|                 ; 38 (38)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4                                                                                  ; immediate_builder         ; work         ;
+;    |branch_result_module:inst8|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|branch_result_module:inst8                                                                               ; branch_result_module      ; work         ;
+;    |decode_latch:inst23|                     ; 123 (123)           ; 99 (99)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|decode_latch:inst23                                                                                      ; decode_latch              ; work         ;
+;    |fetch_unit:inst34|                       ; 222 (222)           ; 97 (97)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34                                                                                        ; fetch_unit                ; work         ;
+;    |immediate_builder:inst4|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4                                                                                  ; immediate_builder         ; work         ;
 ;    |load_data_module:inst32|                 ; 65 (65)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|load_data_module:inst32                                                                                  ; load_data_module          ; work         ;
-;    |mem_latch:inst35|                        ; 0 (0)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|mem_latch:inst35                                                                                         ; mem_latch                 ; work         ;
-;    |next_pc_decision_module:inst9|           ; 128 (128)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9                                                                            ; next_pc_decision_module   ; work         ;
-;    |op_latch:inst24|                         ; 88 (88)             ; 87 (87)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|op_latch:inst24                                                                                          ; op_latch                  ; work         ;
-;    |opcode_decode:inst22|                    ; 23 (23)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|opcode_decode:inst22                                                                                     ; opcode_decode             ; work         ;
+;    |mem_latch:inst35|                        ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|mem_latch:inst35                                                                                         ; mem_latch                 ; work         ;
+;    |next_pc_decision_module:inst9|           ; 66 (66)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9                                                                            ; next_pc_decision_module   ; work         ;
+;    |op_latch:inst24|                         ; 90 (90)             ; 87 (87)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|op_latch:inst24                                                                                          ; op_latch                  ; work         ;
+;    |opcode_decode:inst22|                    ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|opcode_decode:inst22                                                                                     ; opcode_decode             ; work         ;
 ;    |operand_build:inst25|                    ; 75 (75)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|operand_build:inst25                                                                                     ; operand_build             ; work         ;
-;    |pipeline_control:inst26|                 ; 29 (29)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|pipeline_control:inst26                                                                                  ; pipeline_control          ; work         ;
+;    |pipeline_control:inst26|                 ; 28 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|pipeline_control:inst26                                                                                  ; pipeline_control          ; work         ;
 ;    |ram_principal:inst|                      ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ram_principal:inst                                                                                       ; ram_principal             ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ram_principal:inst|altsyncram:altsyncram_component                                                       ; altsyncram                ; work         ;
 ;          |altsyncram_u8p2:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated                        ; altsyncram_u8p2           ; work         ;
@@ -319,81 +319,81 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------------------------------------------------------------------------------------------+
 ; Registers Removed During Synthesis                                                                                                      ;
-+------------------------------------------------------------------------------------+----------------------------------------------------+
-; Register name                                                                      ; Reason for Removal                                 ;
-+------------------------------------------------------------------------------------+----------------------------------------------------+
-; bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8|wr_pc_target_update_reg[1] ; Merged with mem_latch:inst35|address_target_out[1] ;
-; bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8|wr_pc_target_update_reg[0] ; Merged with mem_latch:inst35|address_target_out[0] ;
-; op_latch:inst24|rs2_data_out[20]                                                   ; Merged with address_latch:inst29|rs2_data_out[20]  ;
-; op_latch:inst24|rs2_data_out[18]                                                   ; Merged with address_latch:inst29|rs2_data_out[18]  ;
-; op_latch:inst24|rs2_data_out[16]                                                   ; Merged with address_latch:inst29|rs2_data_out[16]  ;
-; op_latch:inst24|rs2_data_out[12]                                                   ; Merged with address_latch:inst29|rs2_data_out[12]  ;
-; op_latch:inst24|rs2_data_out[8]                                                    ; Merged with address_latch:inst29|rs2_data_out[8]   ;
-; op_latch:inst24|rs2_data_out[4]                                                    ; Merged with address_latch:inst29|rs2_data_out[4]   ;
-; op_latch:inst24|rs2_data_out[2]                                                    ; Merged with address_latch:inst29|rs2_data_out[2]   ;
-; op_latch:inst24|rs2_data_out[30]                                                   ; Merged with address_latch:inst29|rs2_data_out[30]  ;
-; op_latch:inst24|rs2_data_out[24]                                                   ; Merged with address_latch:inst29|rs2_data_out[24]  ;
-; op_latch:inst24|rs2_data_out[22]                                                   ; Merged with address_latch:inst29|rs2_data_out[22]  ;
-; op_latch:inst24|rs2_data_out[19]                                                   ; Merged with address_latch:inst29|rs2_data_out[19]  ;
-; op_latch:inst24|rs2_data_out[17]                                                   ; Merged with address_latch:inst29|rs2_data_out[17]  ;
-; op_latch:inst24|rs2_data_out[10]                                                   ; Merged with address_latch:inst29|rs2_data_out[10]  ;
-; op_latch:inst24|rs2_data_out[14]                                                   ; Merged with address_latch:inst29|rs2_data_out[14]  ;
-; op_latch:inst24|rs2_data_out[27]                                                   ; Merged with address_latch:inst29|rs2_data_out[27]  ;
-; op_latch:inst24|rs2_data_out[6]                                                    ; Merged with address_latch:inst29|rs2_data_out[6]   ;
-; op_latch:inst24|rs2_data_out[26]                                                   ; Merged with address_latch:inst29|rs2_data_out[26]  ;
-; op_latch:inst24|rs2_data_out[25]                                                   ; Merged with address_latch:inst29|rs2_data_out[25]  ;
-; op_latch:inst24|rs2_data_out[13]                                                   ; Merged with address_latch:inst29|rs2_data_out[13]  ;
-; op_latch:inst24|rs2_data_out[11]                                                   ; Merged with address_latch:inst29|rs2_data_out[11]  ;
-; op_latch:inst24|rs2_data_out[5]                                                    ; Merged with address_latch:inst29|rs2_data_out[5]   ;
-; op_latch:inst24|pc_out[31]                                                         ; Merged with address_latch:inst29|prev_pc_out[31]   ;
-; op_latch:inst24|pc_out[30]                                                         ; Merged with address_latch:inst29|prev_pc_out[30]   ;
-; op_latch:inst24|pc_out[29]                                                         ; Merged with address_latch:inst29|prev_pc_out[29]   ;
-; op_latch:inst24|pc_out[28]                                                         ; Merged with address_latch:inst29|prev_pc_out[28]   ;
-; op_latch:inst24|pc_out[27]                                                         ; Merged with address_latch:inst29|prev_pc_out[27]   ;
-; op_latch:inst24|pc_out[26]                                                         ; Merged with address_latch:inst29|prev_pc_out[26]   ;
-; op_latch:inst24|pc_out[25]                                                         ; Merged with address_latch:inst29|prev_pc_out[25]   ;
-; op_latch:inst24|pc_out[24]                                                         ; Merged with address_latch:inst29|prev_pc_out[24]   ;
-; op_latch:inst24|pc_out[23]                                                         ; Merged with address_latch:inst29|prev_pc_out[23]   ;
-; op_latch:inst24|pc_out[22]                                                         ; Merged with address_latch:inst29|prev_pc_out[22]   ;
-; op_latch:inst24|pc_out[21]                                                         ; Merged with address_latch:inst29|prev_pc_out[21]   ;
-; op_latch:inst24|pc_out[20]                                                         ; Merged with address_latch:inst29|prev_pc_out[20]   ;
-; op_latch:inst24|pc_out[19]                                                         ; Merged with address_latch:inst29|prev_pc_out[19]   ;
-; op_latch:inst24|pc_out[18]                                                         ; Merged with address_latch:inst29|prev_pc_out[18]   ;
-; op_latch:inst24|pc_out[17]                                                         ; Merged with address_latch:inst29|prev_pc_out[17]   ;
-; op_latch:inst24|pc_out[16]                                                         ; Merged with address_latch:inst29|prev_pc_out[16]   ;
-; op_latch:inst24|pc_out[15]                                                         ; Merged with address_latch:inst29|prev_pc_out[15]   ;
-; op_latch:inst24|pc_out[14]                                                         ; Merged with address_latch:inst29|prev_pc_out[14]   ;
-; op_latch:inst24|pc_out[13]                                                         ; Merged with address_latch:inst29|prev_pc_out[13]   ;
-; op_latch:inst24|pc_out[12]                                                         ; Merged with address_latch:inst29|prev_pc_out[12]   ;
-; op_latch:inst24|pc_out[11]                                                         ; Merged with address_latch:inst29|prev_pc_out[11]   ;
-; op_latch:inst24|pc_out[10]                                                         ; Merged with address_latch:inst29|prev_pc_out[10]   ;
-; op_latch:inst24|pc_out[9]                                                          ; Merged with address_latch:inst29|prev_pc_out[9]    ;
-; op_latch:inst24|pc_out[8]                                                          ; Merged with address_latch:inst29|prev_pc_out[8]    ;
-; op_latch:inst24|pc_out[7]                                                          ; Merged with address_latch:inst29|prev_pc_out[7]    ;
-; op_latch:inst24|pc_out[6]                                                          ; Merged with address_latch:inst29|prev_pc_out[6]    ;
-; op_latch:inst24|pc_out[5]                                                          ; Merged with address_latch:inst29|prev_pc_out[5]    ;
-; op_latch:inst24|pc_out[4]                                                          ; Merged with address_latch:inst29|prev_pc_out[4]    ;
-; op_latch:inst24|pc_out[3]                                                          ; Merged with address_latch:inst29|prev_pc_out[3]    ;
-; op_latch:inst24|pc_out[2]                                                          ; Merged with address_latch:inst29|prev_pc_out[2]    ;
-; op_latch:inst24|pc_out[1]                                                          ; Merged with address_latch:inst29|prev_pc_out[1]    ;
-; op_latch:inst24|pc_out[0]                                                          ; Merged with address_latch:inst29|prev_pc_out[0]    ;
-; op_latch:inst24|rs2_data_out[31]                                                   ; Merged with address_latch:inst29|rs2_data_out[31]  ;
-; op_latch:inst24|rs2_data_out[29]                                                   ; Merged with address_latch:inst29|rs2_data_out[29]  ;
-; op_latch:inst24|rs2_data_out[28]                                                   ; Merged with address_latch:inst29|rs2_data_out[28]  ;
-; op_latch:inst24|rs2_data_out[23]                                                   ; Merged with address_latch:inst29|rs2_data_out[23]  ;
-; op_latch:inst24|rs2_data_out[21]                                                   ; Merged with address_latch:inst29|rs2_data_out[21]  ;
-; op_latch:inst24|rs2_data_out[15]                                                   ; Merged with address_latch:inst29|rs2_data_out[15]  ;
-; op_latch:inst24|rs2_data_out[9]                                                    ; Merged with address_latch:inst29|rs2_data_out[9]   ;
-; op_latch:inst24|rs2_data_out[7]                                                    ; Merged with address_latch:inst29|rs2_data_out[7]   ;
-; op_latch:inst24|rs2_data_out[3]                                                    ; Merged with address_latch:inst29|rs2_data_out[3]   ;
-; op_latch:inst24|rs2_data_out[1]                                                    ; Merged with address_latch:inst29|rs2_data_out[1]   ;
-; op_latch:inst24|rs2_data_out[0]                                                    ; Merged with address_latch:inst29|rs2_data_out[0]   ;
-; op_latch:inst24|funct3_out[2]                                                      ; Merged with address_latch:inst29|funct3_out[2]     ;
-; op_latch:inst24|funct3_out[1]                                                      ; Merged with address_latch:inst29|funct3_out[1]     ;
-; op_latch:inst24|funct3_out[0]                                                      ; Merged with address_latch:inst29|funct3_out[0]     ;
-; op_latch:inst24|instr_type_out[3]                                                  ; Stuck at GND due to stuck port data_in             ;
-; Total Number of Removed Registers = 70                                             ;                                                    ;
-+------------------------------------------------------------------------------------+----------------------------------------------------+
++----------------------------------------+------------------------------------------------------------------------------------------------+
+; Register name                          ; Reason for Removal                                                                             ;
++----------------------------------------+------------------------------------------------------------------------------------------------+
+; mem_latch:inst35|address_target_out[1] ; Merged with bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8|wr_pc_target_update_reg[1] ;
+; mem_latch:inst35|address_target_out[0] ; Merged with bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8|wr_pc_target_update_reg[0] ;
+; op_latch:inst24|rs2_data_out[20]       ; Merged with address_latch:inst29|rs2_data_out[20]                                              ;
+; op_latch:inst24|rs2_data_out[19]       ; Merged with address_latch:inst29|rs2_data_out[19]                                              ;
+; op_latch:inst24|rs2_data_out[18]       ; Merged with address_latch:inst29|rs2_data_out[18]                                              ;
+; op_latch:inst24|rs2_data_out[16]       ; Merged with address_latch:inst29|rs2_data_out[16]                                              ;
+; op_latch:inst24|rs2_data_out[12]       ; Merged with address_latch:inst29|rs2_data_out[12]                                              ;
+; op_latch:inst24|rs2_data_out[8]        ; Merged with address_latch:inst29|rs2_data_out[8]                                               ;
+; op_latch:inst24|rs2_data_out[4]        ; Merged with address_latch:inst29|rs2_data_out[4]                                               ;
+; op_latch:inst24|rs2_data_out[3]        ; Merged with address_latch:inst29|rs2_data_out[3]                                               ;
+; op_latch:inst24|rs2_data_out[2]        ; Merged with address_latch:inst29|rs2_data_out[2]                                               ;
+; op_latch:inst24|rs2_data_out[0]        ; Merged with address_latch:inst29|rs2_data_out[0]                                               ;
+; op_latch:inst24|rs2_data_out[30]       ; Merged with address_latch:inst29|rs2_data_out[30]                                              ;
+; op_latch:inst24|rs2_data_out[28]       ; Merged with address_latch:inst29|rs2_data_out[28]                                              ;
+; op_latch:inst24|rs2_data_out[26]       ; Merged with address_latch:inst29|rs2_data_out[26]                                              ;
+; op_latch:inst24|rs2_data_out[22]       ; Merged with address_latch:inst29|rs2_data_out[22]                                              ;
+; op_latch:inst24|rs2_data_out[14]       ; Merged with address_latch:inst29|rs2_data_out[14]                                              ;
+; op_latch:inst24|rs2_data_out[6]        ; Merged with address_latch:inst29|rs2_data_out[6]                                               ;
+; op_latch:inst24|rs2_data_out[29]       ; Merged with address_latch:inst29|rs2_data_out[29]                                              ;
+; op_latch:inst24|rs2_data_out[23]       ; Merged with address_latch:inst29|rs2_data_out[23]                                              ;
+; op_latch:inst24|rs2_data_out[13]       ; Merged with address_latch:inst29|rs2_data_out[13]                                              ;
+; op_latch:inst24|rs2_data_out[10]       ; Merged with address_latch:inst29|rs2_data_out[10]                                              ;
+; op_latch:inst24|rs2_data_out[24]       ; Merged with address_latch:inst29|rs2_data_out[24]                                              ;
+; op_latch:inst24|rs2_data_out[17]       ; Merged with address_latch:inst29|rs2_data_out[17]                                              ;
+; op_latch:inst24|rs2_data_out[21]       ; Merged with address_latch:inst29|rs2_data_out[21]                                              ;
+; op_latch:inst24|rs2_data_out[15]       ; Merged with address_latch:inst29|rs2_data_out[15]                                              ;
+; op_latch:inst24|pc_out[31]             ; Merged with address_latch:inst29|prev_pc_out[31]                                               ;
+; op_latch:inst24|pc_out[30]             ; Merged with address_latch:inst29|prev_pc_out[30]                                               ;
+; op_latch:inst24|pc_out[29]             ; Merged with address_latch:inst29|prev_pc_out[29]                                               ;
+; op_latch:inst24|pc_out[28]             ; Merged with address_latch:inst29|prev_pc_out[28]                                               ;
+; op_latch:inst24|pc_out[27]             ; Merged with address_latch:inst29|prev_pc_out[27]                                               ;
+; op_latch:inst24|pc_out[26]             ; Merged with address_latch:inst29|prev_pc_out[26]                                               ;
+; op_latch:inst24|pc_out[25]             ; Merged with address_latch:inst29|prev_pc_out[25]                                               ;
+; op_latch:inst24|pc_out[24]             ; Merged with address_latch:inst29|prev_pc_out[24]                                               ;
+; op_latch:inst24|pc_out[23]             ; Merged with address_latch:inst29|prev_pc_out[23]                                               ;
+; op_latch:inst24|pc_out[22]             ; Merged with address_latch:inst29|prev_pc_out[22]                                               ;
+; op_latch:inst24|pc_out[21]             ; Merged with address_latch:inst29|prev_pc_out[21]                                               ;
+; op_latch:inst24|pc_out[20]             ; Merged with address_latch:inst29|prev_pc_out[20]                                               ;
+; op_latch:inst24|pc_out[19]             ; Merged with address_latch:inst29|prev_pc_out[19]                                               ;
+; op_latch:inst24|pc_out[18]             ; Merged with address_latch:inst29|prev_pc_out[18]                                               ;
+; op_latch:inst24|pc_out[17]             ; Merged with address_latch:inst29|prev_pc_out[17]                                               ;
+; op_latch:inst24|pc_out[16]             ; Merged with address_latch:inst29|prev_pc_out[16]                                               ;
+; op_latch:inst24|pc_out[15]             ; Merged with address_latch:inst29|prev_pc_out[15]                                               ;
+; op_latch:inst24|pc_out[14]             ; Merged with address_latch:inst29|prev_pc_out[14]                                               ;
+; op_latch:inst24|pc_out[13]             ; Merged with address_latch:inst29|prev_pc_out[13]                                               ;
+; op_latch:inst24|pc_out[12]             ; Merged with address_latch:inst29|prev_pc_out[12]                                               ;
+; op_latch:inst24|pc_out[11]             ; Merged with address_latch:inst29|prev_pc_out[11]                                               ;
+; op_latch:inst24|pc_out[10]             ; Merged with address_latch:inst29|prev_pc_out[10]                                               ;
+; op_latch:inst24|pc_out[9]              ; Merged with address_latch:inst29|prev_pc_out[9]                                                ;
+; op_latch:inst24|pc_out[8]              ; Merged with address_latch:inst29|prev_pc_out[8]                                                ;
+; op_latch:inst24|pc_out[7]              ; Merged with address_latch:inst29|prev_pc_out[7]                                                ;
+; op_latch:inst24|pc_out[6]              ; Merged with address_latch:inst29|prev_pc_out[6]                                                ;
+; op_latch:inst24|pc_out[5]              ; Merged with address_latch:inst29|prev_pc_out[5]                                                ;
+; op_latch:inst24|pc_out[4]              ; Merged with address_latch:inst29|prev_pc_out[4]                                                ;
+; op_latch:inst24|pc_out[3]              ; Merged with address_latch:inst29|prev_pc_out[3]                                                ;
+; op_latch:inst24|pc_out[2]              ; Merged with address_latch:inst29|prev_pc_out[2]                                                ;
+; op_latch:inst24|pc_out[1]              ; Merged with address_latch:inst29|prev_pc_out[1]                                                ;
+; op_latch:inst24|pc_out[0]              ; Merged with address_latch:inst29|prev_pc_out[0]                                                ;
+; op_latch:inst24|rs2_data_out[31]       ; Merged with address_latch:inst29|rs2_data_out[31]                                              ;
+; op_latch:inst24|rs2_data_out[27]       ; Merged with address_latch:inst29|rs2_data_out[27]                                              ;
+; op_latch:inst24|rs2_data_out[25]       ; Merged with address_latch:inst29|rs2_data_out[25]                                              ;
+; op_latch:inst24|rs2_data_out[11]       ; Merged with address_latch:inst29|rs2_data_out[11]                                              ;
+; op_latch:inst24|rs2_data_out[9]        ; Merged with address_latch:inst29|rs2_data_out[9]                                               ;
+; op_latch:inst24|rs2_data_out[7]        ; Merged with address_latch:inst29|rs2_data_out[7]                                               ;
+; op_latch:inst24|rs2_data_out[5]        ; Merged with address_latch:inst29|rs2_data_out[5]                                               ;
+; op_latch:inst24|rs2_data_out[1]        ; Merged with address_latch:inst29|rs2_data_out[1]                                               ;
+; op_latch:inst24|funct3_out[2]          ; Merged with address_latch:inst29|funct3_out[2]                                                 ;
+; op_latch:inst24|funct3_out[1]          ; Merged with address_latch:inst29|funct3_out[1]                                                 ;
+; op_latch:inst24|funct3_out[0]          ; Merged with address_latch:inst29|funct3_out[0]                                                 ;
+; op_latch:inst24|instr_type_out[3]      ; Stuck at GND due to stuck port data_in                                                         ;
+; Total Number of Removed Registers = 70 ;                                                                                                ;
++----------------------------------------+------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -402,11 +402,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 1541  ;
-; Number of registers using Synchronous Clear  ; 1031  ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Clear  ; 1032  ;
+; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 1541  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1212  ;
+; Number of registers using Clock Enable       ; 1207  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -455,78 +455,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
-; 3:1                ; 65 bits   ; 130 LEs       ; 65 LEs               ; 65 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34|pc_dec[17]                                        ;
-; 3:1                ; 98 bits   ; 196 LEs       ; 98 LEs               ; 98 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst23|instr_type_out[1]                               ;
-; 3:1                ; 189 bits  ; 378 LEs       ; 189 LEs              ; 189 LEs                ; Yes        ; |tp2_e5_ERV25_grupo2|address_latch:inst29|prev_pc_out[31]                                ;
+; 3:1                ; 65 bits   ; 130 LEs       ; 65 LEs               ; 65 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34|instr[1]                                          ;
+; 3:1                ; 66 bits   ; 132 LEs       ; 66 LEs               ; 66 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst23|save_to_reg_out                                 ;
+; 3:1                ; 189 bits  ; 378 LEs       ; 189 LEs              ; 189 LEs                ; Yes        ; |tp2_e5_ERV25_grupo2|address_latch:inst29|address_target_out[30]                         ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34|pc[1]                                             ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[31][7]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[30][17]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[29][22]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[28][15]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[27][6]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[26][11]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[25][13]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[24][2]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[23][20]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[22][7]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[21][0]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[20][11]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[19][10]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[18][21]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[17][2]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[16][14]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[15][25]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[14][23]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[13][30]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[12][9]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[11][15]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[10][21]                                      ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[9][9]                                        ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[8][18]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[7][1]                                        ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[6][11]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[5][25]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[4][7]                                        ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[3][22]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[2][24]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[1][14]                                       ;
-; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[0][26]                                       ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34|pc[2]                                             ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux9                                        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8|wr_data[57] ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux17                                       ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[10]                            ;
-; 8:1                ; 31 bits   ; 155 LEs       ; 62 LEs               ; 93 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst31|Mux30                                        ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|pipeline_control:inst26|fetch_ena                                   ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[12]                             ;
-; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux1                                        ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst23|imm_out[5]                                      ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 10 LEs               ; 5 LEs                  ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst23|imm_out[20]                                     ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst23|imm_out[18]                                     ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst23|imm_out[25]                                     ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|decode_latch:inst23|imm_out[3]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[31][25]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[30][25]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[29][23]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[28][30]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[27][7]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[26][28]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[25][0]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[24][20]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[23][3]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[22][20]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[21][12]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[20][4]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[19][29]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[18][16]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[17][29]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[16][21]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[15][6]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[14][20]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[13][17]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[12][16]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[11][30]                                      ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[10][9]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[9][17]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[8][23]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[7][27]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[6][16]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[5][18]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[4][17]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[3][20]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[2][17]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[1][17]                                       ;
+; 7:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|register_bank:inst28|x[0][17]                                       ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34|pc[12]                                            ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8|wr_data[58] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9|pc_new[20]                            ;
+; 8:1                ; 31 bits   ; 155 LEs       ; 62 LEs               ; 93 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|address_builder:inst31|Mux18                                        ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|pipeline_control:inst26|op_nop                                      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[15]                             ;
 ; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|load_data_module:inst32|load_data[11]                               ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|load_data_module:inst32|load_data[16]                               ;
-; 10:1               ; 32 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux2                                           ;
-; 10:1               ; 27 bits   ; 162 LEs       ; 54 LEs               ; 108 LEs                ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux46                                          ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|load_data_module:inst32|load_data[31]                               ;
+; 10:1               ; 32 bits   ; 192 LEs       ; 64 LEs               ; 128 LEs                ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux25                                          ;
+; 10:1               ; 27 bits   ; 162 LEs       ; 54 LEs               ; 108 LEs                ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux36                                          ;
 ; 10:1               ; 5 bits    ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|operand_build:inst25|Mux59                                          ;
-; 7:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|load_data_module:inst32|load_data[5]                                ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4|Mux20                                       ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst28|rs1_data[10]                                   ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[25]                             ;
+; 7:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|load_data_module:inst32|load_data[0]                                ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst28|rs1_data[21]                                   ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[31]                             ;
 ; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|store_data_module:inst30|store_data[17]                             ;
-; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst28|rs2_data[23]                                   ;
-; 22:1               ; 8 bits    ; 112 LEs       ; 56 LEs               ; 56 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux81                                                    ;
-; 23:1               ; 7 bits    ; 105 LEs       ; 56 LEs               ; 49 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux79                                                    ;
-; 23:1               ; 4 bits    ; 60 LEs        ; 32 LEs               ; 28 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux90                                                    ;
-; 24:1               ; 4 bits    ; 64 LEs        ; 36 LEs               ; 28 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux69                                                    ;
-; 24:1               ; 2 bits    ; 32 LEs        ; 18 LEs               ; 14 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux93                                                    ;
-; 25:1               ; 2 bits    ; 32 LEs        ; 18 LEs               ; 14 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux67                                                    ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; No         ; |tp2_e5_ERV25_grupo2|register_bank:inst28|rs2_data[4]                                    ;
+; 22:1               ; 8 bits    ; 112 LEs       ; 56 LEs               ; 56 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux88                                                    ;
+; 23:1               ; 7 bits    ; 105 LEs       ; 56 LEs               ; 49 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux78                                                    ;
+; 23:1               ; 4 bits    ; 60 LEs        ; 32 LEs               ; 28 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux89                                                    ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 36 LEs               ; 28 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux71                                                    ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 18 LEs               ; 14 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux94                                                    ;
+; 25:1               ; 2 bits    ; 32 LEs        ; 18 LEs               ; 14 LEs                 ; No         ; |tp2_e5_ERV25_grupo2|alu:inst17|Mux68                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------+
-
-
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Source assignments for bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_98h2:auto_generated ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------------+
-; Assignment                      ; Value              ; From ; To                                                                ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                 ;
-+---------------------------------+--------------------+------+-------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------+
@@ -536,6 +528,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+--------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
 +---------------------------------+--------------------+------+--------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_98h2:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                 ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------+
 
 
 +---------------------------------------------------------+
@@ -567,67 +568,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; J_TYPE         ; 101   ; Unsigned Binary                          ;
 ; N_TYPE         ; 111   ; Unsigned Binary                          ;
 +----------------+-------+------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+------------------------------------------------------------+
-; Parameter Name                     ; Value                ; Type                                                       ;
-+------------------------------------+----------------------+------------------------------------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                    ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                 ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                               ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                               ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                             ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                    ;
-; OPERATION_MODE                     ; BIDIR_DUAL_PORT      ; Untyped                                                    ;
-; WIDTH_A                            ; 64                   ; Signed Integer                                             ;
-; WIDTHAD_A                          ; 6                    ; Signed Integer                                             ;
-; NUMWORDS_A                         ; 64                   ; Signed Integer                                             ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                    ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                    ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                    ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                    ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                    ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                    ;
-; WIDTH_B                            ; 64                   ; Signed Integer                                             ;
-; WIDTHAD_B                          ; 6                    ; Signed Integer                                             ;
-; NUMWORDS_B                         ; 64                   ; Signed Integer                                             ;
-; INDATA_REG_B                       ; CLOCK0               ; Untyped                                                    ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK0               ; Untyped                                                    ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                    ;
-; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                    ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                    ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                    ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                    ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                    ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                    ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                    ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                    ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                    ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                             ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                                             ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                    ;
-; BYTE_SIZE                          ; 8                    ; Untyped                                                    ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped                                                    ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                    ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                    ;
-; INIT_FILE                          ; UNUSED               ; Untyped                                                    ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                    ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                    ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                    ;
-; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                    ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                    ;
-; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                    ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                    ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                    ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                                                    ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                    ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                    ;
-; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                    ;
-; CBXI_PARAMETER                     ; altsyncram_98h2      ; Untyped                                                    ;
-+------------------------------------+----------------------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -723,6 +663,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                       ;
++------------------------------------+----------------------+------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                    ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                 ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                               ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                               ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                             ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                    ;
+; OPERATION_MODE                     ; BIDIR_DUAL_PORT      ; Untyped                                                    ;
+; WIDTH_A                            ; 64                   ; Signed Integer                                             ;
+; WIDTHAD_A                          ; 6                    ; Signed Integer                                             ;
+; NUMWORDS_A                         ; 64                   ; Signed Integer                                             ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                    ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                    ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                    ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                    ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                    ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                    ;
+; WIDTH_B                            ; 64                   ; Signed Integer                                             ;
+; WIDTHAD_B                          ; 6                    ; Signed Integer                                             ;
+; NUMWORDS_B                         ; 64                   ; Signed Integer                                             ;
+; INDATA_REG_B                       ; CLOCK0               ; Untyped                                                    ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK0               ; Untyped                                                    ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                    ;
+; ADDRESS_REG_B                      ; CLOCK0               ; Untyped                                                    ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                    ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                    ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                    ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                    ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                    ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                    ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                    ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                    ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                             ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                                             ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                    ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                    ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA             ; Untyped                                                    ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                    ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                    ;
+; INIT_FILE                          ; UNUSED               ; Untyped                                                    ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                    ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                    ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                    ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                    ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                                                    ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                    ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                    ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                    ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                    ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                    ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                    ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                    ;
+; CBXI_PARAMETER                     ; altsyncram_98h2      ; Untyped                                                    ;
++------------------------------------+----------------------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: immediate_builder:inst4 ;
 +----------------+-------+---------------------------------------------+
@@ -745,17 +746,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Name                                      ; Value                                                                     ;
 +-------------------------------------------+---------------------------------------------------------------------------+
 ; Number of entity instances                ; 2                                                                         ;
-; Entity Instance                           ; bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                                           ;
-;     -- WIDTH_A                            ; 64                                                                        ;
-;     -- NUMWORDS_A                         ; 64                                                                        ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                              ;
-;     -- WIDTH_B                            ; 64                                                                        ;
-;     -- NUMWORDS_B                         ; 64                                                                        ;
-;     -- ADDRESS_REG_B                      ; CLOCK0                                                                    ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                              ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                      ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                                                  ;
 ; Entity Instance                           ; ram_principal:inst|altsyncram:altsyncram_component                        ;
 ;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                                           ;
 ;     -- WIDTH_A                            ; 32                                                                        ;
@@ -767,6 +757,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                              ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                      ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                 ;
+; Entity Instance                           ; bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; BIDIR_DUAL_PORT                                                           ;
+;     -- WIDTH_A                            ; 64                                                                        ;
+;     -- NUMWORDS_A                         ; 64                                                                        ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                              ;
+;     -- WIDTH_B                            ; 64                                                                        ;
+;     -- NUMWORDS_B                         ; 64                                                                        ;
+;     -- ADDRESS_REG_B                      ; CLOCK0                                                                    ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                              ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                      ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; OLD_DATA                                                                  ;
 +-------------------------------------------+---------------------------------------------------------------------------+
 
 
@@ -775,26 +776,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 830                         ;
+; boundary_port         ; 578                         ;
 ; cycloneiii_ff         ; 1541                        ;
-;     CLR               ; 327                         ;
+;     CLR               ; 332                         ;
 ;     CLR SCLR          ; 2                           ;
-;     ENA CLR           ; 183                         ;
-;     ENA CLR SCLR      ; 1029                        ;
-; cycloneiii_lcell_comb ; 3259                        ;
+;     ENA CLR           ; 177                         ;
+;     ENA CLR SCLR      ; 1024                        ;
+;     ENA CLR SCLR SLD  ; 6                           ;
+; cycloneiii_lcell_comb ; 3154                        ;
 ;     arith             ; 244                         ;
 ;         2 data inputs ; 58                          ;
 ;         3 data inputs ; 186                         ;
-;     normal            ; 3015                        ;
+;     normal            ; 2910                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 32                          ;
-;         2 data inputs ; 325                         ;
-;         3 data inputs ; 437                         ;
-;         4 data inputs ; 2220                        ;
+;         2 data inputs ; 319                         ;
+;         3 data inputs ; 363                         ;
+;         4 data inputs ; 2195                        ;
 ; cycloneiii_ram_block  ; 91                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 18.00                       ;
-; Average LUT depth     ; 9.08                        ;
+; Max LUT depth         ; 19.00                       ;
+; Average LUT depth     ; 9.09                        ;
 +-----------------------+-----------------------------+
 
 
@@ -813,7 +815,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Sat Jun 14 02:13:37 2025
+    Info: Processing started: Thu Jun 19 18:04:28 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -884,50 +886,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file bht_btb
 Info (12021): Found 1 design units, including 1 entities, in source file bht_btb_wr_data_builder_2.v
     Info (12023): Found entity 1: bht_btb_wr_data_builder_2 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_wr_data_builder_2.v Line: 1
 Info (12127): Elaborating entity "tp2_e5_ERV25_grupo2" for the top level hierarchy
-Info (12128): Elaborating entity "next_pc_decision_module" for hierarchy "next_pc_decision_module:inst9"
 Info (12128): Elaborating entity "branch_result_module" for hierarchy "branch_result_module:inst8"
 Info (12128): Elaborating entity "alu" for hierarchy "alu:inst17"
 Info (12128): Elaborating entity "operand_build" for hierarchy "operand_build:inst25"
 Info (12128): Elaborating entity "op_latch" for hierarchy "op_latch:inst24"
 Info (12128): Elaborating entity "decode_latch" for hierarchy "decode_latch:inst23"
 Info (12128): Elaborating entity "fetch_unit" for hierarchy "fetch_unit:inst34"
-Info (12128): Elaborating entity "bht_btb_module_2" for hierarchy "bht_btb_module_2:inst21"
-Info (12128): Elaborating entity "prediction_module" for hierarchy "bht_btb_module_2:inst21|prediction_module:inst7"
-Info (12128): Elaborating entity "bht_btb_ram" for hierarchy "bht_btb_module_2:inst21|bht_btb_ram:inst2"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v Line: 98
-Info (12130): Elaborated megafunction instantiation "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v Line: 98
-Info (12133): Instantiated megafunction "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component" with the following parameter: File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v Line: 98
-    Info (12134): Parameter "address_reg_b" = "CLOCK0"
-    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
-    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
-    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
-    Info (12134): Parameter "indata_reg_b" = "CLOCK0"
-    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
-    Info (12134): Parameter "lpm_type" = "altsyncram"
-    Info (12134): Parameter "numwords_a" = "64"
-    Info (12134): Parameter "numwords_b" = "64"
-    Info (12134): Parameter "operation_mode" = "BIDIR_DUAL_PORT"
-    Info (12134): Parameter "outdata_aclr_a" = "NONE"
-    Info (12134): Parameter "outdata_aclr_b" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
-    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
-    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
-    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "OLD_DATA"
-    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "widthad_a" = "6"
-    Info (12134): Parameter "widthad_b" = "6"
-    Info (12134): Parameter "width_a" = "64"
-    Info (12134): Parameter "width_b" = "64"
-    Info (12134): Parameter "width_byteena_a" = "1"
-    Info (12134): Parameter "width_byteena_b" = "1"
-    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_98h2.tdf
-    Info (12023): Found entity 1: altsyncram_98h2 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_98h2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_98h2" for hierarchy "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_98h2:auto_generated" File: c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "bht_btb_wr_data_builder_2" for hierarchy "bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8"
-Info (12128): Elaborating entity "tag_latch" for hierarchy "bht_btb_module_2:inst21|tag_latch:inst6"
+Info (12128): Elaborating entity "next_pc_decision_module" for hierarchy "next_pc_decision_module:inst9"
 Info (12128): Elaborating entity "address_latch" for hierarchy "address_latch:inst29"
 Info (12128): Elaborating entity "pipeline_control" for hierarchy "pipeline_control:inst26"
 Info (12128): Elaborating entity "opcode_decode" for hierarchy "opcode_decode:inst22"
@@ -972,8 +937,45 @@ Info (12133): Instantiated megafunction "ram_principal:inst|altsyncram:altsyncra
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u8p2.tdf
     Info (12023): Found entity 1: altsyncram_u8p2 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_u8p2.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_u8p2" for hierarchy "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated" File: c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Critical Warning (127005): Memory depth (2048) in the design file differs from memory depth (18) in the Memory Initialization File "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Python/program_word.hex" -- setting initial value for remaining addresses to 0 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v Line: 101
+Critical Warning (127005): Memory depth (2048) in the design file differs from memory depth (10) in the Memory Initialization File "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Python/program_word.hex" -- setting initial value for remaining addresses to 0 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v Line: 101
 Info (12128): Elaborating entity "store_data_module" for hierarchy "store_data_module:inst30"
+Info (12128): Elaborating entity "bht_btb_module_2" for hierarchy "bht_btb_module_2:inst21"
+Info (12128): Elaborating entity "prediction_module" for hierarchy "bht_btb_module_2:inst21|prediction_module:inst7"
+Info (12128): Elaborating entity "bht_btb_ram" for hierarchy "bht_btb_module_2:inst21|bht_btb_ram:inst2"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v Line: 98
+Info (12130): Elaborated megafunction instantiation "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v Line: 98
+Info (12133): Instantiated megafunction "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component" with the following parameter: File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v Line: 98
+    Info (12134): Parameter "address_reg_b" = "CLOCK0"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK0"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "64"
+    Info (12134): Parameter "numwords_b" = "64"
+    Info (12134): Parameter "operation_mode" = "BIDIR_DUAL_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "OLD_DATA"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_NO_NBE_READ"
+    Info (12134): Parameter "widthad_a" = "6"
+    Info (12134): Parameter "widthad_b" = "6"
+    Info (12134): Parameter "width_a" = "64"
+    Info (12134): Parameter "width_b" = "64"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_98h2.tdf
+    Info (12023): Found entity 1: altsyncram_98h2 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_98h2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_98h2" for hierarchy "bht_btb_module_2:inst21|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_98h2:auto_generated" File: c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "bht_btb_wr_data_builder_2" for hierarchy "bht_btb_module_2:inst21|bht_btb_wr_data_builder_2:inst8"
+Info (12128): Elaborating entity "tag_latch" for hierarchy "bht_btb_module_2:inst21|tag_latch:inst6"
 Info (12128): Elaborating entity "immediate_builder" for hierarchy "immediate_builder:inst4"
 Info (12128): Elaborating entity "instruction_constant" for hierarchy "instruction_constant:inst10"
 Info (12128): Elaborating entity "instruction_constant_lpm_constant_139" for hierarchy "instruction_constant:inst10|instruction_constant_lpm_constant_139:instruction_constant_lpm_constant_139_component" File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v Line: 71
@@ -987,7 +989,6 @@ Warning (14284): Synthesized away the following node(s):
 Info (13000): Registers with preset signals will power-up high File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/fetch_unit.v Line: 34
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "instr_type_ex[3]" is stuck at GND
     Warning (13410): Pin "bht_wr_data[63]" is stuck at GND
     Warning (13410): Pin "bht_wr_data[62]" is stuck at GND
     Warning (13410): Pin "bht_wr_data[61]" is stuck at GND
@@ -996,8 +997,7 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (15717): Design contains 828 virtual pins; timing numbers associated with paths containing virtual pins are estimates
-    Info (15719): Pin "take_new_pc" is virtual output pin
+Info (15717): Design contains 572 virtual pins; timing numbers associated with paths containing virtual pins are estimates
     Info (15719): Pin "branch_result" is virtual output pin
     Info (15719): Pin "c[31]" is virtual output pin
     Info (15719): Pin "c[30]" is virtual output pin
@@ -1063,8 +1063,7 @@ Info (15717): Design contains 828 virtual pins; timing numbers associated with p
     Info (15719): Pin "a[2]" is virtual output pin
     Info (15719): Pin "a[1]" is virtual output pin
     Info (15719): Pin "a[0]" is virtual output pin
-    Info (15719): Pin "branch_prediction" is virtual output pin
-    Info (15719): Pin "flush_pipeline" is virtual output pin
+    Info (15719): Pin "prev_branch_prediction" is virtual output pin
     Info (15719): Pin "address_target[31]" is virtual output pin
     Info (15719): Pin "address_target[30]" is virtual output pin
     Info (15719): Pin "address_target[29]" is virtual output pin
@@ -1097,70 +1096,6 @@ Info (15717): Design contains 828 virtual pins; timing numbers associated with p
     Info (15719): Pin "address_target[2]" is virtual output pin
     Info (15719): Pin "address_target[1]" is virtual output pin
     Info (15719): Pin "address_target[0]" is virtual output pin
-    Info (15719): Pin "imm_op[31]" is virtual output pin
-    Info (15719): Pin "imm_op[30]" is virtual output pin
-    Info (15719): Pin "imm_op[29]" is virtual output pin
-    Info (15719): Pin "imm_op[28]" is virtual output pin
-    Info (15719): Pin "imm_op[27]" is virtual output pin
-    Info (15719): Pin "imm_op[26]" is virtual output pin
-    Info (15719): Pin "imm_op[25]" is virtual output pin
-    Info (15719): Pin "imm_op[24]" is virtual output pin
-    Info (15719): Pin "imm_op[23]" is virtual output pin
-    Info (15719): Pin "imm_op[22]" is virtual output pin
-    Info (15719): Pin "imm_op[21]" is virtual output pin
-    Info (15719): Pin "imm_op[20]" is virtual output pin
-    Info (15719): Pin "imm_op[19]" is virtual output pin
-    Info (15719): Pin "imm_op[18]" is virtual output pin
-    Info (15719): Pin "imm_op[17]" is virtual output pin
-    Info (15719): Pin "imm_op[16]" is virtual output pin
-    Info (15719): Pin "imm_op[15]" is virtual output pin
-    Info (15719): Pin "imm_op[14]" is virtual output pin
-    Info (15719): Pin "imm_op[13]" is virtual output pin
-    Info (15719): Pin "imm_op[12]" is virtual output pin
-    Info (15719): Pin "imm_op[11]" is virtual output pin
-    Info (15719): Pin "imm_op[10]" is virtual output pin
-    Info (15719): Pin "imm_op[9]" is virtual output pin
-    Info (15719): Pin "imm_op[8]" is virtual output pin
-    Info (15719): Pin "imm_op[7]" is virtual output pin
-    Info (15719): Pin "imm_op[6]" is virtual output pin
-    Info (15719): Pin "imm_op[5]" is virtual output pin
-    Info (15719): Pin "imm_op[4]" is virtual output pin
-    Info (15719): Pin "imm_op[3]" is virtual output pin
-    Info (15719): Pin "imm_op[2]" is virtual output pin
-    Info (15719): Pin "imm_op[1]" is virtual output pin
-    Info (15719): Pin "imm_op[0]" is virtual output pin
-    Info (15719): Pin "pc_op[31]" is virtual output pin
-    Info (15719): Pin "pc_op[30]" is virtual output pin
-    Info (15719): Pin "pc_op[29]" is virtual output pin
-    Info (15719): Pin "pc_op[28]" is virtual output pin
-    Info (15719): Pin "pc_op[27]" is virtual output pin
-    Info (15719): Pin "pc_op[26]" is virtual output pin
-    Info (15719): Pin "pc_op[25]" is virtual output pin
-    Info (15719): Pin "pc_op[24]" is virtual output pin
-    Info (15719): Pin "pc_op[23]" is virtual output pin
-    Info (15719): Pin "pc_op[22]" is virtual output pin
-    Info (15719): Pin "pc_op[21]" is virtual output pin
-    Info (15719): Pin "pc_op[20]" is virtual output pin
-    Info (15719): Pin "pc_op[19]" is virtual output pin
-    Info (15719): Pin "pc_op[18]" is virtual output pin
-    Info (15719): Pin "pc_op[17]" is virtual output pin
-    Info (15719): Pin "pc_op[16]" is virtual output pin
-    Info (15719): Pin "pc_op[15]" is virtual output pin
-    Info (15719): Pin "pc_op[14]" is virtual output pin
-    Info (15719): Pin "pc_op[13]" is virtual output pin
-    Info (15719): Pin "pc_op[12]" is virtual output pin
-    Info (15719): Pin "pc_op[11]" is virtual output pin
-    Info (15719): Pin "pc_op[10]" is virtual output pin
-    Info (15719): Pin "pc_op[9]" is virtual output pin
-    Info (15719): Pin "pc_op[8]" is virtual output pin
-    Info (15719): Pin "pc_op[7]" is virtual output pin
-    Info (15719): Pin "pc_op[6]" is virtual output pin
-    Info (15719): Pin "pc_op[5]" is virtual output pin
-    Info (15719): Pin "pc_op[4]" is virtual output pin
-    Info (15719): Pin "pc_op[3]" is virtual output pin
-    Info (15719): Pin "pc_op[2]" is virtual output pin
-    Info (15719): Pin "pc_op[1]" is virtual output pin
-    Info (15719): Pin "pc_op[0]" is virtual output pin
     Info (15719): Pin "rs1_data_op[31]" is virtual output pin
     Info (15719): Pin "rs1_data_op[30]" is virtual output pin
     Info (15719): Pin "rs1_data_op[29]" is virtual output pin
@@ -1195,38 +1130,6 @@ Info (15717): Design contains 828 virtual pins; timing numbers associated with p
     Info (15719): Pin "rs1_data_op[0]" is virtual output pin
     Info (15719): Pin "save_to_reg_write_back" is virtual output pin
     Info (15719): Pin "rd_memory_wb" is virtual output pin
-    Info (15719): Pin "add_build_target[31]" is virtual output pin
-    Info (15719): Pin "add_build_target[30]" is virtual output pin
-    Info (15719): Pin "add_build_target[29]" is virtual output pin
-    Info (15719): Pin "add_build_target[28]" is virtual output pin
-    Info (15719): Pin "add_build_target[27]" is virtual output pin
-    Info (15719): Pin "add_build_target[26]" is virtual output pin
-    Info (15719): Pin "add_build_target[25]" is virtual output pin
-    Info (15719): Pin "add_build_target[24]" is virtual output pin
-    Info (15719): Pin "add_build_target[23]" is virtual output pin
-    Info (15719): Pin "add_build_target[22]" is virtual output pin
-    Info (15719): Pin "add_build_target[21]" is virtual output pin
-    Info (15719): Pin "add_build_target[20]" is virtual output pin
-    Info (15719): Pin "add_build_target[19]" is virtual output pin
-    Info (15719): Pin "add_build_target[18]" is virtual output pin
-    Info (15719): Pin "add_build_target[17]" is virtual output pin
-    Info (15719): Pin "add_build_target[16]" is virtual output pin
-    Info (15719): Pin "add_build_target[15]" is virtual output pin
-    Info (15719): Pin "add_build_target[14]" is virtual output pin
-    Info (15719): Pin "add_build_target[13]" is virtual output pin
-    Info (15719): Pin "add_build_target[12]" is virtual output pin
-    Info (15719): Pin "add_build_target[11]" is virtual output pin
-    Info (15719): Pin "add_build_target[10]" is virtual output pin
-    Info (15719): Pin "add_build_target[9]" is virtual output pin
-    Info (15719): Pin "add_build_target[8]" is virtual output pin
-    Info (15719): Pin "add_build_target[7]" is virtual output pin
-    Info (15719): Pin "add_build_target[6]" is virtual output pin
-    Info (15719): Pin "add_build_target[5]" is virtual output pin
-    Info (15719): Pin "add_build_target[4]" is virtual output pin
-    Info (15719): Pin "add_build_target[3]" is virtual output pin
-    Info (15719): Pin "add_build_target[2]" is virtual output pin
-    Info (15719): Pin "add_build_target[1]" is virtual output pin
-    Info (15719): Pin "add_build_target[0]" is virtual output pin
     Info (15719): Pin "c_write_back[31]" is virtual output pin
     Info (15719): Pin "c_write_back[30]" is virtual output pin
     Info (15719): Pin "c_write_back[29]" is virtual output pin
@@ -1291,38 +1194,6 @@ Info (15717): Design contains 828 virtual pins; timing numbers associated with p
     Info (15719): Pin "load_data[2]" is virtual output pin
     Info (15719): Pin "load_data[1]" is virtual output pin
     Info (15719): Pin "load_data[0]" is virtual output pin
-    Info (15719): Pin "data_in[31]" is virtual output pin
-    Info (15719): Pin "data_in[30]" is virtual output pin
-    Info (15719): Pin "data_in[29]" is virtual output pin
-    Info (15719): Pin "data_in[28]" is virtual output pin
-    Info (15719): Pin "data_in[27]" is virtual output pin
-    Info (15719): Pin "data_in[26]" is virtual output pin
-    Info (15719): Pin "data_in[25]" is virtual output pin
-    Info (15719): Pin "data_in[24]" is virtual output pin
-    Info (15719): Pin "data_in[23]" is virtual output pin
-    Info (15719): Pin "data_in[22]" is virtual output pin
-    Info (15719): Pin "data_in[21]" is virtual output pin
-    Info (15719): Pin "data_in[20]" is virtual output pin
-    Info (15719): Pin "data_in[19]" is virtual output pin
-    Info (15719): Pin "data_in[18]" is virtual output pin
-    Info (15719): Pin "data_in[17]" is virtual output pin
-    Info (15719): Pin "data_in[16]" is virtual output pin
-    Info (15719): Pin "data_in[15]" is virtual output pin
-    Info (15719): Pin "data_in[14]" is virtual output pin
-    Info (15719): Pin "data_in[13]" is virtual output pin
-    Info (15719): Pin "data_in[12]" is virtual output pin
-    Info (15719): Pin "data_in[11]" is virtual output pin
-    Info (15719): Pin "data_in[10]" is virtual output pin
-    Info (15719): Pin "data_in[9]" is virtual output pin
-    Info (15719): Pin "data_in[8]" is virtual output pin
-    Info (15719): Pin "data_in[7]" is virtual output pin
-    Info (15719): Pin "data_in[6]" is virtual output pin
-    Info (15719): Pin "data_in[5]" is virtual output pin
-    Info (15719): Pin "data_in[4]" is virtual output pin
-    Info (15719): Pin "data_in[3]" is virtual output pin
-    Info (15719): Pin "data_in[2]" is virtual output pin
-    Info (15719): Pin "data_in[1]" is virtual output pin
-    Info (15719): Pin "data_in[0]" is virtual output pin
     Info (15719): Pin "wr_memory_mem" is virtual output pin
     Info (15719): Pin "pc_next[31]" is virtual output pin
     Info (15719): Pin "pc_next[30]" is virtual output pin
@@ -1393,16 +1264,6 @@ Info (15717): Design contains 828 virtual pins; timing numbers associated with p
     Info (15719): Pin "rd_write_back[2]" is virtual output pin
     Info (15719): Pin "rd_write_back[1]" is virtual output pin
     Info (15719): Pin "rd_write_back[0]" is virtual output pin
-    Info (15719): Pin "rs1_op[4]" is virtual output pin
-    Info (15719): Pin "rs1_op[3]" is virtual output pin
-    Info (15719): Pin "rs1_op[2]" is virtual output pin
-    Info (15719): Pin "rs1_op[1]" is virtual output pin
-    Info (15719): Pin "rs1_op[0]" is virtual output pin
-    Info (15719): Pin "rs2_op[4]" is virtual output pin
-    Info (15719): Pin "rs2_op[3]" is virtual output pin
-    Info (15719): Pin "rs2_op[2]" is virtual output pin
-    Info (15719): Pin "rs2_op[1]" is virtual output pin
-    Info (15719): Pin "rs2_op[0]" is virtual output pin
     Info (15719): Pin "rs2_data_op[31]" is virtual output pin
     Info (15719): Pin "rs2_data_op[30]" is virtual output pin
     Info (15719): Pin "rs2_data_op[29]" is virtual output pin
@@ -1435,6 +1296,7 @@ Info (15717): Design contains 828 virtual pins; timing numbers associated with p
     Info (15719): Pin "rs2_data_op[2]" is virtual output pin
     Info (15719): Pin "rs2_data_op[1]" is virtual output pin
     Info (15719): Pin "rs2_data_op[0]" is virtual output pin
+    Info (15719): Pin "branch_prediction" is virtual output pin
     Info (15719): Pin "prev_pc[31]" is virtual output pin
     Info (15719): Pin "prev_pc[30]" is virtual output pin
     Info (15719): Pin "prev_pc[29]" is virtual output pin
@@ -1467,7 +1329,38 @@ Info (15717): Design contains 828 virtual pins; timing numbers associated with p
     Info (15719): Pin "prev_pc[2]" is virtual output pin
     Info (15719): Pin "prev_pc[1]" is virtual output pin
     Info (15719): Pin "prev_pc[0]" is virtual output pin
-    Info (15719): Pin "fetch_ena" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[31]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[30]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[29]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[28]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[27]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[26]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[25]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[24]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[23]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[22]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[21]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[20]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[19]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[18]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[17]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[16]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[15]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[14]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[13]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[12]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[11]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[10]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[9]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[8]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[7]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[6]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[5]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[4]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[3]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[2]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[1]" is virtual output pin
+    Info (15719): Pin "pc_target_prediction[0]" is virtual output pin
     Info (15719): Pin "inst_in[31]" is virtual output pin
     Info (15719): Pin "inst_in[30]" is virtual output pin
     Info (15719): Pin "inst_in[29]" is virtual output pin
@@ -1532,111 +1425,6 @@ Info (15717): Design contains 828 virtual pins; timing numbers associated with p
     Info (15719): Pin "pc_new[2]" is virtual output pin
     Info (15719): Pin "pc_new[1]" is virtual output pin
     Info (15719): Pin "pc_new[0]" is virtual output pin
-    Info (15719): Pin "dec_ena" is virtual output pin
-    Info (15719): Pin "dec_nop" is virtual output pin
-    Info (15719): Pin "imm[31]" is virtual output pin
-    Info (15719): Pin "imm[30]" is virtual output pin
-    Info (15719): Pin "imm[29]" is virtual output pin
-    Info (15719): Pin "imm[28]" is virtual output pin
-    Info (15719): Pin "imm[27]" is virtual output pin
-    Info (15719): Pin "imm[26]" is virtual output pin
-    Info (15719): Pin "imm[25]" is virtual output pin
-    Info (15719): Pin "imm[24]" is virtual output pin
-    Info (15719): Pin "imm[23]" is virtual output pin
-    Info (15719): Pin "imm[22]" is virtual output pin
-    Info (15719): Pin "imm[21]" is virtual output pin
-    Info (15719): Pin "imm[20]" is virtual output pin
-    Info (15719): Pin "imm[19]" is virtual output pin
-    Info (15719): Pin "imm[18]" is virtual output pin
-    Info (15719): Pin "imm[17]" is virtual output pin
-    Info (15719): Pin "imm[16]" is virtual output pin
-    Info (15719): Pin "imm[15]" is virtual output pin
-    Info (15719): Pin "imm[14]" is virtual output pin
-    Info (15719): Pin "imm[13]" is virtual output pin
-    Info (15719): Pin "imm[12]" is virtual output pin
-    Info (15719): Pin "imm[11]" is virtual output pin
-    Info (15719): Pin "imm[10]" is virtual output pin
-    Info (15719): Pin "imm[9]" is virtual output pin
-    Info (15719): Pin "imm[8]" is virtual output pin
-    Info (15719): Pin "imm[7]" is virtual output pin
-    Info (15719): Pin "imm[6]" is virtual output pin
-    Info (15719): Pin "imm[5]" is virtual output pin
-    Info (15719): Pin "imm[4]" is virtual output pin
-    Info (15719): Pin "imm[3]" is virtual output pin
-    Info (15719): Pin "imm[2]" is virtual output pin
-    Info (15719): Pin "imm[1]" is virtual output pin
-    Info (15719): Pin "imm[0]" is virtual output pin
-    Info (15719): Pin "instr_type[2]" is virtual output pin
-    Info (15719): Pin "instr_type[1]" is virtual output pin
-    Info (15719): Pin "instr_type[0]" is virtual output pin
-    Info (15719): Pin "instr_type_ex[3]" is virtual output pin
-    Info (15719): Pin "instr_type_ex[2]" is virtual output pin
-    Info (15719): Pin "instr_type_ex[1]" is virtual output pin
-    Info (15719): Pin "instr_type_ex[0]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[31]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[30]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[29]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[28]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[27]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[26]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[25]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[24]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[23]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[22]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[21]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[20]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[19]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[18]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[17]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[16]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[15]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[14]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[13]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[12]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[11]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[10]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[9]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[8]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[7]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[6]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[5]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[4]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[3]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[2]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[1]" is virtual output pin
-    Info (15719): Pin "rs1_data_ex[0]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[31]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[30]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[29]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[28]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[27]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[26]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[25]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[24]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[23]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[22]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[21]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[20]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[19]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[18]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[17]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[16]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[15]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[14]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[13]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[12]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[11]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[10]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[9]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[8]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[7]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[6]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[5]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[4]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[3]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[2]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[1]" is virtual output pin
-    Info (15719): Pin "rs2_data_ex[0]" is virtual output pin
     Info (15719): Pin "b[31]" is virtual output pin
     Info (15719): Pin "b[30]" is virtual output pin
     Info (15719): Pin "b[29]" is virtual output pin
@@ -1669,49 +1457,6 @@ Info (15717): Design contains 828 virtual pins; timing numbers associated with p
     Info (15719): Pin "b[2]" is virtual output pin
     Info (15719): Pin "b[1]" is virtual output pin
     Info (15719): Pin "b[0]" is virtual output pin
-    Info (15719): Pin "funct3_ex[2]" is virtual output pin
-    Info (15719): Pin "funct3_ex[1]" is virtual output pin
-    Info (15719): Pin "funct3_ex[0]" is virtual output pin
-    Info (15719): Pin "funct7_ex[6]" is virtual output pin
-    Info (15719): Pin "funct7_ex[5]" is virtual output pin
-    Info (15719): Pin "funct7_ex[4]" is virtual output pin
-    Info (15719): Pin "funct7_ex[3]" is virtual output pin
-    Info (15719): Pin "funct7_ex[2]" is virtual output pin
-    Info (15719): Pin "funct7_ex[1]" is virtual output pin
-    Info (15719): Pin "funct7_ex[0]" is virtual output pin
-    Info (15719): Pin "prev_branch_prediction" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[31]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[30]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[29]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[28]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[27]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[26]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[25]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[24]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[23]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[22]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[21]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[20]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[19]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[18]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[17]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[16]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[15]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[14]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[13]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[12]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[11]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[10]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[9]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[8]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[7]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[6]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[5]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[4]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[3]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[2]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[1]" is virtual output pin
-    Info (15719): Pin "pc_target_prediction[0]" is virtual output pin
     Info (15719): Pin "bht_wr_enable" is virtual output pin
     Info (15719): Pin "bht_wr_address[5]" is virtual output pin
     Info (15719): Pin "bht_wr_address[4]" is virtual output pin
@@ -1825,15 +1570,15 @@ Info (15717): Design contains 828 virtual pins; timing numbers associated with p
     Info (15719): Pin "rs2_dec[2]" is virtual output pin
     Info (15719): Pin "rs2_dec[1]" is virtual output pin
     Info (15719): Pin "rs2_dec[0]" is virtual output pin
-Info (21057): Implemented 5305 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 4947 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 0 output pins
-    Info (21061): Implemented 5212 logic cells
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 4850 logic cells
     Info (21064): Implemented 91 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Sat Jun 14 02:14:00 2025
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:38
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 4838 megabytes
+    Info: Processing ended: Thu Jun 19 18:04:49 2025
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:34
 
 
