@@ -21,9 +21,9 @@ on the Quartus Prime software download page.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 376 176)
+	(rect 16 16 376 208)
 	(text "bht_btb_module_2" (rect 5 0 120 14)(font "Intel Clear" (font_size 8)))
-	(text "inst" (rect 8 144 24 156)(font "Intel Clear" ))
+	(text "inst" (rect 8 176 24 188)(font "Intel Clear" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -62,16 +62,23 @@ on the Quartus Prime software download page.
 	(port
 		(pt 0 112)
 		(input)
-		(text "clk" (rect 0 0 16 14)(font "Intel Clear" (font_size 8)))
-		(text "clk" (rect 21 107 37 121)(font "Intel Clear" (font_size 8)))
+		(text "predictor_enable" (rect 0 0 101 14)(font "Intel Clear" (font_size 8)))
+		(text "predictor_enable" (rect 21 107 122 121)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 112)(pt 16 112))
 	)
 	(port
 		(pt 0 128)
 		(input)
-		(text "reset" (rect 0 0 29 14)(font "Intel Clear" (font_size 8)))
-		(text "reset" (rect 21 123 50 137)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 0 0 16 14)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 123 37 137)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "reset" (rect 0 0 29 14)(font "Intel Clear" (font_size 8)))
+		(text "reset" (rect 21 139 50 153)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
 	)
 	(port
 		(pt 360 32)
@@ -116,6 +123,6 @@ on the Quartus Prime software download page.
 		(line (pt 360 112)(pt 344 112)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 344 144))
+		(rectangle (rect 16 16 344 176))
 	)
 )
