@@ -1,4 +1,4 @@
-Analysis & Synthesis Status : Successful - Thu Jun 19 18:24:23 2025
+Analysis & Synthesis Status : Successful - Mon Jun 23 01:49:26 2025
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : tp2_e5_ERV25_grupo2
 Top-level Entity Name : tp2_e5_ERV25_grupo2
@@ -7,7 +7,7 @@ Total logic elements : 4,182
     Total combinational functions : 3,124
     Dedicated logic registers : 1,541
 Total registers : 1541
-Total pins : 6
+Total pins : 14
 Total virtual pins : 572
 Total memory bits : 69,312
 Embedded Multiplier 9-bit elements : 0

@@ -2120,6 +2120,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "LEDS[7]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LEDS[0]",
+					"strict" : false
+				},
+				{
 					"name" : "pc[31]",
 					"strict" : false
 				},
@@ -2292,7 +2324,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "reset_n",
 					"strict" : false
 				}
 			]

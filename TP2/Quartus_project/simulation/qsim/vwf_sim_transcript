@@ -28,7 +28,7 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Thu Jun 19 18:25:44 2025
+    Info: Processing started: Mon Jun 23 01:54:52 2025
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2 --vector_source="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/FOR_SIMULATIONvwf.vwf" --testbench_file="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/FOR_SIMULATIONvwf.vwf.vt"
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
@@ -45,6 +45,8 @@ st bench files
 
  vector source file when writing test bench files
 
+le when writing test bench files
+
 pin "pc_target_prediction[25]" in vector source file when writing test bench files
 
  in vector source file when writing test bench files
@@ -55,13 +57,19 @@ riting test bench files
 
 5): Ignoring output pin "store_data[26]" in vector source file when writing test bench files
 
-Completed successfully. 
+ccessful. 0 errors, 606 warnings
+    Info: Peak virtual memory: 4674 megabytes
+    Info: Processing ended: Mon Jun 23 01:54:54 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
-**** Generating the functional simulation netlist ****
+Completed successfully. 
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/" tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
+**** Generating the timing simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/" tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 
 TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
 
@@ -82,15 +90,22 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Altera and sold by Altera or its authorized distributors.  Please
     Info: refer to the Altera Software License Subscription Agreements 
     Info: on the Quartus Prime software download page.
-    Info: Processing started: Thu Jun 19 18:25:46 2025
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/" tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
+    Info: Processing started: Mon Jun 23 01:54:54 2025
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/" tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file tp2_e5_ERV25_grupo2_8l_1000mv_85c_slow.vo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file tp2_e5_ERV25_grupo2_8l_1000mv_0c_slow.vo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file tp2_e5_ERV25_grupo2_min_1000mv_0c_fast.vo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file tp2_e5_ERV25_grupo2.vo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file tp2_e5_ERV25_grupo2_8l_1000mv_85c_v_slow.sdo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file tp2_e5_ERV25_grupo2_8l_1000mv_0c_v_slow.sdo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file tp2_e5_ERV25_grupo2_min_1000mv_0c_v_fast.sdo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file tp2_e5_ERV25_grupo2_v.sdo in folder "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4690 megabytes
-    Info: Processing ended: Thu Jun 19 18:25:47 2025
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4737 megabytes
+    Info: Processing ended: Mon Jun 23 01:54:59 2025
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
 
 Completed successfully. 
 
@@ -116,7 +131,7 @@ Reading pref.tcl
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 18:25:49 on Jun 19,2025
+# Start time: 01:55:01 on Jun 23,2025
 # vlog -work work tp2_e5_ERV25_grupo2.vo 
 
 # -- Compiling module tp2_e5_ERV25_grupo2
@@ -124,15 +139,16 @@ Reading pref.tcl
 # -- Compiling module hard_block
 
 # 
+
 # Top level modules:
 # 	tp2_e5_ERV25_grupo2
 
-# End time: 18:25:50 on Jun 19,2025, Elapsed time: 0:00:01
+# End time: 01:55:02 on Jun 23,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 
-# Start time: 18:25:50 on Jun 19,2025
+# Start time: 01:55:02 on Jun 23,2025
 # vlog -work work FOR_SIMULATIONvwf.vwf.vt 
 
 # init_auxdbinfo(): DATABASE ERROR: (sqlite3_exec): file is not a database
@@ -146,11 +162,12 @@ Reading pref.tcl
 # Top level modules:
 # 	tp2_e5_ERV25_grupo2_vlg_vec_tst
 
-# End time: 18:25:50 on Jun 19,2025, Elapsed time: 0:00:00
+# End time: 01:55:02 on Jun 23,2025, Elapsed time: 0:00:00
+
 # Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.tp2_e5_ERV25_grupo2_vlg_vec_tst 
-# Start time: 18:25:50 on Jun 19,2025
+# Start time: 01:55:03 on Jun 23,2025
 # Loading work.tp2_e5_ERV25_grupo2_vlg_vec_tst
 # Loading work.tp2_e5_ERV25_grupo2
 # Loading work.hard_block
@@ -164,52 +181,76 @@ Reading pref.tcl
 # Loading cycloneive_ver.cycloneive_ram_block
 # Loading cycloneive_ver.cycloneive_ram_register
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'i1'.  Expected 33, found 26.
-#    Time: 0 ps  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst/i1 File: FOR_SIMULATIONvwf.vwf.vt Line: 62
-# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(62): [TFMPC] - Missing connection for port 'branch_result'.
-# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(62): [TFMPC] - Missing connection for port 'prev_branch_prediction'.
-# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(62): [TFMPC] - Missing connection for port 'save_to_reg_write_back'.
-# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(62): [TFMPC] - Missing connection for port 'rd_memory_wb'.
-# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(62): [TFMPC] - Missing connection for port 'wr_memory_mem'.
-# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(62): [TFMPC] - Missing connection for port 'branch_prediction'.
-# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(62): [TFMPC] - Missing connection for port 'bht_wr_enable'.
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading instances from tp2_e5_ERV25_grupo2_v.sdo
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'i1'.  Expected 34, found 27.
+#    Time: 0 ps  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst/i1 File: FOR_SIMULATIONvwf.vwf.vt Line: 63
+# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(63): [TFMPC] - Missing connection for port 'branch_result'.
+# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(63): [TFMPC] - Missing connection for port 'prev_branch_prediction'.
+# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(63): [TFMPC] - Missing connection for port 'save_to_reg_write_back'.
+# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(63): [TFMPC] - Missing connection for port 'rd_memory_wb'.
+# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(63): [TFMPC] - Missing connection for port 'wr_memory_mem'.
+# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(63): [TFMPC] - Missing connection for port 'branch_prediction'.
+# ** Warning: (vsim-3722) FOR_SIMULATIONvwf.vwf.vt(63): [TFMPC] - Missing connection for port 'bht_wr_enable'.
 # Loading altera_ver.PRIM_GDFF_LOW
-# ** Warning: Design size of 14887 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# ** Warning: Design size of 13369 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
+# Loading timing data from tp2_e5_ERV25_grupo2_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst File: FOR_SIMULATIONvwf.vwf.vt
 
 # after#28
 
-# Simulation time: 110000 ps
+# Simulation time: 971 ps
 
-# Simulation time: 110000 ps
+# Simulation time: 971 ps
 
-# Attempting stack trace sig 11
-# Signal caught: signo [11]
+# Simulation time: 971 ps
 
-# vsim_stacktrace.vstf written
-# Current time Thu Jun 19 18:25:57 2025
-# ModelSim - Intel FPGA Edition Stack Trace
-# Program = vsim
-# Id = "2020.1"
-# Version = "2020.02"
-# Date = "Feb 28 2020"
-# Platform = win32pe
-# Signature = 4a3706afe29a2b87def93ebd4f2693fa
-# 0    0xfd4dbb54: ''
-# End of Stack Trace
+# Simulation time: 971 ps
 
+# Simulation time: 971 ps
 
+# Simulation time: 971 ps
 
-# ** Fatal: (SIGSEGV) Bad handle or reference.
-#    Time: 3720 ns  Iteration: 2  Process: /tp2_e5_ERV25_grupo2_vlg_vec_tst/i1/\inst|altsyncram_component|auto_generated|ram_block1a20 /#ASSIGN#4976 File: $MODEL_TECH/../altera/verilog/src/cycloneive_atoms.v
-# ** Fatal: (vsim-4) ****** Memory allocation failure. *****
-# Attempting to allocate 4239468304 bytes
-# Please check your system for available memory and swap space.
-# ** Fatal: (vsim-4) ****** Memory allocation failure. *****
-# Attempting to allocate 4239468304 bytes
-# Please check your system for available memory and swap space.
-# End time: 18:25:57 on Jun 19,2025, Elapsed time: 0:00:07
-# Errors: 2, Warnings: 9
+# Simulation time: 971 ps
+
+# Simulation time: 971 ps
+
+# Simulation time: 3797133 ps
+
+# Simulation time: 3797133 ps
+
+# Simulation time: 3797133 ps
+
+# Simulation time: 3797133 ps
+
+# Simulation time: 3797133 ps
+
+# Simulation time: 3797133 ps
+
+# Simulation time: 3797133 ps
+
+# Simulation time: 3797133 ps
+
+# Simulation time: 7316814 ps
+
+# Simulation time: 7316814 ps
+
+# Simulation time: 7316814 ps
+
+# Simulation time: 7316814 ps
+
+# Simulation time: 7316814 ps
+
+# Simulation time: 7316814 ps
+
+# ** Note: $finish    : FOR_SIMULATIONvwf.vwf.vt(95)
+#    Time: 100 us  Iteration: 0  Instance: /tp2_e5_ERV25_grupo2_vlg_vec_tst
+
+# End time: 01:56:01 on Jun 23,2025, Elapsed time: 0:00:58
+# Errors: 0, Warnings: 9
 
 Completed successfully. 
 
@@ -235,7 +276,7 @@ Warning: save_to_reg_write_back - signal not found in VCD.
 
 Warning: wr_memory_mem - signal not found in VCD.
 
-Writing the resulting VWF to D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/tp2_e5_ERV25_grupo2_20250619182557.sim.vwf
+Writing the resulting VWF to D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/simulation/qsim/tp2_e5_ERV25_grupo2_20250623015602.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -33,6 +33,7 @@
 //on the Quartus Prime software download page.
 
 module bht_btb_ram (
+	aclr,
 	address_a,
 	address_b,
 	clock,
@@ -43,6 +44,7 @@ module bht_btb_ram (
 	q_a,
 	q_b);
 
+	input	  aclr;
 	input	[5:0]  address_a;
 	input	[5:0]  address_b;
 	input	  clock;
@@ -55,6 +57,7 @@ module bht_btb_ram (
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
+	tri0	  aclr;
 	tri1	  clock;
 	tri0	  wren_a;
 	tri0	  wren_b;
@@ -80,7 +83,7 @@ endmodule
 // Retrieval info: PRIVATE: CLOCK_ENABLE_OUTPUT_A NUMERIC "0"
 // Retrieval info: PRIVATE: CLOCK_ENABLE_OUTPUT_B NUMERIC "0"
 // Retrieval info: PRIVATE: CLRdata NUMERIC "0"
-// Retrieval info: PRIVATE: CLRq NUMERIC "0"
+// Retrieval info: PRIVATE: CLRq NUMERIC "1"
 // Retrieval info: PRIVATE: CLRrdaddress NUMERIC "0"
 // Retrieval info: PRIVATE: CLRrren NUMERIC "0"
 // Retrieval info: PRIVATE: CLRwraddress NUMERIC "0"
@@ -101,7 +104,7 @@ endmodule
 // Retrieval info: PRIVATE: MEM_IN_BITS NUMERIC "0"
 // Retrieval info: PRIVATE: MIFfilename STRING ""
 // Retrieval info: PRIVATE: OPERATION_MODE NUMERIC "3"
-// Retrieval info: PRIVATE: OUTDATA_ACLR_B NUMERIC "0"
+// Retrieval info: PRIVATE: OUTDATA_ACLR_B NUMERIC "1"
 // Retrieval info: PRIVATE: OUTDATA_REG_B NUMERIC "0"
 // Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 // Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_MIXED_PORTS NUMERIC "1"
@@ -138,8 +141,8 @@ endmodule
 // Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "64"
 // Retrieval info: CONSTANT: NUMWORDS_B NUMERIC "64"
 // Retrieval info: CONSTANT: OPERATION_MODE STRING "BIDIR_DUAL_PORT"
-// Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "NONE"
-// Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "NONE"
+// Retrieval info: CONSTANT: OUTDATA_ACLR_A STRING "CLEAR0"
+// Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "CLEAR0"
 // Retrieval info: CONSTANT: OUTDATA_REG_A STRING "UNREGISTERED"
 // Retrieval info: CONSTANT: OUTDATA_REG_B STRING "UNREGISTERED"
 // Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
@@ -153,6 +156,7 @@ endmodule
 // Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "1"
 // Retrieval info: CONSTANT: WIDTH_BYTEENA_B NUMERIC "1"
 // Retrieval info: CONSTANT: WRCONTROL_WRADDRESS_REG_B STRING "CLOCK0"
+// Retrieval info: USED_PORT: aclr 0 0 0 0 INPUT GND "aclr"
 // Retrieval info: USED_PORT: address_a 0 0 6 0 INPUT NODEFVAL "address_a[5..0]"
 // Retrieval info: USED_PORT: address_b 0 0 6 0 INPUT NODEFVAL "address_b[5..0]"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
@@ -162,6 +166,7 @@ endmodule
 // Retrieval info: USED_PORT: q_b 0 0 64 0 OUTPUT NODEFVAL "q_b[63..0]"
 // Retrieval info: USED_PORT: wren_a 0 0 0 0 INPUT GND "wren_a"
 // Retrieval info: USED_PORT: wren_b 0 0 0 0 INPUT GND "wren_b"
+// Retrieval info: CONNECT: @aclr0 0 0 0 0 aclr 0 0 0 0
 // Retrieval info: CONNECT: @address_a 0 0 6 0 address_a 0 0 6 0
 // Retrieval info: CONNECT: @address_b 0 0 6 0 address_b 0 0 6 0
 // Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0

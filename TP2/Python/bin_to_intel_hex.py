@@ -14,16 +14,36 @@ def to_intel_hex_line(address: int, data: bytes) -> str:
 
 # Instrucciones RISC-V en big endian
 instructions = [
-    0x00000013, # NOP
-    0x00000093,
-    0x00100113,
-    0x00a00213,
-    0x002081b3,
-    0x00010093,
-    0x00018113,
-    0xfff20213,
-    0xfe0218e3,
-    0X00018193
+0x00000013,  # NOP
+0x00200293,
+0x06400313,
+0x00000f13,
+0x00200393,
+0x00100e13,
+0x00000e93,
+0x00000f93,
+0x007f8863,
+0x007e8eb3,
+0x001f8f93,
+0xff5ff0ef,
+0x03d2c663,
+0x00028213,
+0x00724663,
+0x40720233,
+0xff9ff0ef,
+0x00020863,
+0x00138393,
+0xfc53c6e3,
+0x00c000ef,
+0x00000e13,
+0x004000ef,
+0x000e0463,
+0x001f0f13,
+0x00128293,
+0xfa5354e3,
+0x000f0e13,
+0x000000ef
+
   ]
 
 with open("program_word.hex", "w") as f:
@@ -279,7 +299,10 @@ loop:
    	addi x4, x4, -1
    	bne	x4, x0, loop
     
-    addi x3, x3, 0
+    addi x28, x3, 0
+
+fin:
+	jal x0, fin
 
 
     00000093
@@ -290,6 +313,93 @@ loop:
     00018113
     fff20213
     fe0218e3
-    00018193
+    00018e13
+
+    
+
+# numeros primos hasta 30
+
+    addi t0, x0, 2      # i = 2, primer número a chequear si es primo
+    addi t1, x0, 30     # N = 30, límite superior
+    addi t5, x0, 0      # contador de primos encontrados = 0
+
+outer_loop:
+    addi t2, x0, 2      # divisor = 2, empezamos a probar divisores
+    addi t3, x0, 1      # es_primo = 1, asumimos que i es primo
+
+inner_loop:
+    # Calculamos divisor * divisor usando sumas repetidas
+    addi t4, x0, 0      # t4 = 0, acumulador de multiplicación
+    addi t6, x0, 0      # t6 = 0, contador de sumas realizadas
+
+mul_loop:
+    beq t6, t2, mul_end # si t6 == divisor, termina multiplicación
+    add t4, t4, t2      # t4 += divisor
+    addi t6, t6, 1      # t6 += 1
+    jal mul_loop        # salto para repetir multiplicación
+
+mul_end:
+    blt t0, t4, check_prime  # si i < divisor*divisor, no hay más divisores que probar
+
+    # Calculamos i % divisor usando restas sucesivas
+    addi x4, t0, 0      # x4 = i, valor que iremos restando divisor
+
+mod_loop:
+    blt x4, t2, mod_end # si resto < divisor, termina el cálculo del módulo
+    sub x4, x4, t2      # resto -= divisor
+    jal mod_loop        # repetir hasta que resto < divisor
+
+mod_end:
+    beq x4, x0, not_prime # si resto == 0, i es divisible por divisor → no es primo
+
+    addi t2, t2, 1      # divisor += 1, probamos siguiente divisor
+    blt t2, t0, inner_loop  # mientras divisor < i seguimos probando
+    jal check_prime     # sino, vamos a checkear si es primo
+
+not_prime:
+    addi t3, x0, 0      # es_primo = 0, marcamos que no es primo
+    jal check_prime     # saltamos a la verificación final
+
+check_prime:
+    beq t3, x0, skip_count # si no es primo, saltamos el conteo
+    addi t5, t5, 1      # contador_primos += 1
+
+skip_count:
+    addi t0, t0, 1      # i += 1, probamos el siguiente número
+    ble t0, t1, outer_loop  # mientras i <= N, seguimos con outer_loop
+
+    addi x28, t5, 0
+end:
+    jal end             # bucle infinito para detener ejecución (resultado en t5)
+
+    
+    0x00200293,
+0x01e00313,
+0x00000f13,
+0x00200393,
+0x00100e13,
+0x00000e93,
+0x00000f93,
+0x007f8863,
+0x007e8eb3,
+0x001f8f93,
+0xff5ff0ef,
+0x03d2c663,
+0x00028213,
+0x00724663,
+0x40720233,
+0xff9ff0ef,
+0x00020863,
+0x00138393,
+0xfc53c6e3,
+0x00c000ef,
+0x00000e13,
+0x004000ef,
+0x000e0463,
+0x001f0f13,
+0x00128293,
+0xfa5354e3,
+0x000f0e13,
+0x000000ef
 
 """
