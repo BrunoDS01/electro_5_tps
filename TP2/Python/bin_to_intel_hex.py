@@ -16,7 +16,7 @@ def to_intel_hex_line(address: int, data: bytes) -> str:
 instructions = [
 0x00000013,  # NOP
 0x00200293,
-0x06400313,
+0x01e00313,
 0x00000f13,
 0x00200393,
 0x00100e13,

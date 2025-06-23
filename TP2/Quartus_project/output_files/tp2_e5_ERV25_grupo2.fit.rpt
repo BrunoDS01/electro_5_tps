@@ -1,5 +1,5 @@
 Fitter report for tp2_e5_ERV25_grupo2
-Mon Jun 23 01:50:04 2025
+Mon Jun 23 02:06:21 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -71,7 +71,7 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Mon Jun 23 01:50:04 2025           ;
+; Fitter Status                      ; Successful - Mon Jun 23 02:06:21 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
@@ -158,14 +158,14 @@ on the Quartus Prime software download page.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.38        ;
+; Average used               ; 1.40        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  12.8%      ;
-;     Processor 3            ;  12.5%      ;
-;     Processor 4            ;  12.4%      ;
+;     Processor 2            ;  13.5%      ;
+;     Processor 3            ;  13.2%      ;
+;     Processor 4            ;  13.1%      ;
 +----------------------------+-------------+
 
 
@@ -852,7 +852,7 @@ RAM content values are presented in the following format: (Binary) (Octal) (Deci
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ;   Addr   ;              +0              ;              +1              ;              +2              ;              +3              ;              +4              ;              +5              ;              +6              ;              +7              ;
 +----------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+------------------------------+
-;0;(00000000000000000000000000010011) (23) (19) (13)    ;(00000000001000000000001010010011) (10001223) (2097811) (200293)   ;(00000110010000000000001100010011) (620001423) (104858387) (6400313)   ;(00000000000000000000111100010011) (7423) (3859) (F13)   ;(00000000001000000000001110010011) (10001623) (2098067) (200393)   ;(00000000000100000000111000010011) (4007023) (1052179) (100E13)   ;(00000000000000000000111010010011) (7223) (3731) (E93)   ;(00000000000000000000111110010011) (7623) (3987) (F93)   ;
+;0;(00000000000000000000000000010011) (23) (19) (13)    ;(00000000001000000000001010010011) (10001223) (2097811) (200293)   ;(00000001111000000000001100010011) (170001423) (31458067) (1E00313)   ;(00000000000000000000111100010011) (7423) (3859) (F13)   ;(00000000001000000000001110010011) (10001623) (2098067) (200393)   ;(00000000000100000000111000010011) (4007023) (1052179) (100E13)   ;(00000000000000000000111010010011) (7223) (3731) (E93)   ;(00000000000000000000111110010011) (7623) (3987) (F93)   ;
 ;8;(00000000011111111000100001100011) (37704143) (8357987) (7F8863)    ;(00000000011111101000111010110011) (37507263) (8294067) (7E8EB3)   ;(00000000000111111000111110010011) (7707623) (2068371) (1F8F93)   ;(11111111010111111111000011101111) (-50007421) (-10489617) (-1000-15-1-1)   ;(00000011110100101100011001100011) (364543143) (64144995) (3D2C663)   ;(00000000000000101000001000010011) (501023) (164371) (28213)   ;(00000000011100100100011001100011) (34443143) (7489123) (724663)   ;(01000000011100100000001000110011) (-2113082585) (1081213491) (40720233)   ;
 ;16;(11111111100111111111000011101111) (-30007421) (-6295313) (-600-15-1-1)    ;(00000000000000100000100001100011) (404143) (133219) (20863)   ;(00000000000100111000001110010011) (4701623) (1278867) (138393)   ;(11111100010100111100011011100011) (-353034435) (-61618461) (-3-10-12-3-9-1-13)   ;(00000000110000000000000011101111) (60000357) (12583151) (C000EF)   ;(00000000000000000000111000010011) (7023) (3603) (E13)   ;(00000000010000000000000011101111) (20000357) (4194543) (4000EF)   ;(00000000000011100000010001100011) (3402143) (918627) (E0463)   ;
 ;24;(00000000000111110000111100010011) (7607423) (2035475) (1F0F13)    ;(00000000000100101000001010010011) (4501223) (1213075) (128293)   ;(11111010010100110101010011100011) (-553125435) (-95202077) (-5-10-12-10-11-1-13)   ;(00000000000011110000111000010011) (3607023) (986643) (F0E13)   ;(00000000000000000000000011101111) (357) (239) (EF)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;(00000000000000000000000000000000) (0) (0) (00)   ;
@@ -1485,7 +1485,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  12 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has 2.5V VCCIO pins. 4 total pin(s) used --  20 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  24 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:03
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -1498,7 +1498,7 @@ Info (170195): Router estimated average interconnect usage is 6% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:13
-Info (11888): Total time spent on timing analysis during the Fitter is 4.10 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 3.96 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1507,9 +1507,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:05
 Info (144001): Generated suppressed messages file D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/output_files/tp2_e5_ERV25_grupo2.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 5586 megabytes
-    Info: Processing ended: Mon Jun 23 01:50:05 2025
+    Info: Processing ended: Mon Jun 23 02:06:22 2025
     Info: Elapsed time: 00:00:38
-    Info: Total CPU time (on all processors): 00:01:07
+    Info: Total CPU time (on all processors): 00:01:09
 
 
 +----------------------------+

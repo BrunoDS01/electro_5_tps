@@ -504,7 +504,7 @@ on the Quartus Prime software download page.
 )
 (pin
 	(output)
-	(rect 2488 808 2664 824)
+	(rect 2504 792 2680 808)
 	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
 	(text "flush_pipeline" (rect 90 0 157 10)(font "Arial" ))
 	(pt 0 8)
@@ -566,6 +566,22 @@ on the Quartus Prime software download page.
 		(line (pt 78 12)(pt 82 8))
 	)
 	(annotation_block (location)(rect 416 1712 528 1896))
+)
+(pin
+	(output)
+	(rect 168 1808 344 1824)
+	(text "OUTPUT" (rect 1 0 39 9)(font "Arial" (font_size 6)))
+	(text "pin_name1" (rect 90 0 143 10)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
 	(rect -456 -8 -424 24)
@@ -3813,11 +3829,6 @@ on the Quartus Prime software download page.
 	(pt 1008 1800)
 )
 (connector
-	(text "flush_pipeline" (rect 2442 800 2509 812)(font "Intel Clear" ))
-	(pt 2488 816)
-	(pt 2432 816)
-)
-(connector
 	(text "clk" (rect 1819 296 1833 308)(font "Intel Clear" ))
 	(pt 1888 312)
 	(pt 1792 312)
@@ -4387,6 +4398,15 @@ on the Quartus Prime software download page.
 (connector
 	(pt -760 424)
 	(pt -640 424)
+)
+(connector
+	(text "flush_pipeline" (rect 2458 784 2525 796)(font "Intel Clear" ))
+	(pt 2504 800)
+	(pt 2448 800)
+)
+(connector
+	(pt 168 1816)
+	(pt 48 1816)
 )
 (text "FETCH" (rect 376 -48 416 -34)(font "Intel Clear" (font_size 8)))
 (text "MEMORIA" (rect -488 -104 -431 -90)(font "Intel Clear" (font_size 8)))
