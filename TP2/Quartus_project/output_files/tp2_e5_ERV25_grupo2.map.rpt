@@ -1,5 +1,5 @@
 Analysis & Synthesis report for tp2_e5_ERV25_grupo2
-Mon Jun 23 02:05:43 2025
+Tue Jun 24 14:44:51 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -58,16 +58,16 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jun 23 02:05:43 2025           ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 24 14:44:51 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; tp2_e5_ERV25_grupo2                             ;
 ; Top-level Entity Name              ; tp2_e5_ERV25_grupo2                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 4,182                                           ;
-;     Total combinational functions  ; 3,124                                           ;
+; Total logic elements               ; 4,184                                           ;
+;     Total combinational functions  ; 3,126                                           ;
 ;     Dedicated logic registers      ; 1,541                                           ;
 ; Total registers                    ; 1541                                            ;
-; Total pins                         ; 14                                              ;
+; Total pins                         ; 17                                              ;
 ; Total virtual pins                 ; 572                                             ;
 ; Total memory bits                  ; 69,312                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -180,49 +180,49 @@ on the Quartus Prime software download page.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                            ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                              ; Library ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
-; ram_principal.v                  ; yes             ; User Wizard-Generated File             ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v             ;         ;
-; tp2_e5_ERV25_grupo2.bdf          ; yes             ; User Block Diagram/Schematic File      ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/tp2_e5_ERV25_grupo2.bdf     ;         ;
-; fetch_unit.v                     ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/fetch_unit.v                ;         ;
-; bht_btb_ram.v                    ; yes             ; User Wizard-Generated File             ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v               ;         ;
-; opcode_decode.v                  ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/opcode_decode.v             ;         ;
-; immediate_builder.v              ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/immediate_builder.v         ;         ;
-; decode_latch.v                   ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/decode_latch.v              ;         ;
-; register_bank.v                  ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v             ;         ;
-; op_latch.v                       ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/op_latch.v                  ;         ;
-; operand_build.v                  ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/operand_build.v             ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/alu.v                       ;         ;
-; alu_latch.v                      ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/alu_latch.v                 ;         ;
-; instruction_constant.v           ; yes             ; User Wizard-Generated File             ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v      ;         ;
-; tag_latch.v                      ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/tag_latch.v                 ;         ;
-; prediction_module.v              ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/prediction_module.v         ;         ;
-; address_builder.v                ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/address_builder.v           ;         ;
-; next_pc_decision_module.v        ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/next_pc_decision_module.v   ;         ;
-; branch_result_module.v           ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/branch_result_module.v      ;         ;
-; pipeline_control.v               ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/pipeline_control.v          ;         ;
-; mem_latch.v                      ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/mem_latch.v                 ;         ;
-; address_latch.v                  ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/address_latch.v             ;         ;
-; store_data_module.v              ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/store_data_module.v         ;         ;
-; load_data_module.v               ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/load_data_module.v          ;         ;
-; bht_btb_module_2.bdf             ; yes             ; User Block Diagram/Schematic File      ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_module_2.bdf        ;         ;
-; bht_btb_wr_data_builder_2.v      ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_wr_data_builder_2.v ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf                                     ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                              ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc                                        ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc                                     ;         ;
-; aglobal241.inc                   ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                                     ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc                                      ;         ;
-; altrom.inc                       ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altrom.inc                                         ;         ;
-; altram.inc                       ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altram.inc                                         ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc                                       ;         ;
-; db/altsyncram_u8p2.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_u8p2.tdf      ;         ;
-; ../Python/program_word.hex       ; yes             ; Auto-Found Memory Initialization File  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Python/program_word.hex                     ;         ;
-; db/altsyncram_90i2.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_90i2.tdf      ;         ;
-+----------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                               ;
++-------------------------------------------------------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                                    ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                                              ; Library ;
++-------------------------------------------------------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; ram_principal.v                                                                     ; yes             ; User Wizard-Generated File             ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v             ;         ;
+; tp2_e5_ERV25_grupo2.bdf                                                             ; yes             ; User Block Diagram/Schematic File      ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/tp2_e5_ERV25_grupo2.bdf     ;         ;
+; fetch_unit.v                                                                        ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/fetch_unit.v                ;         ;
+; bht_btb_ram.v                                                                       ; yes             ; User Wizard-Generated File             ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_ram.v               ;         ;
+; opcode_decode.v                                                                     ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/opcode_decode.v             ;         ;
+; immediate_builder.v                                                                 ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/immediate_builder.v         ;         ;
+; decode_latch.v                                                                      ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/decode_latch.v              ;         ;
+; register_bank.v                                                                     ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/register_bank.v             ;         ;
+; op_latch.v                                                                          ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/op_latch.v                  ;         ;
+; operand_build.v                                                                     ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/operand_build.v             ;         ;
+; alu.v                                                                               ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/alu.v                       ;         ;
+; alu_latch.v                                                                         ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/alu_latch.v                 ;         ;
+; instruction_constant.v                                                              ; yes             ; User Wizard-Generated File             ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/instruction_constant.v      ;         ;
+; tag_latch.v                                                                         ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/tag_latch.v                 ;         ;
+; prediction_module.v                                                                 ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/prediction_module.v         ;         ;
+; address_builder.v                                                                   ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/address_builder.v           ;         ;
+; next_pc_decision_module.v                                                           ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/next_pc_decision_module.v   ;         ;
+; branch_result_module.v                                                              ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/branch_result_module.v      ;         ;
+; pipeline_control.v                                                                  ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/pipeline_control.v          ;         ;
+; mem_latch.v                                                                         ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/mem_latch.v                 ;         ;
+; address_latch.v                                                                     ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/address_latch.v             ;         ;
+; store_data_module.v                                                                 ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/store_data_module.v         ;         ;
+; load_data_module.v                                                                  ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/load_data_module.v          ;         ;
+; bht_btb_module_2.bdf                                                                ; yes             ; User Block Diagram/Schematic File      ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_module_2.bdf        ;         ;
+; bht_btb_wr_data_builder_2.v                                                         ; yes             ; User Verilog HDL File                  ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_wr_data_builder_2.v ;         ;
+; altsyncram.tdf                                                                      ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf                                     ;         ;
+; stratix_ram_block.inc                                                               ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                              ;         ;
+; lpm_mux.inc                                                                         ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_mux.inc                                        ;         ;
+; lpm_decode.inc                                                                      ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/lpm_decode.inc                                     ;         ;
+; aglobal241.inc                                                                      ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                                     ;         ;
+; a_rdenreg.inc                                                                       ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/a_rdenreg.inc                                      ;         ;
+; altrom.inc                                                                          ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altrom.inc                                         ;         ;
+; altram.inc                                                                          ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altram.inc                                         ;         ;
+; altdpram.inc                                                                        ; yes             ; Megafunction                           ; c:/altera_lite/24.1std/quartus/libraries/megafunctions/altdpram.inc                                       ;         ;
+; db/altsyncram_u8p2.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_u8p2.tdf      ;         ;
+; /bruno/itba/10mo cuatri/electronica 5/tps/electro_5_tps/tp2/python/program_word.hex ; yes             ; Auto-Found Memory Initialization File  ; /bruno/itba/10mo cuatri/electronica 5/tps/electro_5_tps/tp2/python/program_word.hex                       ;         ;
+; db/altsyncram_90i2.tdf                                                              ; yes             ; Auto-Generated Megafunction            ; D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_90i2.tdf      ;         ;
++-------------------------------------------------------------------------------------+-----------------+----------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -230,16 +230,16 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 4,182     ;
+; Estimated Total logic elements              ; 4,184     ;
 ;                                             ;           ;
-; Total combinational functions               ; 3124      ;
+; Total combinational functions               ; 3126      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 2195      ;
+;     -- 4 input functions                    ; 2198      ;
 ;     -- 3 input functions                    ; 549       ;
-;     -- <=2 input functions                  ; 380       ;
+;     -- <=2 input functions                  ; 379       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 2880      ;
+;     -- normal mode                          ; 2882      ;
 ;     -- arithmetic mode                      ; 244       ;
 ;                                             ;           ;
 ; Total registers                             ; 1541      ;
@@ -247,14 +247,14 @@ on the Quartus Prime software download page.
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; Virtual pins                                ; 572       ;
-; I/O pins                                    ; 14        ;
+; I/O pins                                    ; 17        ;
 ; Total memory bits                           ; 69312     ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 1632      ;
-; Total fan-out                               ; 20516     ;
+; Total fan-out                               ; 20531     ;
 ; Average fan-out                             ; 3.83      ;
 +---------------------------------------------+-----------+
 
@@ -264,26 +264,25 @@ on the Quartus Prime software download page.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                          ; Entity Name               ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------+---------------------------+--------------+
-; |tp2_e5_ERV25_grupo2                         ; 3124 (1)            ; 1541 (0)                  ; 69312       ; 0            ; 0       ; 0         ; 14   ; 572          ; |tp2_e5_ERV25_grupo2                                                                                                         ; tp2_e5_ERV25_grupo2       ; work         ;
+; |tp2_e5_ERV25_grupo2                         ; 3126 (1)            ; 1541 (0)                  ; 69312       ; 0            ; 0       ; 0         ; 17   ; 572          ; |tp2_e5_ERV25_grupo2                                                                                                         ; tp2_e5_ERV25_grupo2       ; work         ;
 ;    |address_builder:inst31|                  ; 99 (99)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_builder:inst31                                                                                  ; address_builder           ; work         ;
-;    |address_latch:inst29|                    ; 103 (103)           ; 104 (104)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_latch:inst29                                                                                    ; address_latch             ; work         ;
+;    |address_latch:inst29|                    ; 102 (102)           ; 104 (104)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|address_latch:inst29                                                                                    ; address_latch             ; work         ;
 ;    |alu:inst17|                              ; 712 (712)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu:inst17                                                                                              ; alu                       ; work         ;
 ;    |alu_latch:inst18|                        ; 0 (0)               ; 38 (38)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|alu_latch:inst18                                                                                        ; alu_latch                 ; work         ;
-;    |bht_btb_module_2:inst1|                  ; 26 (0)              ; 88 (0)                    ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst1                                                                                  ; bht_btb_module_2          ; work         ;
+;    |bht_btb_module_2:inst1|                  ; 26 (17)             ; 88 (0)                    ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst1                                                                                  ; bht_btb_module_2          ; work         ;
 ;       |bht_btb_ram:inst2|                    ; 0 (0)               ; 0 (0)                     ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst1|bht_btb_ram:inst2                                                                ; bht_btb_ram               ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst1|bht_btb_ram:inst2|altsyncram:altsyncram_component                                ; altsyncram                ; work         ;
 ;             |altsyncram_90i2:auto_generated| ; 0 (0)               ; 0 (0)                     ; 3776        ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst1|bht_btb_ram:inst2|altsyncram:altsyncram_component|altsyncram_90i2:auto_generated ; altsyncram_90i2           ; work         ;
 ;       |bht_btb_wr_data_builder_2:inst8|      ; 9 (9)               ; 64 (64)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst1|bht_btb_wr_data_builder_2:inst8                                                  ; bht_btb_wr_data_builder_2 ; work         ;
-;       |prediction_module:inst7|              ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst1|prediction_module:inst7                                                          ; prediction_module         ; work         ;
 ;       |tag_latch:inst6|                      ; 0 (0)               ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|bht_btb_module_2:inst1|tag_latch:inst6                                                                  ; tag_latch                 ; work         ;
 ;    |branch_result_module:inst8|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|branch_result_module:inst8                                                                              ; branch_result_module      ; work         ;
-;    |decode_latch:inst23|                     ; 123 (123)           ; 99 (99)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|decode_latch:inst23                                                                                     ; decode_latch              ; work         ;
+;    |decode_latch:inst23|                     ; 125 (125)           ; 99 (99)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|decode_latch:inst23                                                                                     ; decode_latch              ; work         ;
 ;    |fetch_unit:inst34|                       ; 222 (222)           ; 97 (97)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|fetch_unit:inst34                                                                                       ; fetch_unit                ; work         ;
 ;    |immediate_builder:inst4|                 ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|immediate_builder:inst4                                                                                 ; immediate_builder         ; work         ;
 ;    |load_data_module:inst32|                 ; 65 (65)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|load_data_module:inst32                                                                                 ; load_data_module          ; work         ;
 ;    |mem_latch:inst35|                        ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|mem_latch:inst35                                                                                        ; mem_latch                 ; work         ;
 ;    |next_pc_decision_module:inst9|           ; 66 (66)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|next_pc_decision_module:inst9                                                                           ; next_pc_decision_module   ; work         ;
-;    |op_latch:inst24|                         ; 89 (89)             ; 87 (87)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|op_latch:inst24                                                                                         ; op_latch                  ; work         ;
+;    |op_latch:inst24|                         ; 90 (90)             ; 87 (87)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|op_latch:inst24                                                                                         ; op_latch                  ; work         ;
 ;    |opcode_decode:inst22|                    ; 18 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|opcode_decode:inst22                                                                                    ; opcode_decode             ; work         ;
 ;    |operand_build:inst25|                    ; 75 (75)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|operand_build:inst25                                                                                    ; operand_build             ; work         ;
 ;    |pipeline_control:inst26|                 ; 28 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |tp2_e5_ERV25_grupo2|pipeline_control:inst26                                                                                 ; pipeline_control          ; work         ;
@@ -324,26 +323,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+-----------------------------------------------------------------------------------------------+
 ; mem_latch:inst35|address_target_out[1] ; Merged with bht_btb_module_2:inst1|bht_btb_wr_data_builder_2:inst8|wr_pc_target_update_reg[1] ;
 ; mem_latch:inst35|address_target_out[0] ; Merged with bht_btb_module_2:inst1|bht_btb_wr_data_builder_2:inst8|wr_pc_target_update_reg[0] ;
-; op_latch:inst24|rs2_data_out[19]       ; Merged with address_latch:inst29|rs2_data_out[19]                                             ;
-; op_latch:inst24|rs2_data_out[3]        ; Merged with address_latch:inst29|rs2_data_out[3]                                              ;
-; op_latch:inst24|pc_out[31]             ; Merged with address_latch:inst29|prev_pc_out[31]                                              ;
 ; op_latch:inst24|pc_out[30]             ; Merged with address_latch:inst29|prev_pc_out[30]                                              ;
+; op_latch:inst24|pc_out[26]             ; Merged with address_latch:inst29|prev_pc_out[26]                                              ;
+; op_latch:inst24|pc_out[22]             ; Merged with address_latch:inst29|prev_pc_out[22]                                              ;
+; op_latch:inst24|pc_out[18]             ; Merged with address_latch:inst29|prev_pc_out[18]                                              ;
+; op_latch:inst24|pc_out[14]             ; Merged with address_latch:inst29|prev_pc_out[14]                                              ;
+; op_latch:inst24|pc_out[6]              ; Merged with address_latch:inst29|prev_pc_out[6]                                               ;
+; op_latch:inst24|pc_out[2]              ; Merged with address_latch:inst29|prev_pc_out[2]                                               ;
+; op_latch:inst24|rs2_data_out[27]       ; Merged with address_latch:inst29|rs2_data_out[27]                                             ;
+; op_latch:inst24|pc_out[31]             ; Merged with address_latch:inst29|prev_pc_out[31]                                              ;
 ; op_latch:inst24|pc_out[29]             ; Merged with address_latch:inst29|prev_pc_out[29]                                              ;
 ; op_latch:inst24|pc_out[28]             ; Merged with address_latch:inst29|prev_pc_out[28]                                              ;
 ; op_latch:inst24|pc_out[27]             ; Merged with address_latch:inst29|prev_pc_out[27]                                              ;
-; op_latch:inst24|pc_out[26]             ; Merged with address_latch:inst29|prev_pc_out[26]                                              ;
 ; op_latch:inst24|pc_out[25]             ; Merged with address_latch:inst29|prev_pc_out[25]                                              ;
 ; op_latch:inst24|pc_out[24]             ; Merged with address_latch:inst29|prev_pc_out[24]                                              ;
 ; op_latch:inst24|pc_out[23]             ; Merged with address_latch:inst29|prev_pc_out[23]                                              ;
-; op_latch:inst24|pc_out[22]             ; Merged with address_latch:inst29|prev_pc_out[22]                                              ;
 ; op_latch:inst24|pc_out[21]             ; Merged with address_latch:inst29|prev_pc_out[21]                                              ;
 ; op_latch:inst24|pc_out[20]             ; Merged with address_latch:inst29|prev_pc_out[20]                                              ;
 ; op_latch:inst24|pc_out[19]             ; Merged with address_latch:inst29|prev_pc_out[19]                                              ;
-; op_latch:inst24|pc_out[18]             ; Merged with address_latch:inst29|prev_pc_out[18]                                              ;
 ; op_latch:inst24|pc_out[17]             ; Merged with address_latch:inst29|prev_pc_out[17]                                              ;
 ; op_latch:inst24|pc_out[16]             ; Merged with address_latch:inst29|prev_pc_out[16]                                              ;
 ; op_latch:inst24|pc_out[15]             ; Merged with address_latch:inst29|prev_pc_out[15]                                              ;
-; op_latch:inst24|pc_out[14]             ; Merged with address_latch:inst29|prev_pc_out[14]                                              ;
 ; op_latch:inst24|pc_out[13]             ; Merged with address_latch:inst29|prev_pc_out[13]                                              ;
 ; op_latch:inst24|pc_out[12]             ; Merged with address_latch:inst29|prev_pc_out[12]                                              ;
 ; op_latch:inst24|pc_out[11]             ; Merged with address_latch:inst29|prev_pc_out[11]                                              ;
@@ -351,18 +351,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; op_latch:inst24|pc_out[9]              ; Merged with address_latch:inst29|prev_pc_out[9]                                               ;
 ; op_latch:inst24|pc_out[8]              ; Merged with address_latch:inst29|prev_pc_out[8]                                               ;
 ; op_latch:inst24|pc_out[7]              ; Merged with address_latch:inst29|prev_pc_out[7]                                               ;
-; op_latch:inst24|pc_out[6]              ; Merged with address_latch:inst29|prev_pc_out[6]                                               ;
 ; op_latch:inst24|pc_out[5]              ; Merged with address_latch:inst29|prev_pc_out[5]                                               ;
 ; op_latch:inst24|pc_out[4]              ; Merged with address_latch:inst29|prev_pc_out[4]                                               ;
 ; op_latch:inst24|pc_out[3]              ; Merged with address_latch:inst29|prev_pc_out[3]                                               ;
-; op_latch:inst24|pc_out[2]              ; Merged with address_latch:inst29|prev_pc_out[2]                                               ;
 ; op_latch:inst24|pc_out[1]              ; Merged with address_latch:inst29|prev_pc_out[1]                                               ;
 ; op_latch:inst24|pc_out[0]              ; Merged with address_latch:inst29|prev_pc_out[0]                                               ;
 ; op_latch:inst24|rs2_data_out[31]       ; Merged with address_latch:inst29|rs2_data_out[31]                                             ;
 ; op_latch:inst24|rs2_data_out[30]       ; Merged with address_latch:inst29|rs2_data_out[30]                                             ;
 ; op_latch:inst24|rs2_data_out[29]       ; Merged with address_latch:inst29|rs2_data_out[29]                                             ;
 ; op_latch:inst24|rs2_data_out[28]       ; Merged with address_latch:inst29|rs2_data_out[28]                                             ;
-; op_latch:inst24|rs2_data_out[27]       ; Merged with address_latch:inst29|rs2_data_out[27]                                             ;
 ; op_latch:inst24|rs2_data_out[26]       ; Merged with address_latch:inst29|rs2_data_out[26]                                             ;
 ; op_latch:inst24|rs2_data_out[25]       ; Merged with address_latch:inst29|rs2_data_out[25]                                             ;
 ; op_latch:inst24|rs2_data_out[24]       ; Merged with address_latch:inst29|rs2_data_out[24]                                             ;
@@ -370,6 +367,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; op_latch:inst24|rs2_data_out[22]       ; Merged with address_latch:inst29|rs2_data_out[22]                                             ;
 ; op_latch:inst24|rs2_data_out[21]       ; Merged with address_latch:inst29|rs2_data_out[21]                                             ;
 ; op_latch:inst24|rs2_data_out[20]       ; Merged with address_latch:inst29|rs2_data_out[20]                                             ;
+; op_latch:inst24|rs2_data_out[19]       ; Merged with address_latch:inst29|rs2_data_out[19]                                             ;
 ; op_latch:inst24|rs2_data_out[18]       ; Merged with address_latch:inst29|rs2_data_out[18]                                             ;
 ; op_latch:inst24|rs2_data_out[17]       ; Merged with address_latch:inst29|rs2_data_out[17]                                             ;
 ; op_latch:inst24|rs2_data_out[16]       ; Merged with address_latch:inst29|rs2_data_out[16]                                             ;
@@ -385,6 +383,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; op_latch:inst24|rs2_data_out[6]        ; Merged with address_latch:inst29|rs2_data_out[6]                                              ;
 ; op_latch:inst24|rs2_data_out[5]        ; Merged with address_latch:inst29|rs2_data_out[5]                                              ;
 ; op_latch:inst24|rs2_data_out[4]        ; Merged with address_latch:inst29|rs2_data_out[4]                                              ;
+; op_latch:inst24|rs2_data_out[3]        ; Merged with address_latch:inst29|rs2_data_out[3]                                              ;
 ; op_latch:inst24|rs2_data_out[2]        ; Merged with address_latch:inst29|rs2_data_out[2]                                              ;
 ; op_latch:inst24|rs2_data_out[1]        ; Merged with address_latch:inst29|rs2_data_out[1]                                              ;
 ; op_latch:inst24|rs2_data_out[0]        ; Merged with address_latch:inst29|rs2_data_out[0]                                              ;
@@ -776,23 +775,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 586                         ;
+; boundary_port         ; 589                         ;
 ; cycloneiii_ff         ; 1541                        ;
 ;     CLR               ; 332                         ;
 ;     CLR SCLR          ; 2                           ;
 ;     ENA CLR           ; 177                         ;
 ;     ENA CLR SCLR      ; 1024                        ;
 ;     ENA CLR SCLR SLD  ; 6                           ;
-; cycloneiii_lcell_comb ; 3154                        ;
+; cycloneiii_lcell_comb ; 3156                        ;
 ;     arith             ; 244                         ;
 ;         2 data inputs ; 58                          ;
 ;         3 data inputs ; 186                         ;
-;     normal            ; 2910                        ;
+;     normal            ; 2912                        ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 32                          ;
-;         2 data inputs ; 319                         ;
+;         2 data inputs ; 318                         ;
 ;         3 data inputs ; 363                         ;
-;         4 data inputs ; 2195                        ;
+;         4 data inputs ; 2198                        ;
 ; cycloneiii_ram_block  ; 91                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 19.00                       ;
@@ -805,7 +804,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:09     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -815,7 +814,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Mon Jun 23 02:05:16 2025
+    Info: Processing started: Tue Jun 24 14:44:31 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off tp2_e5_ERV25_grupo2 -c tp2_e5_ERV25_grupo2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -887,6 +886,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file bht_btb
     Info (12023): Found entity 1: bht_btb_wr_data_builder_2 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/bht_btb_wr_data_builder_2.v Line: 1
 Info (12127): Elaborating entity "tp2_e5_ERV25_grupo2" for the top level hierarchy
 Warning (275008): Primitive "GND" of instance "inst2" not used
+Warning (275008): Primitive "VCC" of instance "inst3" not used
 Info (12128): Elaborating entity "branch_result_module" for hierarchy "branch_result_module:inst8"
 Info (12128): Elaborating entity "alu" for hierarchy "alu:inst17"
 Info (12128): Elaborating entity "operand_build" for hierarchy "operand_build:inst25"
@@ -938,7 +938,6 @@ Info (12133): Instantiated megafunction "ram_principal:inst|altsyncram:altsyncra
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_u8p2.tdf
     Info (12023): Found entity 1: altsyncram_u8p2 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/db/altsyncram_u8p2.tdf Line: 28
 Info (12128): Elaborating entity "altsyncram_u8p2" for hierarchy "ram_principal:inst|altsyncram:altsyncram_component|altsyncram_u8p2:auto_generated" File: c:/altera_lite/24.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Critical Warning (127005): Memory depth (2048) in the design file differs from memory depth (29) in the Memory Initialization File "D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Python/program_word.hex" -- setting initial value for remaining addresses to 0 File: D:/Bruno/ITBA/10mo cuatri/Electronica 5/TPS/electro_5_tps/TP2/Quartus_project/ram_principal.v Line: 101
 Info (12128): Elaborating entity "store_data_module" for hierarchy "store_data_module:inst30"
 Info (12128): Elaborating entity "bht_btb_module_2" for hierarchy "bht_btb_module_2:inst1"
 Info (12128): Elaborating entity "prediction_module" for hierarchy "bht_btb_module_2:inst1|prediction_module:inst7"
@@ -1571,15 +1570,15 @@ Info (15717): Design contains 572 virtual pins; timing numbers associated with p
     Info (15719): Pin "rs2_dec[2]" is virtual output pin
     Info (15719): Pin "rs2_dec[1]" is virtual output pin
     Info (15719): Pin "rs2_dec[0]" is virtual output pin
-Info (21057): Implemented 4955 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 12 output pins
-    Info (21061): Implemented 4850 logic cells
+Info (21057): Implemented 4960 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 4852 logic cells
     Info (21064): Implemented 91 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 16 warnings
     Info: Peak virtual memory: 4838 megabytes
-    Info: Processing ended: Mon Jun 23 02:05:43 2025
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:45
+    Info: Processing ended: Tue Jun 24 14:44:51 2025
+    Info: Elapsed time: 00:00:20
+    Info: Total CPU time (on all processors): 00:00:34
 
 

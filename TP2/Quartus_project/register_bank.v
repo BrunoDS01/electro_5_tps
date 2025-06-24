@@ -15,7 +15,7 @@ module register_bank(
 
     output reg [31:0] rs1_data,
     output reg [31:0] rs2_data,
-	output wire [31:0] x28_, x29_, x30_, x31_
+	output wire [31:0] x28_, x29_, x30_, x31_, x10_
 );
 
 reg [31:0] x[0:31];
@@ -24,6 +24,7 @@ assign x28_ = x[28];
 assign x29_ = x[29];
 assign x30_ = x[30];
 assign x31_ = x[31];
+assign x10_ = x[10];
 
 
 always @(rs1) begin

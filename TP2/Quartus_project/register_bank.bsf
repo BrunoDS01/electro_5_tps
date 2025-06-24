@@ -129,6 +129,13 @@ on the Quartus Prime software download page.
 		(text "x31_[31..0]" (rect 185 107 227 119)(font "Arial" ))
 		(line (pt 248 112)(pt 232 112)(line_width 3))
 	)
+	(port
+		(pt 248 128)
+		(output)
+		(text "x10_[31..0]" (rect 0 0 42 12)(font "Arial" ))
+		(text "x10_[31..0]" (rect 185 123 227 135)(font "Arial" ))
+		(line (pt 248 128)(pt 232 128)(line_width 3))
+	)
 	(drawing
 		(rectangle (rect 16 16 232 192)(line_width 1))
 	)

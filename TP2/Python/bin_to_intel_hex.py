@@ -15,8 +15,9 @@ def to_intel_hex_line(address: int, data: bytes) -> str:
 # Instrucciones RISC-V en big endian
 instructions = [
 0x00000013,  # NOP
+0x00100513,
 0x00200293,
-0x01e00313,
+0x3e800313,
 0x00000f13,
 0x00200393,
 0x00100e13,
@@ -42,6 +43,7 @@ instructions = [
 0x00128293,
 0xfa5354e3,
 0x000f0e13,
+0x00200513,
 0x000000ef
 
   ]

@@ -1860,6 +1860,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "init",
+					"strict" : false
+				},
+				{
+					"name" : "ready",
+					"strict" : false
+				},
+				{
 					"name" : "bht_wr_address[5]",
 					"strict" : false
 				},
@@ -2317,6 +2325,10 @@
 				},
 				{
 					"name" : "rs2_dec[0]",
+					"strict" : false
+				},
+				{
+					"name" : "predictor_enable",
 					"strict" : false
 				},
 				{
