@@ -14,37 +14,17 @@ def to_intel_hex_line(address: int, data: bytes) -> str:
 
 # Instrucciones RISC-V en big endian
 instructions = [
-0x00000013,  # NOP
-0x00100513,
-0x00200293,
-0x3e800313,
-0x00000f13,
-0x00200393,
-0x00100e13,
-0x00000e93,
-0x00000f93,
-0x007f8863,
-0x007e8eb3,
-0x001f8f93,
-0xff5ff0ef,
-0x03d2c663,
-0x00028213,
-0x00724663,
-0x40720233,
-0xff9ff0ef,
-0x00020863,
-0x00138393,
-0xfc53c6e3,
-0x00c000ef,
-0x00000e13,
-0x004000ef,
-0x000e0463,
-0x001f0f13,
-0x00128293,
-0xfa5354e3,
-0x000f0e13,
-0x00200513,
-0x000000ef
+    0x00000013,  # NOP
+    0x00000093,
+    0x00100113,
+    0x00a00213,
+    0x002081b3,
+    0x00010093,
+    0x00018113,
+    0xfff20213,
+    0xfe0218e3,
+    0x00018e13,
+    0x0000006f,
 
   ]
 
@@ -306,7 +286,6 @@ loop:
 fin:
 	jal x0, fin
 
-
     00000093
     00100113
     00a00213
@@ -316,13 +295,13 @@ fin:
     fff20213
     fe0218e3
     00018e13
+    0000006f
 
-    
+# numeros primos hasta 1000
 
-# numeros primos hasta 30
-
+    addi x10, x0, 1      # Flag para cargar en el último bit de x10 un 1 como señal de inicio
     addi t0, x0, 2      # i = 2, primer número a chequear si es primo
-    addi t1, x0, 30     # N = 30, límite superior
+    addi t1, x0, 1000     # N = 1000, límite superior
     addi t5, x0, 0      # contador de primos encontrados = 0
 
 outer_loop:
@@ -371,12 +350,15 @@ skip_count:
     ble t0, t1, outer_loop  # mientras i <= N, seguimos con outer_loop
 
     addi x28, t5, 0
-end:
+    addi x10, x0, 2     # Pone en 1 el segundo bit menos significativo de X10, para indicar el fin
+end:    
     jal end             # bucle infinito para detener ejecución (resultado en t5)
 
-    
-    0x00200293,
-0x01e00313,
+
+0x00000013,  # NOP
+0x00100513, # ADDI a0, x0, 1
+0x00200293,
+0x3e800313,
 0x00000f13,
 0x00200393,
 0x00100e13,
@@ -402,6 +384,6 @@ end:
 0x00128293,
 0xfa5354e3,
 0x000f0e13,
+0x00200513, # ADDI a0, x0, 2
 0x000000ef
-
 """

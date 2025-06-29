@@ -111,12 +111,12 @@ set_instance_assignment -name VIRTUAL_PIN ON -to rs1_dec
 set_instance_assignment -name VIRTUAL_PIN ON -to rs2_data_op
 set_instance_assignment -name VIRTUAL_PIN ON -to rs2_dec
 set_instance_assignment -name VIRTUAL_PIN ON -to store_data
-set_instance_assignment -name VIRTUAL_PIN ON -to branch_result
+set_instance_assignment -name VIRTUAL_PIN OFF -to branch_result -disable
 set_global_assignment -name VECTOR_WAVEFORM_FILE COMPLETE_SIM.vwf
 set_global_assignment -name BDF_FILE bht_btb_module_2.bdf
 set_global_assignment -name VERILOG_FILE bht_btb_wr_data_builder_2.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE JUMP_SIM.vwf
-set_instance_assignment -name VIRTUAL_PIN ON -to branch_prediction
+set_instance_assignment -name VIRTUAL_PIN OFF -to branch_prediction -disable
 set_instance_assignment -name VIRTUAL_PIN ON -to prev_branch_prediction
 set_instance_assignment -name VIRTUAL_PIN ON -to a
 set_instance_assignment -name VIRTUAL_PIN ON -to b
